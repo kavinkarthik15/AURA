@@ -1,0 +1,290 @@
+[
+  {
+    "experience_id": "exp_0001",
+    "execution_id": "exec_20260723_001",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 75
+    },
+    "actual_state": {
+      "python": 72
+    },
+    "predicted_growth": {
+      "python": 10
+    },
+    "actual_growth": {
+      "python": 7
+    },
+    "prediction_error": 3.0,
+    "actions": [
+      "Python Project",
+      "DSA Practice"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 12.5,
+    "success": true,
+    "created_at": "2026-07-23T10:05:09.429694"
+  },
+  {
+    "experience_id": "exp_0002",
+    "execution_id": "exec_20260723_004",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 80
+    },
+    "actual_state": {
+      "python": 76
+    },
+    "predicted_growth": {
+      "python": 15
+    },
+    "actual_growth": {
+      "python": 11
+    },
+    "prediction_error": 4.0,
+    "actions": [
+      "Python Project"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 9.0,
+    "success": true,
+    "created_at": "2026-07-23T10:05:09.431119"
+  },
+  {
+    "experience_id": "exp_0003",
+    "execution_id": "exec_20260723_002",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 78
+    },
+    "actual_state": {
+      "python": 74
+    },
+    "predicted_growth": {
+      "python": 13
+    },
+    "actual_growth": {
+      "python": 9
+    },
+    "prediction_error": 4.0,
+    "actions": [
+      "Python Project",
+      "DSA Practice"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 10.0,
+    "success": false,
+    "created_at": "2026-07-23T10:05:09.432398"
+  },
+  {
+    "experience_id": "exp_0004",
+    "execution_id": "exec_20260723_003",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 75
+    },
+    "actual_state": {
+      "python": 72
+    },
+    "predicted_growth": {
+      "python": 10
+    },
+    "actual_growth": {
+      "python": 7
+    },
+    "prediction_error": 3.0,
+    "actions": [
+      "Python Project"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 8.0,
+    "success": true,
+    "created_at": "2026-07-23T10:05:09.433754"
+  },
+  {
+    "experience_id": "exp_0005",
+    "execution_id": "exec_20260723_001",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 75
+    },
+    "actual_state": {
+      "python": 72
+    },
+    "predicted_growth": {
+      "python": 10
+    },
+    "actual_growth": {
+      "python": 7
+    },
+    "prediction_error": 3.0,
+    "actions": [
+      "Python Project",
+      "DSA Practice"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 12.5,
+    "success": true,
+    "created_at": "2026-07-23T11:17:27.267904",
+    "experience_version": "v1",
+    "model_version": "v2",
+    "planner_version": "beam_search_v1",
+    "objective_profile": "balanced_learning",
+    "dataset_version": "v1"
+  },
+  {
+    "experience_id": "exp_0006",
+    "execution_id": "exec_20260723_004",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 80
+    },
+    "actual_state": {
+      "python": 76
+    },
+    "predicted_growth": {
+      "python": 15
+    },
+    "actual_growth": {
+      "python": 11
+    },
+    "prediction_error": 4.0,
+    "actions": [
+      "Python Project"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 9.0,
+    "success": true,
+    "created_at": "2026-07-23T11:17:27.270470",
+    "experience_version": "v1",
+    "model_version": "v2",
+    "planner_version": "beam_search_v1",
+    "objective_profile": "balanced_learning",
+    "dataset_version": "v1"
+  },
+  {
+    "experience_id": "exp_0007",
+    "execution_id": "exec_20260723_002",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 78
+    },
+    "actual_state": {
+      "python": 74
+    },
+    "predicted_growth": {
+      "python": 13
+    },
+    "actual_growth": {
+      "python": 9
+    },
+    "prediction_error": 4.0,
+    "actions": [
+      "Python Project",
+      "DSA Practice"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 10.0,
+    "success": false,
+    "created_at": "2026-07-23T11:17:27.272633",
+    "experience_version": "v1",
+    "model_version": "v2",
+    "planner_version": "beam_search_v1",
+    "objective_profile": "balanced_learning",
+    "dataset_version": "v1"
+  },
+  {
+    "experience_id": "exp_0008",
+    "execution_id": "exec_20260723_003",
+    "plan_name": "Placement Plan",
+    "goal_name": "Python Growth",
+    "initial_state": {
+      "python": 65
+    },
+    "predicted_state": {
+      "python": 75
+    },
+    "actual_state": {
+      "python": 72
+    },
+    "predicted_growth": {
+      "python": 10
+    },
+    "actual_growth": {
+      "python": 7
+    },
+    "prediction_error": 3.0,
+    "actions": [
+      "Python Project"
+    ],
+    "completed_actions": [
+      "Python Project"
+    ],
+    "failed_actions": [],
+    "skipped_actions": [],
+    "execution_time": 8.0,
+    "success": true,
+    "created_at": "2026-07-23T11:17:27.274549",
+    "experience_version": "v1",
+    "model_version": "v2",
+    "planner_version": "beam_search_v1",
+    "objective_profile": "balanced_learning",
+    "dataset_version": "v1"
+  }
+]

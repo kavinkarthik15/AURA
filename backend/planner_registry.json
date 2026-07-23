@@ -1,0 +1,8 @@
+{
+  "planner_version": "beam_v1",
+  "beam_width": 5,
+  "max_depth": 4,
+  "plans_generated": 15,
+  "best_score": 0.87,
+  "created_at": "2026-07-23"
+}

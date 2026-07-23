@@ -1,0 +1,119 @@
+[
+    {
+        "model_version": "v1",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.14,
+        "mse": 0.078,
+        "r2": 0.896,
+        "training_data_hash": "v1-training-data",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T04:40:59.937851+00:00"
+    },
+    {
+        "model_version": "v1",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.14,
+        "mse": 0.078,
+        "r2": 0.896,
+        "training_data_hash": "v1-training-data",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T04:52:58.496569+00:00"
+    },
+    {
+        "model_version": "v2",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.446086,
+        "mse": 1.264613,
+        "r2": 0.939589,
+        "training_data_hash": "sequence-training-data",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T04:52:58.497240+00:00"
+    },
+    {
+        "model_version": "v2",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.4460857487922706,
+        "mse": 1.2646131025406138,
+        "r2": 0.939589247505658,
+        "training_data_hash": "91e879f3dd752f788f91b0c0fbb5d97e4da721c65954b74a15be8521b7001e6f",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T05:37:04.435533+00:00"
+    },
+    {
+        "model_version": "v1",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.5767538819875777,
+        "mse": 2.3035659173075036,
+        "r2": 0.896243617077529,
+        "training_data_hash": "56bb4b75f7031b630ba7cd571b529a1ed2f1e4b0fb2d4fecee719705afefba30",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T05:37:51.756438+00:00"
+    },
+    {
+        "model_version": "v2",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 111,
+        "mae": 0.4460857487922706,
+        "mse": 1.2646131025406135,
+        "r2": 0.939589247505658,
+        "training_data_hash": "91e879f3dd752f788f91b0c0fbb5d97e4da721c65954b74a15be8521b7001e6f",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T05:38:05.017037+00:00"
+    },
+    {
+        "model_version": "v7",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "created_at": "2026-07-23T11:24:06.205817+00:00"
+    },
+    {
+        "model_version": "v8",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v7",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-23T11:28:49.223826+00:00"
+    },
+    {
+        "model_version": "v9",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v8",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-23T11:28:49.800624+00:00"
+    }
+]

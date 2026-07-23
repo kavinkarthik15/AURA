@@ -1,0 +1,58 @@
+[
+  {
+    "action_id": "ACT001",
+    "name": "Complete Python Project",
+    "category": "Project",
+    "estimated_skill_gain": 10,
+    "success_probability": 0.8,
+    "expected_growth": 10
+  },
+  {
+    "action_id": "ACT002",
+    "name": "Complete DSA Course",
+    "category": "Course",
+    "estimated_skill_gain": 8,
+    "success_probability": 0.7,
+    "expected_growth": 8
+  },
+  {
+    "action_id": "ACT003",
+    "name": "Complete Internship",
+    "category": "Internship",
+    "estimated_skill_gain": 15,
+    "success_probability": 0.85,
+    "expected_growth": 15
+  },
+  {
+    "action_id": "ACT004",
+    "name": "Participate in Hackathon",
+    "category": "Hackathon",
+    "estimated_skill_gain": 12,
+    "success_probability": 0.78,
+    "expected_growth": 12
+  },
+  {
+    "action_id": "ACT005",
+    "name": "Practice DSA",
+    "category": "DSA Practice",
+    "estimated_skill_gain": 7,
+    "success_probability": 0.68,
+    "expected_growth": 7
+  },
+  {
+    "action_id": "ACT006",
+    "name": "Attend Mock Interview",
+    "category": "Mock Interviews",
+    "estimated_skill_gain": 6,
+    "success_probability": 0.72,
+    "expected_growth": 6
+  },
+  {
+    "action_id": "ACT007",
+    "name": "Read Research Paper",
+    "category": "Research Papers",
+    "estimated_skill_gain": 5,
+    "success_probability": 0.62,
+    "expected_growth": 5
+  }
+]

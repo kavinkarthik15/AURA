@@ -1,0 +1,1190 @@
+{
+    "dataset_version": "v1",
+    "records": [
+    {
+        "state_before": {
+            "python": 55
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 65
+        }
+    },
+    {
+        "state_before": {
+            "python": 55
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 67
+        }
+    },
+    {
+        "state_before": {
+            "python": 55
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 69
+        }
+    },
+    {
+        "state_before": {
+            "python": 65
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 74
+        }
+    },
+    {
+        "state_before": {
+            "python": 65
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 76
+        }
+    },
+    {
+        "state_before": {
+            "python": 65
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 78
+        }
+    },
+    {
+        "state_before": {
+            "python": 58,
+            "dsa": 42
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "python": 63,
+            "dsa": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 58,
+            "dsa": 42
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "python": 65,
+            "dsa": 56
+        }
+    },
+    {
+        "state_before": {
+            "python": 58,
+            "dsa": 42
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "python": 67,
+            "dsa": 58
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "dsa": 61
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "dsa": 63
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54
+        },
+        "action": "Complete DSA Course",
+        "state_after": {
+            "dsa": 65
+        }
+    },
+    {
+        "state_before": {
+            "python": 62,
+            "ml": 35
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 69,
+            "ml": 41
+        }
+    },
+    {
+        "state_before": {
+            "python": 62,
+            "ml": 35
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 71,
+            "ml": 43
+        }
+    },
+    {
+        "state_before": {
+            "python": 62,
+            "ml": 35
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 73,
+            "ml": 45
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 60
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 82,
+            "dsa": 68
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 60
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 84,
+            "dsa": 70
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 60
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 86,
+            "dsa": 72
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 48
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 56
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 48
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 58
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 48
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 60
+        }
+    },
+    {
+        "state_before": {
+            "python": 72,
+            "dsa": 62
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 75,
+            "dsa": 64
+        }
+    },
+    {
+        "state_before": {
+            "python": 72,
+            "dsa": 62
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 77,
+            "dsa": 66
+        }
+    },
+    {
+        "state_before": {
+            "python": 72,
+            "dsa": 62
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 79,
+            "dsa": 68
+        }
+    },
+    {
+        "state_before": {
+            "ml": 30
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "ml": 36
+        }
+    },
+    {
+        "state_before": {
+            "ml": 30
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "ml": 38
+        }
+    },
+    {
+        "state_before": {
+            "ml": 30
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "ml": 40
+        }
+    },
+    {
+        "state_before": {
+            "python": 68,
+            "ml": 34
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "python": 70,
+            "ml": 38
+        }
+    },
+    {
+        "state_before": {
+            "python": 68,
+            "ml": 34
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "python": 72,
+            "ml": 40
+        }
+    },
+    {
+        "state_before": {
+            "python": 68,
+            "ml": 34
+        },
+        "action": "Read Research Paper",
+        "state_after": {
+            "python": 74,
+            "ml": 42
+        }
+    },
+    {
+        "state_before": {
+            "python": 74,
+            "ml": 38
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 82,
+            "ml": 42
+        }
+    },
+    {
+        "state_before": {
+            "python": 74,
+            "ml": 38
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 84,
+            "ml": 44
+        }
+    },
+    {
+        "state_before": {
+            "python": 74,
+            "ml": 38
+        },
+        "action": "Complete Python Project",
+        "state_after": {
+            "python": 86,
+            "ml": 46
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 58
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 76,
+            "dsa": 63
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 58
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 78,
+            "dsa": 65
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "dsa": 58
+        },
+        "action": "Participate in Hackathon",
+        "state_after": {
+            "python": 80,
+            "dsa": 67
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "dsa": 63
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 79,
+            "dsa": 66
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "dsa": 63
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 81,
+            "dsa": 68
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "dsa": 63
+        },
+        "action": "Attend Mock Interview",
+        "state_after": {
+            "python": 83,
+            "dsa": 70
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 66
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 72
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 66
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 74
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 66
+        },
+        "action": "Practice DSA",
+        "state_after": {
+            "dsa": 76
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "ml": 42
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 88,
+            "ml": 50
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "ml": 42
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 90,
+            "ml": 52
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "ml": 42
+        },
+        "action": "Complete Internship",
+        "state_after": {
+            "python": 92,
+            "ml": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 56,
+            "confidence": 40
+        },
+        "action": "Python Course",
+        "state_after": {
+            "python": 61,
+            "confidence": 45
+        }
+    },
+    {
+        "state_before": {
+            "python": 56,
+            "confidence": 40
+        },
+        "action": "Python Course",
+        "state_after": {
+            "python": 63,
+            "confidence": 47
+        }
+    },
+    {
+        "state_before": {
+            "python": 56,
+            "confidence": 40
+        },
+        "action": "Python Course",
+        "state_after": {
+            "python": 65,
+            "confidence": 49
+        }
+    },
+    {
+        "state_before": {
+            "python": 61,
+            "confidence": 45
+        },
+        "action": "Python Project",
+        "state_after": {
+            "python": 71,
+            "confidence": 50
+        }
+    },
+    {
+        "state_before": {
+            "python": 61,
+            "confidence": 45
+        },
+        "action": "Python Project",
+        "state_after": {
+            "python": 73,
+            "confidence": 52
+        }
+    },
+    {
+        "state_before": {
+            "python": 61,
+            "confidence": 45
+        },
+        "action": "Python Project",
+        "state_after": {
+            "python": 75,
+            "confidence": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 71,
+            "confidence": 50
+        },
+        "action": "Hackathon",
+        "state_after": {
+            "python": 79,
+            "confidence": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 71,
+            "confidence": 50
+        },
+        "action": "Hackathon",
+        "state_after": {
+            "python": 81,
+            "confidence": 56
+        }
+    },
+    {
+        "state_before": {
+            "python": 71,
+            "confidence": 50
+        },
+        "action": "Hackathon",
+        "state_after": {
+            "python": 83,
+            "confidence": 58
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "industry_knowledge": 40
+        },
+        "action": "Internship",
+        "state_after": {
+            "python": 94,
+            "industry_knowledge": 52
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "industry_knowledge": 40
+        },
+        "action": "Internship",
+        "state_after": {
+            "python": 96,
+            "industry_knowledge": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 79,
+            "industry_knowledge": 40
+        },
+        "action": "Internship",
+        "state_after": {
+            "python": 98,
+            "industry_knowledge": 56
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 45,
+            "confidence": 42
+        },
+        "action": "DSA Course",
+        "state_after": {
+            "dsa": 54,
+            "confidence": 47
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 45,
+            "confidence": 42
+        },
+        "action": "DSA Course",
+        "state_after": {
+            "dsa": 56,
+            "confidence": 49
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 45,
+            "confidence": 42
+        },
+        "action": "DSA Course",
+        "state_after": {
+            "dsa": 58,
+            "confidence": 51
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54,
+            "confidence": 47
+        },
+        "action": "DSA Project",
+        "state_after": {
+            "dsa": 63,
+            "confidence": 51
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54,
+            "confidence": 47
+        },
+        "action": "DSA Project",
+        "state_after": {
+            "dsa": 65,
+            "confidence": 53
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 54,
+            "confidence": 47
+        },
+        "action": "DSA Project",
+        "state_after": {
+            "dsa": 67,
+            "confidence": 55
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 63,
+            "confidence": 51
+        },
+        "action": "DSA Hackathon",
+        "state_after": {
+            "dsa": 69,
+            "confidence": 55
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 63,
+            "confidence": 51
+        },
+        "action": "DSA Hackathon",
+        "state_after": {
+            "dsa": 71,
+            "confidence": 57
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 63,
+            "confidence": 51
+        },
+        "action": "DSA Hackathon",
+        "state_after": {
+            "dsa": 73,
+            "confidence": 59
+        }
+    },
+    {
+        "state_before": {
+            "ml": 35,
+            "confidence": 44
+        },
+        "action": "Machine Learning Course",
+        "state_after": {
+            "ml": 44,
+            "confidence": 49
+        }
+    },
+    {
+        "state_before": {
+            "ml": 35,
+            "confidence": 44
+        },
+        "action": "Machine Learning Course",
+        "state_after": {
+            "ml": 46,
+            "confidence": 51
+        }
+    },
+    {
+        "state_before": {
+            "ml": 35,
+            "confidence": 44
+        },
+        "action": "Machine Learning Course",
+        "state_after": {
+            "ml": 48,
+            "confidence": 53
+        }
+    },
+    {
+        "state_before": {
+            "ml": 44,
+            "confidence": 49
+        },
+        "action": "ML Project",
+        "state_after": {
+            "ml": 53,
+            "confidence": 54
+        }
+    },
+    {
+        "state_before": {
+            "ml": 44,
+            "confidence": 49
+        },
+        "action": "ML Project",
+        "state_after": {
+            "ml": 55,
+            "confidence": 56
+        }
+    },
+    {
+        "state_before": {
+            "ml": 44,
+            "confidence": 49
+        },
+        "action": "ML Project",
+        "state_after": {
+            "ml": 57,
+            "confidence": 58
+        }
+    },
+    {
+        "state_before": {
+            "ml": 53,
+            "industry_knowledge": 40
+        },
+        "action": "Research Paper Review",
+        "state_after": {
+            "ml": 58,
+            "industry_knowledge": 45
+        }
+    },
+    {
+        "state_before": {
+            "ml": 53,
+            "industry_knowledge": 40
+        },
+        "action": "Research Paper Review",
+        "state_after": {
+            "ml": 60,
+            "industry_knowledge": 47
+        }
+    },
+    {
+        "state_before": {
+            "ml": 53,
+            "industry_knowledge": 40
+        },
+        "action": "Research Paper Review",
+        "state_after": {
+            "ml": 62,
+            "industry_knowledge": 49
+        }
+    },
+    {
+        "state_before": {
+            "python": 60,
+            "confidence": 48
+        },
+        "action": "Python Bootcamp",
+        "state_after": {
+            "python": 66,
+            "confidence": 52
+        }
+    },
+    {
+        "state_before": {
+            "python": 60,
+            "confidence": 48
+        },
+        "action": "Python Bootcamp",
+        "state_after": {
+            "python": 68,
+            "confidence": 54
+        }
+    },
+    {
+        "state_before": {
+            "python": 60,
+            "confidence": 48
+        },
+        "action": "Python Bootcamp",
+        "state_after": {
+            "python": 70,
+            "confidence": 56
+        }
+    },
+    {
+        "state_before": {
+            "python": 66,
+            "sql": 28
+        },
+        "action": "Build SQL Pipeline",
+        "state_after": {
+            "python": 70,
+            "sql": 34
+        }
+    },
+    {
+        "state_before": {
+            "python": 66,
+            "sql": 28
+        },
+        "action": "Build SQL Pipeline",
+        "state_after": {
+            "python": 72,
+            "sql": 36
+        }
+    },
+    {
+        "state_before": {
+            "python": 66,
+            "sql": 28
+        },
+        "action": "Build SQL Pipeline",
+        "state_after": {
+            "python": 74,
+            "sql": 38
+        }
+    },
+    {
+        "state_before": {
+            "statistics": 24,
+            "confidence": 50
+        },
+        "action": "Statistics Workshop",
+        "state_after": {
+            "statistics": 31,
+            "confidence": 54
+        }
+    },
+    {
+        "state_before": {
+            "statistics": 24,
+            "confidence": 50
+        },
+        "action": "Statistics Workshop",
+        "state_after": {
+            "statistics": 33,
+            "confidence": 56
+        }
+    },
+    {
+        "state_before": {
+            "statistics": 24,
+            "confidence": 50
+        },
+        "action": "Statistics Workshop",
+        "state_after": {
+            "statistics": 35,
+            "confidence": 58
+        }
+    },
+    {
+        "state_before": {
+            "sql": 34,
+            "industry_knowledge": 45
+        },
+        "action": "SQL Practice",
+        "state_after": {
+            "sql": 41,
+            "industry_knowledge": 49
+        }
+    },
+    {
+        "state_before": {
+            "sql": 34,
+            "industry_knowledge": 45
+        },
+        "action": "SQL Practice",
+        "state_after": {
+            "sql": 43,
+            "industry_knowledge": 51
+        }
+    },
+    {
+        "state_before": {
+            "sql": 34,
+            "industry_knowledge": 45
+        },
+        "action": "SQL Practice",
+        "state_after": {
+            "sql": 45,
+            "industry_knowledge": 53
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "teamwork": 40
+        },
+        "action": "Team Hackathon",
+        "state_after": {
+            "python": 76,
+            "teamwork": 46
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "teamwork": 40
+        },
+        "action": "Team Hackathon",
+        "state_after": {
+            "python": 78,
+            "teamwork": 48
+        }
+    },
+    {
+        "state_before": {
+            "python": 70,
+            "teamwork": 40
+        },
+        "action": "Team Hackathon",
+        "state_after": {
+            "python": 80,
+            "teamwork": 50
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 69,
+            "communication": 38
+        },
+        "action": "System Design Study",
+        "state_after": {
+            "dsa": 74,
+            "communication": 43
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 69,
+            "communication": 38
+        },
+        "action": "System Design Study",
+        "state_after": {
+            "dsa": 76,
+            "communication": 45
+        }
+    },
+    {
+        "state_before": {
+            "dsa": 69,
+            "communication": 38
+        },
+        "action": "System Design Study",
+        "state_after": {
+            "dsa": 78,
+            "communication": 47
+        }
+    },
+    {
+        "state_before": {
+            "ml": 58,
+            "statistics": 31
+        },
+        "action": "ML Experiment",
+        "state_after": {
+            "ml": 64,
+            "statistics": 37
+        }
+    },
+    {
+        "state_before": {
+            "ml": 58,
+            "statistics": 31
+        },
+        "action": "ML Experiment",
+        "state_after": {
+            "ml": 66,
+            "statistics": 39
+        }
+    },
+    {
+        "state_before": {
+            "ml": 58,
+            "statistics": 31
+        },
+        "action": "ML Experiment",
+        "state_after": {
+            "ml": 68,
+            "statistics": 41
+        }
+    },
+    {
+        "state_before": {
+            "communication": 43,
+            "confidence": 54
+        },
+        "action": "Presentation Workshop",
+        "state_after": {
+            "communication": 49,
+            "confidence": 58
+        }
+    },
+    {
+        "state_before": {
+            "communication": 43,
+            "confidence": 54
+        },
+        "action": "Presentation Workshop",
+        "state_after": {
+            "communication": 51,
+            "confidence": 60
+        }
+    },
+    {
+        "state_before": {
+            "communication": 43,
+            "confidence": 54
+        },
+        "action": "Presentation Workshop",
+        "state_after": {
+            "communication": 53,
+            "confidence": 62
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "teamwork": 46
+        },
+        "action": "API Build",
+        "state_after": {
+            "python": 82,
+            "teamwork": 50
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "teamwork": 46
+        },
+        "action": "API Build",
+        "state_after": {
+            "python": 84,
+            "teamwork": 52
+        }
+    },
+    {
+        "state_before": {
+            "python": 76,
+            "teamwork": 46
+        },
+        "action": "API Build",
+        "state_after": {
+            "python": 86,
+            "teamwork": 54
+        }
+    },
+    {
+        "state_before": {
+            "industry_knowledge": 49,
+            "confidence": 58
+        },
+        "action": "Industry Review",
+        "state_after": {
+            "industry_knowledge": 55,
+            "confidence": 62
+        }
+    },
+    {
+        "state_before": {
+            "industry_knowledge": 49,
+            "confidence": 58
+        },
+        "action": "Industry Review",
+        "state_after": {
+            "industry_knowledge": 57,
+            "confidence": 64
+        }
+    },
+    {
+        "state_before": {
+            "industry_knowledge": 49,
+            "confidence": 58
+        },
+        "action": "Industry Review",
+        "state_after": {
+            "industry_knowledge": 59,
+            "confidence": 66
+        }
+    },
+    {
+        "state_before": {
+            "python": 82,
+            "dsa": 74
+        },
+        "action": "Algorithm Practice",
+        "state_after": {
+            "python": 86,
+            "dsa": 79
+        }
+    },
+    {
+        "state_before": {
+            "python": 82,
+            "dsa": 74
+        },
+        "action": "Algorithm Practice",
+        "state_after": {
+            "python": 88,
+            "dsa": 81
+        }
+    },
+    {
+        "state_before": {
+            "python": 82,
+            "dsa": 74
+        },
+        "action": "Algorithm Practice",
+        "state_after": {
+            "python": 90,
+            "dsa": 83
+        }
+    },
+    {
+        "state_before": {
+            "ml": 64,
+            "confidence": 62
+        },
+        "action": "Deploy ML Model",
+        "state_after": {
+            "ml": 72,
+            "confidence": 67
+        }
+    },
+    {
+        "state_before": {
+            "ml": 64,
+            "confidence": 62
+        },
+        "action": "Deploy ML Model",
+        "state_after": {
+            "ml": 74,
+            "confidence": 69
+        }
+    },
+    {
+        "state_before": {
+            "ml": 64,
+            "confidence": 62
+        },
+        "action": "Deploy ML Model",
+        "state_after": {
+            "ml": 76,
+            "confidence": 71
+        }
+    }
+    ]
+}

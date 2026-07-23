@@ -1,0 +1,15 @@
+{
+  "current_state": {
+    "python": 50,
+    "dsa": 40,
+    "ml": 30
+  },
+  "goal_state": {
+    "goal": "Career Growth",
+    "target_skills": {
+      "python": 80,
+      "dsa": 70,
+      "ml": 60
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "last_updated": "2026-07-22T08:53:53.617868",
+    "state": {
+        "skills": {
+            "python": 90,
+            "sql": 40,
+            "statistics": 20
+        },
+        "knowledge": {
+            "machine_learning": 30,
+            "data_science": 50
+        },
+        "projects": {
+            "stock_prediction": 40
+        },
+        "goals": {
+            "become_data_scientist": 35
+        },
+        "learning": {
+            "consistency": 70,
+            "focus": 65
+        }
+    }
+}
