@@ -1,0 +1,156 @@
+[
+  {
+    "research_version": "research_1",
+    "experiment_id": "goal_plan_1785000547",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785000547",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-25T17:29:07.889857+00:00"
+  },
+  {
+    "research_version": "research_2",
+    "experiment_id": "goal_plan_1785001036",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785001036",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-25T17:37:16.792098+00:00"
+  },
+  {
+    "research_version": "research_3",
+    "experiment_id": "goal_plan_1785001038",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785001038",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-25T17:37:18.404717+00:00"
+  },
+  {
+    "research_version": "research_4",
+    "experiment_id": "goal_plan_1785042633",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785042633",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-26T05:10:33.816662+00:00"
+  },
+  {
+    "research_version": "research_5",
+    "experiment_id": "goal_plan_1785042634",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785042634",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-26T05:10:34.893734+00:00"
+  },
+  {
+    "research_version": "research_6",
+    "experiment_id": "goal_plan_1785042653",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785042653",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-26T05:10:53.058771+00:00"
+  },
+  {
+    "research_version": "research_7",
+    "experiment_id": "goal_plan_1785042654",
+    "planner_version": "planner_v2",
+    "policy_version": "policy_v3",
+    "retrieval_version": "retrieval_v2",
+    "reasoner_version": "reasoning_v1",
+    "twin_version": "twin_v4",
+    "dataset_version": "dataset_v1",
+    "benchmark_version": "benchmark_v1",
+    "lineage": {
+      "experiment": "goal_plan_1785042654",
+      "planner": "planner_v2",
+      "policy": "policy_v3",
+      "retriever": "retrieval_v2",
+      "reasoner": "reasoning_v1",
+      "twin": "twin_v4",
+      "dataset": "dataset_v1",
+      "benchmark": "benchmark_v1"
+    },
+    "recorded_at": "2026-07-26T05:10:54.080042+00:00"
+  }
+]

@@ -10,7 +10,7 @@ class ExperienceServiceTests(unittest.TestCase):
     def test_add_and_reload_experience(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             file_path = Path(tmp_dir) / "experiences.json"
-            service = ExperienceService(file_path=file_path)
+            service = ExperienceService(file_path=file_path, include_synthetic=False)
 
             expected_timestamp = datetime(2026, 7, 22, 12, 0, 0)
             experience = {

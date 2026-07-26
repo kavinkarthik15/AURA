@@ -1,0 +1,47 @@
+{
+  "experiment_id": "ablation_seed_7",
+  "recorded_at": "2026-07-25T17:17:28.315047+00:00",
+  "planner_version": "v2",
+  "policy_version": "policy_v1",
+  "retrieval_version": "retrieval_v1",
+  "model_version": "v2",
+  "random_seed": 7,
+  "retrieval_configuration": {
+    "top_k": 3,
+    "metric": "hybrid",
+    "weight": 0.0
+  },
+  "planner_configuration": {
+    "beam_width": 5,
+    "max_depth": 4
+  },
+  "beam_width": 5,
+  "objective_profile": "balanced_learning",
+  "benchmark_results": {
+    "policy_only": 0.75,
+    "retrieval_only": 0.75,
+    "hybrid": 0.75
+  },
+  "execution_metrics": {},
+  "performance_timings_ms": {},
+  "confidence_breakdown": {
+    "policy_only": {
+      "policy": 0.0,
+      "retrieval": 0.0,
+      "digital_twin": 0.0,
+      "planner": 0.3825
+    },
+    "retrieval_only": {
+      "policy": 0.0,
+      "retrieval": 0.0,
+      "digital_twin": 0.0,
+      "planner": 0.3825
+    },
+    "hybrid": {
+      "policy": 0.0,
+      "retrieval": 0.0,
+      "digital_twin": 0.0,
+      "planner": 0.3825
+    }
+  }
+}

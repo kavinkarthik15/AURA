@@ -31,6 +31,7 @@ class ContinualTrainer:
         model = SequenceTransitionModel()
         model.train(combined)
 
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         model_path = self.output_dir / f"candidate_model_{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}.json"
         model_path.write_text(json.dumps(model.to_dict(), indent=2), encoding="utf-8")
 

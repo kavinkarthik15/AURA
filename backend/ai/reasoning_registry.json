@@ -1,0 +1,173 @@
+[
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T16:59:02.530246+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:06:49.487538+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:07:22.235426+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:07:40.181475+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:08:01.462557+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:08:16.892776+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:11:27.276665+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:17:28.183710+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:18:08.254858+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:18:21.898176+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:18:36.602422+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:18:51.436747+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:19:25.076871+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:19:52.727760+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:21:03.783604+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:29:07.895570+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-25T17:37:18.410560+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-26T05:10:34.898301+00:00"
+  },
+  {
+    "version": "reasoning_v1",
+    "benchmark_score": 0.7,
+    "explanation_quality": 0.7,
+    "reasoning_coverage": 0.75,
+    "deployment_status": "draft",
+    "parent_version": "reasoning_v1",
+    "recorded_at": "2026-07-26T05:10:54.083737+00:00"
+  }
+]

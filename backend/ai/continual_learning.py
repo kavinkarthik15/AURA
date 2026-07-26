@@ -1,3 +1,4 @@
+import time
 from typing import Any, Dict, List
 
 from backend.ai.benchmark_candidate import BenchmarkCandidate
@@ -53,15 +54,22 @@ class ContinualLearningPipeline:
         ])
 
     def run(self, experiences: List[ExperienceLog], base_dataset: List[Dict[str, Any]] | None = None) -> Dict[str, Any]:
+        cycle_started = time.perf_counter()
         self.ingest_experiences(experiences)
         replay = self.replay_buffer.sample(batch_size=max(1, len(experiences)))
         stats = self.replay_buffer.get_statistics()
         merge_meta = self._build_merge_metadata(base_dataset, replay)
+        training_started = time.perf_counter()
         candidate = self.trainer.train_candidate(replay, base_dataset=base_dataset)
+        training_time_ms = round((time.perf_counter() - training_started) * 1000, 4)
 
         baseline = self.registry.get_latest_model()
+        benchmark_started = time.perf_counter()
         benchmark = self.benchmark.benchmark(candidate, baseline=baseline)
+        benchmark_time_ms = round((time.perf_counter() - benchmark_started) * 1000, 4)
+        deployment_started = time.perf_counter()
         deployment = self.deploy.deploy(candidate, benchmark)
+        deployment_time_ms = round((time.perf_counter() - deployment_started) * 1000, 4)
         candidate_registered = None
 
         if deployment.get("deployed"):
@@ -112,5 +120,11 @@ class ContinualLearningPipeline:
             "registered": candidate_registered,
             "merge_metadata": merge_meta,
             "replay_stats": stats,
+            "performance_timings_ms": {
+                "training": training_time_ms,
+                "benchmark": benchmark_time_ms,
+                "deployment": deployment_time_ms,
+                "continual_learning_cycle": round((time.perf_counter() - cycle_started) * 1000, 4),
+            },
             "report": self._build_report(candidate, benchmark, deployment, merge_meta),
         }

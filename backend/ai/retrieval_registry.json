@@ -1,0 +1,13 @@
+[
+	{
+		"version": "retrieval_v1",
+		"similarity_metric": "hybrid",
+		"retrieval_weight": 0.4,
+		"dataset_version": "v1",
+		"benchmark": {
+			"source": "docs/RETRIEVAL_BENCHMARK.md",
+			"status": "baseline"
+		},
+		"timestamp": "2026-07-24T00:00:00+00:00"
+	}
+]

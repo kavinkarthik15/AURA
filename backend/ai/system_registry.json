@@ -1,0 +1,7 @@
+{
+  "planner": "planner_v2",
+  "policy": "policy_v3",
+  "retrieval": "retrieval_v2",
+  "reasoning": "reasoning_v1",
+  "twin": "twin_v4"
+}

@@ -10,3 +10,5 @@ class SearchState:
     depth: int = 0
     goal_progress: float = 0.0
     confidence: float = 0.0
+    policy_score: float = 0.0
+    retrieval_score: float = 0.0

@@ -1,0 +1,15 @@
+{
+  "covered_paths": [
+    "planner",
+    "retriever",
+    "reasoner"
+  ],
+  "paths": [
+    "planner",
+    "retriever",
+    "reasoner",
+    "execution",
+    "continual_learning",
+    "policy_update"
+  ]
+}

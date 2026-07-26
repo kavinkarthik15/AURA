@@ -1,5 +1,9 @@
 {
-  "planner_version": "beam_v1",
+  "planner_version": "v2",
+  "beam_search": true,
+  "policy_guided": true,
+  "policy_version": "policy_v1",
+  "policy_weight": 0.2,
   "beam_width": 5,
   "max_depth": 4,
   "plans_generated": 15,

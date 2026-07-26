@@ -11,8 +11,9 @@ DEFAULT_SYNTHETIC_EXPERIENCES_FILE = Path(__file__).resolve().parents[1] / "data
 
 
 class ExperienceService:
-    def __init__(self, file_path: Path | None = None) -> None:
+    def __init__(self, file_path: Path | None = None, include_synthetic: bool = True) -> None:
         self.file_path = file_path or DEFAULT_EXPERIENCES_FILE
+        self.include_synthetic = include_synthetic
 
     def load_experiences(self) -> List[Experience]:
         if not self.file_path.exists():
@@ -23,7 +24,7 @@ class ExperienceService:
             data = json.load(handle)
 
         synthetic_data: List[Dict[str, Any]] = []
-        if DEFAULT_SYNTHETIC_EXPERIENCES_FILE.exists():
+        if self.include_synthetic and DEFAULT_SYNTHETIC_EXPERIENCES_FILE.exists():
             with DEFAULT_SYNTHETIC_EXPERIENCES_FILE.open("r", encoding="utf-8") as handle:
                 synthetic_data = json.load(handle)
 

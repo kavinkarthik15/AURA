@@ -1,0 +1,15 @@
+{
+  "experiment_id": "experiment_001",
+  "recorded_at": "2026-07-24T00:00:00+00:00",
+  "planner_version": "v2",
+  "policy_version": "policy_v1",
+  "model_version": "v2",
+  "beam_width": 5,
+  "objective_profile": "balanced_learning",
+  "benchmark_results": {
+    "planner": "PLANNER_BENCHMARK_V1",
+    "policy": "POLICY_BENCHMARK_v1"
+  },
+  "execution_metrics": {},
+  "performance_timings_ms": {}
+}

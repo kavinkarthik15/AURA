@@ -1,0 +1,29 @@
+[
+  {
+    "experience_id": "exp_0001",
+    "state": {"python": 65},
+    "goal": "Python Growth",
+    "actions": ["Python Project", "DSA Practice"],
+    "completed_actions": ["Python Project"],
+    "success": true,
+    "goal_completion": 0.92
+  },
+  {
+    "experience_id": "exp_0002",
+    "state": {"python": 65},
+    "goal": "Python Growth",
+    "actions": ["Python Project"],
+    "completed_actions": ["Python Project"],
+    "success": true,
+    "goal_completion": 0.91
+  },
+  {
+    "experience_id": "exp_0003",
+    "state": {"python": 65},
+    "goal": "Python Growth",
+    "actions": ["Python Project", "DSA Practice"],
+    "completed_actions": ["Python Project"],
+    "success": false,
+    "goal_completion": 0.8
+  }
+]
