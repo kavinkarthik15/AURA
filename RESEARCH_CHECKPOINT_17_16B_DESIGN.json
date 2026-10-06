@@ -1,7 +1,7 @@
 {
   "phase": "17.16B",
-  "status": "BLOCKED_INDEPENDENT_OUTCOME_DATA_REQUIRED",
-  "assessment_date": "2026-10-04",
+  "status": "INFRASTRUCTURE_READY_AWAITING_PROSPECTIVE_OUTCOMES",
+  "assessment_date": "2026-10-06",
   "research_question": "Does the frozen MG correction mechanism improve future-state prediction compared with the existing base prediction when both are evaluated against the same independently observed outcome?",
   "ground_truth_source": null,
   "ground_truth_status": "No repository source is verified as independently observed ground truth for this evaluation. The 15-row experiences.json corpus is documented as synthetic; the default transition service also loads synthetic_experiences.json. Other actual_state-labelled data lacks row-level provenance and is described as synthetic or is populated by caller-supplied/test values.",
@@ -19,6 +19,14 @@
   "leakage_risk": "CRITICAL",
   "pseudoreplication_risk": "CRITICAL",
   "implementation_ready": false,
+  "infrastructure_ready": true,
+  "effectiveness_evaluation_status": "BLOCKED_INDEPENDENT_OUTCOME_DATA_REQUIRED",
+  "prospective_collection": {
+    "storage": "backend/data/prospective_outcomes/prospective_outcomes.sqlite3 (ignored local runtime database)",
+    "verified_observed_outcomes": 0,
+    "analysis_performed": false,
+    "architecture_document": "17_16B_PROSPECTIVE_GROUND_TRUTH_ARCHITECTURE.md"
+  },
   "blocking_issues": [
     "No independently observed, provenance-verified action-linked post-state cohort was found.",
     "experiences.json is explicitly documented as synthetic and is used by TransitionEngine to generate base predictions.",
@@ -53,7 +61,8 @@
     "frozen_17_15_artifacts_modified": false,
     "frozen_mg_coefficients_modified": false,
     "production_behavior_modified": false,
-    "effectiveness_experiment_run": false
+    "effectiveness_experiment_run": false,
+    "prospective_collection_infrastructure_added": true
   },
   "assessment_report": "17_16B_ARCHITECTURE_AND_GROUND_TRUTH_ASSESSMENT.md"
 }
