@@ -1,0 +1,42 @@
+{
+  "phase": "17.14A",
+  "stage": "instrumentation_freeze",
+  "created": "2026-08-14T14:22:32.193583Z",
+  "description": "Frozen observability recorder implementation before shadow validation execution",
+  "test_results": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "errors": 0,
+    "tests": [
+      "test_shadow_event_recorder_preserves_prediction_and_records_schema",
+      "test_shadow_event_recorder_failure_is_isolated",
+      "test_shadow_event_recorder_does_not_change_legacy_behavior",
+      "test_simulate_action_returns_structured_prediction",
+      "test_simulate_plan_returns_sequence_and_summary",
+      "test_simulate_probabilistic_action_returns_branches"
+    ]
+  },
+  "implementation": {
+    "component": "SimulationEngine shadow event recorder",
+    "location": "backend/services/simulation_engine.py",
+    "key_methods": [
+      "SimulationEngine.__init__(shadow_event_recorder=...)",
+      "SimulationEngine._record_shadow_event(event)",
+      "SimulationEngine.simulate_action(...) with recorder integration"
+    ],
+    "design_principle": "Pure function, no state mutation, failure isolation, observational only"
+  },
+  "file_hashes": {
+    "simulation_engine.py": "b03248668535832903af820649cdff5072722ead1488d972fb94adba021de6bf",
+    "test_simulation_engine.py": "c10e26b3bda38c3bfd5e6edc37481bdddabce83484834a3d4cfae7c4a721e6d6",
+    "17_14A_OBSERVABILITY_CONTRACT.md": "189e72c8c28fe21d71bf9528e3475a2e0806118299a6ae640ea2c0d50e8b3c0b",
+    "17_14A_EXPERIMENT_MANIFEST.md": "0c7047d5aa2a7bf73236eb2dfabf697f37f9f778d3991dbe710a86cbba1bd229",
+    "17_14A_PRE_EXECUTION_VERIFICATION_RESULT.json": "91498f860254f565fdbb677e0cf9b2df7456c662428662db1323c6f2e1212cee"
+  },
+  "git_info": {
+    "commit": "f98c99ab738358a6b51888e238f856d96afa50ba",
+    "summary": "Update README"
+  },
+  "verification_artifacts": {
+    "observability_contract": 

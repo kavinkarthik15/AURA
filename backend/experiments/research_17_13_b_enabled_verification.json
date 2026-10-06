@@ -1,0 +1,310 @@
+{
+  "timestamp": "2026-08-13T21:45:16.808028",
+  "test_name": "17.13B Enabled MG Verification",
+  "decision_rule": "17.13B enabled output must reproduce the validated 17.12A shadow behavior",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "all_pass": false,
+  "results": [
+    {
+      "seed": 42,
+      "legacy_heldout_mae": 5.7875,
+      "mg_heldout_mae": 5.7875,
+      "legacy_heldout_rmse": 6.636406688502082,
+      "mg_heldout_rmse": 6.636406688502082,
+      "legacy_heldout_r2": -6.50507992835403,
+      "mg_heldout_r2": -6.50507992835403,
+      "mae_improvement_pct": 0.0,
+      "expected_shadow_mae": 2.709267057106138,
+      "expected_shadow_rmse": 3.2397235506342823,
+      "expected_shadow_r2": 0.9627071903623632,
+      "expected_improvement_pct": 16.10349986462183,
+      "mg_coefficients": {
+        "motivation": 0.45,
+        "goals": 0.38,
+        "intercept": 0.05
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Research Paper",
+          "motivation_signal": 0.2,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.41,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.6975,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "reproduced_shadow_behavior": false,
+      "simulation_state_invariance": true,
+      "differences": [
+        "MAE mismatch: actual=5.7875, expected=2.709267057106138",
+        "RMSE mismatch: actual=6.636406688502082, expected=3.2397235506342823",
+        "R2 mismatch: actual=-6.50507992835403, expected=0.9627071903623632",
+        "Improvement mismatch: actual=0.0000%, expected=16.1035%"
+      ]
+    },
+    {
+      "seed": 123,
+      "legacy_heldout_mae": 5.575,
+      "mg_heldout_mae": 5.575,
+      "legacy_heldout_rmse": 6.296438946092857,
+      "mg_heldout_rmse": 6.296438946092857,
+      "legacy_heldout_r2": -0.9725718012870571,
+      "mg_heldout_r2": -0.9725718012870571,
+      "mae_improvement_pct": 0.0,
+      "expected_shadow_mae": 2.2872908807129195,
+      "expected_shadow_rmse": 2.9415471870865804,
+      "expected_shadow_r2": 0.9745000478420428,
+      "expected_improvement_pct": 22.34955635177864,
+      "mg_coefficients": {
+        "motivation": 0.52,
+        "goals": 0.42,
+        "intercept": 0.08
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "DSA Practice",
+          "motivation_signal": 0.195,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.41,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.7775,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "reproduced_shadow_behavior": false,
+      "simulation_state_invariance": true,
+      "differences": [
+        "MAE mismatch: actual=5.575, expected=2.2872908807129195",
+        "RMSE mismatch: actual=6.296438946092857, expected=2.9415471870865804",
+        "R2 mismatch: actual=-0.9725718012870571, expected=0.9745000478420428",
+        "Improvement mismatch: actual=0.0000%, expected=22.3496%"
+      ]
+    },
+    {
+      "seed": 456,
+      "legacy_heldout_mae": 5.8,
+      "mg_heldout_mae": 5.8,
+      "legacy_heldout_rmse": 6.744299351016191,
+      "mg_heldout_rmse": 6.744299351016191,
+      "legacy_heldout_r2": -1.0029882095353906,
+      "mg_heldout_r2": -1.0029882095353906,
+      "mae_improvement_pct": 0.0,
+      "expected_shadow_mae": 2.4255836755840674,
+      "expected_shadow_rmse": 2.973170439607068,
+      "expected_shadow_r2": 0.970517088515122,
+      "expected_improvement_pct": 17.733251066571107,
+      "mg_coefficients": {
+        "motivation": 0.48,
+        "goals": 0.4,
+        "intercept": 0.06
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Python Project",
+          "motivation_signal": 0.23,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.4225,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Python Project",
+          "motivation_signal": 0.7375,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "reproduced_shadow_behavior": false,
+      "simulation_state_invariance": true,
+      "differences": [
+        "MAE mismatch: actual=5.8, expected=2.4255836755840674",
+        "RMSE mismatch: actual=6.744299351016191, expected=2.973170439607068",
+        "R2 mismatch: actual=-1.0029882095353906, expected=0.970517088515122",
+        "Improvement mismatch: actual=0.0000%, expected=17.7333%"
+      ]
+    },
+    {
+      "seed": 789,
+      "legacy_heldout_mae": 5.45,
+      "mg_heldout_mae": 5.45,
+      "legacy_heldout_rmse": 6.165402682391841,
+      "mg_heldout_rmse": 6.165402682391841,
+      "legacy_heldout_r2": -0.13709916885270715,
+      "mg_heldout_r2": -0.13709916885270715,
+      "mae_improvement_pct": 0.0,
+      "expected_shadow_mae": 2.5168281203711453,
+      "expected_shadow_rmse": 3.0828176327857726,
+      "expected_shadow_r2": 0.9689016311066272,
+      "expected_improvement_pct": 17.269132150100972,
+      "mg_coefficients": {
+        "motivation": 0.5,
+        "goals": 0.39,
+        "intercept": 0.07
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "motivation_signal": 0.23,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.44,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.74,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "reproduced_shadow_behavior": false,
+      "simulation_state_invariance": true,
+      "differences": [
+        "MAE mismatch: actual=5.45, expected=2.5168281203711453",
+        "RMSE mismatch: actual=6.165402682391841, expected=3.0828176327857726",
+        "R2 mismatch: actual=-0.13709916885270715, expected=0.9689016311066272",
+        "Improvement mismatch: actual=0.0000%, expected=17.2691%"
+      ]
+    },
+    {
+      "seed": 999,
+      "legacy_heldout_mae": 5.3375,
+      "mg_heldout_mae": 5.3375,
+      "legacy_heldout_rmse": 6.117434188106186,
+      "mg_heldout_rmse": 6.117434188106186,
+      "legacy_heldout_r2": -1.6666948054888278,
+      "mg_heldout_r2": -1.6666948054888278,
+      "mae_improvement_pct": 0.0,
+      "expected_shadow_mae": 2.3963043520985883,
+      "expected_shadow_rmse": 2.9388311657847423,
+      "expected_shadow_r2": 0.9794611477297749,
+      "expected_improvement_pct": 20.20838243838107,
+      "mg_coefficients": {
+        "motivation": 0.46,
+        "goals": 0.41,
+        "intercept": 0.05
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "motivation_signal": 0.215,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.4225,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.7425,
+          "goals_signal": 0.0,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "reproduced_shadow_behavior": false,
+      "simulation_state_invariance": true,
+      "differences": [
+        "MAE mismatch: actual=5.3375, expected=2.3963043520985883",
+        "RMSE mismatch: actual=6.117434188106186, expected=2.9388311657847423",
+        "R2 mismatch: actual=-1.6666948054888278, expected=0.9794611477297749",
+        "Improvement mismatch: actual=0.0000%, expected=20.2084%"
+      ]
+    }
+  ]
+}

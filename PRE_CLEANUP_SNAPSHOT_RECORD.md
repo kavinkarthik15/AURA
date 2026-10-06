@@ -1,0 +1,378 @@
+﻿# Pre-Cleanup Snapshot Record
+
+- Timestamp (local ISO 8601): 2026-10-06T22:22:49.3345759+05:30
+- Branch: pre-cleanup-snapshot
+- Snapshot commit SHA: pending; recorded in the follow-up record update because a commit cannot contain its own hash.
+- Previous HEAD SHA: f98c99ab738358a6b51888e238f856d96afa50ba
+- Purpose: Create a local recovery checkpoint of the complete current non-ignored repository state before any authorized cleanup.
+- Cleanup status: **No cleanup had been executed before this snapshot.** No deletion, move, archive, restore, or implementation/research edit was performed for this checkpoint.
+- Ignored files: left ignored and unstaged unless they were already tracked; no force-add was used.
+
+## Git status before snapshot
+
+Captured with git status --short on this branch immediately before staging:
+
+``text
+ M backend/ai/evaluate_retrieval.py
+ M backend/ai/experience_reasoner.py
+ M backend/ai/experience_retriever.py
+ M backend/ai/integration_coverage.json
+ M backend/ai/meta_learning.json
+ M backend/ai/meta_reasoner.py
+ M backend/ai/model_registry.json
+ M backend/ai/policy_registry.json
+ M backend/ai/reasoning_registry.json
+ M backend/ai/research_registry.json
+ M backend/ai/system_registry.json
+ M backend/data/experience_dataset.json
+ M backend/models/__init__.py
+ M backend/models/user_state.py
+ M backend/services/beam_search_planner.py
+ M backend/services/digital_twin.py
+ M backend/services/goal_plan_service.py
+ M backend/services/goal_planner.py
+ M backend/services/simulation_engine.py
+ M backend/services/state_diff.py
+ M backend/tests/test_beam_search.py
+ M backend/tests/test_goal_plan_service.py
+ M backend/tests/test_retrieval_planner.py
+ M backend/tests/test_simulation_engine.py
+ D docs/AURA_ARCHITECTURE_V1.md
+ D docs/AURA_ARCHITECTURE_V2.md
+ D docs/AURA_DOCUMENTATION.md
+ D docs/AURA_SYSTEM_ARCHITECTURE.md
+ D docs/MILESTONE_SPRINT9_1.md
+ D docs/PLANNING_ARCHITECTURE_V1.md
+ D docs/POLICY_BENCHMARK_v1.md
+ M docs/architecture.md
+ D docs/archive/META_REASONING_BENCHMARK.md
+ D docs/archive/META_REASONING_BENCHMARK_v1.md
+ D docs/archive/POLICY_DASHBOARD.md
+ D docs/archive/PROJECT_METRICS.md
+ D docs/archive/RETRIEVAL_BENCHMARK.md
+ D docs/archive/SPRINT_11_REVIEW.md
+ D docs/milestone_sprint5.md
+ D docs/milestone_sprint8.md
+ D docs/model_benchmark_v1.md
+ D docs/research_notes.md
+ M experiments/ablation_seed_7/experiment.json
+?? 17_13C_EXECUTION_FINAL_REPORT.md
+?? 17_13C_EXECUTION_LOG_RUN1.txt
+?? 17_13C_EXPERIMENT_MANIFEST.md
+?? 17_13C_PRE_EXECUTION_SUMMARY.md
+?? 17_13C_PRE_EXECUTION_VERIFICATION.md
+?? 17_13C_READY_FOR_EXECUTION.md
+?? 17_13C_RESULT_RUN1.json
+?? 17_13C_RESULT_RUN1.md
+?? 17_13_B_IMPLEMENTATION_COMPLETE.md
+?? 17_13_B_VALIDATION_CHECKLIST.md
+?? 17_14A_DECISION_GATE_RESULT.json
+?? 17_14A_EXPERIMENT_MANIFEST.md
+?? 17_14A_OBSERVABILITY_CONTRACT.md
+?? 17_14A_PRE_EXECUTION_SUMMARY.md
+?? 17_14A_PRE_EXECUTION_VERIFICATION.md
+?? 17_14A_PRE_EXECUTION_VERIFICATION_RESULT.json
+?? 17_14A_PRE_EXECUTION_VERIFICATION_RESULT.md
+?? 17_14A_READY_FOR_EXECUTION.md
+?? 17_14A_SAFETY_ANALYSIS_RESULTS.json
+?? 17_14A_SHADOW_VALIDATION_COMPLETE.md
+?? 17_14A_SHADOW_VALIDATION_EVENTS.json
+?? 17_14A_SHADOW_VALIDATION_REPORT.json
+?? 17_15_EXPERIMENT_MANIFEST.md
+?? 17_15_FORENSIC_ANALYSIS_ROOT_CAUSE.md
+?? 17_15_PHASE_COMPLETE_SUMMARY.md
+?? 17_15_PLANNING_COMPLETE.md
+?? 17_15_PRE_EXECUTION_SUMMARY.md
+?? 17_15_PRE_EXECUTION_VERIFICATION.md
+?? 17_15_READY_FOR_EXECUTION.md
+?? 17_15_SAFETY_ANALYSIS_REPORT.md
+?? 17_15_SHADOW_VALIDATION_COMPLETE.md
+?? 17_15_SHADOW_VALIDATION_EVENTS.json
+?? 17_15_SHADOW_VALIDATION_REPORT.json
+?? 17_16A_BEHAVIORAL_ANALYSIS_RESULTS.json
+?? 17_16A_BEHAVIORAL_ANALYSIS_SUMMARY.md
+?? 17_16B_ARCHITECTURE_AND_GROUND_TRUTH_ASSESSMENT.md
+?? 17_16B_ARCHITECTURE_INSPECTION.md
+?? 17_16B_OUTCOME_GENERATION_READY.md
+?? 17_16_SCHEMA_ANALYSIS_FINDING.md
+?? AURA_REPOSITORY_CLEANUP_AUDIT.md
+?? AURA_REPOSITORY_CLEANUP_MANIFEST.json
+?? CLEANUP_CLASSIFICATION_MANIFEST.json
+?? CLEANUP_CLASSIFICATION_REPORT.md
+?? CLEANUP_HUMAN_REVIEW_PACKAGE.md
+?? CLEANUP_PROPOSED_ACTIONS.json
+?? EVIDENCE_PRESERVATION_17_13B.md
+?? PHASE_17_4C_COMPLETION_SUMMARY.md
+?? PHASE_17_5A_COMPLETION_SUMMARY.md
+?? PHASE_17_5A_QUICK_REFERENCE.md
+?? RESEARCH_17_13_B_ENABLED_VERIFICATION.md
+?? RESEARCH_17_2_A_MECHANISM_ANALYSIS.md
+?? RESEARCH_17_8_A_PREDICTIVE_STATE_DIMENSIONS.md
+?? RESEARCH_17_8_C_MINIMAL_STRUCTURE.md
+?? RESEARCH_CHECKPOINT_17_13B_MG_INTEGRATION_VALIDATED.md
+?? RESEARCH_CHECKPOINT_17_13C_RUN1.md
+?? RESEARCH_CHECKPOINT_17_14A_DECISION_GATE_COMPLETE.md
+?? RESEARCH_CHECKPOINT_17_14A_INSTRUMENTATION_FREEZE.json
+?? RESEARCH_CHECKPOINT_17_15_SAFETY_GATES_PASS.json
+?? RESEARCH_CHECKPOINT_17_16A_MECHANISM_SENSIBILITY.json
+?? RESEARCH_CHECKPOINT_17_16B_ARCHITECTURE_READY.json
+?? RESEARCH_CHECKPOINT_17_16B_DESIGN.json
+?? RESEARCH_PLAN_17_13C_SHADOW_VALIDATION.md
+?? analysis_output.txt
+?? backend/ai/candidate_model_20260731035636.json
+?? backend/ai/candidate_model_20260731035637.json
+?? backend/ai/candidate_model_20260731035709.json
+?? backend/ai/candidate_model_20260731035710.json
+?? backend/ai/candidate_model_20260731035711.json
+?? backend/ai/candidate_model_20260731035819.json
+?? backend/ai/candidate_model_20260731035820.json
+?? backend/ai/candidate_model_20260731035821.json
+?? backend/ai/candidate_model_20260731100830.json
+?? backend/ai/candidate_model_20260731100831.json
+?? backend/ai/candidate_model_20260731100859.json
+?? backend/ai/candidate_model_20260731100900.json
+?? backend/ai/candidate_model_20260731100901.json
+?? backend/ai/candidate_model_20260731100923.json
+?? backend/ai/candidate_model_20260731100924.json
+?? backend/ai/candidate_model_20260731100925.json
+?? backend/ai/candidate_model_20260810164027.json
+?? backend/ai/candidate_model_20260810164028.json
+?? backend/ai/candidate_model_20260810164133.json
+?? backend/ai/candidate_model_20260810164134.json
+?? backend/ai/candidate_model_20260810164209.json
+?? backend/ai/candidate_model_20260810164210.json
+?? backend/ai/candidate_model_20260810164245.json
+?? backend/ai/candidate_model_20260810164246.json
+?? backend/ai/candidate_model_20260810164502.json
+?? backend/ai/candidate_model_20260810164503.json
+?? backend/ai/candidate_model_20260810164648.json
+?? backend/ai/candidate_model_20260810164649.json
+?? backend/ai/candidate_model_20260810165609.json
+?? backend/ai/candidate_model_20260810165610.json
+?? backend/ai/candidate_model_20260810165611.json
+?? backend/ai/candidate_model_20260810165717.json
+?? backend/ai/candidate_model_20260810165718.json
+?? backend/ai/candidate_model_20260810165820.json
+?? backend/ai/candidate_model_20260810165821.json
+?? backend/ai/candidate_model_20260810170425.json
+?? backend/ai/candidate_model_20260810170426.json
+?? backend/ai/candidate_model_20260810171053.json
+?? backend/ai/candidate_model_20260810171054.json
+?? backend/ai/candidate_model_20260810171123.json
+?? backend/ai/candidate_model_20260810171124.json
+?? backend/ai/candidate_model_20260810171125.json
+?? backend/ai/candidate_model_20260810171221.json
+?? backend/ai/candidate_model_20260810171222.json
+?? backend/ai/candidate_model_20260810171420.json
+?? backend/ai/candidate_model_20260810171421.json
+?? backend/ai/candidate_model_20260810171422.json
+?? backend/ai/candidate_model_20260810171456.json
+?? backend/ai/candidate_model_20260810171457.json
+?? backend/ai/candidate_model_20260810171458.json
+?? backend/ai/candidate_model_20260810171731.json
+?? backend/ai/candidate_model_20260810171732.json
+?? backend/ai/candidate_model_20260811080826.json
+?? backend/ai/candidate_model_20260811080827.json
+?? backend/ai/candidate_model_20260811081200.json
+?? backend/ai/candidate_model_20260811081201.json
+?? backend/ai/candidate_model_20260811090152.json
+?? backend/ai/candidate_model_20260811090153.json
+?? backend/ai/candidate_model_20260811100609.json
+?? backend/ai/candidate_model_20260811100610.json
+?? backend/ai/candidate_model_20260811102949.json
+?? backend/ai/candidate_model_20260811102950.json
+?? backend/ai/candidate_model_20260811110459.json
+?? backend/ai/candidate_model_20260811110500.json
+?? backend/ai/candidate_model_20260811112403.json
+?? backend/ai/candidate_model_20260811112404.json
+?? backend/ai/candidate_model_20260811112945.json
+?? backend/ai/candidate_model_20260811112946.json
+?? backend/ai/candidate_model_20260811113748.json
+?? backend/ai/candidate_model_20260811113749.json
+?? backend/ai/candidate_model_20260811115240.json
+?? backend/ai/candidate_model_20260811115241.json
+?? backend/ai/candidate_model_20260811115815.json
+?? backend/ai/candidate_model_20260811120653.json
+?? backend/ai/candidate_model_20260811120654.json
+?? backend/ai/candidate_model_20260811121800.json
+?? backend/ai/candidate_model_20260811121801.json
+?? backend/ai/candidate_model_20260811122453.json
+?? backend/ai/candidate_model_20260811122454.json
+?? backend/ai/candidate_model_20260811122539.json
+?? backend/ai/candidate_model_20260811122540.json
+?? backend/ai/candidate_model_20260811122836.json
+?? backend/ai/candidate_model_20260811122837.json
+?? backend/ai/candidate_model_20260811124342.json
+?? backend/ai/candidate_model_20260811124343.json
+?? backend/ai/candidate_model_20260811132410.json
+?? backend/ai/candidate_model_20260811132411.json
+?? backend/ai/candidate_model_20260811132412.json
+?? backend/ai/candidate_model_20260811170447.json
+?? backend/ai/candidate_model_20260811170448.json
+?? backend/ai/candidate_model_20260811170449.json
+?? backend/ai/candidate_model_20260811170803.json
+?? backend/ai/candidate_model_20260811170804.json
+?? backend/ai/candidate_model_20260811170805.json
+?? backend/ai/candidate_model_20260811171658.json
+?? backend/ai/candidate_model_20260811171659.json
+?? backend/ai/candidate_model_20260811172756.json
+?? backend/ai/candidate_model_20260811172757.json
+?? backend/ai/candidate_model_20260811173124.json
+?? backend/ai/candidate_model_20260811173125.json
+?? backend/ai/candidate_model_20260811173342.json
+?? backend/ai/candidate_model_20260811173343.json
+?? backend/ai/candidate_model_20260812091043.json
+?? backend/ai/candidate_model_20260812091044.json
+?? backend/ai/candidate_model_20260812095504.json
+?? backend/ai/candidate_model_20260812095505.json
+?? backend/ai/candidate_model_20260812150146.json
+?? backend/ai/candidate_model_20260812150147.json
+?? backend/ai/candidate_model_20260812150342.json
+?? backend/ai/candidate_model_20260812150343.json
+?? backend/ai/candidate_model_20260812161421.json
+?? backend/ai/candidate_model_20260812161422.json
+?? backend/ai/candidate_model_20260812161423.json
+?? backend/ai/candidate_model_20260812161853.json
+?? backend/ai/candidate_model_20260812161854.json
+?? backend/ai/candidate_model_20260812163428.json
+?? backend/ai/candidate_model_20260812163429.json
+?? backend/ai/candidate_model_20260812164532.json
+?? backend/ai/candidate_model_20260812164533.json
+?? backend/ai/candidate_model_20260812164601.json
+?? backend/ai/candidate_model_20260812164602.json
+?? backend/ai/candidate_model_20260812164624.json
+?? backend/ai/candidate_model_20260812164625.json
+?? backend/ai/candidate_model_20260813043344.json
+?? backend/ai/candidate_model_20260813043345.json
+?? backend/ai/candidate_model_20260813043413.json
+?? backend/ai/candidate_model_20260813043414.json
+?? backend/ai/candidate_model_20260813043442.json
+?? backend/ai/candidate_model_20260813043553.json
+?? backend/ai/candidate_model_20260813043554.json
+?? backend/ai/candidate_model_20260813043616.json
+?? backend/ai/candidate_model_20260813043617.json
+?? backend/ai/candidate_model_20260813043639.json
+?? backend/ai/candidate_model_20260813043640.json
+?? backend/ai/context_builder.py
+?? backend/ai/decision_reasoner.py
+?? backend/ai/knowledge_reasoner.py
+?? backend/ai/reflection_memory.json
+?? backend/ai/reflection_registry.json
+?? backend/compatibility/
+?? backend/consolidation/
+?? backend/experiments/
+?? backend/memory/
+?? backend/models/batch_closed_loop_result.py
+?? backend/models/calibration_experiment_result.py
+?? backend/models/calibration_parameters.py
+?? backend/models/calibration_result.py
+?? backend/models/closed_loop_validation_result.py
+?? backend/models/decision_outcome.py
+?? backend/models/experiment_metrics.py
+?? backend/models/experiment_record.py
+?? backend/models/multi_step_decision.py
+?? backend/models/planning_horizon.py
+?? backend/models/prediction_error_result.py
+?? backend/models/simulated_state.py
+?? backend/models/simulation_trajectory.py
+?? backend/models/simulation_trajectory_tree.py
+?? backend/planning/
+?? backend/services/batch_closed_loop_evaluator.py
+?? backend/services/calibration_applier.py
+?? backend/services/calibration_experiment.py
+?? backend/services/closed_loop_validation.py
+?? backend/services/digital_twin_calibrator.py
+?? backend/services/experiment_metrics_calculator.py
+?? backend/services/experiment_recorder.py
+?? backend/services/multi_step_decision_engine.py
+?? backend/services/prediction_error_evaluator.py
+?? backend/services/sign_aware_calibrator.py
+?? backend/services/snapshot_validation.py
+?? backend/tests/test_adaptive_weight_provider.py
+?? backend/tests/test_batch_closed_loop.py
+?? backend/tests/test_beam_expander.py
+?? backend/tests/test_beam_node.py
+?? backend/tests/test_beam_search_candidate_selector_integration.py
+?? backend/tests/test_beam_search_trajectory.py
+?? backend/tests/test_calibration_experiment.py
+?? backend/tests/test_candidate_selector.py
+?? backend/tests/test_closed_loop_validation.py
+?? backend/tests/test_consolidation_engine.py
+?? backend/tests/test_decision_outcome.py
+?? backend/tests/test_decision_reasoner.py
+?? backend/tests/test_decision_reasoner_updated.py
+?? backend/tests/test_digital_twin_calibrator.py
+?? backend/tests/test_digital_twin_integration_scoring.py
+?? backend/tests/test_digital_twin_score_translator.py
+?? backend/tests/test_episodic_memory.py
+?? backend/tests/test_expected_state_evaluator.py
+?? backend/tests/test_experiment_metrics.py
+?? backend/tests/test_experiment_metrics_calculator.py
+?? backend/tests/test_experiment_recorder.py
+?? backend/tests/test_experiment_runner.py
+?? backend/tests/test_knowledge_generator.py
+?? backend/tests/test_knowledge_merger.py
+?? backend/tests/test_knowledge_reasoner.py
+?? backend/tests/test_knowledge_retriever.py
+?? backend/tests/test_knowledge_validator.py
+?? backend/tests/test_memory_manager.py
+?? backend/tests/test_mg_config_and_layer.py
+?? backend/tests/test_multi_step_decision.py
+?? backend/tests/test_pattern_detector.py
+?? backend/tests/test_planner_adjustment_contract.py
+?? backend/tests/test_planner_selection_adapter.py
+?? backend/tests/test_planning_context.py
+?? backend/tests/test_planning_horizon.py
+?? backend/tests/test_prediction_error_evaluator.py
+?? backend/tests/test_probabilistic_transition.py
+?? backend/tests/test_research_benchmark_generator.py
+?? backend/tests/test_research_dataset_persistence.py
+?? backend/tests/test_research_experiment_17_0_b.py
+?? backend/tests/test_risk_evaluator.py
+?? backend/tests/test_semantic_memory.py
+?? backend/tests/test_simulated_state.py
+?? backend/tests/test_simulation_trajectory.py
+?? backend/tests/test_simulation_trajectory_tree.py
+?? backend/tests/test_state_evaluator.py
+?? backend/tests/test_state_transition.py
+?? backend/tests/test_trajectory_evaluator.py
+?? backend/tests/test_trajectory_selection_contract.py
+?? backend/tests/test_trajectory_tree_evaluator.py
+?? backend/tests/test_transition_model.py
+?? backend/tests/test_uncertainty_evaluator.py
+?? backend/tests/test_unified_context_builder.py
+?? backend/tests/test_working_memory.py
+?? backend/validation/
+?? check_signature.py
+?? debug_seed_789.py
+?? docs/architecture/
+?? docs/research/
+?? docs/specifications/
+?? experiment_runs/
+?? first_fail.txt
+?? kr_out.txt
+?? kr_out2.txt
+?? project_directory_listing.txt
+?? pytest_full_after_fix.txt
+?? pytest_out.txt
+?? pytest_out2.txt
+?? pytest_report.txt
+?? run_17_2_a_tests.py
+?? run_17_4_a.py
+?? run_17_4_b.py
+?? run_17_4_c.py
+?? run_enabled_verification.py
+?? run_phase4_fixed.py
+?? run_phase4_test.py
+?? temp_show_results.py
+?? test_17_13_b_basic.py
+?? test_17_5_a.txt
+?? test_import.py
+?? test_reload.py
+?? test_results.txt
+?? "what each files are used for.md"
+``
+
+## Git status after snapshot
+
+Expected after snapshot commit: git status --short is empty. The exact verified post-commit status will be recorded in the follow-up update; ignored files are not shown by default.

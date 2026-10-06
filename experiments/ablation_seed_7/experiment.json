@@ -1,6 +1,6 @@
 {
   "experiment_id": "ablation_seed_7",
-  "recorded_at": "2026-07-25T17:17:28.315047+00:00",
+  "recorded_at": "2026-08-13T04:36:53.466642+00:00",
   "planner_version": "v2",
   "policy_version": "policy_v1",
   "retrieval_version": "retrieval_v1",
@@ -33,15 +33,17 @@
     },
     "retrieval_only": {
       "policy": 0.0,
-      "retrieval": 0.0,
+      "retrieval": 0.7841,
       "digital_twin": 0.0,
-      "planner": 0.3825
+      "planner": 0.5393
     },
     "hybrid": {
       "policy": 0.0,
-      "retrieval": 0.0,
+      "retrieval": 0.7841,
       "digital_twin": 0.0,
-      "planner": 0.3825
+      "planner": 0.5393
     }
-  }
+  },
+  "research_version": "research_v1",
+  "system_registry": {}
 }

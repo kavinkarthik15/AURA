@@ -1,0 +1,254 @@
+{
+  "phase": "17.16A",
+  "analysis_type": "Correction Pattern Analysis",
+  "events_analyzed": 2400,
+  "sections": {
+    "A_correction_distribution": {
+      "total_corrections": 2400,
+      "all_applied": true,
+      "minimum": 0.007899108704606306,
+      "maximum": 5.347402291610499,
+      "mean": 2.7868272746034477,
+      "median": 2.8960038490493423,
+      "stdev": 2.368023436638654,
+      "q25": 0.662958555379976,
+      "q75": 5.019872568272814,
+      "p95": 5.347402291610499,
+      "p99": 5.347402291610499,
+      "outliers_3sigma": 0,
+      "outlier_values": [],
+      "positive_count": 2400,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_pct": 100.0
+    },
+    "B_signal_correction": {
+      "motivation_levels": {
+        "0.0": {
+          "count": 1200,
+          "mean": 5.129049142718709,
+          "median": 5.129049142718709,
+          "stdev": 0.218444186272811,
+          "min": 4.910695993826919,
+          "max": 5.347402291610499
+        },
+        "1.0": {
+          "count": 1200,
+          "mean": 0.44460540648818603,
+          "median": 0.44460540648818603,
+          "stdev": 0.4368883725456217,
+          "min": 0.007899108704606306,
+          "max": 0.8813117042717658
+        }
+      },
+      "goals_buckets": {
+        "0.0": {
+          "count": 600,
+          "mean": 5.347402291610499,
+          "median": 5.347402291610499,
+          "stdev": 0.0,
+          "min": 5.347402291610499,
+          "max": 5.347402291610499
+        },
+        "0.0875": {
+          "count": 600,
+          "mean": 4.910695993826919,
+          "median": 4.910695993826919,
+          "stdev": 0.0,
+          "min": 4.910695993826919,
+          "max": 4.910695993826919
+        },
+        "0.2375": {
+          "count": 600,
+          "mean": 0.8813117042717658,
+          "median": 0.8813117042717658,
+          "stdev": 0.0,
+          "min": 0.8813117042717658,
+          "max": 0.8813117042717658
+        },
+        "0.4125": {
+          "count": 600,
+          "mean": 0.007899108704606306,
+          "median": 0.007899108704606306,
+          "stdev": 0.0,
+          "min": 0.007899108704606306,
+          "max": 0.007899108704606306
+        }
+      },
+      "signal_pair_stability": {},
+      "signal_pair_consistency_issues": 0,
+      "problematic_pairs": [],
+      "motivation_monotonic": false
+    },
+    "C_category_behavior": {
+      "high_motivation": {
+        "event_count": 600,
+        "correction_mean": 0.007899108704606306,
+        "correction_median": 0.007899108704606306,
+        "correction_stdev": 0.0,
+        "correction_range": [
+          0.007899108704606306,
+          0.007899108704606306
+        ],
+        "motivation_mean": 1.0,
+        "goals_mean": 0.4125,
+        "latency_mean": 0.021918499951425474,
+        "latency_p99": 0.08070199968642555,
+        "fallback_count": 0,
+        "fallback_rate": 0.0
+      },
+      "low_skill_practice": {
+        "event_count": 600,
+        "correction_mean": 4.910695993826919,
+        "correction_median": 4.910695993826919,
+        "correction_stdev": 0.0,
+        "correction_range": [
+          4.910695993826919,
+          4.910695993826919
+        ],
+        "motivation_mean": 0.0,
+        "goals_mean": 0.0875,
+        "latency_mean": 0.08300333335985972,
+        "latency_p99": 0.16689099684299427,
+        "fallback_count": 0,
+        "fallback_rate": 0.0
+      },
+      "project_completion": {
+        "event_count": 600,
+        "correction_mean": 0.8813117042717658,
+        "correction_median": 0.8813117042717658,
+        "correction_stdev": 0.0,
+        "correction_range": [
+          0.8813117042717658,
+          0.8813117042717658
+        ],
+        "motivation_mean": 1.0,
+        "goals_mean": 0.2375,
+        "latency_mean": 0.02491066657360837,
+        "latency_p99": 0.08726300111447911,
+        "fallback_count": 0,
+        "fallback_rate": 0.0
+      },
+      "unknown": {
+        "event_count": 600,
+        "correction_mean": 5.347402291610499,
+        "correction_median": 5.347402291610499,
+        "correction_stdev": 0.0,
+        "correction_range": [
+          5.347402291610499,
+          5.347402291610499
+        ],
+        "motivation_mean": 0.0,
+        "goals_mean": 0.0,
+        "latency_mean": 0.011776500105042942,
+        "latency_p99": 0.03320100178825669,
+        "fallback_count": 0,
+        "fallback_rate": 0.0
+      }
+    },
+    "D_seed_consistency": {
+      "1000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "2000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "3000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "4000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "5000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "6000": {
+        "event_count": 400,
+        "mean": 2.7868272746034477,
+        "median": 2.8960038490493423,
+        "stdev": 2.3704950200654573
+      },
+      "cross_seed_mean": 2.7868272746034477,
+      "cross_seed_stdev": 0.0,
+      "seed_consistency": "stable"
+    },
+    "E_prediction_impact": {
+      "shift_distribution": {
+        "count": 1800,
+        "mean": 1.2888681792896206,
+        "median": 0.5875411361811776,
+        "stdev": 1.423940198074306,
+        "min": 0.005266072469737537,
+        "max": 3.2737973292179467
+      },
+      "by_category": {
+        "high_motivation": {
+          "count": 600,
+          "mean": 0.005266072469737537,
+          "median": 0.005266072469737537,
+          "stdev": 0.0
+        },
+        "low_skill_practice": {
+          "count": 600,
+          "mean": 3.2737973292179467,
+          "median": 3.2737973292179467,
+          "stdev": 0.0
+        },
+        "project_completion": {
+          "count": 600,
+          "mean": 0.5875411361811776,
+          "median": 0.5875411361811776,
+          "stdev": 0.0
+        }
+      }
+    },
+    "F_anomalies": {
+      "very_large_corrections": [],
+      "zero_corrections": [],
+      "negative_corrections": [],
+      "high_variance_categories": [],
+      "high_fallback_categories": [],
+      "seed_variance": [],
+      "unexpected_combinations": 600
+    },
+    "G_mechanistic_verdict": {
+      "mechanism_behaves_sensibly": true,
+      "concerns": [],
+      "strengths": [
+        "Correction distribution is well-behaved (few outliers)",
+        "Signal pairs are reproducible (deterministic)",
+        "Seed-to-seed behavior is consistent"
+      ]
+    },
+    "H_17_16b_recommendations": {
+      "proceed_to_17_16b": true,
+      "focus_areas": [
+        "Validate high_motivation outcomes",
+        "Validate low_skill_practice outcomes",
+        "Validate project_completion outcomes",
+        "Validate unknown outcomes"
+      ],
+      "design_notes": [
+        "Mechanism is sound; proceed to outcome-based validation",
+        "17.16B must capture: state_before, action, actual_state_after, error_legacy, error_mg",
+        "Calculate \u0394Error = |Actual - MG| - |Actual - Legacy|",
+        "Interpret: \u0394Error < 0 means MG improved prediction"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2205 @@
+{
+  "experiment_id": "research_mechanism_17_2_a",
+  "seed": 42,
+  "dataset_id": "research_benchmark_v1_seed_42",
+  "timestamp": "2026-08-12T22:15:19.045862",
+  "learning_rate": 0.007,
+  "bounds": {
+    "state_adjustment_max": 0.12,
+    "probability_bias_max": 0.012,
+    "risk_bias_max": 0.012,
+    "uncertainty_increment_max": 0.012,
+    "confidence_increment_max": 0.012
+  },
+  "calibration_trajectory": [
+    {
+      "step": 0,
+      "experience_id": "research_exp_000_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.028,
+        "machine_learning": 0.042,
+        "projects": 0.07,
+        "python": 0.007
+      },
+      "transition_probability_bias": -0.012,
+      "risk_bias": 0.012,
+      "uncertainty": 0.5059,
+      "confidence": 0.488,
+      "prediction_error": 5.25,
+      "cumulative_mae": 5.25
+    },
+    {
+      "step": 1,
+      "experience_id": "research_exp_001_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.077,
+        "machine_learning": 0.14,
+        "projects": 0.161,
+        "python": 0.028
+      },
+      "transition_probability_bias": -0.024,
+      "risk_bias": 0.024,
+      "uncertainty": 0.5122,
+      "confidence": 0.476,
+      "prediction_error": 9.25,
+      "cumulative_mae": 7.25
+    },
+    {
+      "step": 2,
+      "experience_id": "research_exp_002_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.126,
+        "machine_learning": 0.14700000000000002,
+        "projects": 0.168,
+        "python": 0.084
+      },
+      "transition_probability_bias": -0.036,
+      "risk_bias": 0.036,
+      "uncertainty": 0.5179,
+      "confidence": 0.464,
+      "prediction_error": 4.25,
+      "cumulative_mae": 6.25
+    },
+    {
+      "step": 3,
+      "experience_id": "research_exp_003_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 0.161,
+        "machine_learning": 0.15400000000000003,
+        "projects": 0.196,
+        "python": 0.112
+      },
+      "transition_probability_bias": -0.048,
+      "risk_bias": 0.048,
+      "uncertainty": 0.5233,
+      "confidence": 0.452,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.5625
+    },
+    {
+      "step": 4,
+      "experience_id": "research_exp_004_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 0.17500000000000002,
+        "machine_learning": 0.21000000000000002,
+        "projects": 0.224,
+        "python": 0.126
+      },
+      "transition_probability_bias": -0.06,
+      "risk_bias": 0.06,
+      "uncertainty": 0.5289,
+      "confidence": 0.44,
+      "prediction_error": 4.0,
+      "cumulative_mae": 5.25
+    },
+    {
+      "step": 5,
+      "experience_id": "research_exp_005_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 0.196,
+        "machine_learning": 0.28700000000000003,
+        "projects": 0.29400000000000004,
+        "python": 0.14
+      },
+      "transition_probability_bias": -0.072,
+      "risk_bias": 0.072,
+      "uncertainty": 0.535,
+      "confidence": 0.428,
+      "prediction_error": 6.5,
+      "cumulative_mae": 5.4583
+    },
+    {
+      "step": 6,
+      "experience_id": "research_exp_006_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 0.28,
+        "machine_learning": 0.392,
+        "projects": 0.41400000000000003,
+        "python": 0.231
+      },
+      "transition_probability_bias": -0.084,
+      "risk_bias": 0.084,
+      "uncertainty": 0.5416,
+      "confidence": 0.416,
+      "prediction_error": 14.75,
+      "cumulative_mae": 6.7857
+    },
+    {
+      "step": 7,
+      "experience_id": "research_exp_007_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 0.31500000000000006,
+        "machine_learning": 0.41300000000000003,
+        "projects": 0.42100000000000004,
+        "python": 0.259
+      },
+      "transition_probability_bias": -0.096,
+      "risk_bias": 0.096,
+      "uncertainty": 0.547,
+      "confidence": 0.404,
+      "prediction_error": 3.25,
+      "cumulative_mae": 6.3438
+    },
+    {
+      "step": 8,
+      "experience_id": "research_exp_008_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.35700000000000004,
+        "machine_learning": 0.48300000000000004,
+        "projects": 0.519,
+        "python": 0.301
+      },
+      "transition_probability_bias": -0.108,
+      "risk_bias": 0.108,
+      "uncertainty": 0.5533,
+      "confidence": 0.392,
+      "prediction_error": 9.0,
+      "cumulative_mae": 6.6389
+    },
+    {
+      "step": 9,
+      "experience_id": "research_exp_009_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.392,
+        "machine_learning": 0.553,
+        "projects": 0.596,
+        "python": 0.322
+      },
+      "transition_probability_bias": -0.12,
+      "risk_bias": 0.12,
+      "uncertainty": 0.5595,
+      "confidence": 0.38,
+      "prediction_error": 7.25,
+      "cumulative_mae": 6.7
+    },
+    {
+      "step": 10,
+      "experience_id": "research_exp_010_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.455,
+        "machine_learning": 0.5670000000000001,
+        "projects": 0.617,
+        "python": 0.392
+      },
+      "transition_probability_bias": -0.132,
+      "risk_bias": 0.132,
+      "uncertainty": 0.5655,
+      "confidence": 0.368,
+      "prediction_error": 6.0,
+      "cumulative_mae": 6.6364
+    },
+    {
+      "step": 11,
+      "experience_id": "research_exp_011_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 0.48300000000000004,
+        "machine_learning": 0.6230000000000001,
+        "projects": 0.631,
+        "python": 0.392
+      },
+      "transition_probability_bias": -0.144,
+      "risk_bias": 0.144,
+      "uncertainty": 0.5709,
+      "confidence": 0.356,
+      "prediction_error": 3.5,
+      "cumulative_mae": 6.375
+    },
+    {
+      "step": 12,
+      "experience_id": "research_exp_012_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 0.48300000000000004,
+        "machine_learning": 0.6580000000000001,
+        "projects": 0.68,
+        "python": 0.41300000000000003
+      },
+      "transition_probability_bias": -0.156,
+      "risk_bias": 0.156,
+      "uncertainty": 0.5764,
+      "confidence": 0.344,
+      "prediction_error": 3.75,
+      "cumulative_mae": 6.1731
+    },
+    {
+      "step": 13,
+      "experience_id": "research_exp_013_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 0.49700000000000005,
+        "machine_learning": 0.7000000000000002,
+        "projects": 0.7290000000000001,
+        "python": 0.42000000000000004
+      },
+      "transition_probability_bias": -0.168,
+      "risk_bias": 0.168,
+      "uncertainty": 0.582,
+      "confidence": 0.332,
+      "prediction_error": 4.0,
+      "cumulative_mae": 6.0179
+    },
+    {
+      "step": 14,
+      "experience_id": "research_exp_014_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 0.5810000000000001,
+        "machine_learning": 0.8190000000000002,
+        "projects": 0.8490000000000001,
+        "python": 0.511
+      },
+      "transition_probability_bias": -0.18,
+      "risk_bias": 0.18,
+      "uncertainty": 0.5886,
+      "confidence": 0.32,
+      "prediction_error": 15.25,
+      "cumulative_mae": 6.6333
+    },
+    {
+      "step": 15,
+      "experience_id": "research_exp_015_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 0.6230000000000001,
+        "machine_learning": 0.8190000000000002,
+        "projects": 0.8560000000000001,
+        "python": 0.56
+      },
+      "transition_probability_bias": -0.192,
+      "risk_bias": 0.192,
+      "uncertainty": 0.594,
+      "confidence": 0.308,
+      "prediction_error": 3.5,
+      "cumulative_mae": 6.4375
+    },
+    {
+      "step": 16,
+      "experience_id": "research_exp_016_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.6440000000000001,
+        "machine_learning": 0.8750000000000002,
+        "projects": 0.9120000000000001,
+        "python": 0.5740000000000001
+      },
+      "transition_probability_bias": -0.204,
+      "risk_bias": 0.204,
+      "uncertainty": 0.5999,
+      "confidence": 0.296,
+      "prediction_error": 5.25,
+      "cumulative_mae": 6.3676
+    },
+    {
+      "step": 17,
+      "experience_id": "research_exp_017_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.6790000000000002,
+        "machine_learning": 0.9800000000000002,
+        "projects": 0.9890000000000001,
+        "python": 0.6160000000000001
+      },
+      "transition_probability_bias": -0.216,
+      "risk_bias": 0.216,
+      "uncertainty": 0.6062,
+      "confidence": 0.284,
+      "prediction_error": 9.25,
+      "cumulative_mae": 6.5278
+    },
+    {
+      "step": 18,
+      "experience_id": "research_exp_018_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.7140000000000002,
+        "machine_learning": 0.9800000000000002,
+        "projects": 0.9890000000000001,
+        "python": 0.6580000000000001
+      },
+      "transition_probability_bias": -0.228,
+      "risk_bias": 0.228,
+      "uncertainty": 0.6113,
+      "confidence": 0.272,
+      "prediction_error": 2.75,
+      "cumulative_mae": 6.3289
+    },
+    {
+      "step": 19,
+      "experience_id": "research_exp_019_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 0.7140000000000002,
+        "machine_learning": 0.9870000000000002,
+        "projects": 1.0170000000000001,
+        "python": 0.6580000000000001
+      },
+      "transition_probability_bias": -0.2368,
+      "risk_bias": 0.2368,
+      "uncertainty": 0.6152,
+      "confidence": 0.2633,
+      "prediction_error": 1.25,
+      "cumulative_mae": 6.075
+    },
+    {
+      "step": 20,
+      "experience_id": "research_exp_020_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 0.7350000000000002,
+        "machine_learning": 1.0290000000000001,
+        "projects": 1.0310000000000001,
+        "python": 0.6790000000000002
+      },
+      "transition_probability_bias": -0.2488,
+      "risk_bias": 0.2488,
+      "uncertainty": 0.6206,
+      "confidence": 0.2513,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.9524
+    },
+    {
+      "step": 21,
+      "experience_id": "research_exp_021_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 0.7560000000000002,
+        "machine_learning": 1.0430000000000001,
+        "projects": 1.052,
+        "python": 0.6860000000000002
+      },
+      "transition_probability_bias": -0.2608,
+      "risk_bias": 0.2608,
+      "uncertainty": 0.6254,
+      "confidence": 0.2393,
+      "prediction_error": 2.25,
+      "cumulative_mae": 5.7841
+    },
+    {
+      "step": 22,
+      "experience_id": "research_exp_022_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 0.7980000000000003,
+        "machine_learning": 1.1410000000000002,
+        "projects": 1.157,
+        "python": 0.7140000000000002
+      },
+      "transition_probability_bias": -0.2728,
+      "risk_bias": 0.2728,
+      "uncertainty": 0.6317,
+      "confidence": 0.2273,
+      "prediction_error": 9.75,
+      "cumulative_mae": 5.9565
+    },
+    {
+      "step": 23,
+      "experience_id": "research_exp_023_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 0.8330000000000003,
+        "machine_learning": 1.1480000000000001,
+        "projects": 1.157,
+        "python": 0.7490000000000002
+      },
+      "transition_probability_bias": -0.2848,
+      "risk_bias": 0.2848,
+      "uncertainty": 0.6368,
+      "confidence": 0.2153,
+      "prediction_error": 2.75,
+      "cumulative_mae": 5.8229
+    },
+    {
+      "step": 24,
+      "experience_id": "research_exp_024_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.8680000000000003,
+        "machine_learning": 1.1900000000000002,
+        "projects": 1.22,
+        "python": 0.7630000000000002
+      },
+      "transition_probability_bias": -0.2968,
+      "risk_bias": 0.2968,
+      "uncertainty": 0.6427,
+      "confidence": 0.2033,
+      "prediction_error": 5.5,
+      "cumulative_mae": 5.81
+    },
+    {
+      "step": 25,
+      "experience_id": "research_exp_025_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.8960000000000004,
+        "machine_learning": 1.2530000000000001,
+        "projects": 1.29,
+        "python": 0.7910000000000003
+      },
+      "transition_probability_bias": -0.3088,
+      "risk_bias": 0.3088,
+      "uncertainty": 0.6488,
+      "confidence": 0.1913,
+      "prediction_error": 6.75,
+      "cumulative_mae": 5.8462
+    },
+    {
+      "step": 26,
+      "experience_id": "research_exp_026_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 0.9310000000000004,
+        "machine_learning": 1.26,
+        "projects": 1.297,
+        "python": 0.8330000000000003
+      },
+      "transition_probability_bias": -0.3208,
+      "risk_bias": 0.3208,
+      "uncertainty": 0.6542,
+      "confidence": 0.1793,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.75
+    },
+    {
+      "step": 27,
+      "experience_id": "research_exp_027_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 0.9380000000000004,
+        "machine_learning": 1.302,
+        "projects": 1.339,
+        "python": 0.8610000000000003
+      },
+      "transition_probability_bias": -0.3328,
+      "risk_bias": 0.3328,
+      "uncertainty": 0.6599,
+      "confidence": 0.1673,
+      "prediction_error": 4.25,
+      "cumulative_mae": 5.6964
+    },
+    {
+      "step": 28,
+      "experience_id": "research_exp_028_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 0.9590000000000004,
+        "machine_learning": 1.337,
+        "projects": 1.353,
+        "python": 0.8960000000000004
+      },
+      "transition_probability_bias": -0.3448,
+      "risk_bias": 0.3448,
+      "uncertainty": 0.6654,
+      "confidence": 0.1553,
+      "prediction_error": 3.75,
+      "cumulative_mae": 5.6293
+    },
+    {
+      "step": 29,
+      "experience_id": "research_exp_029_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 0.9730000000000004,
+        "machine_learning": 1.365,
+        "projects": 1.402,
+        "python": 0.9030000000000004
+      },
+      "transition_probability_bias": -0.3568,
+      "risk_bias": 0.3568,
+      "uncertainty": 0.6708,
+      "confidence": 0.1433,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.5583
+    },
+    {
+      "step": 30,
+      "experience_id": "research_exp_030_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 1.0710000000000004,
+        "machine_learning": 1.4849999999999999,
+        "projects": 1.5219999999999998,
+        "python": 0.9730000000000003
+      },
+      "transition_probability_bias": -0.3688,
+      "risk_bias": 0.3688,
+      "uncertainty": 0.6774,
+      "confidence": 0.1313,
+      "prediction_error": 15.5,
+      "cumulative_mae": 5.879
+    },
+    {
+      "step": 31,
+      "experience_id": "research_exp_031_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 1.1270000000000004,
+        "machine_learning": 1.4919999999999998,
+        "projects": 1.5289999999999997,
+        "python": 1.0150000000000003
+      },
+      "transition_probability_bias": -0.3808,
+      "risk_bias": 0.3808,
+      "uncertainty": 0.683,
+      "confidence": 0.1193,
+      "prediction_error": 4.0,
+      "cumulative_mae": 5.8203
+    },
+    {
+      "step": 32,
+      "experience_id": "research_exp_032_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.1340000000000003,
+        "machine_learning": 1.5479999999999998,
+        "projects": 1.5849999999999997,
+        "python": 1.0150000000000003
+      },
+      "transition_probability_bias": -0.3928,
+      "risk_bias": 0.3928,
+      "uncertainty": 0.6887,
+      "confidence": 0.1073,
+      "prediction_error": 4.25,
+      "cumulative_mae": 5.7727
+    },
+    {
+      "step": 33,
+      "experience_id": "research_exp_033_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.1830000000000003,
+        "machine_learning": 1.632,
+        "projects": 1.6549999999999998,
+        "python": 1.0640000000000003
+      },
+      "transition_probability_bias": -0.4048,
+      "risk_bias": 0.4048,
+      "uncertainty": 0.695,
+      "confidence": 0.0953,
+      "prediction_error": 9.0,
+      "cumulative_mae": 5.8676
+    },
+    {
+      "step": 34,
+      "experience_id": "research_exp_034_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.2530000000000003,
+        "machine_learning": 1.6529999999999998,
+        "projects": 1.6759999999999997,
+        "python": 1.1340000000000003
+      },
+      "transition_probability_bias": -0.4168,
+      "risk_bias": 0.4168,
+      "uncertainty": 0.7011,
+      "confidence": 0.0833,
+      "prediction_error": 6.5,
+      "cumulative_mae": 5.8857
+    },
+    {
+      "step": 35,
+      "experience_id": "research_exp_035_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 1.2880000000000003,
+        "machine_learning": 1.6669999999999998,
+        "projects": 1.6899999999999997,
+        "python": 1.1830000000000003
+      },
+      "transition_probability_bias": -0.4288,
+      "risk_bias": 0.4288,
+      "uncertainty": 0.7067,
+      "confidence": 0.0713,
+      "prediction_error": 4.0,
+      "cumulative_mae": 5.8333
+    },
+    {
+      "step": 36,
+      "experience_id": "research_exp_036_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 1.3090000000000002,
+        "machine_learning": 1.7019999999999997,
+        "projects": 1.7109999999999996,
+        "python": 1.2180000000000002
+      },
+      "transition_probability_bias": -0.4408,
+      "risk_bias": 0.4408,
+      "uncertainty": 0.7123,
+      "confidence": 0.0593,
+      "prediction_error": 4.0,
+      "cumulative_mae": 5.7838
+    },
+    {
+      "step": 37,
+      "experience_id": "research_exp_037_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 1.3090000000000002,
+        "machine_learning": 1.7299999999999998,
+        "projects": 1.7319999999999995,
+        "python": 1.239
+      },
+      "transition_probability_bias": -0.4528,
+      "risk_bias": 0.4528,
+      "uncertainty": 0.7173,
+      "confidence": 0.0473,
+      "prediction_error": 2.5,
+      "cumulative_mae": 5.6974
+    },
+    {
+      "step": 38,
+      "experience_id": "research_exp_038_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 1.3860000000000001,
+        "machine_learning": 1.8419999999999999,
+        "projects": 1.8299999999999996,
+        "python": 1.316
+      },
+      "transition_probability_bias": -0.4648,
+      "risk_bias": 0.4648,
+      "uncertainty": 0.7238,
+      "confidence": 0.0353,
+      "prediction_error": 13.0,
+      "cumulative_mae": 5.8846
+    },
+    {
+      "step": 39,
+      "experience_id": "research_exp_039_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 1.4420000000000002,
+        "machine_learning": 1.8489999999999998,
+        "projects": 1.8369999999999995,
+        "python": 1.3860000000000001
+      },
+      "transition_probability_bias": -0.4768,
+      "risk_bias": 0.4768,
+      "uncertainty": 0.7296,
+      "confidence": 0.0233,
+      "prediction_error": 5.0,
+      "cumulative_mae": 5.8625
+    },
+    {
+      "step": 40,
+      "experience_id": "research_exp_040_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.4420000000000002,
+        "machine_learning": 1.8839999999999997,
+        "projects": 1.8929999999999996,
+        "python": 1.3860000000000001
+      },
+      "transition_probability_bias": -0.4888,
+      "risk_bias": 0.4888,
+      "uncertainty": 0.735,
+      "confidence": 0.0113,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.7988
+    },
+    {
+      "step": 41,
+      "experience_id": "research_exp_041_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.449,
+        "machine_learning": 1.9189999999999996,
+        "projects": 1.9279999999999995,
+        "python": 1.407
+      },
+      "transition_probability_bias": -0.5008,
+      "risk_bias": 0.5008,
+      "uncertainty": 0.7404,
+      "confidence": 0.0,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.744
+    },
+    {
+      "step": 42,
+      "experience_id": "research_exp_042_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.498,
+        "machine_learning": 1.9259999999999995,
+        "projects": 1.9279999999999995,
+        "python": 1.47
+      },
+      "transition_probability_bias": -0.5128,
+      "risk_bias": 0.5128,
+      "uncertainty": 0.7461,
+      "confidence": 0.0,
+      "prediction_error": 4.25,
+      "cumulative_mae": 5.7093
+    },
+    {
+      "step": 43,
+      "experience_id": "research_exp_043_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 1.505,
+        "machine_learning": 1.9749999999999994,
+        "projects": 1.9489999999999994,
+        "python": 1.47
+      },
+      "transition_probability_bias": -0.5248,
+      "risk_bias": 0.5248,
+      "uncertainty": 0.7512,
+      "confidence": 0.0,
+      "prediction_error": 2.75,
+      "cumulative_mae": 5.642
+    },
+    {
+      "step": 44,
+      "experience_id": "research_exp_044_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 1.505,
+        "machine_learning": 1.9959999999999993,
+        "projects": 1.9979999999999993,
+        "python": 1.484
+      },
+      "transition_probability_bias": -0.5368,
+      "risk_bias": 0.5368,
+      "uncertainty": 0.7564,
+      "confidence": 0.0,
+      "prediction_error": 3.0,
+      "cumulative_mae": 5.5833
+    },
+    {
+      "step": 45,
+      "experience_id": "research_exp_045_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 1.505,
+        "machine_learning": 2.051999999999999,
+        "projects": 2.039999999999999,
+        "python": 1.4909999999999999
+      },
+      "transition_probability_bias": -0.5488,
+      "risk_bias": 0.5488,
+      "uncertainty": 0.7619,
+      "confidence": 0.0,
+      "prediction_error": 3.75,
+      "cumulative_mae": 5.5435
+    },
+    {
+      "step": 46,
+      "experience_id": "research_exp_046_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 1.5679999999999998,
+        "machine_learning": 2.1429999999999993,
+        "projects": 2.095999999999999,
+        "python": 1.533
+      },
+      "transition_probability_bias": -0.5608,
+      "risk_bias": 0.5608,
+      "uncertainty": 0.7682,
+      "confidence": 0.0,
+      "prediction_error": 9.0,
+      "cumulative_mae": 5.617
+    },
+    {
+      "step": 47,
+      "experience_id": "research_exp_047_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 1.6239999999999999,
+        "machine_learning": 2.1709999999999994,
+        "projects": 2.116999999999999,
+        "python": 1.5959999999999999
+      },
+      "transition_probability_bias": -0.5728,
+      "risk_bias": 0.5728,
+      "uncertainty": 0.7742,
+      "confidence": 0.0,
+      "prediction_error": 6.0,
+      "cumulative_mae": 5.625
+    },
+    {
+      "step": 48,
+      "experience_id": "research_exp_048_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.652,
+        "machine_learning": 2.240999999999999,
+        "projects": 2.193999999999999,
+        "python": 1.6169999999999998
+      },
+      "transition_probability_bias": -0.5848,
+      "risk_bias": 0.5848,
+      "uncertainty": 0.7803,
+      "confidence": 0.0,
+      "prediction_error": 7.0,
+      "cumulative_mae": 5.6531
+    },
+    {
+      "step": 49,
+      "experience_id": "research_exp_049_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.7009999999999998,
+        "machine_learning": 2.3249999999999993,
+        "projects": 2.270999999999999,
+        "python": 1.6589999999999998
+      },
+      "transition_probability_bias": -0.5968,
+      "risk_bias": 0.5968,
+      "uncertainty": 0.7866,
+      "confidence": 0.0,
+      "prediction_error": 9.0,
+      "cumulative_mae": 5.72
+    },
+    {
+      "step": 50,
+      "experience_id": "research_exp_050_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.757,
+        "machine_learning": 2.345999999999999,
+        "projects": 2.298999999999999,
+        "python": 1.7219999999999998
+      },
+      "transition_probability_bias": -0.6088,
+      "risk_bias": 0.6088,
+      "uncertainty": 0.7926,
+      "confidence": 0.0,
+      "prediction_error": 6.0,
+      "cumulative_mae": 5.7255
+    },
+    {
+      "step": 51,
+      "experience_id": "research_exp_051_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 1.785,
+        "machine_learning": 2.359999999999999,
+        "projects": 2.326999999999999,
+        "python": 1.7709999999999997
+      },
+      "transition_probability_bias": -0.6208,
+      "risk_bias": 0.6208,
+      "uncertainty": 0.7983,
+      "confidence": 0.0,
+      "prediction_error": 4.25,
+      "cumulative_mae": 5.6971
+    },
+    {
+      "step": 52,
+      "experience_id": "research_exp_052_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 1.7919999999999998,
+        "machine_learning": 2.380999999999999,
+        "projects": 2.347999999999999,
+        "python": 1.8059999999999996
+      },
+      "transition_probability_bias": -0.6328,
+      "risk_bias": 0.6328,
+      "uncertainty": 0.8035,
+      "confidence": 0.0,
+      "prediction_error": 3.0,
+      "cumulative_mae": 5.6462
+    },
+    {
+      "step": 53,
+      "experience_id": "research_exp_053_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 1.7989999999999997,
+        "machine_learning": 2.3949999999999987,
+        "projects": 2.375999999999999,
+        "python": 1.8339999999999996
+      },
+      "transition_probability_bias": -0.6448,
+      "risk_bias": 0.6448,
+      "uncertainty": 0.8086,
+      "confidence": 0.0,
+      "prediction_error": 2.75,
+      "cumulative_mae": 5.5926
+    },
+    {
+      "step": 54,
+      "experience_id": "research_exp_054_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 1.8549999999999998,
+        "machine_learning": 2.514999999999999,
+        "projects": 2.466999999999999,
+        "python": 1.9249999999999996
+      },
+      "transition_probability_bias": -0.6568,
+      "risk_bias": 0.6568,
+      "uncertainty": 0.8151,
+      "confidence": 0.0,
+      "prediction_error": 13.0,
+      "cumulative_mae": 5.7273
+    },
+    {
+      "step": 55,
+      "experience_id": "research_exp_055_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 1.9249999999999998,
+        "machine_learning": 2.549999999999999,
+        "projects": 2.487999999999999,
+        "python": 1.9879999999999995
+      },
+      "transition_probability_bias": -0.6688,
+      "risk_bias": 0.6688,
+      "uncertainty": 0.8212,
+      "confidence": 0.0,
+      "prediction_error": 6.75,
+      "cumulative_mae": 5.7455
+    },
+    {
+      "step": 56,
+      "experience_id": "research_exp_056_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.9249999999999998,
+        "machine_learning": 2.598999999999999,
+        "projects": 2.508999999999999,
+        "python": 1.9879999999999995
+      },
+      "transition_probability_bias": -0.6808,
+      "risk_bias": 0.6808,
+      "uncertainty": 0.8262,
+      "confidence": 0.0,
+      "prediction_error": 2.5,
+      "cumulative_mae": 5.6886
+    },
+    {
+      "step": 57,
+      "experience_id": "research_exp_057_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.9319999999999997,
+        "machine_learning": 2.6409999999999987,
+        "projects": 2.557999999999999,
+        "python": 1.9949999999999994
+      },
+      "transition_probability_bias": -0.6928,
+      "risk_bias": 0.6928,
+      "uncertainty": 0.8317,
+      "confidence": 0.0,
+      "prediction_error": 3.75,
+      "cumulative_mae": 5.6552
+    },
+    {
+      "step": 58,
+      "experience_id": "research_exp_058_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 1.9739999999999998,
+        "machine_learning": 2.647999999999999,
+        "projects": 2.557999999999999,
+        "python": 2.0369999999999995
+      },
+      "transition_probability_bias": -0.7048,
+      "risk_bias": 0.7048,
+      "uncertainty": 0.8371,
+      "confidence": 0.0,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.6144
+    },
+    {
+      "step": 59,
+      "experience_id": "research_exp_059_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 1.9739999999999998,
+        "machine_learning": 2.6619999999999986,
+        "projects": 2.578999999999999,
+        "python": 2.0719999999999996
+      },
+      "transition_probability_bias": -0.7168,
+      "risk_bias": 0.7168,
+      "uncertainty": 0.8421,
+      "confidence": 0.0,
+      "prediction_error": 2.5,
+      "cumulative_mae": 5.5625
+    },
+    {
+      "step": 60,
+      "experience_id": "research_exp_060_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 1.9879999999999998,
+        "machine_learning": 2.6899999999999986,
+        "projects": 2.606999999999999,
+        "python": 2.0929999999999995
+      },
+      "transition_probability_bias": -0.7288,
+      "risk_bias": 0.7288,
+      "uncertainty": 0.8475,
+      "confidence": 0.0,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.5246
+    },
+    {
+      "step": 61,
+      "experience_id": "research_exp_061_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 1.9949999999999997,
+        "machine_learning": 2.7109999999999985,
+        "projects": 2.613999999999999,
+        "python": 2.1139999999999994
+      },
+      "transition_probability_bias": -0.7408,
+      "risk_bias": 0.7408,
+      "uncertainty": 0.8522,
+      "confidence": 0.0,
+      "prediction_error": 2.0,
+      "cumulative_mae": 5.4677
+    },
+    {
+      "step": 62,
+      "experience_id": "research_exp_062_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 2.0229999999999997,
+        "machine_learning": 2.8089999999999984,
+        "projects": 2.711999999999999,
+        "python": 2.1559999999999993
+      },
+      "transition_probability_bias": -0.7528,
+      "risk_bias": 0.7528,
+      "uncertainty": 0.8585,
+      "confidence": 0.0,
+      "prediction_error": 9.5,
+      "cumulative_mae": 5.5317
+    },
+    {
+      "step": 63,
+      "experience_id": "research_exp_063_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 2.0649999999999995,
+        "machine_learning": 2.8159999999999985,
+        "projects": 2.711999999999999,
+        "python": 2.204999999999999
+      },
+      "transition_probability_bias": -0.7648,
+      "risk_bias": 0.7648,
+      "uncertainty": 0.8639,
+      "confidence": 0.0,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.5
+    },
+    {
+      "step": 64,
+      "experience_id": "research_exp_064_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.0859999999999994,
+        "machine_learning": 2.8439999999999985,
+        "projects": 2.7539999999999987,
+        "python": 2.218999999999999
+      },
+      "transition_probability_bias": -0.7768,
+      "risk_bias": 0.7768,
+      "uncertainty": 0.8694,
+      "confidence": 0.0,
+      "prediction_error": 3.75,
+      "cumulative_mae": 5.4731
+    },
+    {
+      "step": 65,
+      "experience_id": "research_exp_065_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.0859999999999994,
+        "machine_learning": 2.8999999999999986,
+        "projects": 2.8099999999999987,
+        "python": 2.239999999999999
+      },
+      "transition_probability_bias": -0.7888,
+      "risk_bias": 0.7888,
+      "uncertainty": 0.8752,
+      "confidence": 0.0,
+      "prediction_error": 4.75,
+      "cumulative_mae": 5.4621
+    },
+    {
+      "step": 66,
+      "experience_id": "research_exp_066_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.1489999999999996,
+        "machine_learning": 2.9279999999999986,
+        "projects": 2.8379999999999987,
+        "python": 2.316999999999999
+      },
+      "transition_probability_bias": -0.8008,
+      "risk_bias": 0.8008,
+      "uncertainty": 0.8813,
+      "confidence": 0.0,
+      "prediction_error": 7.0,
+      "cumulative_mae": 5.4851
+    },
+    {
+      "step": 67,
+      "experience_id": "research_exp_067_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 2.2049999999999996,
+        "machine_learning": 2.9349999999999987,
+        "projects": 2.8379999999999987,
+        "python": 2.3869999999999987
+      },
+      "transition_probability_bias": -0.8128,
+      "risk_bias": 0.8128,
+      "uncertainty": 0.8871,
+      "confidence": 0.0,
+      "prediction_error": 4.75,
+      "cumulative_mae": 5.4743
+    },
+    {
+      "step": 68,
+      "experience_id": "research_exp_068_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 2.2469999999999994,
+        "machine_learning": 2.9629999999999987,
+        "projects": 2.8589999999999987,
+        "python": 2.4079999999999986
+      },
+      "transition_probability_bias": -0.8248,
+      "risk_bias": 0.8248,
+      "uncertainty": 0.8927,
+      "confidence": 0.0,
+      "prediction_error": 4.0,
+      "cumulative_mae": 5.4529
+    },
+    {
+      "step": 69,
+      "experience_id": "research_exp_069_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 2.2539999999999996,
+        "machine_learning": 2.997999999999999,
+        "projects": 2.9079999999999986,
+        "python": 2.4149999999999987
+      },
+      "transition_probability_bias": -0.8368,
+      "risk_bias": 0.8368,
+      "uncertainty": 0.8981,
+      "confidence": 0.0,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.425
+    },
+    {
+      "step": 70,
+      "experience_id": "research_exp_070_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 2.3589999999999995,
+        "machine_learning": 3.117999999999999,
+        "projects": 3.0199999999999987,
+        "python": 2.4919999999999987
+      },
+      "transition_probability_bias": -0.8488,
+      "risk_bias": 0.8488,
+      "uncertainty": 0.9047,
+      "confidence": 0.0,
+      "prediction_error": 15.5,
+      "cumulative_mae": 5.5669
+    },
+    {
+      "step": 71,
+      "experience_id": "research_exp_071_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 2.4149999999999996,
+        "machine_learning": 3.145999999999999,
+        "projects": 3.0479999999999987,
+        "python": 2.5619999999999985
+      },
+      "transition_probability_bias": -0.8608,
+      "risk_bias": 0.8608,
+      "uncertainty": 0.9108,
+      "confidence": 0.0,
+      "prediction_error": 6.5,
+      "cumulative_mae": 5.5799
+    },
+    {
+      "step": 72,
+      "experience_id": "research_exp_072_low_skill_practice",
+      "category": "low_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.4289999999999994,
+        "machine_learning": 3.173999999999999,
+        "projects": 3.0969999999999986,
+        "python": 2.5689999999999986
+      },
+      "transition_probability_bias": -0.8728,
+      "risk_bias": 0.8728,
+      "uncertainty": 0.9162,
+      "confidence": 0.0,
+      "prediction_error": 3.5,
+      "cumulative_mae": 5.5514
+    },
+    {
+      "step": 73,
+      "experience_id": "research_exp_073_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.4639999999999995,
+        "machine_learning": 3.243999999999999,
+        "projects": 3.1669999999999985,
+        "python": 2.6109999999999984
+      },
+      "transition_probability_bias": -0.8848,
+      "risk_bias": 0.8848,
+      "uncertainty": 0.9224,
+      "confidence": 0.0,
+      "prediction_error": 7.75,
+      "cumulative_mae": 5.5811
+    },
+    {
+      "step": 74,
+      "experience_id": "research_exp_074_high_skill_practice",
+      "category": "high_skill_practice",
+      "expected_state_bias": {
+        "dsa": 2.5129999999999995,
+        "machine_learning": 3.2579999999999987,
+        "projects": 3.1739999999999986,
+        "python": 2.6739999999999986
+      },
+      "transition_probability_bias": -0.8968,
+      "risk_bias": 0.8968,
+      "uncertainty": 0.9282,
+      "confidence": 0.0,
+      "prediction_error": 4.75,
+      "cumulative_mae": 5.57
+    },
+    {
+      "step": 75,
+      "experience_id": "research_exp_075_low_motivation",
+      "category": "low_motivation",
+      "expected_state_bias": {
+        "dsa": 2.5479999999999996,
+        "machine_learning": 3.2719999999999985,
+        "projects": 3.1949999999999985,
+        "python": 2.7089999999999987
+      },
+      "transition_probability_bias": -0.9088,
+      "risk_bias": 0.9088,
+      "uncertainty": 0.9337,
+      "confidence": 0.0,
+      "prediction_error": 3.75,
+      "cumulative_mae": 5.5461
+    },
+    {
+      "step": 76,
+      "experience_id": "research_exp_076_high_motivation",
+      "category": "high_motivation",
+      "expected_state_bias": {
+        "dsa": 2.5899999999999994,
+        "machine_learning": 3.2789999999999986,
+        "projects": 3.2019999999999986,
+        "python": 2.743999999999999
+      },
+      "transition_probability_bias": -0.9208,
+      "risk_bias": 0.9208,
+      "uncertainty": 0.9391,
+      "confidence": 0.0,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.5162
+    },
+    {
+      "step": 77,
+      "experience_id": "research_exp_077_mixed_skills",
+      "category": "mixed_skills",
+      "expected_state_bias": {
+        "dsa": 2.5969999999999995,
+        "machine_learning": 3.3139999999999987,
+        "projects": 3.2369999999999988,
+        "python": 2.7579999999999987
+      },
+      "transition_probability_bias": -0.9328,
+      "risk_bias": 0.9328,
+      "uncertainty": 0.9445,
+      "confidence": 0.0,
+      "prediction_error": 3.25,
+      "cumulative_mae": 5.4872
+    },
+    {
+      "step": 78,
+      "experience_id": "research_exp_078_project_completion",
+      "category": "project_completion",
+      "expected_state_bias": {
+        "dsa": 2.6739999999999995,
+        "machine_learning": 3.433999999999999,
+        "projects": 3.3419999999999987,
+        "python": 2.8139999999999987
+      },
+      "transition_probability_bias": -0.9448,
+      "risk_bias": 0.9448,
+      "uncertainty": 0.951,
+      "confidence": 0.0,
+      "prediction_error": 13.5,
+      "cumulative_mae": 5.5886
+    },
+    {
+      "step": 79,
+      "experience_id": "research_exp_079_plateau",
+      "category": "plateau",
+      "expected_state_bias": {
+        "dsa": 2.7159999999999993,
+        "machine_learning": 3.440999999999999,
+        "projects": 3.3559999999999985,
+        "python": 2.8699999999999988
+      },
+      "transition_probability_bias": -0.9568,
+      "risk_bias": 0.9568,
+      "uncertainty": 0.9567,
+      "confidence": 0.0,
+      "prediction_error": 4.25,
+      "cumulative_mae": 5.5719
+    }
+  ],
+  "bias_comparisons": [
+    {
+      "step": 0,
+      "experience_id": "research_exp_000_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 0.0368,
+      "bias_distance": 3.9632,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0092
+    },
+    {
+      "step": 1,
+      "experience_id": "research_exp_001_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.1015,
+      "bias_distance": 2.8985,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0338
+    },
+    {
+      "step": 2,
+      "experience_id": "research_exp_002_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 0.1313,
+      "bias_distance": 3.1313,
+      "direction_correct": false,
+      "magnitude_ratio": 0.0438
+    },
+    {
+      "step": 3,
+      "experience_id": "research_exp_003_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.1557,
+      "bias_distance": 4.8442,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0312
+    },
+    {
+      "step": 4,
+      "experience_id": "research_exp_004_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 0.1838,
+      "bias_distance": 4.1837,
+      "direction_correct": false,
+      "magnitude_ratio": 0.0459
+    },
+    {
+      "step": 5,
+      "experience_id": "research_exp_005_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.2293,
+      "bias_distance": 2.7708,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0764
+    },
+    {
+      "step": 6,
+      "experience_id": "research_exp_006_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.3293,
+      "bias_distance": 4.6707,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0659
+    },
+    {
+      "step": 7,
+      "experience_id": "research_exp_007_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 0.352,
+      "bias_distance": 0.352,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 8,
+      "experience_id": "research_exp_008_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 0.415,
+      "bias_distance": 3.585,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1038
+    },
+    {
+      "step": 9,
+      "experience_id": "research_exp_009_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.4657,
+      "bias_distance": 2.5343,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1552
+    },
+    {
+      "step": 10,
+      "experience_id": "research_exp_010_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 0.5078,
+      "bias_distance": 3.5078,
+      "direction_correct": false,
+      "magnitude_ratio": 0.1693
+    },
+    {
+      "step": 11,
+      "experience_id": "research_exp_011_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.5323,
+      "bias_distance": 4.4677,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1065
+    },
+    {
+      "step": 12,
+      "experience_id": "research_exp_012_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 0.5585,
+      "bias_distance": 4.5585,
+      "direction_correct": false,
+      "magnitude_ratio": 0.1396
+    },
+    {
+      "step": 13,
+      "experience_id": "research_exp_013_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.5865,
+      "bias_distance": 2.4135,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1955
+    },
+    {
+      "step": 14,
+      "experience_id": "research_exp_014_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.69,
+      "bias_distance": 4.31,
+      "direction_correct": true,
+      "magnitude_ratio": 0.138
+    },
+    {
+      "step": 15,
+      "experience_id": "research_exp_015_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 0.7145,
+      "bias_distance": 0.7145,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 16,
+      "experience_id": "research_exp_016_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 0.7513,
+      "bias_distance": 3.2487,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1878
+    },
+    {
+      "step": 17,
+      "experience_id": "research_exp_017_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.816,
+      "bias_distance": 2.184,
+      "direction_correct": true,
+      "magnitude_ratio": 0.272
+    },
+    {
+      "step": 18,
+      "experience_id": "research_exp_018_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 0.8353,
+      "bias_distance": 3.8353,
+      "direction_correct": false,
+      "magnitude_ratio": 0.2784
+    },
+    {
+      "step": 19,
+      "experience_id": "research_exp_019_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.844,
+      "bias_distance": 4.156,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1688
+    },
+    {
+      "step": 20,
+      "experience_id": "research_exp_020_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 0.8685,
+      "bias_distance": 4.8685,
+      "direction_correct": false,
+      "magnitude_ratio": 0.2171
+    },
+    {
+      "step": 21,
+      "experience_id": "research_exp_021_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 0.8843,
+      "bias_distance": 2.1157,
+      "direction_correct": true,
+      "magnitude_ratio": 0.2948
+    },
+    {
+      "step": 22,
+      "experience_id": "research_exp_022_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 0.9525,
+      "bias_distance": 4.0475,
+      "direction_correct": true,
+      "magnitude_ratio": 0.1905
+    },
+    {
+      "step": 23,
+      "experience_id": "research_exp_023_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 0.9718,
+      "bias_distance": 0.9718,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 24,
+      "experience_id": "research_exp_024_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 1.0103,
+      "bias_distance": 2.9897,
+      "direction_correct": true,
+      "magnitude_ratio": 0.2526
+    },
+    {
+      "step": 25,
+      "experience_id": "research_exp_025_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.0575,
+      "bias_distance": 1.9425,
+      "direction_correct": true,
+      "magnitude_ratio": 0.3525
+    },
+    {
+      "step": 26,
+      "experience_id": "research_exp_026_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 1.0803,
+      "bias_distance": 4.0803,
+      "direction_correct": false,
+      "magnitude_ratio": 0.3601
+    },
+    {
+      "step": 27,
+      "experience_id": "research_exp_027_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.11,
+      "bias_distance": 3.89,
+      "direction_correct": true,
+      "magnitude_ratio": 0.222
+    },
+    {
+      "step": 28,
+      "experience_id": "research_exp_028_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 1.1363,
+      "bias_distance": 5.1363,
+      "direction_correct": false,
+      "magnitude_ratio": 0.2841
+    },
+    {
+      "step": 29,
+      "experience_id": "research_exp_029_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.1608,
+      "bias_distance": 1.8392,
+      "direction_correct": true,
+      "magnitude_ratio": 0.3869
+    },
+    {
+      "step": 30,
+      "experience_id": "research_exp_030_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.2628,
+      "bias_distance": 3.7372,
+      "direction_correct": true,
+      "magnitude_ratio": 0.2525
+    },
+    {
+      "step": 31,
+      "experience_id": "research_exp_031_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 1.2908,
+      "bias_distance": 1.2908,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 32,
+      "experience_id": "research_exp_032_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 1.3205,
+      "bias_distance": 2.6795,
+      "direction_correct": true,
+      "magnitude_ratio": 0.3301
+    },
+    {
+      "step": 33,
+      "experience_id": "research_exp_033_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.3835,
+      "bias_distance": 1.6165,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4612
+    },
+    {
+      "step": 34,
+      "experience_id": "research_exp_034_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 1.429,
+      "bias_distance": 4.429,
+      "direction_correct": false,
+      "magnitude_ratio": 0.4763
+    },
+    {
+      "step": 35,
+      "experience_id": "research_exp_035_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.457,
+      "bias_distance": 3.543,
+      "direction_correct": true,
+      "magnitude_ratio": 0.2914
+    },
+    {
+      "step": 36,
+      "experience_id": "research_exp_036_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 1.485,
+      "bias_distance": 5.485,
+      "direction_correct": false,
+      "magnitude_ratio": 0.3712
+    },
+    {
+      "step": 37,
+      "experience_id": "research_exp_037_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.5025,
+      "bias_distance": 1.4975,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5008
+    },
+    {
+      "step": 38,
+      "experience_id": "research_exp_038_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.5935,
+      "bias_distance": 3.4065,
+      "direction_correct": true,
+      "magnitude_ratio": 0.3187
+    },
+    {
+      "step": 39,
+      "experience_id": "research_exp_039_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 1.6285,
+      "bias_distance": 1.6285,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 40,
+      "experience_id": "research_exp_040_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 1.6512,
+      "bias_distance": 2.3487,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4128
+    },
+    {
+      "step": 41,
+      "experience_id": "research_exp_041_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.6757,
+      "bias_distance": 1.3243,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5586
+    },
+    {
+      "step": 42,
+      "experience_id": "research_exp_042_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 1.7055,
+      "bias_distance": 4.7055,
+      "direction_correct": false,
+      "magnitude_ratio": 0.5685
+    },
+    {
+      "step": 43,
+      "experience_id": "research_exp_043_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.7247,
+      "bias_distance": 3.2753,
+      "direction_correct": true,
+      "magnitude_ratio": 0.3449
+    },
+    {
+      "step": 44,
+      "experience_id": "research_exp_044_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 1.7457,
+      "bias_distance": 5.7457,
+      "direction_correct": false,
+      "magnitude_ratio": 0.4364
+    },
+    {
+      "step": 45,
+      "experience_id": "research_exp_045_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.772,
+      "bias_distance": 1.228,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5907
+    },
+    {
+      "step": 46,
+      "experience_id": "research_exp_046_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 1.835,
+      "bias_distance": 3.165,
+      "direction_correct": true,
+      "magnitude_ratio": 0.367
+    },
+    {
+      "step": 47,
+      "experience_id": "research_exp_047_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 1.877,
+      "bias_distance": 1.877,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 48,
+      "experience_id": "research_exp_048_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 1.926,
+      "bias_distance": 2.074,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4815
+    },
+    {
+      "step": 49,
+      "experience_id": "research_exp_049_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 1.989,
+      "bias_distance": 1.011,
+      "direction_correct": true,
+      "magnitude_ratio": 0.663
+    },
+    {
+      "step": 50,
+      "experience_id": "research_exp_050_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 2.031,
+      "bias_distance": 5.031,
+      "direction_correct": false,
+      "magnitude_ratio": 0.677
+    },
+    {
+      "step": 51,
+      "experience_id": "research_exp_051_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.0607,
+      "bias_distance": 2.9393,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4121
+    },
+    {
+      "step": 52,
+      "experience_id": "research_exp_052_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 2.0817,
+      "bias_distance": 6.0817,
+      "direction_correct": false,
+      "magnitude_ratio": 0.5204
+    },
+    {
+      "step": 53,
+      "experience_id": "research_exp_053_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.101,
+      "bias_distance": 0.899,
+      "direction_correct": true,
+      "magnitude_ratio": 0.7003
+    },
+    {
+      "step": 54,
+      "experience_id": "research_exp_054_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.1905,
+      "bias_distance": 2.8095,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4381
+    },
+    {
+      "step": 55,
+      "experience_id": "research_exp_055_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 2.2377,
+      "bias_distance": 2.2377,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 56,
+      "experience_id": "research_exp_056_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 2.2552,
+      "bias_distance": 1.7448,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5638
+    },
+    {
+      "step": 57,
+      "experience_id": "research_exp_057_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.2815,
+      "bias_distance": 0.7185,
+      "direction_correct": true,
+      "magnitude_ratio": 0.7605
+    },
+    {
+      "step": 58,
+      "experience_id": "research_exp_058_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 2.3042,
+      "bias_distance": 5.3042,
+      "direction_correct": false,
+      "magnitude_ratio": 0.7681
+    },
+    {
+      "step": 59,
+      "experience_id": "research_exp_059_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.3217,
+      "bias_distance": 2.6783,
+      "direction_correct": true,
+      "magnitude_ratio": 0.4643
+    },
+    {
+      "step": 60,
+      "experience_id": "research_exp_060_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 2.3445,
+      "bias_distance": 6.3445,
+      "direction_correct": false,
+      "magnitude_ratio": 0.5861
+    },
+    {
+      "step": 61,
+      "experience_id": "research_exp_061_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.3585,
+      "bias_distance": 0.6415,
+      "direction_correct": true,
+      "magnitude_ratio": 0.7862
+    },
+    {
+      "step": 62,
+      "experience_id": "research_exp_062_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.425,
+      "bias_distance": 2.575,
+      "direction_correct": true,
+      "magnitude_ratio": 0.485
+    },
+    {
+      "step": 63,
+      "experience_id": "research_exp_063_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 2.4495,
+      "bias_distance": 2.4495,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 64,
+      "experience_id": "research_exp_064_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 2.4757,
+      "bias_distance": 1.5243,
+      "direction_correct": true,
+      "magnitude_ratio": 0.6189
+    },
+    {
+      "step": 65,
+      "experience_id": "research_exp_065_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.509,
+      "bias_distance": 0.491,
+      "direction_correct": true,
+      "magnitude_ratio": 0.8363
+    },
+    {
+      "step": 66,
+      "experience_id": "research_exp_066_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 2.558,
+      "bias_distance": 5.558,
+      "direction_correct": false,
+      "magnitude_ratio": 0.8527
+    },
+    {
+      "step": 67,
+      "experience_id": "research_exp_067_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.5912,
+      "bias_distance": 2.4088,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5182
+    },
+    {
+      "step": 68,
+      "experience_id": "research_exp_068_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 2.6192,
+      "bias_distance": 6.6192,
+      "direction_correct": false,
+      "magnitude_ratio": 0.6548
+    },
+    {
+      "step": 69,
+      "experience_id": "research_exp_069_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.6437,
+      "bias_distance": 0.3563,
+      "direction_correct": true,
+      "magnitude_ratio": 0.8812
+    },
+    {
+      "step": 70,
+      "experience_id": "research_exp_070_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.7472,
+      "bias_distance": 2.2528,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5494
+    },
+    {
+      "step": 71,
+      "experience_id": "research_exp_071_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 2.7927,
+      "bias_distance": 2.7927,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    },
+    {
+      "step": 72,
+      "experience_id": "research_exp_072_low_skill_practice",
+      "category": "low_skill_practice",
+      "true_systematic_bias": 4.0,
+      "learned_state_bias_avg": 2.8172,
+      "bias_distance": 1.1828,
+      "direction_correct": true,
+      "magnitude_ratio": 0.7043
+    },
+    {
+      "step": 73,
+      "experience_id": "research_exp_073_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.8715,
+      "bias_distance": 0.1285,
+      "direction_correct": true,
+      "magnitude_ratio": 0.9572
+    },
+    {
+      "step": 74,
+      "experience_id": "research_exp_074_high_skill_practice",
+      "category": "high_skill_practice",
+      "true_systematic_bias": -3.0,
+      "learned_state_bias_avg": 2.9047,
+      "bias_distance": 5.9047,
+      "direction_correct": false,
+      "magnitude_ratio": 0.9682
+    },
+    {
+      "step": 75,
+      "experience_id": "research_exp_075_low_motivation",
+      "category": "low_motivation",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 2.931,
+      "bias_distance": 2.069,
+      "direction_correct": true,
+      "magnitude_ratio": 0.5862
+    },
+    {
+      "step": 76,
+      "experience_id": "research_exp_076_high_motivation",
+      "category": "high_motivation",
+      "true_systematic_bias": -4.0,
+      "learned_state_bias_avg": 2.9537,
+      "bias_distance": 6.9537,
+      "direction_correct": false,
+      "magnitude_ratio": 0.7384
+    },
+    {
+      "step": 77,
+      "experience_id": "research_exp_077_mixed_skills",
+      "category": "mixed_skills",
+      "true_systematic_bias": 3.0,
+      "learned_state_bias_avg": 2.9765,
+      "bias_distance": 0.0235,
+      "direction_correct": true,
+      "magnitude_ratio": 0.9922
+    },
+    {
+      "step": 78,
+      "experience_id": "research_exp_078_project_completion",
+      "category": "project_completion",
+      "true_systematic_bias": 5.0,
+      "learned_state_bias_avg": 3.066,
+      "bias_distance": 1.934,
+      "direction_correct": true,
+      "magnitude_ratio": 0.6132
+    },
+    {
+      "step": 79,
+      "experience_id": "research_exp_079_plateau",
+      "category": "plateau",
+      "true_systematic_bias": 0.0,
+      "learned_state_bias_avg": 3.0957,
+      "bias_distance": 3.0957,
+      "direction_correct": true,
+      "magnitude_ratio": 0.0
+    }
+  ],
+  "initial_mae": 5.25,
+  "final_mae": 4.25,
+  "total_mae_reduction": 1.0,
+  "convergence_rate": 11.1,
+  "category_bias_distances": {
+    "low_skill_practice": 2.5341,
+    "medium_skill_practice": 1.4849,
+    "high_skill_practice": 4.5487,
+    "low_motivation": 3.4272,
+    "high_motivation": 5.5977,
+    "mixed_skills": 1.3785,
+    "project_completion": 3.2908,
+    "plateau": 1.741
+  },
+  "category_direction_accuracy": {
+    "low_skill_practice": 100.0,
+    "medium_skill_practice": 100.0,
+    "high_skill_practice": 0.0,
+    "low_motivation": 100.0,
+    "high_motivation": 0.0,
+    "mixed_skills": 100.0,
+    "project_completion": 100.0,
+    "plateau": 100.0
+  },
+  "is_learning": true,
+  "is_converging": false,
+  "learning_explanation": "Calibration reduced MAE (1.0000, 19.0%), but bias convergence is weak (11.1%). Learning may work through mechanisms other than explicit bias correction."
+}

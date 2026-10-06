@@ -1,0 +1,311 @@
+........................................................................ [ 32%]
+........................................................................ [ 65%]
+.F.F......F........FF................................................... [ 98%]
+...                                                                      [100%]
+================================== FAILURES ===================================
+_ ReasoningModuleTests.test_reasoning_metadata_is_exposed_by_planner_and_service _
+
+self = <test_reasoning_modules.ReasoningModuleTests testMethod=test_reasoning_metadata_is_exposed_by_planner_and_service>
+
+    def test_reasoning_metadata_is_exposed_by_planner_and_service(self) -> None:
+        planner = BeamSearchPlanner(retriever=DummyRetriever())
+        goal_state = GoalState(goal="Placement", target_skills={"python": 50})
+>       search_result = planner.search({"python": 10, "projects": 1}, goal_state, beam_width=2, max_depth=1)
+
+backend\tests\test_reasoning_modules.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+backend\services\beam_search_planner.py:101: in search
+    retrieval_result = self.memory_manager.retrieve_experiences(
+backend\memory\memory_manager.py:110: in retrieve_experiences
+    return self.episodic_memory.retrieve_experiences(state, goal, actions, top_k, diversity_threshold)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <backend.memory.episodic_memory.EpisodicMemory object at 0x0000020D438F7700>
+state = {'projects': 1, 'python': 10}, goal = 'Placement'
+actions = ['Complete Python Project', 'Complete Internship', 'Participate in Hackathon', 'Complete DSA Course', 'Practice DSA']
+top_k = 10, diversity_threshold = None
+
+    def retrieve_experiences(self, state: Dict[str, float], goal: str, actions: List[str] | None = None, top_k: int = 10, diversity_threshold: float | None = None) -> Dict[str, Any]:
+        if top_k == 10 and diversity_threshold is None:
+            result = self.retriever.retrieve(state, goal, actions)
+        else:
+            kwargs: Dict[str, Any] = {"top_k": top_k}
+            if diversity_threshold is not None:
+                kwargs["diversity_threshold"] = diversity_threshold
+            result = self.retriever.retrieve(state, goal, actions, **kwargs)
+        self._touch_matches(result["matches"])
+>       self._emit_event("MemoryRetrieved", memory_ids=[match.memory_id for match in result["matches"]], top_k=top_k, goal=goal)
+E       AttributeError: 'types.SimpleNamespace' object has no attribute 'memory_id'
+
+backend\memory\episodic_memory.py:61: AttributeError
+_________ ReplayAndEvaluationTests.test_replay_and_evaluation_helpers _________
+
+self = <test_replay_and_evaluation.ReplayAndEvaluationTests testMethod=test_replay_and_evaluation_helpers>
+
+    def test_replay_and_evaluation_helpers(self) -> None:
+        experiences = [
+            Experience(
+                experience_id="exp_0001",
+                timestamp=datetime.utcnow(),
+                user_id="user_001",
+                experience_type="project",
+                state_before={"python": 60},
+                action="Complete Python Project",
+                context={"hours_spent": 15},
+                state_after={"python": 70},
+                state_delta={"python": 10},
+                outcome_value=0.8,
+            )
+        ]
+    
+        replay = ExperienceReplayService(experiences)
+        self.assertEqual(len(replay.get_similar_experiences("python")), 1)
+        self.assertEqual(len(replay.get_successful_experiences()), 1)
+        self.assertEqual(len(replay.get_failed_experiences()), 0)
+        self.assertEqual(len(replay.get_recent_experiences(days=30)), 1)
+    
+        evaluation = EvaluationService(experiences)
+        self.assertEqual(evaluation.prediction_error(10, 8), 2)
+        self.assertEqual(evaluation.success_prediction_accuracy(0.8, 0.8), 1)
+        self.assertEqual(evaluation.state_prediction_accuracy({"python": 70}, {"python": 70}), 1)
+    
+        diff = calculate_state_diff({"python": 60}, {"python": 75})
+>       self.assertEqual(diff["python"], 15)
+E       KeyError: 'python'
+
+backend\tests\test_replay_and_evaluation.py:39: KeyError
+_ AblationAndReproducibilityTests.test_run_retrieval_ablation_returns_policy_retrieval_and_hybrid _
+
+self = <test_retrieval_ablation_and_reproducibility.AblationAndReproducibilityTests testMethod=test_run_retrieval_ablation_returns_policy_retrieval_and_hybrid>
+
+    def test_run_retrieval_ablation_returns_policy_retrieval_and_hybrid(self) -> None:
+        service = GoalPlanService(beam_search_planner=BeamSearchPlanner())
+>       result = service.run_retrieval_ablation(
+            {"python": 40, "dsa": 10, "projects": 1},
+            GoalState(goal="Python Growth", target_skills={"python": 80}),
+            seed=7,
+        )
+
+backend\tests\test_retrieval_ablation_and_reproducibility.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <backend.services.goal_plan_service.GoalPlanService object at 0x0000020D427C1260>
+current_state = {'dsa': 10, 'projects': 1, 'python': 40}
+goal_state = GoalState(goal='Python Growth', target_skills={'python': 80})
+seed = 7
+
+    def run_retrieval_ablation(self, current_state: Dict[str, int], goal_state: GoalState, seed: int = 7) -> Dict:
+        random.seed(seed)
+        baseline = self.beam_search_planner.search(
+            current_state,
+            goal_state,
+            beam_width=DEFAULT_BEAM_WIDTH,
+            max_depth=DEFAULT_MAX_DEPTH,
+            use_policy=True,
+            use_retrieval=True,
+        )
+        policy_only = self.beam_search_planner.search(
+            current_state,
+            goal_state,
+            beam_width=DEFAULT_BEAM_WIDTH,
+            max_depth=DEFAULT_MAX_DEPTH,
+            use_policy=True,
+            use_retrieval=False,
+        )
+        retrieval_only = self.beam_search_planner.search(
+            current_state,
+            goal_state,
+            beam_width=DEFAULT_BEAM_WIDTH,
+            max_depth=DEFAULT_MAX_DEPTH,
+            use_policy=False,
+            use_retrieval=True,
+        )
+        hybrid = self.beam_search_planner.search(
+            current_state,
+            goal_state,
+            beam_width=DEFAULT_BEAM_WIDTH,
+            max_depth=DEFAULT_MAX_DEPTH,
+            use_policy=True,
+            use_retrieval=True,
+        )
+    
+        experiment_payload = {
+            "random_seed": seed,
+            "retrieval_configuration": {
+                "top_k": 3,
+                "metric": "hybrid",
+>               "weight": self.beam_search_planner.retrieval_weight if self.beam_search_planner.retriever else 0.0,
+            },
+            "planner_configuration": {"beam_width": DEFAULT_BEAM_WIDTH, "max_depth": DEFAULT_MAX_DEPTH},
+            "policy_version": (
+                getattr(self.beam_search_planner.policy, "policy_version", "policy_v1")
+                if self.beam_search_planner.policy
+                else "policy_v1"
+            ),
+            "retrieval_version": (
+                getattr(self.beam_search_planner.retriever, "metric", "retrieval_v1")
+                if self.beam_search_planner.retriever
+                else "retrieval_v1"
+            ),
+            "model_version": "v2",
+            "benchmark_results": {
+                "policy_only": policy_only.get("score", 0.0),
+                "retrieval_only": retrieval_only.get("score", 0.0),
+                "hybrid": hybrid.get("score", 0.0),
+            },
+            "confidence_breakdown": {
+                "policy_only": policy_only.get("confidence_breakdown", {}),
+                "retrieval_only": retrieval_only.get("confidence_breakdown", {}),
+                "hybrid": hybrid.get("confidence_breakdown", {}),
+            },
+        }
+E       AttributeError: 'BeamSearchPlanner' object has no attribute 'retriever'
+
+backend\services\goal_plan_service.py:229: AttributeError
+_ SemanticMemoryTests.test_create_retrieve_update_revision_archive_and_delete _
+
+self = <test_semantic_memory.SemanticMemoryTests testMethod=test_create_retrieve_update_revision_archive_and_delete>
+
+    def test_create_retrieve_update_revision_archive_and_delete(self) -> None:
+        memory = SemanticMemory()
+        stored = memory.store(
+            {
+                "concept": "Backend",
+                "statement": "Learns backend technologies quickly.",
+                "knowledge_type": "skill",
+                "confidence": 0.9,
+                "importance": 0.95,
+                "confidence_source": "Reasoner",
+                "importance_reason": "Repeated Success",
+                "importance_source": "Reflection",
+            }
+        )
+    
+        self.assertEqual(stored["status"], MemoryStatus.ACTIVE.value)
+>       retrieved = memory.retrieve({"query": "backend"})
+
+backend\tests\test_semantic_memory.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <backend.memory.semantic_memory.SemanticMemory object at 0x0000020D43AA7930>
+query = {'query': 'backend'}, top_k = 10
+
+    def retrieve(self, query: Dict[str, Any] | None = None, top_k: int = 10) -> List[Dict[str, Any]]:
+        query = query or {}
+        search_text = query.get("query") or query.get("concept") or ""
+        result = self.retriever.retrieve(search_text, top_k=top_k)
+        self._touch_matches(result["matches"])
+>       self._emit_event("KnowledgeRetrieved", knowledge_ids=[item.knowledge_id for item in result["matches"]])
+E       AttributeError: 'dict' object has no attribute 'knowledge_id'
+
+backend\memory\semantic_memory.py:39: AttributeError
+_________ SemanticMemoryTests.test_manager_integration_and_retrieval __________
+
+self = <test_semantic_memory.SemanticMemoryTests testMethod=test_manager_integration_and_retrieval>
+
+    def test_manager_integration_and_retrieval(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            manager = MemoryManager(registry_path=Path(tmpdir) / "registry.json")
+            stored = manager.store_knowledge(
+                {
+                    "concept": "Programming",
+                    "statement": "The user learns backend technologies quickly.",
+                    "knowledge_type": "skill",
+                }
+            )
+            result = manager.retrieve_knowledge("backend")
+            stats = manager.knowledge_statistics()
+    
+        self.assertEqual(stored["concept"], "Programming")
+>       self.assertEqual(result[0]["concept"], "Programming")
+E       KeyError: 'concept'
+
+backend\tests\test_semantic_memory.py:66: KeyError
+============================== warnings summary ===============================
+backend/tests/test_complete_aura_pipeline.py::CompleteAuraPipelineTests::test_complete_pipeline_regression
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_complete_first_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_fail_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_finish_execution
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_skip_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_start_execution
+backend/tests/test_full_pipeline_integration.py::FullPipelineIntegrationTests::test_goal_to_policy_update_pipeline
+  D:\AURA\backend\services\execution_engine.py:92: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+
+backend/tests/test_complete_aura_pipeline.py::CompleteAuraPipelineTests::test_complete_pipeline_regression
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_complete_first_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_fail_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_finish_execution
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_skip_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_start_execution
+backend/tests/test_full_pipeline_integration.py::FullPipelineIntegrationTests::test_goal_to_policy_update_pipeline
+  D:\AURA\backend\services\execution_engine.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at=datetime.utcnow().isoformat(),
+
+backend/tests/test_complete_aura_pipeline.py::CompleteAuraPipelineTests::test_complete_pipeline_regression
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_complete_first_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_fail_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_finish_execution
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_skip_action
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_start_execution
+backend/tests/test_full_pipeline_integration.py::FullPipelineIntegrationTests::test_goal_to_policy_update_pipeline
+  D:\AURA\backend\services\execution_engine.py:22: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    updated_at=datetime.utcnow().isoformat(),
+
+backend/tests/test_complete_aura_pipeline.py: 3 warnings
+backend/tests/test_execution_engine.py: 12 warnings
+backend/tests/test_full_pipeline_integration.py: 6 warnings
+  D:\AURA\backend\models\execution_state.py:44: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    self.updated_at = datetime.utcnow().isoformat()
+
+backend/tests/test_complete_aura_pipeline.py: 3 warnings
+backend/tests/test_execution_engine.py: 12 warnings
+backend/tests/test_full_pipeline_integration.py: 6 warnings
+  D:\AURA\backend\services\execution_tracker.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "timestamp": datetime.utcnow().isoformat(),
+
+backend/tests/test_complete_aura_pipeline.py::CompleteAuraPipelineTests::test_complete_pipeline_regression
+backend/tests/test_execution_engine.py::ExecutionEngineTests::test_finish_execution
+backend/tests/test_full_pipeline_integration.py::FullPipelineIntegrationTests::test_goal_to_policy_update_pipeline
+  D:\AURA\backend\services\execution_engine.py:83: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    self.execution_state.completed_at = datetime.utcnow().isoformat()
+
+backend/tests/test_complete_aura_pipeline.py::CompleteAuraPipelineTests::test_complete_pipeline_regression
+backend/tests/test_experience_logger.py::ExperienceLoggerTests::test_create_experience
+backend/tests/test_experience_logger.py::ExperienceLoggerTests::test_execution_linked
+backend/tests/test_experience_logger.py::ExperienceLoggerTests::test_experience_stored
+backend/tests/test_experience_logger.py::ExperienceLoggerTests::test_prediction_error
+backend/tests/test_full_pipeline_integration.py::FullPipelineIntegrationTests::test_goal_to_policy_update_pipeline
+  D:\AURA\backend\services\experience_logger.py:33: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    created_at=datetime.utcnow().isoformat(),
+
+backend/tests/test_consolidation_engine.py: 2 warnings
+backend/tests/test_pattern_detector.py: 20 warnings
+  D:\AURA\.venv\Lib\site-packages\pydantic\main.py:263: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+
+backend/tests/test_policy_dataset.py::PolicyDatasetTests::test_builds_policy_samples_from_experience
+backend/tests/test_policy_training.py::PolicyTrainingTests::test_trains_and_persists_policy_artifact
+  D:\AURA\backend\models\experience_log.py:49: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    "created_at": self.created_at or datetime.utcnow().isoformat(),
+
+backend/tests/test_replay_and_evaluation.py::ReplayAndEvaluationTests::test_replay_and_evaluation_helpers
+  D:\AURA\backend\tests\test_replay_and_evaluation.py:15: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    timestamp=datetime.utcnow(),
+
+backend/tests/test_replay_and_evaluation.py::ReplayAndEvaluationTests::test_replay_and_evaluation_helpers
+  D:\AURA\backend\services\experience_replay.py:26: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    cutoff = datetime.utcnow() - timedelta(days=days)
+
+backend/tests/test_sprint6_modules.py: 3575 warnings
+  D:\AURA\.venv\Lib\site-packages\sklearn\utils\parallel.py:144: UserWarning: `sklearn.utils.parallel.delayed` should be used with `sklearn.utils.parallel.Parallel` to make it possible to propagate the scikit-learn configuration of the current thread to the joblib workers.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED backend/tests/test_reasoning_modules.py::ReasoningModuleTests::test_reasoning_metadata_is_exposed_by_planner_and_service
+FAILED backend/tests/test_replay_and_evaluation.py::ReplayAndEvaluationTests::test_replay_and_evaluation_helpers
+FAILED backend/tests/test_retrieval_ablation_and_reproducibility.py::AblationAndReproducibilityTests::test_run_retrieval_ablation_returns_policy_retrieval_and_hybrid
+FAILED backend/tests/test_semantic_memory.py::SemanticMemoryTests::test_create_retrieve_update_revision_archive_and_delete
+FAILED backend/tests/test_semantic_memory.py::SemanticMemoryTests::test_manager_integration_and_retrieval
+5 failed, 214 passed, 3673 warnings in 21.21s

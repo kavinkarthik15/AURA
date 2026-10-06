@@ -1,0 +1,20 @@
+{
+  "experiment_id": "research_17_1_a_ablation_seed_42",
+  "timestamp": "2026-08-12 16:14:08.264656",
+  "dataset_id": "research_benchmark_v1_seed_42",
+  "seed": 42,
+  "condition_a": {
+    "condition_name": "Baseline",
+    "condition_description": "No calibration; predictions from default simulation",
+    "held_out_mae": 5.7875,
+    "training_mae": 5.7875
+  },
+  "condition_b": {
+    "condition_name": "Learning",
+    "condition_description": "Calibration enabled (learning_rate=0.007)",
+    "held_out_mae": 5.4125,
+    "training_mae": 5.7875
+  },
+  "absolute_improvement": 0.375,
+  "improvement_percent": 6.479481641468683
+}

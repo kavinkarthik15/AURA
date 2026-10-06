@@ -1,0 +1,2432 @@
+[
+  {
+    "candidate_id": "KGC-DF7AE9B521EF",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D88C6C8BD84B",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-8101DB263762",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-045FD4872392",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A68F04C0715F",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-64A427D2955A",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5DCC7242BDDD",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9FA8A5D1DCD3",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F9D9C85F8D8F",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-DA15A773FB76",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-FC093BAA81ED",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-99578A91D2DB",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7768CB8FE610",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0483E8466DB3",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5EA2177E3649",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0583F31B4722",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E6549166C9F4",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C5D589C6C365",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D536FA574EBA",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9684AB3FAA79",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D2653B2EAC00",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-376B4CD0209D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-CAAA5C8F87AD",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-081986B6D5FB",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-147696ACEEDE",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-92107D7D1AE1",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-54E14DB9CD65",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-37C49FB76FE2",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-35654DD2D7D6",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-185D52A37D23",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-940C1B471917",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-23EBB1F0864E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E0FC68CEAEEA",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-22215FA92E00",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3C1C6C5749E4",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-AA4571886C3B",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5D00D136CF4B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-94F7DBED6671",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-46379AC6084F",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3B6E7166C944",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-85F30241F49B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-585AA76E9E22",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F1EF78D16E8B",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6597FBF55A8C",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-926B14FE9A9C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-69432ED0BA0D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C57DFE44FDC1",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-EBD3D3D1B766",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-8A031EF25690",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-83FDBE3D51BA",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E2E3C3A95679",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A8484EEEC052",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-384D2A6EA404",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0B6878941AF3",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-4701A625AF61",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BAE5C0BCD854",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-90EDD691DE18",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6B6C5F5001BC",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C756B8F5C04B",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B574EF07CF33",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5AEB3B321400",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2AFAEA5BDFEC",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2F6F92ED694F",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-43FD9F5AFD5A",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B6DA7BB6E474",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0C597947664E",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0150BCC88DB1",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F63A364A2BD0",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6B757D250BEB",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-80875BA7CD0C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B6C41843EBE8",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-31DF45B1C9E0",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F97EA3226D71",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F172853937C6",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-4F9B909146C5",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-63F113ADD5F5",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F0A4CB46A8B8",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B06FE739D549",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-39EF9AECD644",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BB5B2F8D986E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D28802629D68",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-DE20284D160D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E5228E4DB1E2",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-FF87D89CF931",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-437F63FDCA4E",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-25A638E335F9",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-427F13C572F5",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-004BF863B51E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C392C58756AC",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9560B82FB58F",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-618F4E8265E3",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0829B9AD2F07",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-96CC3635DC28",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-50948643868C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-70C0AA2103FF",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2966B57CF121",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-EFE61A31D41D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-11B8A79DAA7B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-201B7B9B2F11",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-146C0B25142D",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-15F27C36D1EA",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6B0E2E29855A",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7D1423BAFE2A",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-252EE1BEABC4",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-655B38E66440",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-22B280FB49ED",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1957CEE58CAD",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-AB84DB913C9F",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-41225ED8AE97",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-4385B21EAB0F",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-39B53A581B01",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5F8E7A1F07F9",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-30449453E416",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A9889753979B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-492B138E85C9",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BD4FE452E821",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-602B31E5CC0B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C61C11BA6FEC",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-ABEEE0E54918",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7D5EF49C4EA5",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9F3581942317",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5BEDA1E21314",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5E4147780F64",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1A318FC0FECA",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-30B32A06980B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1FFBD1D3626E",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BD9B6A83B3F7",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1D7DE8DC3533",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-244317A2C409",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-74C91FF41092",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-31A245D3A0D9",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-900089FBC7A7",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D7908627653D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7F25F135E49B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9E7F5535FDA8",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B091742B8816",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-CDF897D500B9",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F5DF8D85DEA3",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-59DDC205EBCB",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F386D0B6981D",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-492B31C350E8",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-8CF923F45EBD",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-242BCF97A7DA",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F6C74BAAA2CB",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D104DAABF997",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1511BCB62447",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-61FE85EA7C0F",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2FC887F8E09E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1FB625CE6F6A",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6C2A1EBF56EF",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-890D1D1C4A19",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-72912DEB0239",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-27CD7FB0556D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-99FB7B2626D0",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-681208145E0F",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0E31365B4E08",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-404AC0EB6187",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A3ED3B15A8A1",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-263466A503F7",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-223AC1045FFE",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F06EC27885F3",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0A3D8DB9992F",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9917A0DF1EDE",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-609AE7A9D190",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-227CCD14F379",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3CBB06AF834C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E73C1139893C",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3916E51B3841",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E80C78A8B5A3",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-44B274079DD1",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-248E502E7442",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-762C66AA7521",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-85F11D304B25",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-728ED59C4341",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7A4640AEDFB3",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-C37945DBD2F1",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F3869152D64F",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-585622A6A08A",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-620CDC28D78E",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-21F899B425E1",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D3A35FC9FC59",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2130F18D553C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-EF73D6029A19",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BF6D02ECF86E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3176A6844885",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-5337EB85455E",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-41A81812F204",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D1525A632D9E",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-8C86C4D49897",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-EADFB08BF26E",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3F8686B608A7",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-22113B7EC564",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3A2448DEE86C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6FC107ABBF95",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-FBF0130ECA84",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A60D365EF89B",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-03E631246861",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-771DB2D633B5",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-7820290D0213",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-46B340620089",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-ECF187EF5EAD",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-EA48C3194AA5",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-68A2B33BD99A",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-35A9BF059640",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-8E7F3FE57A10",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-769FB57BEE02",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-CA6EBBEFE008",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9C107FBAC1E2",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-AE55355CBC54",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-20E931666A7C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-389C7DC287AE",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A790629FA318",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-01869D6AB537",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-9077597297C8",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-502EA0869ADF",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E33D09154F86",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-3E76B654376B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-E94AFE483C90",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-DF18359DEA63",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BAD8A6F63242",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-1160618382C8",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-905ADC998411",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-739B29A59421",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-556C01188976",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F06C0C422C48",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-D22278716C9D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-BC6249A9DF80",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-B6FD204DDB34",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-0287DD504354",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-573F39EFE558",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-AD07BF01903C",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-F1DFF87843AD",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-6A570B63D77C",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  },
+  {
+    "candidate_id": "KGC-2FE90929C93B",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.8,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "exp_1",
+      "exp_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-27C4BF052FEC",
+    "knowledge": "A recurring habit has been identified in the observed experiences.",
+    "confidence": 0.8,
+    "generated_from": "Habit",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-43ADC7AE6C33",
+    "knowledge": "Repeated failures indicate a recurring challenge in this context.",
+    "confidence": 0.75,
+    "generated_from": "Repeated Failure",
+    "evidence": [
+      "ep_1",
+      "ep_2"
+    ]
+  },
+  {
+    "candidate_id": "KGC-A15B9F35FF7D",
+    "knowledge": "Successful outcomes have been repeatedly observed in this context.",
+    "confidence": 0.81,
+    "generated_from": "Repeated Success",
+    "evidence": [
+      "ep_1",
+      "ep_2",
+      "ep_3"
+    ]
+  }
+]

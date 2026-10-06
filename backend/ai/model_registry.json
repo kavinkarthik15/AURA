@@ -415,5 +415,3725 @@
             "r2": 1.0
         },
         "created_at": "2026-07-26T05:10:53.348719+00:00"
+    },
+    {
+        "model_version": "v25",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v24",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:56:36.033617+00:00"
+    },
+    {
+        "model_version": "v26",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v25",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:56:36.565718+00:00"
+    },
+    {
+        "model_version": "v27",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v26",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:56:37.903203+00:00"
+    },
+    {
+        "model_version": "v28",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v27",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:57:09.399545+00:00"
+    },
+    {
+        "model_version": "v29",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v28",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:57:09.978904+00:00"
+    },
+    {
+        "model_version": "v30",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v29",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:57:11.247687+00:00"
+    },
+    {
+        "model_version": "v31",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v30",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:58:19.653698+00:00"
+    },
+    {
+        "model_version": "v32",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v31",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:58:20.223713+00:00"
+    },
+    {
+        "model_version": "v33",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v32",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T03:58:21.486305+00:00"
+    },
+    {
+        "model_version": "v34",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v33",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:08:30.109770+00:00"
+    },
+    {
+        "model_version": "v35",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v34",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:08:30.605725+00:00"
+    },
+    {
+        "model_version": "v36",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v35",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:08:31.494191+00:00"
+    },
+    {
+        "model_version": "v37",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v36",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:08:59.746605+00:00"
+    },
+    {
+        "model_version": "v38",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v37",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:09:00.202438+00:00"
+    },
+    {
+        "model_version": "v39",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v38",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:09:01.076560+00:00"
+    },
+    {
+        "model_version": "v40",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v39",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:09:23.611556+00:00"
+    },
+    {
+        "model_version": "v41",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v40",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:09:24.114937+00:00"
+    },
+    {
+        "model_version": "v42",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v41",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-07-31T10:09:25.016905+00:00"
+    },
+    {
+        "model_version": "v43",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v42",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:40:27.759059+00:00"
+    },
+    {
+        "model_version": "v44",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v43",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:40:28.063402+00:00"
+    },
+    {
+        "model_version": "v45",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v44",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:40:28.658860+00:00"
+    },
+    {
+        "model_version": "v46",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v45",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:41:33.864253+00:00"
+    },
+    {
+        "model_version": "v47",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v46",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:41:34.186213+00:00"
+    },
+    {
+        "model_version": "v48",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v47",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:41:34.761922+00:00"
+    },
+    {
+        "model_version": "v49",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v48",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:09.988655+00:00"
+    },
+    {
+        "model_version": "v50",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v49",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:10.294473+00:00"
+    },
+    {
+        "model_version": "v51",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v50",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:10.855606+00:00"
+    },
+    {
+        "model_version": "v52",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v51",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:45.400784+00:00"
+    },
+    {
+        "model_version": "v53",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v52",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:45.695813+00:00"
+    },
+    {
+        "model_version": "v54",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v53",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:42:46.273765+00:00"
+    },
+    {
+        "model_version": "v55",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v54",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:45:02.331568+00:00"
+    },
+    {
+        "model_version": "v56",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v55",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:45:02.828948+00:00"
+    },
+    {
+        "model_version": "v57",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v56",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:45:03.748669+00:00"
+    },
+    {
+        "model_version": "v58",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v57",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:46:48.402795+00:00"
+    },
+    {
+        "model_version": "v59",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v58",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:46:48.871649+00:00"
+    },
+    {
+        "model_version": "v60",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v59",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:46:49.765154+00:00"
+    },
+    {
+        "model_version": "v61",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v60",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:56:09.854034+00:00"
+    },
+    {
+        "model_version": "v62",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v61",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:56:10.320730+00:00"
+    },
+    {
+        "model_version": "v63",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v62",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:56:11.215577+00:00"
+    },
+    {
+        "model_version": "v64",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v63",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:57:17.295230+00:00"
+    },
+    {
+        "model_version": "v65",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v64",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:57:17.776119+00:00"
+    },
+    {
+        "model_version": "v66",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v65",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:57:18.662948+00:00"
+    },
+    {
+        "model_version": "v67",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v66",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:58:20.321992+00:00"
+    },
+    {
+        "model_version": "v68",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v67",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:58:20.970808+00:00"
+    },
+    {
+        "model_version": "v69",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v68",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T16:58:21.912013+00:00"
+    },
+    {
+        "model_version": "v70",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v69",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:04:25.169279+00:00"
+    },
+    {
+        "model_version": "v71",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v70",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:04:25.651954+00:00"
+    },
+    {
+        "model_version": "v72",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v71",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:04:26.554782+00:00"
+    },
+    {
+        "model_version": "v73",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v72",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:10:53.313263+00:00"
+    },
+    {
+        "model_version": "v74",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v73",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:10:53.783944+00:00"
+    },
+    {
+        "model_version": "v75",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v74",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:10:54.669479+00:00"
+    },
+    {
+        "model_version": "v76",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v75",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:11:23.657625+00:00"
+    },
+    {
+        "model_version": "v77",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v76",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:11:24.156023+00:00"
+    },
+    {
+        "model_version": "v78",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v77",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:11:25.066300+00:00"
+    },
+    {
+        "model_version": "v79",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v78",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:12:21.299090+00:00"
+    },
+    {
+        "model_version": "v80",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v79",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:12:21.778557+00:00"
+    },
+    {
+        "model_version": "v81",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v80",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:12:22.716083+00:00"
+    },
+    {
+        "model_version": "v82",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v81",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:20.679293+00:00"
+    },
+    {
+        "model_version": "v83",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v82",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:21.180631+00:00"
+    },
+    {
+        "model_version": "v84",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v83",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:22.113320+00:00"
+    },
+    {
+        "model_version": "v85",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v84",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:56.640074+00:00"
+    },
+    {
+        "model_version": "v86",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v85",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:57.129261+00:00"
+    },
+    {
+        "model_version": "v87",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v86",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:14:58.052729+00:00"
+    },
+    {
+        "model_version": "v88",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v87",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:17:31.043157+00:00"
+    },
+    {
+        "model_version": "v89",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v88",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:17:31.518445+00:00"
+    },
+    {
+        "model_version": "v90",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v89",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-10T17:17:32.443659+00:00"
+    },
+    {
+        "model_version": "v91",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v90",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:08:26.008057+00:00"
+    },
+    {
+        "model_version": "v92",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v91",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:08:26.360451+00:00"
+    },
+    {
+        "model_version": "v93",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v92",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:08:27.041230+00:00"
+    },
+    {
+        "model_version": "v94",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v93",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:12:00.398988+00:00"
+    },
+    {
+        "model_version": "v95",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v94",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:12:00.719978+00:00"
+    },
+    {
+        "model_version": "v96",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v95",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T08:12:01.323736+00:00"
+    },
+    {
+        "model_version": "v97",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v96",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T09:01:52.361293+00:00"
+    },
+    {
+        "model_version": "v98",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v97",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T09:01:52.702403+00:00"
+    },
+    {
+        "model_version": "v99",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v98",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T09:01:53.333280+00:00"
+    },
+    {
+        "model_version": "v100",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v99",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:06:09.081241+00:00"
+    },
+    {
+        "model_version": "v101",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v100",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:06:09.427892+00:00"
+    },
+    {
+        "model_version": "v102",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v101",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:06:10.074450+00:00"
+    },
+    {
+        "model_version": "v103",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v102",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:29:49.501696+00:00"
+    },
+    {
+        "model_version": "v104",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v103",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:29:49.810944+00:00"
+    },
+    {
+        "model_version": "v105",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v104",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T10:29:50.395912+00:00"
+    },
+    {
+        "model_version": "v106",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v105",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:04:59.753574+00:00"
+    },
+    {
+        "model_version": "v107",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v106",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:05:00.092594+00:00"
+    },
+    {
+        "model_version": "v108",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v107",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:05:00.721528+00:00"
+    },
+    {
+        "model_version": "v109",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v108",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:24:03.727729+00:00"
+    },
+    {
+        "model_version": "v110",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v109",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:24:04.072842+00:00"
+    },
+    {
+        "model_version": "v111",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v110",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:24:04.706766+00:00"
+    },
+    {
+        "model_version": "v112",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v111",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:29:45.853076+00:00"
+    },
+    {
+        "model_version": "v113",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v112",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:29:46.218911+00:00"
+    },
+    {
+        "model_version": "v114",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v113",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:29:46.787807+00:00"
+    },
+    {
+        "model_version": "v115",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v114",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:37:48.992666+00:00"
+    },
+    {
+        "model_version": "v116",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v115",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:37:49.342689+00:00"
+    },
+    {
+        "model_version": "v117",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v116",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:37:49.938620+00:00"
+    },
+    {
+        "model_version": "v118",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v117",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:52:40.453497+00:00"
+    },
+    {
+        "model_version": "v119",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v118",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:52:40.775878+00:00"
+    },
+    {
+        "model_version": "v120",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v119",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:52:41.381553+00:00"
+    },
+    {
+        "model_version": "v121",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v120",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:58:15.044514+00:00"
+    },
+    {
+        "model_version": "v122",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v121",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:58:15.356808+00:00"
+    },
+    {
+        "model_version": "v123",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v122",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T11:58:15.961184+00:00"
+    },
+    {
+        "model_version": "v124",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v123",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:06:53.708986+00:00"
+    },
+    {
+        "model_version": "v125",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v124",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:06:54.075505+00:00"
+    },
+    {
+        "model_version": "v126",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v125",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:06:54.674311+00:00"
+    },
+    {
+        "model_version": "v127",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v126",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:18:00.565501+00:00"
+    },
+    {
+        "model_version": "v128",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v127",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:18:00.885308+00:00"
+    },
+    {
+        "model_version": "v129",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v128",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:18:01.489662+00:00"
+    },
+    {
+        "model_version": "v130",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v129",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:24:53.887490+00:00"
+    },
+    {
+        "model_version": "v131",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v130",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:24:54.268081+00:00"
+    },
+    {
+        "model_version": "v132",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v131",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:24:54.884932+00:00"
+    },
+    {
+        "model_version": "v133",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v132",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:25:39.348012+00:00"
+    },
+    {
+        "model_version": "v134",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v133",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:25:39.684969+00:00"
+    },
+    {
+        "model_version": "v135",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v134",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:25:40.295293+00:00"
+    },
+    {
+        "model_version": "v136",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v135",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:28:36.153653+00:00"
+    },
+    {
+        "model_version": "v137",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v136",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:28:36.479817+00:00"
+    },
+    {
+        "model_version": "v138",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v137",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:28:37.094234+00:00"
+    },
+    {
+        "model_version": "v139",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v138",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:43:42.694192+00:00"
+    },
+    {
+        "model_version": "v140",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v139",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:43:43.029934+00:00"
+    },
+    {
+        "model_version": "v141",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v140",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T12:43:43.709897+00:00"
+    },
+    {
+        "model_version": "v142",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v141",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T13:24:11.003584+00:00"
+    },
+    {
+        "model_version": "v143",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v142",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T13:24:11.585326+00:00"
+    },
+    {
+        "model_version": "v144",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v143",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T13:24:12.547935+00:00"
+    },
+    {
+        "model_version": "v145",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v144",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:04:47.854509+00:00"
+    },
+    {
+        "model_version": "v146",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v145",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:04:48.559353+00:00"
+    },
+    {
+        "model_version": "v147",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v146",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:04:49.861225+00:00"
+    },
+    {
+        "model_version": "v148",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v147",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:08:03.838466+00:00"
+    },
+    {
+        "model_version": "v149",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v148",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:08:04.349002+00:00"
+    },
+    {
+        "model_version": "v150",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v149",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:08:05.311534+00:00"
+    },
+    {
+        "model_version": "v151",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v150",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:16:58.683543+00:00"
+    },
+    {
+        "model_version": "v152",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v151",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:16:59.031091+00:00"
+    },
+    {
+        "model_version": "v153",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v152",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:16:59.667839+00:00"
+    },
+    {
+        "model_version": "v154",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v153",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:27:56.518576+00:00"
+    },
+    {
+        "model_version": "v155",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v154",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:27:57.009442+00:00"
+    },
+    {
+        "model_version": "v156",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v155",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:27:57.910090+00:00"
+    },
+    {
+        "model_version": "v157",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v156",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:31:24.739052+00:00"
+    },
+    {
+        "model_version": "v158",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v157",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:31:25.079393+00:00"
+    },
+    {
+        "model_version": "v159",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v158",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:31:25.705032+00:00"
+    },
+    {
+        "model_version": "v160",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v159",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:33:42.504831+00:00"
+    },
+    {
+        "model_version": "v161",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v160",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:33:42.878622+00:00"
+    },
+    {
+        "model_version": "v162",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v161",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-11T17:33:43.548765+00:00"
+    },
+    {
+        "model_version": "v163",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v162",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:10:43.163254+00:00"
+    },
+    {
+        "model_version": "v164",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v163",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:10:43.760109+00:00"
+    },
+    {
+        "model_version": "v165",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v164",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:10:44.875161+00:00"
+    },
+    {
+        "model_version": "v166",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v165",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:55:04.399003+00:00"
+    },
+    {
+        "model_version": "v167",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v166",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:55:04.894533+00:00"
+    },
+    {
+        "model_version": "v168",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v167",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T09:55:05.927223+00:00"
+    },
+    {
+        "model_version": "v169",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v168",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:01:46.841611+00:00"
+    },
+    {
+        "model_version": "v170",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v169",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:01:47.150042+00:00"
+    },
+    {
+        "model_version": "v171",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v170",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:01:47.730087+00:00"
+    },
+    {
+        "model_version": "v172",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v171",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:03:42.682932+00:00"
+    },
+    {
+        "model_version": "v173",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v172",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:03:42.994969+00:00"
+    },
+    {
+        "model_version": "v174",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v173",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T15:03:43.571344+00:00"
+    },
+    {
+        "model_version": "v175",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v174",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:14:21.953012+00:00"
+    },
+    {
+        "model_version": "v176",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v175",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:14:22.364657+00:00"
+    },
+    {
+        "model_version": "v177",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v176",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:14:23.157769+00:00"
+    },
+    {
+        "model_version": "v178",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v177",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:18:53.215135+00:00"
+    },
+    {
+        "model_version": "v179",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v178",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:18:53.672232+00:00"
+    },
+    {
+        "model_version": "v180",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v179",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:18:54.521810+00:00"
+    },
+    {
+        "model_version": "v181",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v180",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:34:28.631326+00:00"
+    },
+    {
+        "model_version": "v182",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v181",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:34:29.099019+00:00"
+    },
+    {
+        "model_version": "v183",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v182",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:34:29.972376+00:00"
+    },
+    {
+        "model_version": "v184",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v183",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:45:32.282759+00:00"
+    },
+    {
+        "model_version": "v185",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v184",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:45:32.578954+00:00"
+    },
+    {
+        "model_version": "v186",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v185",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:45:33.155254+00:00"
+    },
+    {
+        "model_version": "v187",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v186",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:01.114239+00:00"
+    },
+    {
+        "model_version": "v188",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v187",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:01.420174+00:00"
+    },
+    {
+        "model_version": "v189",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v188",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:02.004943+00:00"
+    },
+    {
+        "model_version": "v190",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v189",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:24.493287+00:00"
+    },
+    {
+        "model_version": "v191",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v190",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:24.814246+00:00"
+    },
+    {
+        "model_version": "v192",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v191",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-12T16:46:25.405288+00:00"
+    },
+    {
+        "model_version": "v193",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v192",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:33:44.945994+00:00"
+    },
+    {
+        "model_version": "v194",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v193",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:33:45.270150+00:00"
+    },
+    {
+        "model_version": "v195",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v194",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:33:45.834982+00:00"
+    },
+    {
+        "model_version": "v196",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v195",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:13.501951+00:00"
+    },
+    {
+        "model_version": "v197",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v196",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:13.810315+00:00"
+    },
+    {
+        "model_version": "v198",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v197",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:14.378751+00:00"
+    },
+    {
+        "model_version": "v199",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v198",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:42.075197+00:00"
+    },
+    {
+        "model_version": "v200",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v199",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:42.386859+00:00"
+    },
+    {
+        "model_version": "v201",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v200",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:34:42.948830+00:00"
+    },
+    {
+        "model_version": "v202",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v201",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:35:53.500400+00:00"
+    },
+    {
+        "model_version": "v203",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v202",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:35:53.787550+00:00"
+    },
+    {
+        "model_version": "v204",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v203",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:35:54.316349+00:00"
+    },
+    {
+        "model_version": "v205",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v204",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:16.779609+00:00"
+    },
+    {
+        "model_version": "v206",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v205",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:17.096386+00:00"
+    },
+    {
+        "model_version": "v207",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v206",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:17.645151+00:00"
+    },
+    {
+        "model_version": "v208",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "9ccc8fc465573595b0996cd8b5002ed5398144ab03f68881a2643fd75481d3b4",
+        "dataset_version": "v1",
+        "parent_model": "v207",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:39.612185+00:00"
+    },
+    {
+        "model_version": "v209",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "0af8731be120befc54b7433ff1ee5f9ccd99e7a2a02360767cf4b5195c620b5e",
+        "dataset_version": "v1",
+        "parent_model": "v208",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:39.968297+00:00"
+    },
+    {
+        "model_version": "v210",
+        "algorithm": "RandomForestRegressor",
+        "dataset_size": 1,
+        "mae": 0.0,
+        "mse": 0.0,
+        "r2": 1.0,
+        "training_data_hash": "3bbfa87f9985d4ffbc34f267582a356162ddf716ef52f9880feaa9a23b761a23",
+        "dataset_version": "v1",
+        "parent_model": "v209",
+        "training_source": "experience_replay",
+        "experience_count": 1,
+        "accepted": false,
+        "benchmark": {
+            "mae": 0.0,
+            "mse": 0.0,
+            "r2": 1.0
+        },
+        "created_at": "2026-08-13T04:36:40.532724+00:00"
     }
 ]

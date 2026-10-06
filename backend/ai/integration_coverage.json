@@ -2,7 +2,9 @@
   "covered_paths": [
     "planner",
     "retriever",
-    "reasoner"
+    "reasoner",
+    "policy_update",
+    "continual_learning"
   ],
   "paths": [
     "planner",

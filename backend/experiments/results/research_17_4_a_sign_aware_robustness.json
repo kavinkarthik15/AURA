@@ -1,0 +1,91 @@
+{
+  "experiment_name": "17.4A: Multi-Seed Sign-Aware Calibration Robustness",
+  "timestamp": "2026-08-13T05:09:11.182867+00:00",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "baseline_mae": 5.7875,
+      "original_mae": 5.4125,
+      "sign_aware_mae": 5.3125,
+      "original_improvement": 0.375,
+      "sign_aware_improvement": 0.47499999999999964,
+      "original_direction_accuracy": 0.75,
+      "sign_aware_direction_accuracy": 0.75,
+      "original_negative_bias_accuracy": 0.5,
+      "sign_aware_negative_bias_accuracy": 0.5,
+      "sign_aware_wins": true
+    },
+    "123": {
+      "seed": 123,
+      "baseline_mae": 5.7875,
+      "original_mae": 5.075,
+      "sign_aware_mae": 4.975,
+      "original_improvement": 0.7124999999999995,
+      "sign_aware_improvement": 0.8125,
+      "original_direction_accuracy": 0.775,
+      "sign_aware_direction_accuracy": 0.775,
+      "original_negative_bias_accuracy": 0.60415,
+      "sign_aware_negative_bias_accuracy": 0.60415,
+      "sign_aware_wins": true
+    },
+    "456": {
+      "seed": 456,
+      "baseline_mae": 5.7875,
+      "original_mae": 5.25,
+      "sign_aware_mae": 5.35,
+      "original_improvement": 0.5374999999999996,
+      "sign_aware_improvement": 0.4375,
+      "original_direction_accuracy": 0.7875,
+      "sign_aware_direction_accuracy": 0.7875,
+      "original_negative_bias_accuracy": 0.54165,
+      "sign_aware_negative_bias_accuracy": 0.54165,
+      "sign_aware_wins": false
+    },
+    "789": {
+      "seed": 789,
+      "baseline_mae": 5.7875,
+      "original_mae": 4.825,
+      "sign_aware_mae": 4.975,
+      "original_improvement": 0.9624999999999995,
+      "sign_aware_improvement": 0.8125,
+      "original_direction_accuracy": 0.8,
+      "sign_aware_direction_accuracy": 0.625,
+      "original_negative_bias_accuracy": 0.70835,
+      "sign_aware_negative_bias_accuracy": 0.54165,
+      "sign_aware_wins": false
+    },
+    "999": {
+      "seed": 999,
+      "baseline_mae": 5.7875,
+      "original_mae": 4.5875,
+      "sign_aware_mae": 4.7125,
+      "original_improvement": 1.1999999999999993,
+      "sign_aware_improvement": 1.0749999999999993,
+      "original_direction_accuracy": 0.8625,
+      "sign_aware_direction_accuracy": 0.6625,
+      "original_negative_bias_accuracy": 0.66665,
+      "sign_aware_negative_bias_accuracy": 0.54165,
+      "sign_aware_wins": false
+    }
+  },
+  "statistics": {
+    "mean_original_improvement": 0.7574999999999996,
+    "mean_sign_aware_improvement": 0.7224999999999998,
+    "mean_improvement_delta": -0.03499999999999979,
+    "median_improvement_delta": -0.09999999999999964,
+    "min_improvement_delta": -0.14999999999999947,
+    "max_improvement_delta": 0.10000000000000053,
+    "std_dev_improvement_delta": 0.11135528725660034,
+    "sign_aware_win_count": 2,
+    "sign_aware_win_rate": 0.4,
+    "all_seeds_no_regression": false
+  },
+  "success_criterion_met": false
+}

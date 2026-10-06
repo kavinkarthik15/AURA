@@ -1,0 +1,406 @@
+{
+  "analysis_date": "2026-08-13T19:26:22.100647",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 80,
+      "matrix": {
+        "motivation": {
+          "dimension": "motivation",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "motivation: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "goals": {
+          "dimension": "goals",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "goals: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "behavior": {
+          "dimension": "behavior",
+          "existing_parameter": "transition_probability_bias (conceptual), expected_state_bias (indirect)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "behavior: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        }
+      },
+      "elapsed_seconds": 13.293220599996857,
+      "prediction_requests": 66240,
+      "prediction_calls": 40480,
+      "prediction_cache_hits": 25760,
+      "prediction_cache_hit_rate": 0.3888888888888889
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 80,
+      "matrix": {
+        "motivation": {
+          "dimension": "motivation",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "motivation: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "goals": {
+          "dimension": "goals",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "goals: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "behavior": {
+          "dimension": "behavior",
+          "existing_parameter": "transition_probability_bias (conceptual), expected_state_bias (indirect)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "behavior: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        }
+      },
+      "elapsed_seconds": 14.51542559999507,
+      "prediction_requests": 66240,
+      "prediction_calls": 40480,
+      "prediction_cache_hits": 25760,
+      "prediction_cache_hit_rate": 0.3888888888888889
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 80,
+      "matrix": {
+        "motivation": {
+          "dimension": "motivation",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "motivation: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "goals": {
+          "dimension": "goals",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "goals: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "behavior": {
+          "dimension": "behavior",
+          "existing_parameter": "transition_probability_bias (conceptual), expected_state_bias (indirect)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "behavior: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        }
+      },
+      "elapsed_seconds": 14.415964800005895,
+      "prediction_requests": 66240,
+      "prediction_calls": 40480,
+      "prediction_cache_hits": 25760,
+      "prediction_cache_hit_rate": 0.3888888888888889
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 80,
+      "matrix": {
+        "motivation": {
+          "dimension": "motivation",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "motivation: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "goals": {
+          "dimension": "goals",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "goals: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "behavior": {
+          "dimension": "behavior",
+          "existing_parameter": "transition_probability_bias (conceptual), expected_state_bias (indirect)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "behavior: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        }
+      },
+      "elapsed_seconds": 14.643930099999125,
+      "prediction_requests": 66240,
+      "prediction_calls": 40480,
+      "prediction_cache_hits": 25760,
+      "prediction_cache_hit_rate": 0.3888888888888889
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 80,
+      "matrix": {
+        "motivation": {
+          "dimension": "motivation",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "motivation: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "goals": {
+          "dimension": "goals",
+          "existing_parameter": "expected_state_bias (indirect proxy only)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "goals: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        },
+        "behavior": {
+          "dimension": "behavior",
+          "existing_parameter": "transition_probability_bias (conceptual), expected_state_bias (indirect)",
+          "can_influence_prediction": false,
+          "directly_representable": false,
+          "classification": "not_representable",
+          "prediction_sensitivity": 0.0,
+          "mae_sensitivity": 0.0,
+          "objective_delta": 0.0,
+          "jacobian_by_parameter": {
+            "expected_state_bias": 1.0,
+            "transition_probability_bias": 0.0,
+            "risk_bias": 0.0,
+            "uncertainty": 0.0,
+            "confidence": 0.0
+          },
+          "jacobian_delta_norm": 0.0,
+          "effect_distinguishable_from_expected_state_bias": false,
+          "expected_state_bias_equivalence_rmse": 0.0,
+          "equivalent_parameter_settings_count": 81,
+          "unique_prediction_signatures": 3,
+          "evidence": "behavior: pred_sens=0.000000, mae_sens=0.000000, objective_delta=0.000000; jac_expected_state_bias=1.000000, jac_transition_probability_bias=0.000000, jac_risk_bias=0.000000; equivalence_rmse=0.000000, fitted_bias={'python': 0.0, 'dsa': 0.0, 'machine_learning': 0.0, 'projects': 0.0}; equivalent_settings=81, unique_signatures=3."
+        }
+      },
+      "elapsed_seconds": 14.357442300002731,
+      "prediction_requests": 66240,
+      "prediction_calls": 40480,
+      "prediction_cache_hits": 25760,
+      "prediction_cache_hit_rate": 0.3888888888888889
+    }
+  }
+}

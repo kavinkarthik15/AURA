@@ -1,0 +1,2135 @@
+{
+  "analysis_date": "2026-08-13T19:45:50.163214",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "runtime_seconds": 0.04031079999549547,
+      "model_results": {
+        "baseline": {
+          "model": "baseline",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 5.510585937500001,
+          "heldout_mae": 5.716015625000002,
+          "train_rmse": 6.787015837934594,
+          "heldout_rmse": 7.087274715334875,
+          "train_r2": 0.8817271753835564,
+          "heldout_r2": 0.843461196857271,
+          "delta_mae_vs_baseline": 0.0,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_r2_vs_baseline": 0.0,
+          "prediction_delta_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 3.228125
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "M": {
+          "model": "M",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.390722656250001,
+          "heldout_mae": 5.787656250000002,
+          "train_rmse": 6.573698035305168,
+          "heldout_rmse": 6.942305908567054,
+          "train_r2": 0.891906168191038,
+          "heldout_r2": 0.8519964587906971,
+          "delta_mae_vs_baseline": -0.07164062500000057,
+          "delta_rmse_vs_baseline": 0.14496880676782098,
+          "delta_r2_vs_baseline": 0.00853526193342613,
+          "prediction_delta_vs_baseline": 1.1937500000000008,
+          "coefficients": {
+            "beta_0": 0.8406249999999992,
+            "beta_motivation": 4.775000000000001
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.954999999999999,
+              "mae_delta": 0.20749999999999869
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "G": {
+          "model": "G",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.919002146824873,
+          "heldout_mae": 4.986617199242259,
+          "train_rmse": 6.299573653165752,
+          "heldout_rmse": 6.295815261289423,
+          "train_r2": 0.9045094789141689,
+          "heldout_r2": 0.8879123128595485,
+          "delta_mae_vs_baseline": 0.7293984257577426,
+          "delta_rmse_vs_baseline": 0.7914594540454516,
+          "delta_r2_vs_baseline": 0.04445111600227758,
+          "prediction_delta_vs_baseline": 1.773285084924392,
+          "coefficients": {
+            "beta_0": 9.180819151378207,
+            "beta_goals": -14.825791182032072
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 3.706447795508017,
+              "mae_delta": 0.023936750668200446
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "B": {
+          "model": "B",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.47319367858092,
+          "heldout_mae": 5.65237842147223,
+          "train_rmse": 6.767275161604955,
+          "heldout_rmse": 7.002207432780298,
+          "train_r2": 0.8826827990040444,
+          "heldout_r2": 0.8484910486761199,
+          "delta_mae_vs_baseline": 0.06363720352777147,
+          "delta_rmse_vs_baseline": 0.08506728255457663,
+          "delta_r2_vs_baseline": 0.005029851818848963,
+          "prediction_delta_vs_baseline": 0.32808513818761786,
+          "coefficients": {
+            "beta_0": 8.149402072814246,
+            "beta_behavior": -6.03374966781823
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.5430374701036417,
+              "mae_delta": -0.03822880680308227
+            }
+          }
+        },
+        "MG": {
+          "model": "MG",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.773421701848738,
+          "heldout_mae": 4.731726821688122,
+          "train_rmse": 5.905711753642407,
+          "heldout_rmse": 5.89885188512005,
+          "train_r2": 0.9216782793707434,
+          "heldout_r2": 0.9082273673411784,
+          "delta_mae_vs_baseline": 0.9842888033118795,
+          "delta_rmse_vs_baseline": 1.188422830214825,
+          "delta_r2_vs_baseline": 0.06476617048390743,
+          "prediction_delta_vs_baseline": 2.490123931110846,
+          "coefficients": {
+            "beta_0": 6.997153353844922,
+            "beta_motivation": 6.310022921988768,
+            "beta_goals": -17.245026507386786
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.2620045843977534,
+              "mae_delta": 0.4160186564796753
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.311256626846697,
+              "mae_delta": 0.9023790555055893
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "MB": {
+          "model": "MB",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 5.370150691946444,
+          "heldout_mae": 5.73951513788969,
+          "train_rmse": 6.5595657373217335,
+          "heldout_rmse": 6.894623850948104,
+          "train_r2": 0.8925690460230729,
+          "heldout_r2": 0.8547652634974467,
+          "delta_mae_vs_baseline": -0.023499512889688212,
+          "delta_rmse_vs_baseline": 0.1926508643867706,
+          "delta_r2_vs_baseline": 0.011304066640175803,
+          "prediction_delta_vs_baseline": 1.395028976818546,
+          "coefficients": {
+            "beta_0": 4.976278976818556,
+            "beta_motivation": 4.712100319744204,
+            "beta_behavior": -5.031974420463641
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.9424200639488394,
+              "mae_delta": 0.2006038918864892
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.4528776978417294,
+              "mae_delta": 0.004911196043162924
+            }
+          }
+        },
+        "GB": {
+          "model": "GB",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.856991965041405,
+          "heldout_mae": 4.962217703260481,
+          "train_rmse": 6.24637010946752,
+          "heldout_rmse": 6.3866135108868,
+          "train_r2": 0.9068934003523275,
+          "heldout_r2": 0.883079750040243,
+          "delta_mae_vs_baseline": 0.7537979217395208,
+          "delta_rmse_vs_baseline": 0.7006612044480747,
+          "delta_r2_vs_baseline": 0.03961855318297203,
+          "prediction_delta_vs_baseline": 2.1235190934240635,
+          "coefficients": {
+            "beta_0": 1.354196591892003,
+            "beta_goals": -17.501946764649546,
+            "beta_behavior": 10.913255619758726
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.375486691162386,
+              "mae_delta": 0.30359116367431227
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.9821930057782845,
+              "mae_delta": 0.23914517456541784
+            }
+          }
+        },
+        "MGB": {
+          "model": "MGB",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.673093511444153,
+          "heldout_mae": 4.698050632230423,
+          "train_rmse": 5.783536714468482,
+          "heldout_rmse": 5.897272148493535,
+          "train_r2": 0.9267788306683997,
+          "heldout_r2": 0.9083055700178195,
+          "delta_mae_vs_baseline": 1.0179649927695786,
+          "delta_rmse_vs_baseline": 1.1900025668413399,
+          "delta_r2_vs_baseline": 0.06484437316054859,
+          "prediction_delta_vs_baseline": 2.628352508632394,
+          "coefficients": {
+            "beta_0": -4.809113175371293,
+            "beta_motivation": 6.885240706194582,
+            "beta_goals": -21.434411897259135,
+            "beta_behavior": 16.18480937518478
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.3770481412389155,
+              "mae_delta": 0.42431399509829326
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.358602974314783,
+              "mae_delta": 1.3636260494513266
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.4566328437666318,
+              "mae_delta": 0.31272374015796256
+            }
+          }
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.773421701848738,
+          "heldout_mae": 4.731726821688122,
+          "train_rmse": 5.905711753642407,
+          "heldout_rmse": 5.89885188512005,
+          "train_r2": 0.9216782793707434,
+          "heldout_r2": 0.9082273673411784,
+          "delta_mae_vs_baseline": 0.9842888033118795,
+          "delta_rmse_vs_baseline": 1.188422830214825,
+          "delta_r2_vs_baseline": 0.06476617048390743,
+          "prediction_delta_vs_baseline": 2.490123931110846,
+          "coefficients": {
+            "beta_0": 6.997153353844922,
+            "beta_motivation": 6.310022921988768,
+            "beta_goals": -17.245026507386786
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.2620045843977534,
+              "mae_delta": 0.4160186564796753
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.311256626846697,
+              "mae_delta": 0.9023790555055893
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "all_three": {
+          "model": "all_three",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.673093511444153,
+          "heldout_mae": 4.698050632230423,
+          "train_rmse": 5.783536714468482,
+          "heldout_rmse": 5.897272148493535,
+          "train_r2": 0.9267788306683997,
+          "heldout_r2": 0.9083055700178195,
+          "delta_mae_vs_baseline": 1.0179649927695786,
+          "delta_rmse_vs_baseline": 1.1900025668413399,
+          "delta_r2_vs_baseline": 0.06484437316054859,
+          "prediction_delta_vs_baseline": 2.628352508632394,
+          "coefficients": {
+            "beta_0": -4.809113175371293,
+            "beta_motivation": 6.885240706194582,
+            "beta_goals": -21.434411897259135,
+            "beta_behavior": 16.18480937518478
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.3770481412389155,
+              "mae_delta": 0.42431399509829326
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.358602974314783,
+              "mae_delta": 1.3636260494513266
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.4566328437666318,
+              "mae_delta": 0.31272374015796256
+            }
+          }
+        }
+      },
+      "benchmark_invariant": true,
+      "target_invariant": true,
+      "simulation_semantics_invariant": true,
+      "gate1_causal_activation": true,
+      "gate2_objective_improvement": true,
+      "gate4_incremental_mg_over_singletons": true,
+      "gate4_incremental_mgb_over_mg": true
+    },
+    "123": {
+      "seed": 123,
+      "runtime_seconds": 0.038374499999918044,
+      "model_results": {
+        "baseline": {
+          "model": "baseline",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 5.61443359375,
+          "heldout_mae": 5.358671875000001,
+          "train_rmse": 6.983629714151159,
+          "heldout_rmse": 6.412622592639068,
+          "train_r2": 0.8732956287970881,
+          "heldout_r2": 0.898319409904585,
+          "delta_mae_vs_baseline": 0.0,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_r2_vs_baseline": 0.0,
+          "prediction_delta_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 3.371875
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "M": {
+          "model": "M",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.438105468750001,
+          "heldout_mae": 5.611640625000001,
+          "train_rmse": 6.642276265285494,
+          "heldout_rmse": 6.611817810982469,
+          "train_r2": 0.8895671419072599,
+          "heldout_r2": 0.88902139486465,
+          "delta_mae_vs_baseline": -0.25296874999999996,
+          "delta_rmse_vs_baseline": -0.1991952183434007,
+          "delta_r2_vs_baseline": -0.009298015039934993,
+          "prediction_delta_vs_baseline": 1.5250000000000004,
+          "coefficients": {
+            "beta_0": 0.3218749999999996,
+            "beta_motivation": 6.1000000000000005
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.219999999999997,
+              "mae_delta": 0.11984374999999847
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "G": {
+          "model": "G",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.1232135871629705,
+          "heldout_mae": 4.833961697022042,
+          "train_rmse": 6.599072545281446,
+          "heldout_rmse": 5.755687177383875,
+          "train_r2": 0.8915684392852234,
+          "heldout_r2": 0.9269681280511377,
+          "delta_mae_vs_baseline": 0.5247101779779584,
+          "delta_rmse_vs_baseline": 0.6569354152551936,
+          "delta_r2_vs_baseline": 0.028648718146552676,
+          "prediction_delta_vs_baseline": 1.9953685034867825,
+          "coefficients": {
+            "beta_0": 9.348189707472,
+            "beta_goals": -15.223794734068404
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 3.8059486835171015,
+              "mae_delta": 0.16478914311934734
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "B": {
+          "model": "B",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.407367235013032,
+          "heldout_mae": 5.2985908992180715,
+          "train_rmse": 6.827798632498081,
+          "heldout_rmse": 6.429970441353691,
+          "train_r2": 0.8808248652683565,
+          "heldout_r2": 0.8975209546025763,
+          "delta_mae_vs_baseline": 0.06008097578192917,
+          "delta_rmse_vs_baseline": -0.017347848714623026,
+          "delta_r2_vs_baseline": -0.000798455302008727,
+          "prediction_delta_vs_baseline": 1.0032211120764591,
+          "coefficients": {
+            "beta_0": -10.768353605560387,
+            "beta_behavior": 17.296915725456127
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.5567224152910537,
+              "mae_delta": 0.41607026498696786
+            }
+          }
+        },
+        "MG": {
+          "model": "MG",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.768536734624665,
+          "heldout_mae": 4.7019350375650415,
+          "train_rmse": 6.000948871661229,
+          "heldout_rmse": 5.7889847343887615,
+          "train_r2": 0.9179329995900105,
+          "heldout_r2": 0.9255904547920482,
+          "delta_mae_vs_baseline": 0.6567368374349591,
+          "delta_rmse_vs_baseline": 0.6236378582503068,
+          "delta_r2_vs_baseline": 0.027271044887463125,
+          "prediction_delta_vs_baseline": 2.9206010597306094,
+          "coefficients": {
+            "beta_0": 7.030569253490998,
+            "beta_motivation": 7.97162483126171,
+            "beta_goals": -19.47327175197513
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.594324966252342,
+              "mae_delta": 0.22313274403139438
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.8683179379937815,
+              "mae_delta": 1.1704717098736044
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "MB": {
+          "model": "MB",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 5.255301837270342,
+          "heldout_mae": 5.569537401574804,
+          "train_rmse": 6.515459613804078,
+          "heldout_rmse": 6.598469721548558,
+          "train_r2": 0.8954044914996345,
+          "heldout_r2": 0.8896533462070974,
+          "delta_mae_vs_baseline": -0.2108655265748034,
+          "delta_rmse_vs_baseline": -0.18584712890949007,
+          "delta_r2_vs_baseline": -0.00866606369748768,
+          "prediction_delta_vs_baseline": 2.025526301399828,
+          "coefficients": {
+            "beta_0": -12.0193460192476,
+            "beta_motivation": 5.794335083114614,
+            "beta_behavior": 15.283245844269468
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.158867016622923,
+              "mae_delta": 0.13432688101487233
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.3754921259842523,
+              "mae_delta": 0.16726131889763707
+            }
+          }
+        },
+        "GB": {
+          "model": "GB",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.953094078200019,
+          "heldout_mae": 4.624346669834561,
+          "train_rmse": 6.396438930130316,
+          "heldout_rmse": 5.599331541167312,
+          "train_r2": 0.9007806343871344,
+          "heldout_r2": 0.9333310069551545,
+          "delta_mae_vs_baseline": 0.7343252051654394,
+          "delta_rmse_vs_baseline": 0.8132910514717562,
+          "delta_r2_vs_baseline": 0.03501159705056944,
+          "prediction_delta_vs_baseline": 2.1025746904202416,
+          "coefficients": {
+            "beta_0": -6.044460913834827,
+            "beta_goals": -15.944774487838522,
+            "beta_behavior": 19.175145397464313
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 3.9861936219596297,
+              "mae_delta": 0.3867742858885652
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.725763085771788,
+              "mae_delta": 0.6405340807029232
+            }
+          }
+        },
+        "MGB": {
+          "model": "MGB",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.609591200082557,
+          "heldout_mae": 4.495691700757893,
+          "train_rmse": 5.827252573482347,
+          "heldout_rmse": 5.584218912174072,
+          "train_r2": 0.9251203287137525,
+          "heldout_r2": 0.9339367270540596,
+          "delta_mae_vs_baseline": 0.8629801742421073,
+          "delta_rmse_vs_baseline": 0.8284036804649961,
+          "delta_r2_vs_baseline": 0.03561731714947458,
+          "prediction_delta_vs_baseline": 2.9214725014885174,
+          "coefficients": {
+            "beta_0": -6.51401687202669,
+            "beta_motivation": 7.67837634844158,
+            "beta_goals": -19.95535943859579,
+            "beta_behavior": 16.979156780022972
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.5356752696883151,
+              "mae_delta": 0.28225432282661345
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.988839859648947,
+              "mae_delta": 1.3277971374355433
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.5281241102020675,
+              "mae_delta": 0.2452858538374736
+            }
+          }
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.768536734624665,
+          "heldout_mae": 4.7019350375650415,
+          "train_rmse": 6.000948871661229,
+          "heldout_rmse": 5.7889847343887615,
+          "train_r2": 0.9179329995900105,
+          "heldout_r2": 0.9255904547920482,
+          "delta_mae_vs_baseline": 0.6567368374349591,
+          "delta_rmse_vs_baseline": 0.6236378582503068,
+          "delta_r2_vs_baseline": 0.027271044887463125,
+          "prediction_delta_vs_baseline": 2.9206010597306094,
+          "coefficients": {
+            "beta_0": 7.030569253490998,
+            "beta_motivation": 7.97162483126171,
+            "beta_goals": -19.47327175197513
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.594324966252342,
+              "mae_delta": 0.22313274403139438
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.8683179379937815,
+              "mae_delta": 1.1704717098736044
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "all_three": {
+          "model": "all_three",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.609591200082557,
+          "heldout_mae": 4.495691700757893,
+          "train_rmse": 5.827252573482347,
+          "heldout_rmse": 5.584218912174072,
+          "train_r2": 0.9251203287137525,
+          "heldout_r2": 0.9339367270540596,
+          "delta_mae_vs_baseline": 0.8629801742421073,
+          "delta_rmse_vs_baseline": 0.8284036804649961,
+          "delta_r2_vs_baseline": 0.03561731714947458,
+          "prediction_delta_vs_baseline": 2.9214725014885174,
+          "coefficients": {
+            "beta_0": -6.51401687202669,
+            "beta_motivation": 7.67837634844158,
+            "beta_goals": -19.95535943859579,
+            "beta_behavior": 16.979156780022972
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.5356752696883151,
+              "mae_delta": 0.28225432282661345
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.988839859648947,
+              "mae_delta": 1.3277971374355433
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.5281241102020675,
+              "mae_delta": 0.2452858538374736
+            }
+          }
+        }
+      },
+      "benchmark_invariant": true,
+      "target_invariant": true,
+      "simulation_semantics_invariant": true,
+      "gate1_causal_activation": true,
+      "gate2_objective_improvement": true,
+      "gate4_incremental_mg_over_singletons": true,
+      "gate4_incremental_mgb_over_mg": true
+    },
+    "456": {
+      "seed": 456,
+      "runtime_seconds": 0.035270399996079504,
+      "model_results": {
+        "baseline": {
+          "model": "baseline",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 5.25580078125,
+          "heldout_mae": 5.442343749999999,
+          "train_rmse": 6.45622201712232,
+          "heldout_rmse": 6.481681669568862,
+          "train_r2": 0.882292461241365,
+          "heldout_r2": 0.8863375312393573,
+          "delta_mae_vs_baseline": 0.0,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_r2_vs_baseline": 0.0,
+          "prediction_delta_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 3.346875
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "M": {
+          "model": "M",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.2208984375,
+          "heldout_mae": 5.373125,
+          "train_rmse": 6.333921727739063,
+          "heldout_rmse": 6.415165899306501,
+          "train_r2": 0.8884322828784309,
+          "heldout_r2": 0.8897746117930765,
+          "delta_mae_vs_baseline": 0.06921874999999922,
+          "delta_rmse_vs_baseline": 0.06651577026236044,
+          "delta_r2_vs_baseline": 0.003437080553719163,
+          "prediction_delta_vs_baseline": 0.884375,
+          "coefficients": {
+            "beta_0": 1.5781249999999993,
+            "beta_motivation": 3.537500000000001
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.7075000000000023,
+              "mae_delta": 0.12210937500000085
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "G": {
+          "model": "G",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.629563004104414,
+          "heldout_mae": 4.564487771899552,
+          "train_rmse": 5.932368855594192,
+          "heldout_rmse": 5.6496446245032885,
+          "train_r2": 0.9077657093136648,
+          "heldout_r2": 0.9267795164646156,
+          "delta_mae_vs_baseline": 0.8778559781004471,
+          "delta_rmse_vs_baseline": 0.8320370450655732,
+          "delta_r2_vs_baseline": 0.040441985225258326,
+          "prediction_delta_vs_baseline": 2.2690730612418704,
+          "coefficients": {
+            "beta_0": 10.275184061683303,
+            "beta_goals": -17.16940024656568
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.29235006164142,
+              "mae_delta": 0.8987462344538342
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "B": {
+          "model": "B",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.117271800066607,
+          "heldout_mae": 5.4541248057282425,
+          "train_rmse": 6.329875972039954,
+          "heldout_rmse": 6.569125829065026,
+          "train_r2": 0.8886333849126602,
+          "heldout_r2": 0.8817650733894695,
+          "delta_mae_vs_baseline": -0.011781055728243395,
+          "delta_rmse_vs_baseline": -0.08744415949616435,
+          "delta_r2_vs_baseline": -0.004572457849887801,
+          "prediction_delta_vs_baseline": 1.121172291296625,
+          "coefficients": {
+            "beta_0": -9.2284358348135,
+            "beta_behavior": 15.150976909413851
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.3635879218472469,
+              "mae_delta": 0.1225605017761966
+            }
+          }
+        },
+        "MG": {
+          "model": "MG",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.396039113342435,
+          "heldout_mae": 4.376733640390098,
+          "train_rmse": 5.591825482642444,
+          "heldout_rmse": 5.314174505483546,
+          "train_r2": 0.9231697923680607,
+          "heldout_r2": 0.9415161140503985,
+          "delta_mae_vs_baseline": 1.065610109609901,
+          "delta_rmse_vs_baseline": 1.1675071640853156,
+          "delta_r2_vs_baseline": 0.055178582811041155,
+          "prediction_delta_vs_baseline": 2.686545673610075,
+          "coefficients": {
+            "beta_0": 8.824246066284346,
+            "beta_motivation": 5.802693500911017,
+            "beta_goals": -20.7637330361365
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.1605387001822027,
+              "mae_delta": 0.23934968633332687
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.190933259034125,
+              "mae_delta": 1.6145265960982247
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "MB": {
+          "model": "MB",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 5.112997386311699,
+          "heldout_mae": 5.388952953610603,
+          "train_rmse": 6.241932920778168,
+          "heldout_rmse": 6.419071002876768,
+          "train_r2": 0.8929730093413462,
+          "heldout_r2": 0.8895738023520109,
+          "delta_mae_vs_baseline": 0.05339079638939648,
+          "delta_rmse_vs_baseline": 0.06261066669209381,
+          "delta_r2_vs_baseline": 0.003236271112653566,
+          "prediction_delta_vs_baseline": 1.0769321297989036,
+          "coefficients": {
+            "beta_0": -8.95779821755027,
+            "beta_motivation": 3.017207495429613,
+            "beta_behavior": 13.007312614259597
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.6034414990859245,
+              "mae_delta": 0.10700382769652794
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.1706581352833643,
+              "mae_delta": 0.09308143852833695
+            }
+          }
+        },
+        "GB": {
+          "model": "GB",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.472542842766073,
+          "heldout_mae": 4.535724245836287,
+          "train_rmse": 5.679040411259638,
+          "heldout_rmse": 5.716322330221272,
+          "train_r2": 0.9193114482672158,
+          "heldout_r2": 0.9237430495302749,
+          "delta_mae_vs_baseline": 0.9066195041637117,
+          "delta_rmse_vs_baseline": 0.7653593393475902,
+          "delta_r2_vs_baseline": 0.03740551829091754,
+          "prediction_delta_vs_baseline": 2.5769302591049823,
+          "coefficients": {
+            "beta_0": -6.149043822446874,
+            "beta_goals": -19.104095407241743,
+            "beta_behavior": 20.728829845545995
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.776023851810435,
+              "mae_delta": 1.3516602191787612
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.8655946860991395,
+              "mae_delta": 0.38532413212834005
+            }
+          }
+        },
+        "MGB": {
+          "model": "MGB",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.254295607265588,
+          "heldout_mae": 4.241513441150147,
+          "train_rmse": 5.396098881689384,
+          "heldout_rmse": 5.174574052029439,
+          "train_r2": 0.9316112677891357,
+          "heldout_r2": 0.9473827889499113,
+          "delta_mae_vs_baseline": 1.2008303088498522,
+          "delta_rmse_vs_baseline": 1.3071076175394225,
+          "delta_r2_vs_baseline": 0.061045257710554024,
+          "prediction_delta_vs_baseline": 2.7761785195220137,
+          "coefficients": {
+            "beta_0": -5.200411774428985,
+            "beta_motivation": 5.230885213579764,
+            "beta_goals": -22.078420223659407,
+            "beta_behavior": 17.88081106737694
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.046177042715953,
+              "mae_delta": 0.14786181523122544
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.519605055914852,
+              "mae_delta": 1.9154915094275777
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.609272996063925,
+              "mae_delta": 0.28161550043522343
+            }
+          }
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.396039113342435,
+          "heldout_mae": 4.376733640390098,
+          "train_rmse": 5.591825482642444,
+          "heldout_rmse": 5.314174505483546,
+          "train_r2": 0.9231697923680607,
+          "heldout_r2": 0.9415161140503985,
+          "delta_mae_vs_baseline": 1.065610109609901,
+          "delta_rmse_vs_baseline": 1.1675071640853156,
+          "delta_r2_vs_baseline": 0.055178582811041155,
+          "prediction_delta_vs_baseline": 2.686545673610075,
+          "coefficients": {
+            "beta_0": 8.824246066284346,
+            "beta_motivation": 5.802693500911017,
+            "beta_goals": -20.7637330361365
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.1605387001822027,
+              "mae_delta": 0.23934968633332687
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.190933259034125,
+              "mae_delta": 1.6145265960982247
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "all_three": {
+          "model": "all_three",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.254295607265588,
+          "heldout_mae": 4.241513441150147,
+          "train_rmse": 5.396098881689384,
+          "heldout_rmse": 5.174574052029439,
+          "train_r2": 0.9316112677891357,
+          "heldout_r2": 0.9473827889499113,
+          "delta_mae_vs_baseline": 1.2008303088498522,
+          "delta_rmse_vs_baseline": 1.3071076175394225,
+          "delta_r2_vs_baseline": 0.061045257710554024,
+          "prediction_delta_vs_baseline": 2.7761785195220137,
+          "coefficients": {
+            "beta_0": -5.200411774428985,
+            "beta_motivation": 5.230885213579764,
+            "beta_goals": -22.078420223659407,
+            "beta_behavior": 17.88081106737694
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.046177042715953,
+              "mae_delta": 0.14786181523122544
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.519605055914852,
+              "mae_delta": 1.9154915094275777
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 1.609272996063925,
+              "mae_delta": 0.28161550043522343
+            }
+          }
+        }
+      },
+      "benchmark_invariant": true,
+      "target_invariant": true,
+      "simulation_semantics_invariant": true,
+      "gate1_causal_activation": true,
+      "gate2_objective_improvement": true,
+      "gate4_incremental_mg_over_singletons": true,
+      "gate4_incremental_mgb_over_mg": true
+    },
+    "789": {
+      "seed": 789,
+      "runtime_seconds": 0.03516799999488285,
+      "model_results": {
+        "baseline": {
+          "model": "baseline",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 5.253906249999999,
+          "heldout_mae": 4.97703125,
+          "train_rmse": 6.560746789619303,
+          "heldout_rmse": 6.047213330328276,
+          "train_r2": 0.8810621924376192,
+          "heldout_r2": 0.8923897375079356,
+          "delta_mae_vs_baseline": 0.0,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_r2_vs_baseline": 0.0,
+          "prediction_delta_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 3.0812500000000003
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "M": {
+          "model": "M",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.203984374999999,
+          "heldout_mae": 5.11640625,
+          "train_rmse": 6.350278352659039,
+          "heldout_rmse": 6.080731928086453,
+          "train_r2": 0.891222744258942,
+          "heldout_r2": 0.8907877317333441,
+          "delta_mae_vs_baseline": -0.13937500000000025,
+          "delta_rmse_vs_baseline": -0.033518597758177116,
+          "delta_r2_vs_baseline": -0.001602005774591464,
+          "prediction_delta_vs_baseline": 1.1656250000000001,
+          "coefficients": {
+            "beta_0": 0.7499999999999997,
+            "beta_motivation": 4.6625000000000005
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.9325000000000024,
+              "mae_delta": 0.05820312500000124
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "G": {
+          "model": "G",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.628182665073153,
+          "heldout_mae": 4.182648494523823,
+          "train_rmse": 5.968415824522159,
+          "heldout_rmse": 5.402047284066518,
+          "train_r2": 0.908811750769168,
+          "heldout_r2": 0.9214995864563362,
+          "delta_mae_vs_baseline": 0.7943827554761764,
+          "delta_rmse_vs_baseline": 0.6451660462617577,
+          "delta_r2_vs_baseline": 0.02910984894840063,
+          "prediction_delta_vs_baseline": 2.215366425955198,
+          "coefficients": {
+            "beta_0": 10.088769738330736,
+            "beta_goals": -17.12943916419996
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.282359791049991,
+              "mae_delta": 1.0460172073561305
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "B": {
+          "model": "B",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.2442140638806585,
+          "heldout_mae": 5.089263020427258,
+          "train_rmse": 6.532932268566467,
+          "heldout_rmse": 6.212257680113567,
+          "train_r2": 0.8824239596403693,
+          "heldout_r2": 0.884415973107059,
+          "delta_mae_vs_baseline": -0.1122317704272584,
+          "delta_rmse_vs_baseline": -0.16504434978529137,
+          "delta_r2_vs_baseline": -0.007973764400876604,
+          "prediction_delta_vs_baseline": 0.5669174268413132,
+          "coefficients": {
+            "beta_0": 8.91575705598005,
+            "beta_behavior": -6.961380529133542
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.5569104423306825,
+              "mae_delta": -0.05099894745049216
+            }
+          }
+        },
+        "MG": {
+          "model": "MG",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.385405412800067,
+          "heldout_mae": 4.173171500100393,
+          "train_rmse": 5.554907658022683,
+          "heldout_rmse": 5.097163356572369,
+          "train_r2": 0.9266286218320707,
+          "heldout_r2": 0.9341144392402895,
+          "delta_mae_vs_baseline": 0.8038597498996065,
+          "delta_rmse_vs_baseline": 0.9500499737559069,
+          "delta_r2_vs_baseline": 0.041724701732353875,
+          "prediction_delta_vs_baseline": 2.407478861187581,
+          "coefficients": {
+            "beta_0": 7.992258573499878,
+            "beta_motivation": 6.279824280772411,
+            "beta_goals": -19.679966911824927
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.2559648561544836,
+              "mae_delta": 0.1447651641672465
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.919991727956233,
+              "mae_delta": 1.6630151465700171
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "MB": {
+          "model": "MB",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 5.202637517479288,
+          "heldout_mae": 5.183409681547149,
+          "train_rmse": 6.3373606696701,
+          "heldout_rmse": 6.14914072810812,
+          "train_r2": 0.891835567219964,
+          "heldout_r2": 0.8874906864287868,
+          "delta_mae_vs_baseline": -0.20637843154714908,
+          "delta_rmse_vs_baseline": -0.10192739777984361,
+          "delta_r2_vs_baseline": -0.004899051079148786,
+          "prediction_delta_vs_baseline": 1.1897396245580731,
+          "coefficients": {
+            "beta_0": 4.764202746556931,
+            "beta_motivation": 4.5213412220991005,
+            "beta_behavior": -4.705292596696772
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.9042682444198196,
+              "mae_delta": 0.07018309554904612
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.37642340773574257,
+              "mae_delta": -0.04243925947179594
+            }
+          }
+        },
+        "GB": {
+          "model": "GB",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.626431935850249,
+          "heldout_mae": 4.198311560322087,
+          "train_rmse": 5.967721455783498,
+          "heldout_rmse": 5.43147011070289,
+          "train_r2": 0.9088427409105646,
+          "heldout_r2": 0.9202434266725183,
+          "delta_mae_vs_baseline": 0.7787196896779127,
+          "delta_rmse_vs_baseline": 0.6157432196253856,
+          "delta_r2_vs_baseline": 0.02785368916458275,
+          "prediction_delta_vs_baseline": 2.2199878282000682,
+          "coefficients": {
+            "beta_0": 10.9400387011002,
+            "beta_goals": -17.019439894823257,
+            "beta_behavior": -1.0693736668184126
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.254859973705816,
+              "mae_delta": 1.025967290259743
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.08554989334547383,
+              "mae_delta": -0.023955680200813845
+            }
+          }
+        },
+        "MGB": {
+          "model": "MGB",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.379696203090941,
+          "heldout_mae": 4.132088583049857,
+          "train_rmse": 5.548483716446691,
+          "heldout_rmse": 5.043264432369809,
+          "train_r2": 0.926895324170291,
+          "heldout_r2": 0.9362683483900289,
+          "delta_mae_vs_baseline": 0.8449426669501428,
+          "delta_rmse_vs_baseline": 1.003948897958467,
+          "delta_r2_vs_baseline": 0.04387861088209333,
+          "prediction_delta_vs_baseline": 2.5058083757997074,
+          "coefficients": {
+            "beta_0": 5.41913734927603,
+            "beta_motivation": 6.40630238825213,
+            "beta_goals": -20.058372930256503,
+            "beta_behavior": 3.1793409292496055
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.281260477650426,
+              "mae_delta": 0.1343533509611472
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.014593232564127,
+              "mae_delta": 1.7407868866133542
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.25434727433996845,
+              "mae_delta": 0.02384505696937289
+            }
+          }
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.385405412800067,
+          "heldout_mae": 4.173171500100393,
+          "train_rmse": 5.554907658022683,
+          "heldout_rmse": 5.097163356572369,
+          "train_r2": 0.9266286218320707,
+          "heldout_r2": 0.9341144392402895,
+          "delta_mae_vs_baseline": 0.8038597498996065,
+          "delta_rmse_vs_baseline": 0.9500499737559069,
+          "delta_r2_vs_baseline": 0.041724701732353875,
+          "prediction_delta_vs_baseline": 2.407478861187581,
+          "coefficients": {
+            "beta_0": 7.992258573499878,
+            "beta_motivation": 6.279824280772411,
+            "beta_goals": -19.679966911824927
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.2559648561544836,
+              "mae_delta": 0.1447651641672465
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.919991727956233,
+              "mae_delta": 1.6630151465700171
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "all_three": {
+          "model": "all_three",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.379696203090941,
+          "heldout_mae": 4.132088583049857,
+          "train_rmse": 5.548483716446691,
+          "heldout_rmse": 5.043264432369809,
+          "train_r2": 0.926895324170291,
+          "heldout_r2": 0.9362683483900289,
+          "delta_mae_vs_baseline": 0.8449426669501428,
+          "delta_rmse_vs_baseline": 1.003948897958467,
+          "delta_r2_vs_baseline": 0.04387861088209333,
+          "prediction_delta_vs_baseline": 2.5058083757997074,
+          "coefficients": {
+            "beta_0": 5.41913734927603,
+            "beta_motivation": 6.40630238825213,
+            "beta_goals": -20.058372930256503,
+            "beta_behavior": 3.1793409292496055
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.281260477650426,
+              "mae_delta": 0.1343533509611472
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 5.014593232564127,
+              "mae_delta": 1.7407868866133542
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.25434727433996845,
+              "mae_delta": 0.02384505696937289
+            }
+          }
+        }
+      },
+      "benchmark_invariant": true,
+      "target_invariant": true,
+      "simulation_semantics_invariant": true,
+      "gate1_causal_activation": true,
+      "gate2_objective_improvement": true,
+      "gate4_incremental_mg_over_singletons": true,
+      "gate4_incremental_mgb_over_mg": true
+    },
+    "999": {
+      "seed": 999,
+      "runtime_seconds": 0.03784749999613268,
+      "model_results": {
+        "baseline": {
+          "model": "baseline",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 5.141562500000001,
+          "heldout_mae": 4.901875000000001,
+          "train_rmse": 6.342773169866239,
+          "heldout_rmse": 6.236918340865545,
+          "train_r2": 0.8969964842595219,
+          "heldout_r2": 0.9203325198255192,
+          "delta_mae_vs_baseline": 0.0,
+          "delta_rmse_vs_baseline": 0.0,
+          "delta_r2_vs_baseline": 0.0,
+          "prediction_delta_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 3.321875000000001
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "M": {
+          "model": "M",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.152851562500001,
+          "heldout_mae": 4.786562500000002,
+          "train_rmse": 6.239446558740207,
+          "heldout_rmse": 6.082052394391634,
+          "train_r2": 0.9017720972093076,
+          "heldout_r2": 0.9261679110237677,
+          "delta_mae_vs_baseline": 0.11531249999999904,
+          "delta_rmse_vs_baseline": 0.15486594647391083,
+          "delta_r2_vs_baseline": 0.005835391198248496,
+          "prediction_delta_vs_baseline": 0.8062500000000001,
+          "coefficients": {
+            "beta_0": 1.7093750000000003,
+            "beta_motivation": 3.2250000000000005
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.6449999999999967,
+              "mae_delta": 0.19749999999999623
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "G": {
+          "model": "G",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.651511357701619,
+          "heldout_mae": 4.592123491875351,
+          "train_rmse": 5.87098551830185,
+          "heldout_rmse": 5.782844250973399,
+          "train_r2": 0.9181633022331261,
+          "heldout_r2": 0.9370265899062727,
+          "delta_mae_vs_baseline": 0.30975150812465024,
+          "delta_rmse_vs_baseline": 0.4540740898921456,
+          "delta_r2_vs_baseline": 0.01669407008075352,
+          "prediction_delta_vs_baseline": 2.0964877068811716,
+          "coefficients": {
+            "beta_0": 9.62719552367205,
+            "beta_goals": -15.776057730860941
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 3.9440144327152353,
+              "mae_delta": 0.518720477292347
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "B": {
+          "model": "B",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 5.132049243255099,
+          "heldout_mae": 4.885917279008554,
+          "train_rmse": 6.3393877590290755,
+          "heldout_rmse": 6.238982694690493,
+          "train_r2": 0.8971541961037129,
+          "heldout_r2": 0.9202537435073934,
+          "delta_mae_vs_baseline": 0.01595772099144721,
+          "delta_rmse_vs_baseline": -0.002064353824947851,
+          "delta_r2_vs_baseline": -7.87763181258061e-05,
+          "prediction_delta_vs_baseline": 0.17400053465672313,
+          "coefficients": {
+            "beta_0": 1.2934031585874148,
+            "beta_behavior": 2.455033998683918
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.20867788988813424,
+              "mae_delta": 0.049100679973679284
+            }
+          }
+        },
+        "MG": {
+          "model": "MG",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.558341907457101,
+          "heldout_mae": 4.305187830066599,
+          "train_rmse": 5.617369406911771,
+          "heldout_rmse": 5.372651177003605,
+          "train_r2": 0.9288660269205511,
+          "heldout_r2": 0.9510230047775988,
+          "delta_mae_vs_baseline": 0.5966871699334027,
+          "delta_rmse_vs_baseline": 0.8642671638619399,
+          "delta_r2_vs_baseline": 0.0306904849520796,
+          "prediction_delta_vs_baseline": 2.373257287965302,
+          "coefficients": {
+            "beta_0": 8.158868379231235,
+            "beta_motivation": 4.947890725583349,
+            "beta_goals": -18.292137763326828
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.9895781451166691,
+              "mae_delta": 0.2186447378972325
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.573034440831707,
+              "mae_delta": 1.2134787108518914
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "MB": {
+          "model": "MB",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 5.139585607176284,
+          "heldout_mae": 4.737730710471263,
+          "train_rmse": 6.233187565808149,
+          "heldout_rmse": 6.072621371156782,
+          "train_r2": 0.9020588596804313,
+          "heldout_r2": 0.9265185351069035,
+          "delta_mae_vs_baseline": 0.16414428952873816,
+          "delta_rmse_vs_baseline": 0.16429696970876329,
+          "delta_r2_vs_baseline": 0.006186015281384294,
+          "prediction_delta_vs_baseline": 0.8871018911032802,
+          "coefficients": {
+            "beta_0": -1.0561743008147877,
+            "beta_motivation": 3.2747550099097094,
+            "beta_behavior": 3.317000660647423
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.6549510019819411,
+              "mae_delta": 0.2066600659271085
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.28194505615503,
+              "mae_delta": 0.08292501651618522
+            }
+          }
+        },
+        "GB": {
+          "model": "GB",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.636086787911905,
+          "heldout_mae": 4.562102633704607,
+          "train_rmse": 5.8402433173443695,
+          "heldout_rmse": 5.810500710389509,
+          "train_r2": 0.9194858065383711,
+          "heldout_r2": 0.9360458700671357,
+          "delta_mae_vs_baseline": 0.339772366295394,
+          "delta_rmse_vs_baseline": 0.42641763047603565,
+          "delta_r2_vs_baseline": 0.015713350241616464,
+          "prediction_delta_vs_baseline": 2.1942236887724196,
+          "coefficients": {
+            "beta_0": 3.9322446785917298,
+            "beta_goals": -16.416894044728313,
+            "beta_behavior": 7.202515098495622
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.1042235111820755,
+              "mae_delta": 0.666727285995969
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.6122137833721271,
+              "mae_delta": 0.1028685619180072
+            }
+          }
+        },
+        "MGB": {
+          "model": "MGB",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.49685329059307,
+          "heldout_mae": 4.25551878887026,
+          "train_rmse": 5.5632837178992585,
+          "heldout_rmse": 5.3474817917878665,
+          "train_r2": 0.9310873371202452,
+          "heldout_r2": 0.9518483058344508,
+          "delta_mae_vs_baseline": 0.6463562111297412,
+          "delta_rmse_vs_baseline": 0.8894365490776783,
+          "delta_r2_vs_baseline": 0.03151578600893157,
+          "prediction_delta_vs_baseline": 2.548225015624536,
+          "coefficients": {
+            "beta_0": 0.6713568391130893,
+            "beta_motivation": 5.178306287059829,
+            "beta_goals": -19.244161318552067,
+            "beta_behavior": 9.383122857913891
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.0356612574119652,
+              "mae_delta": 0.18680019521199576
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.811040329638017,
+              "mae_delta": 1.4925988064703501
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.7975654429226811,
+              "mae_delta": 0.14621300414409788
+            }
+          }
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.558341907457101,
+          "heldout_mae": 4.305187830066599,
+          "train_rmse": 5.617369406911771,
+          "heldout_rmse": 5.372651177003605,
+          "train_r2": 0.9288660269205511,
+          "heldout_r2": 0.9510230047775988,
+          "delta_mae_vs_baseline": 0.5966871699334027,
+          "delta_rmse_vs_baseline": 0.8642671638619399,
+          "delta_r2_vs_baseline": 0.0306904849520796,
+          "prediction_delta_vs_baseline": 2.373257287965302,
+          "coefficients": {
+            "beta_0": 8.158868379231235,
+            "beta_motivation": 4.947890725583349,
+            "beta_goals": -18.292137763326828
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 0.9895781451166691,
+              "mae_delta": 0.2186447378972325
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.573034440831707,
+              "mae_delta": 1.2134787108518914
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.0,
+              "mae_delta": 0.0
+            }
+          }
+        },
+        "all_three": {
+          "model": "all_three",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 4.49685329059307,
+          "heldout_mae": 4.25551878887026,
+          "train_rmse": 5.5632837178992585,
+          "heldout_rmse": 5.3474817917878665,
+          "train_r2": 0.9310873371202452,
+          "heldout_r2": 0.9518483058344508,
+          "delta_mae_vs_baseline": 0.6463562111297412,
+          "delta_rmse_vs_baseline": 0.8894365490776783,
+          "delta_r2_vs_baseline": 0.03151578600893157,
+          "prediction_delta_vs_baseline": 2.548225015624536,
+          "coefficients": {
+            "beta_0": 0.6713568391130893,
+            "beta_motivation": 5.178306287059829,
+            "beta_goals": -19.244161318552067,
+            "beta_behavior": 9.383122857913891
+          },
+          "intervention_effects": {
+            "motivation": {
+              "dimension": "motivation",
+              "prediction_delta": 1.0356612574119652,
+              "mae_delta": 0.18680019521199576
+            },
+            "goals": {
+              "dimension": "goals",
+              "prediction_delta": 4.811040329638017,
+              "mae_delta": 1.4925988064703501
+            },
+            "behavior": {
+              "dimension": "behavior",
+              "prediction_delta": 0.7975654429226811,
+              "mae_delta": 0.14621300414409788
+            }
+          }
+        }
+      },
+      "benchmark_invariant": true,
+      "target_invariant": true,
+      "simulation_semantics_invariant": true,
+      "gate1_causal_activation": true,
+      "gate2_objective_improvement": true,
+      "gate4_incremental_mg_over_singletons": true,
+      "gate4_incremental_mgb_over_mg": true
+    }
+  },
+  "aggregate_summary": {
+    "total_runtime_seconds": 0.18697119998250855,
+    "per_seed_runtime_seconds": {
+      "42": 0.04031079999549547,
+      "123": 0.038374499999918044,
+      "456": 0.035270399996079504,
+      "789": 0.03516799999488285,
+      "999": 0.03784749999613268
+    },
+    "mean_metrics_by_model": {
+      "baseline": {
+        "mean_mae": 5.279187500000001,
+        "mean_rmse": 6.4531421297473255,
+        "mean_r2": 0.8881680790669336,
+        "mean_delta_mae": 0.0,
+        "mean_delta_rmse": 0.0,
+        "mean_delta_r2": 0.0
+      },
+      "M": {
+        "mean_mae": 5.335078125000001,
+        "mean_rmse": 6.426414788266822,
+        "mean_r2": 0.8895496216411071,
+        "mean_delta_mae": -0.055890625000000506,
+        "mean_delta_rmse": 0.026727341480502886,
+        "mean_delta_r2": 0.0013815425741734665
+      },
+      "G": {
+        "mean_mae": 4.6319677309126055,
+        "mean_rmse": 5.777207719643301,
+        "mean_r2": 0.9200372267475821,
+        "mean_delta_mae": 0.647219769087395,
+        "mean_delta_rmse": 0.6759344101040243,
+        "mean_delta_r2": 0.031869147680648545
+      },
+      "B": {
+        "mean_mae": 5.276054885170871,
+        "mean_rmse": 6.490508815600615,
+        "mean_r2": 0.8864893586565237,
+        "mean_delta_mae": 0.00313261482912921,
+        "mean_delta_rmse": -0.03736668585328999,
+        "mean_delta_r2": -0.0016787204104099951
+      },
+      "MG": {
+        "mean_mae": 4.457750965962051,
+        "mean_rmse": 5.494365131713666,
+        "mean_r2": 0.9320942760403027,
+        "mean_delta_mae": 0.8214365340379498,
+        "mean_delta_rmse": 0.9587769980336589,
+        "mean_delta_r2": 0.04392619697336904
+      },
+      "MB": {
+        "mean_mae": 5.323829177018702,
+        "mean_rmse": 6.426785334927667,
+        "mean_r2": 0.889600326718449,
+        "mean_delta_mae": -0.04464167701870121,
+        "mean_delta_rmse": 0.026356794819658802,
+        "mean_delta_r2": 0.0014322476515154392
+      },
+      "GB": {
+        "mean_mae": 4.576540562591605,
+        "mean_rmse": 5.7888476406735565,
+        "mean_r2": 0.9192886206530653,
+        "mean_delta_mae": 0.7026469374083957,
+        "mean_delta_rmse": 0.6642944890737684,
+        "mean_delta_r2": 0.031120541586131645
+      },
+      "MGB": {
+        "mean_mae": 4.364572629211716,
+        "mean_rmse": 5.409362267370945,
+        "mean_r2": 0.935548348049254,
+        "mean_delta_mae": 0.9146148707882844,
+        "mean_delta_rmse": 1.0437798623763808,
+        "mean_delta_r2": 0.047380268982320416
+      },
+      "motivation_goals": {
+        "mean_mae": 4.457750965962051,
+        "mean_rmse": 5.494365131713666,
+        "mean_r2": 0.9320942760403027,
+        "mean_delta_mae": 0.8214365340379498,
+        "mean_delta_rmse": 0.9587769980336589,
+        "mean_delta_r2": 0.04392619697336904
+      },
+      "all_three": {
+        "mean_mae": 4.364572629211716,
+        "mean_rmse": 5.409362267370945,
+        "mean_r2": 0.935548348049254,
+        "mean_delta_mae": 0.9146148707882844,
+        "mean_delta_rmse": 1.0437798623763808,
+        "mean_delta_r2": 0.047380268982320416
+      }
+    },
+    "gate3_reproducibility": true,
+    "consistency_counts": {
+      "objective_improvement_mg": 5,
+      "objective_improvement_mgb": 5,
+      "incremental_mgb_over_mg": 5,
+      "causal_activation_pass": 5
+    }
+  }
+}

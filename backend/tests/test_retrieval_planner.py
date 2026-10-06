@@ -23,6 +23,9 @@ class RetrievalPlannerTests(unittest.TestCase):
             self.assertTrue(result["retrieved_experiences"])
             self.assertIn("exp_42", {item["experience_id"] for item in result["retrieved_experiences"]})
             self.assertIn("similar previous execution", result["retrieval_explanation"])
+            self.assertTrue(result["working_memory_id"].startswith("WM-"))
+            record_types = {record["type"] for record in result["working_memory_snapshot"]["records"]}
+            self.assertTrue({"goal", "constraint", "experience", "candidate_plan", "reasoning", "strategy", "confidence", "reflection"}.issubset(record_types))
 
 
 if __name__ == "__main__":

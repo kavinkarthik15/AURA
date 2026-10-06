@@ -1,0 +1,837 @@
+{
+  "analysis_date": "2026-08-13T15:43:53.378244",
+  "total_seeds": 5,
+  "learning_rate": 0.007,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 80,
+      "single_parameter_results": [
+        {
+          "intervention_name": "expected_state_bias",
+          "parameter_names": [
+            "expected_state_bias"
+          ],
+          "baseline_prediction_mean": 52.01875,
+          "modified_prediction_mean": 57.01875,
+          "mean_prediction_delta": 6.0,
+          "max_prediction_delta": 10.0,
+          "baseline_mae": 5.828125,
+          "modified_mae": 5.771875,
+          "mae_delta": 0.056250000000000355,
+          "improvement": 0.056250000000000355,
+          "causally_effective": true,
+          "effective_range": 10.0
+        },
+        {
+          "intervention_name": "transition_probability_bias",
+          "parameter_names": [
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 52.01875,
+          "modified_prediction_mean": 52.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.828125,
+          "modified_mae": 5.828125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "risk_bias",
+          "parameter_names": [
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 52.01875,
+          "modified_prediction_mean": 52.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.828125,
+          "modified_mae": 5.828125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "uncertainty",
+          "parameter_names": [
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 52.01875,
+          "modified_prediction_mean": 52.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.828125,
+          "modified_mae": 5.828125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "confidence",
+          "parameter_names": [
+            "confidence"
+          ],
+          "baseline_prediction_mean": 52.01875,
+          "modified_prediction_mean": 52.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.828125,
+          "modified_mae": 5.828125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "pairwise_results": [
+        {
+          "intervention_name": "expected_state_bias+transition_probability_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 57.01875,
+          "modified_prediction_mean": 57.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.771875,
+          "modified_mae": 5.771875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+risk_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 57.01875,
+          "modified_prediction_mean": 57.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.771875,
+          "modified_mae": 5.771875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+uncertainty",
+          "parameter_names": [
+            "expected_state_bias",
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 57.01875,
+          "modified_prediction_mean": 57.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.771875,
+          "modified_mae": 5.771875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+confidence",
+          "parameter_names": [
+            "expected_state_bias",
+            "confidence"
+          ],
+          "baseline_prediction_mean": 57.01875,
+          "modified_prediction_mean": 57.01875,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.771875,
+          "modified_mae": 5.771875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "causally_inert_parameters": [
+        "transition_probability_bias",
+        "risk_bias",
+        "uncertainty",
+        "confidence"
+      ],
+      "causally_active_parameters": [
+        "expected_state_bias"
+      ],
+      "total_effective_interventions": 1
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 80,
+      "single_parameter_results": [
+        {
+          "intervention_name": "expected_state_bias",
+          "parameter_names": [
+            "expected_state_bias"
+          ],
+          "baseline_prediction_mean": 51.63125,
+          "modified_prediction_mean": 51.63125,
+          "mean_prediction_delta": 6.0,
+          "max_prediction_delta": 10.0,
+          "baseline_mae": 5.859375,
+          "modified_mae": 5.859375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": true,
+          "effective_range": 10.0
+        },
+        {
+          "intervention_name": "transition_probability_bias",
+          "parameter_names": [
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 51.63125,
+          "modified_prediction_mean": 51.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.859375,
+          "modified_mae": 5.859375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "risk_bias",
+          "parameter_names": [
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 51.63125,
+          "modified_prediction_mean": 51.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.859375,
+          "modified_mae": 5.859375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "uncertainty",
+          "parameter_names": [
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 51.63125,
+          "modified_prediction_mean": 51.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.859375,
+          "modified_mae": 5.859375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "confidence",
+          "parameter_names": [
+            "confidence"
+          ],
+          "baseline_prediction_mean": 51.63125,
+          "modified_prediction_mean": 51.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.859375,
+          "modified_mae": 5.859375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "pairwise_results": [
+        {
+          "intervention_name": "expected_state_bias+transition_probability_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 56.63125,
+          "modified_prediction_mean": 56.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.896875,
+          "modified_mae": 5.896875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+risk_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 56.63125,
+          "modified_prediction_mean": 56.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.896875,
+          "modified_mae": 5.896875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+uncertainty",
+          "parameter_names": [
+            "expected_state_bias",
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 56.63125,
+          "modified_prediction_mean": 56.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.896875,
+          "modified_mae": 5.896875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+confidence",
+          "parameter_names": [
+            "expected_state_bias",
+            "confidence"
+          ],
+          "baseline_prediction_mean": 56.63125,
+          "modified_prediction_mean": 56.63125,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.896875,
+          "modified_mae": 5.896875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "causally_inert_parameters": [
+        "transition_probability_bias",
+        "risk_bias",
+        "uncertainty",
+        "confidence"
+      ],
+      "causally_active_parameters": [
+        "expected_state_bias"
+      ],
+      "total_effective_interventions": 1
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 80,
+      "single_parameter_results": [
+        {
+          "intervention_name": "expected_state_bias",
+          "parameter_names": [
+            "expected_state_bias"
+          ],
+          "baseline_prediction_mean": 52.059375,
+          "modified_prediction_mean": 57.059375,
+          "mean_prediction_delta": 6.0,
+          "max_prediction_delta": 10.0,
+          "baseline_mae": 5.709375,
+          "modified_mae": 5.440625,
+          "mae_delta": 0.2687499999999998,
+          "improvement": 0.2687499999999998,
+          "causally_effective": true,
+          "effective_range": 10.0
+        },
+        {
+          "intervention_name": "transition_probability_bias",
+          "parameter_names": [
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 52.059375,
+          "modified_prediction_mean": 52.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.709375,
+          "modified_mae": 5.709375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "risk_bias",
+          "parameter_names": [
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 52.059375,
+          "modified_prediction_mean": 52.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.709375,
+          "modified_mae": 5.709375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "uncertainty",
+          "parameter_names": [
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 52.059375,
+          "modified_prediction_mean": 52.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.709375,
+          "modified_mae": 5.709375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "confidence",
+          "parameter_names": [
+            "confidence"
+          ],
+          "baseline_prediction_mean": 52.059375,
+          "modified_prediction_mean": 52.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.709375,
+          "modified_mae": 5.709375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "pairwise_results": [
+        {
+          "intervention_name": "expected_state_bias+transition_probability_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 57.059375,
+          "modified_prediction_mean": 57.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.440625,
+          "modified_mae": 5.440625,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+risk_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 57.059375,
+          "modified_prediction_mean": 57.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.440625,
+          "modified_mae": 5.440625,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+uncertainty",
+          "parameter_names": [
+            "expected_state_bias",
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 57.059375,
+          "modified_prediction_mean": 57.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.440625,
+          "modified_mae": 5.440625,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+confidence",
+          "parameter_names": [
+            "expected_state_bias",
+            "confidence"
+          ],
+          "baseline_prediction_mean": 57.059375,
+          "modified_prediction_mean": 57.059375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.440625,
+          "modified_mae": 5.440625,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "causally_inert_parameters": [
+        "transition_probability_bias",
+        "risk_bias",
+        "uncertainty",
+        "confidence"
+      ],
+      "causally_active_parameters": [
+        "expected_state_bias"
+      ],
+      "total_effective_interventions": 1
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 80,
+      "single_parameter_results": [
+        {
+          "intervention_name": "expected_state_bias",
+          "parameter_names": [
+            "expected_state_bias"
+          ],
+          "baseline_prediction_mean": 52.190625,
+          "modified_prediction_mean": 52.190625,
+          "mean_prediction_delta": 6.0,
+          "max_prediction_delta": 10.0,
+          "baseline_mae": 5.58125,
+          "modified_mae": 5.58125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": true,
+          "effective_range": 10.0
+        },
+        {
+          "intervention_name": "transition_probability_bias",
+          "parameter_names": [
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 52.190625,
+          "modified_prediction_mean": 52.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.58125,
+          "modified_mae": 5.58125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "risk_bias",
+          "parameter_names": [
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 52.190625,
+          "modified_prediction_mean": 52.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.58125,
+          "modified_mae": 5.58125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "uncertainty",
+          "parameter_names": [
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 52.190625,
+          "modified_prediction_mean": 52.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.58125,
+          "modified_mae": 5.58125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "confidence",
+          "parameter_names": [
+            "confidence"
+          ],
+          "baseline_prediction_mean": 52.190625,
+          "modified_prediction_mean": 52.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.58125,
+          "modified_mae": 5.58125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "pairwise_results": [
+        {
+          "intervention_name": "expected_state_bias+transition_probability_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 57.190625,
+          "modified_prediction_mean": 57.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.5875,
+          "modified_mae": 5.5875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+risk_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 57.190625,
+          "modified_prediction_mean": 57.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.5875,
+          "modified_mae": 5.5875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+uncertainty",
+          "parameter_names": [
+            "expected_state_bias",
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 57.190625,
+          "modified_prediction_mean": 57.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.5875,
+          "modified_mae": 5.5875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+confidence",
+          "parameter_names": [
+            "expected_state_bias",
+            "confidence"
+          ],
+          "baseline_prediction_mean": 57.190625,
+          "modified_prediction_mean": 57.190625,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.5875,
+          "modified_mae": 5.5875,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "causally_inert_parameters": [
+        "transition_probability_bias",
+        "risk_bias",
+        "uncertainty",
+        "confidence"
+      ],
+      "causally_active_parameters": [
+        "expected_state_bias"
+      ],
+      "total_effective_interventions": 1
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 80,
+      "single_parameter_results": [
+        {
+          "intervention_name": "expected_state_bias",
+          "parameter_names": [
+            "expected_state_bias"
+          ],
+          "baseline_prediction_mean": 51.79375,
+          "modified_prediction_mean": 56.79375,
+          "mean_prediction_delta": 6.0,
+          "max_prediction_delta": 10.0,
+          "baseline_mae": 5.578125,
+          "modified_mae": 5.409375,
+          "mae_delta": 0.16875000000000018,
+          "improvement": 0.16875000000000018,
+          "causally_effective": true,
+          "effective_range": 10.0
+        },
+        {
+          "intervention_name": "transition_probability_bias",
+          "parameter_names": [
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 51.79375,
+          "modified_prediction_mean": 51.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.578125,
+          "modified_mae": 5.578125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "risk_bias",
+          "parameter_names": [
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 51.79375,
+          "modified_prediction_mean": 51.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.578125,
+          "modified_mae": 5.578125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "uncertainty",
+          "parameter_names": [
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 51.79375,
+          "modified_prediction_mean": 51.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.578125,
+          "modified_mae": 5.578125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "confidence",
+          "parameter_names": [
+            "confidence"
+          ],
+          "baseline_prediction_mean": 51.79375,
+          "modified_prediction_mean": 51.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.578125,
+          "modified_mae": 5.578125,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "pairwise_results": [
+        {
+          "intervention_name": "expected_state_bias+transition_probability_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "transition_probability_bias"
+          ],
+          "baseline_prediction_mean": 56.79375,
+          "modified_prediction_mean": 56.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.409375,
+          "modified_mae": 5.409375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+risk_bias",
+          "parameter_names": [
+            "expected_state_bias",
+            "risk_bias"
+          ],
+          "baseline_prediction_mean": 56.79375,
+          "modified_prediction_mean": 56.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.409375,
+          "modified_mae": 5.409375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+uncertainty",
+          "parameter_names": [
+            "expected_state_bias",
+            "uncertainty"
+          ],
+          "baseline_prediction_mean": 56.79375,
+          "modified_prediction_mean": 56.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.409375,
+          "modified_mae": 5.409375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        },
+        {
+          "intervention_name": "expected_state_bias+confidence",
+          "parameter_names": [
+            "expected_state_bias",
+            "confidence"
+          ],
+          "baseline_prediction_mean": 56.79375,
+          "modified_prediction_mean": 56.79375,
+          "mean_prediction_delta": 0.0,
+          "max_prediction_delta": 0.0,
+          "baseline_mae": 5.409375,
+          "modified_mae": 5.409375,
+          "mae_delta": 0.0,
+          "improvement": 0.0,
+          "causally_effective": false,
+          "effective_range": 0.0
+        }
+      ],
+      "causally_inert_parameters": [
+        "transition_probability_bias",
+        "risk_bias",
+        "uncertainty",
+        "confidence"
+      ],
+      "causally_active_parameters": [
+        "expected_state_bias"
+      ],
+      "total_effective_interventions": 1
+    }
+  }
+}

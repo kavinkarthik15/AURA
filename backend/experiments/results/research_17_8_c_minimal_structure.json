@@ -1,0 +1,1491 @@
+{
+  "analysis_date": "2026-08-13T19:31:34.412686",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events_train": 80,
+      "total_events_heldout": 20,
+      "runtime_seconds": 0.006150999994133599,
+      "baseline_model": "current_bias_only",
+      "candidate_metrics": {
+        "current_bias_only": {
+          "model": "current_bias_only",
+          "family": "current",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 4.59984375,
+          "heldout_mae": 4.6625,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 5.754644014565541,
+          "heldout_rmse": 6.107482123643507,
+          "delta_rmse_vs_baseline": 0.0,
+          "train_r2": 0.0,
+          "heldout_r2": -0.0026778101650211106,
+          "delta_r2_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 6.4781249999999995
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 1,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 1.0,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_motivation": {
+          "model": "plus_motivation",
+          "family": "candidate_a",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.75671875,
+          "heldout_mae": 4.7171875000000005,
+          "delta_mae_vs_baseline": -0.05468750000000089,
+          "train_rmse": 5.5014406848910955,
+          "heldout_rmse": 5.938643475418018,
+          "delta_rmse_vs_baseline": 0.16883864822548933,
+          "train_r2": 0.08606366543195332,
+          "heldout_r2": 0.05199309297705512,
+          "delta_r2_vs_baseline": 0.05467090314207623,
+          "coefficients": {
+            "beta_0": 4.090624999999998,
+            "beta_motivation": 4.775000000000001
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 3.6122516562787976,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_goals": {
+          "model": "plus_goals",
+          "family": "candidate_a",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.0289925908052435,
+          "heldout_mae": 3.4378232400176536,
+          "delta_mae_vs_baseline": 1.224676759982346,
+          "train_rmse": 5.17078059500305,
+          "heldout_rmse": 5.168091021284823,
+          "delta_rmse_vs_baseline": 0.9393911023586838,
+          "train_r2": 0.19262500582441522,
+          "heldout_r2": 0.28204487045951865,
+          "delta_r2_vs_baseline": 0.28472268062453976,
+          "coefficients": {
+            "beta_0": 12.430819151378207,
+            "beta_goals": -14.825791182032077
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 6.840548277915441,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_behavior": {
+          "model": "plus_behavior",
+          "family": "candidate_a",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.560003321817699,
+          "heldout_mae": 4.555259766144033,
+          "delta_mae_vs_baseline": 0.1072402338559666,
+          "train_rmse": 5.731348607690459,
+          "heldout_rmse": 6.00855922261599,
+          "delta_rmse_vs_baseline": 0.09892290102751744,
+          "train_r2": 0.008079824115025058,
+          "heldout_r2": 0.029539893726451494,
+          "delta_r2_vs_baseline": 0.032217703891472604,
+          "coefficients": {
+            "beta_0": 11.399402072814247,
+            "beta_behavior": -6.033749667818229
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 19.458657130081395,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.609650721638529,
+          "heldout_mae": 3.543561214660348,
+          "delta_mae_vs_baseline": 1.1189387853396515,
+          "train_rmse": 4.682923773361047,
+          "heldout_rmse": 4.676358472421074,
+          "delta_rmse_vs_baseline": 1.4311236512224328,
+          "train_r2": 0.337787688057233,
+          "heldout_r2": 0.41216886484352644,
+          "delta_r2_vs_baseline": 0.41484667500854755,
+          "coefficients": {
+            "beta_0": 10.247153353844922,
+            "beta_motivation": 6.310022921988768,
+            "beta_goals": -17.245026507386793
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 7.660363544632116,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_behavior": {
+          "model": "motivation_behavior",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.715833957833733,
+          "heldout_mae": 4.753354816147082,
+          "delta_mae_vs_baseline": -0.09085481614708257,
+          "train_rmse": 5.484546144599862,
+          "heldout_rmse": 5.882832059991381,
+          "delta_rmse_vs_baseline": 0.2246500636521258,
+          "train_r2": 0.09166831581706503,
+          "heldout_r2": 0.06972811448227922,
+          "delta_r2_vs_baseline": 0.07240592464730033,
+          "coefficients": {
+            "beta_0": 8.22627897681855,
+            "beta_motivation": 4.712100319744205,
+            "beta_behavior": -5.031974420463637
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.087931287206512,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "goals_behavior": {
+          "model": "goals_behavior",
+          "family": "candidate_a",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.948936965083374,
+          "heldout_mae": 3.5503279293396246,
+          "delta_mae_vs_baseline": 1.112172070660375,
+          "train_rmse": 5.105828365157732,
+          "heldout_rmse": 5.278324273615804,
+          "delta_rmse_vs_baseline": 0.8291578500277028,
+          "train_r2": 0.21278112745159072,
+          "heldout_r2": 0.25109086156290006,
+          "delta_r2_vs_baseline": 0.25376867172792117,
+          "coefficients": {
+            "beta_0": 4.604196591892005,
+            "beta_goals": -17.501946764649542,
+            "beta_behavior": 10.91325561975872
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.715759993752812,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "all_three": {
+          "model": "all_three",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.3975619292249783,
+          "heldout_mae": 3.2878831459869047,
+          "delta_mae_vs_baseline": 1.374616854013095,
+          "train_rmse": 4.527873747975411,
+          "heldout_rmse": 4.674365603308919,
+          "delta_rmse_vs_baseline": 1.433116520334588,
+          "train_r2": 0.3809129902067101,
+          "heldout_r2": 0.41266977635549296,
+          "delta_r2_vs_baseline": 0.41534758652051407,
+          "coefficients": {
+            "beta_0": -1.5591131753712966,
+            "beta_motivation": 6.885240706194585,
+            "beta_goals": -21.43441189725913,
+            "beta_behavior": 16.184809375184784
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 24.882082458502772,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "aggregate_signal": {
+          "model": "aggregate_signal",
+          "family": "candidate_b",
+          "features": [
+            "aggregate_signal"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.660229350038541,
+          "heldout_mae": 4.703080752577845,
+          "delta_mae_vs_baseline": -0.04058075257784566,
+          "train_rmse": 5.747969866873662,
+          "heldout_rmse": 6.1255336047624604,
+          "delta_rmse_vs_baseline": -0.018051481118953383,
+          "train_r2": 0.0023182241640079537,
+          "heldout_r2": -0.00861366635309535,
+          "delta_r2_vs_baseline": -0.00593585618807424,
+          "coefficients": {
+            "beta_0": 5.399968454756189,
+            "beta_aggregate_signal": 1.8836438678431484
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 9.062332344928915,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "minimal_linear": {
+          "model": "minimal_linear",
+          "family": "candidate_c",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.3975619292249783,
+          "heldout_mae": 3.2878831459869047,
+          "delta_mae_vs_baseline": 1.374616854013095,
+          "train_rmse": 4.527873747975411,
+          "heldout_rmse": 4.674365603308919,
+          "delta_rmse_vs_baseline": 1.433116520334588,
+          "train_r2": 0.3809129902067101,
+          "heldout_r2": 0.41266977635549296,
+          "delta_r2_vs_baseline": 0.41534758652051407,
+          "coefficients": {
+            "beta_0": -1.5591131753712966,
+            "beta_motivation": 6.885240706194585,
+            "beta_goals": -21.43441189725913,
+            "beta_behavior": 16.184809375184784
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 24.882082458502772,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        }
+      },
+      "gate1_expressiveness": true,
+      "gate2_incremental_information": true,
+      "gate3_identifiability": true,
+      "gate4_minimality": true,
+      "minimal_sufficient_model": "all_three",
+      "minimal_sufficient_parameter_count": 4,
+      "outcome_label": "outcome_b_multi_dimension_required"
+    },
+    "123": {
+      "seed": 123,
+      "total_events_train": 80,
+      "total_events_heldout": 20,
+      "runtime_seconds": 0.005675200001860503,
+      "baseline_model": "current_bias_only",
+      "candidate_metrics": {
+        "current_bias_only": {
+          "model": "current_bias_only",
+          "family": "current",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 4.696562500000001,
+          "heldout_mae": 4.7871875,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 6.018200747264501,
+          "heldout_rmse": 5.326511852575286,
+          "delta_rmse_vs_baseline": 0.0,
+          "train_r2": 0.0,
+          "heldout_r2": -0.03821163720153686,
+          "delta_r2_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 6.621875
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 1,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 1.0,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_motivation": {
+          "model": "plus_motivation",
+          "family": "candidate_a",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.740468750000001,
+          "heldout_mae": 4.8549999999999995,
+          "delta_mae_vs_baseline": -0.06781249999999961,
+          "train_rmse": 5.6184953710379615,
+          "heldout_rmse": 5.564722343983122,
+          "delta_rmse_vs_baseline": -0.2382104914078358,
+          "train_r2": 0.12842108725762713,
+          "heldout_r2": -0.13314920009605702,
+          "delta_r2_vs_baseline": -0.09493756289452016,
+          "coefficients": {
+            "beta_0": 3.571874999999999,
+            "beta_motivation": 6.100000000000001
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 3.6122516562787976,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_goals": {
+          "model": "plus_goals",
+          "family": "candidate_a",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.092553542887198,
+          "heldout_mae": 4.005389127590638,
+          "delta_mae_vs_baseline": 0.7817983724093622,
+          "train_rmse": 5.567352576214959,
+          "heldout_rmse": 4.514192605981846,
+          "delta_rmse_vs_baseline": 0.8123192465934403,
+          "train_r2": 0.14421610173868593,
+          "heldout_r2": 0.25430665505804906,
+          "delta_r2_vs_baseline": 0.2925182922595859,
+          "coefficients": {
+            "beta_0": 12.598189707472,
+            "beta_goals": -15.223794734068397
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 7.708069633670773,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_behavior": {
+          "model": "plus_behavior",
+          "family": "candidate_a",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.57554029105126,
+          "heldout_mae": 4.732078084274543,
+          "delta_mae_vs_baseline": 0.05510941572545658,
+          "train_rmse": 5.836650616230396,
+          "heldout_rmse": 5.347384395822147,
+          "delta_rmse_vs_baseline": -0.020872543246861497,
+          "train_r2": 0.059423652079142575,
+          "heldout_r2": -0.046364280548245596,
+          "delta_r2_vs_baseline": -0.008152643346708732,
+          "coefficients": {
+            "beta_0": -7.518353605560387,
+            "beta_behavior": 17.296915725456127
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 19.703781061624884,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.680676812910046,
+          "heldout_mae": 3.4950232132265926,
+          "delta_mae_vs_baseline": 1.2921642867734073,
+          "train_rmse": 4.843453686192547,
+          "heldout_rmse": 4.55657154612831,
+          "delta_rmse_vs_baseline": 0.7699403064469763,
+          "train_r2": 0.3522954288722797,
+          "heldout_r2": 0.24023989552699176,
+          "delta_r2_vs_baseline": 0.27845153272852863,
+          "coefficients": {
+            "beta_0": 10.280569253490997,
+            "beta_motivation": 7.97162483126171,
+            "beta_goals": -19.473271751975123
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 8.711046856771494,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_behavior": {
+          "model": "motivation_behavior",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.5535714676290455,
+          "heldout_mae": 4.889782917760279,
+          "delta_mae_vs_baseline": -0.1025954177602788,
+          "train_rmse": 5.46798593900094,
+          "heldout_rmse": 5.5488559781447835,
+          "delta_rmse_vs_baseline": -0.22234412556949756,
+          "train_r2": 0.17449171242198158,
+          "heldout_r2": -0.1266966486576926,
+          "delta_r2_vs_baseline": -0.08848501145615573,
+          "coefficients": {
+            "beta_0": -8.769346019247608,
+            "beta_motivation": 5.794335083114614,
+            "beta_behavior": 15.283245844269473
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.231356247472224,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "goals_behavior": {
+          "model": "goals_behavior",
+          "family": "candidate_a",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.9558344424625544,
+          "heldout_mae": 3.7634719064915303,
+          "delta_mae_vs_baseline": 1.0237155935084696,
+          "train_rmse": 5.325606748238801,
+          "heldout_rmse": 4.313063146756736,
+          "delta_rmse_vs_baseline": 1.0134487058185497,
+          "train_r2": 0.21692231553740338,
+          "heldout_r2": 0.31927495351162316,
+          "delta_r2_vs_baseline": 0.35748659071316,
+          "coefficients": {
+            "beta_0": -2.7944609138348255,
+            "beta_goals": -15.944774487838522,
+            "beta_behavior": 19.175145397464313
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 20.626866837225826,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "all_three": {
+          "model": "all_three",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.362088487629457,
+          "heldout_mae": 3.4743884076760367,
+          "delta_mae_vs_baseline": 1.3127990923239632,
+          "train_rmse": 4.6265028698960755,
+          "heldout_rmse": 4.293425306102644,
+          "delta_rmse_vs_baseline": 1.0330865464726422,
+          "train_r2": 0.40902061566344294,
+          "heldout_r2": 0.3254596703290613,
+          "delta_r2_vs_baseline": 0.3636713075305982,
+          "coefficients": {
+            "beta_0": -3.2640168720266884,
+            "beta_motivation": 7.6783763484415815,
+            "beta_goals": -19.95535943859579,
+            "beta_behavior": 16.97915678002297
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.107219902994125,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "aggregate_signal": {
+          "model": "aggregate_signal",
+          "family": "candidate_b",
+          "features": [
+            "aggregate_signal"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.778075641635421,
+          "heldout_mae": 4.951911975125311,
+          "delta_mae_vs_baseline": -0.1647244751253112,
+          "train_rmse": 5.8842175892554485,
+          "heldout_rmse": 5.612851605578242,
+          "delta_rmse_vs_baseline": -0.2863397530029559,
+          "train_r2": 0.0440303441354446,
+          "heldout_r2": -0.15283517139300118,
+          "delta_r2_vs_baseline": -0.11462353419146432,
+          "coefficients": {
+            "beta_0": 1.6072660841801074,
+            "beta_aggregate_signal": 8.797229926852335
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 9.26546316628103,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "minimal_linear": {
+          "model": "minimal_linear",
+          "family": "candidate_c",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.362088487629457,
+          "heldout_mae": 3.4743884076760367,
+          "delta_mae_vs_baseline": 1.3127990923239632,
+          "train_rmse": 4.6265028698960755,
+          "heldout_rmse": 4.293425306102644,
+          "delta_rmse_vs_baseline": 1.0330865464726422,
+          "train_r2": 0.40902061566344294,
+          "heldout_r2": 0.3254596703290613,
+          "delta_r2_vs_baseline": 0.3636713075305982,
+          "coefficients": {
+            "beta_0": -3.2640168720266884,
+            "beta_motivation": 7.6783763484415815,
+            "beta_goals": -19.95535943859579,
+            "beta_behavior": 16.97915678002297
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.107219902994125,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        }
+      },
+      "gate1_expressiveness": true,
+      "gate2_incremental_information": true,
+      "gate3_identifiability": true,
+      "gate4_minimality": true,
+      "minimal_sufficient_model": "all_three",
+      "minimal_sufficient_parameter_count": 4,
+      "outcome_label": "outcome_b_multi_dimension_required"
+    },
+    "456": {
+      "seed": 456,
+      "total_events_train": 80,
+      "total_events_heldout": 20,
+      "runtime_seconds": 0.005238400000962429,
+      "baseline_model": "current_bias_only",
+      "candidate_metrics": {
+        "current_bias_only": {
+          "model": "current_bias_only",
+          "family": "current",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 4.405546875000001,
+          "heldout_mae": 4.475,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 5.4761548082915805,
+          "heldout_rmse": 5.326203832526971,
+          "delta_rmse_vs_baseline": 0.0,
+          "train_r2": 0.0,
+          "heldout_r2": -7.746056052537753e-05,
+          "delta_r2_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 6.596875
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 1,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 1.0,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_motivation": {
+          "model": "plus_motivation",
+          "family": "candidate_a",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.432421875,
+          "heldout_mae": 4.5421875,
+          "delta_mae_vs_baseline": -0.06718750000000018,
+          "train_rmse": 5.331419436053123,
+          "heldout_rmse": 5.24505514895935,
+          "delta_rmse_vs_baseline": 0.08114868356762095,
+          "train_r2": 0.052161668673202155,
+          "heldout_r2": 0.03016424392984629,
+          "delta_r2_vs_baseline": 0.030241704490371668,
+          "coefficients": {
+            "beta_0": 4.828124999999999,
+            "beta_motivation": 3.5375000000000005
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 3.6122516562787976,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_goals": {
+          "model": "plus_goals",
+          "family": "candidate_a",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 3.667391417309698,
+          "heldout_mae": 3.485253856176923,
+          "delta_mae_vs_baseline": 0.9897461438230768,
+          "train_rmse": 4.847521943098758,
+          "heldout_rmse": 4.274895833020835,
+          "delta_rmse_vs_baseline": 1.051307999506136,
+          "train_r2": 0.21641135598403793,
+          "heldout_r2": 0.355757832523548,
+          "delta_r2_vs_baseline": 0.35583529308407336,
+          "coefficients": {
+            "beta_0": 13.525184061683305,
+            "beta_goals": -17.16940024656568
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 7.858249040263173,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_behavior": {
+          "model": "plus_behavior",
+          "family": "candidate_a",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.436073490230906,
+          "heldout_mae": 4.689539853463588,
+          "delta_mae_vs_baseline": -0.21453985346358806,
+          "train_rmse": 5.326612297831404,
+          "heldout_rmse": 5.432279830613409,
+          "delta_rmse_vs_baseline": -0.1060759980864372,
+          "train_r2": 0.05387015766507164,
+          "heldout_r2": -0.04030896428288022,
+          "delta_r2_vs_baseline": -0.040231503722354844,
+          "coefficients": {
+            "beta_0": -5.978435834813501,
+            "beta_behavior": 15.150976909413851
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 20.16666507065883,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.3883086169749044,
+          "heldout_mae": 3.2359872284768203,
+          "delta_mae_vs_baseline": 1.2390127715231793,
+          "train_rmse": 4.424249199392978,
+          "heldout_rmse": 3.820562874071213,
+          "delta_rmse_vs_baseline": 1.5056409584557584,
+          "train_r2": 0.34727878569032655,
+          "heldout_r2": 0.4854201498354105,
+          "delta_r2_vs_baseline": 0.48549761039593586,
+          "coefficients": {
+            "beta_0": 12.074246066284342,
+            "beta_motivation": 5.802693500911017,
+            "beta_goals": -20.763733036136497
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 8.940283728163955,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_behavior": {
+          "model": "motivation_behavior",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.434603376371114,
+          "heldout_mae": 4.475,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 5.221800009335314,
+          "heldout_rmse": 5.249830715363436,
+          "delta_rmse_vs_baseline": 0.07637311716353512,
+          "train_r2": 0.0907380123025262,
+          "heldout_r2": 0.02839738985684137,
+          "delta_r2_vs_baseline": 0.02847485041736675,
+          "coefficients": {
+            "beta_0": -5.70779821755027,
+            "beta_motivation": 3.0172074954296146,
+            "beta_behavior": 13.007312614259599
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.85060286841016,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "goals_behavior": {
+          "model": "goals_behavior",
+          "family": "candidate_a",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.373183933323567,
+          "heldout_mae": 3.69935606932473,
+          "delta_mae_vs_baseline": 0.7756439306752698,
+          "train_rmse": 4.533979349613322,
+          "heldout_rmse": 4.362635783902473,
+          "delta_rmse_vs_baseline": 0.9635680486244986,
+          "train_r2": 0.3144997118813274,
+          "heldout_r2": 0.32904099121363084,
+          "delta_r2_vs_baseline": 0.3291184517741562,
+          "coefficients": {
+            "beta_0": -2.8990438224468797,
+            "beta_goals": -19.104095407241722,
+            "beta_behavior": 20.728829845545995
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.166997460837557,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "all_three": {
+          "model": "all_three",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.0814965437156774,
+          "heldout_mae": 3.2434012205412586,
+          "delta_mae_vs_baseline": 1.231598779458741,
+          "train_rmse": 4.174128878097731,
+          "heldout_rmse": 3.6238745314837226,
+          "delta_rmse_vs_baseline": 1.7023293010432488,
+          "train_r2": 0.4189944592155759,
+          "heldout_r2": 0.5370390298352312,
+          "delta_r2_vs_baseline": 0.5371164903957566,
+          "coefficients": {
+            "beta_0": -1.9504117744289828,
+            "beta_motivation": 5.230885213579761,
+            "beta_goals": -22.078420223659393,
+            "beta_behavior": 17.880811067376932
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.768849150125916,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "aggregate_signal": {
+          "model": "aggregate_signal",
+          "family": "candidate_b",
+          "features": [
+            "aggregate_signal"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.450824570347402,
+          "heldout_mae": 4.535256756877837,
+          "delta_mae_vs_baseline": -0.0602567568778376,
+          "train_rmse": 5.462504578902563,
+          "heldout_rmse": 5.362981470541388,
+          "delta_rmse_vs_baseline": -0.03677763801441625,
+          "train_r2": 0.0049791202511064725,
+          "heldout_r2": -0.013936288842207434,
+          "delta_r2_vs_baseline": -0.013858828281682056,
+          "coefficients": {
+            "beta_0": 5.081637449786641,
+            "beta_aggregate_signal": 2.6222342068323976
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 9.08931391762173,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "minimal_linear": {
+          "model": "minimal_linear",
+          "family": "candidate_c",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.0814965437156774,
+          "heldout_mae": 3.2434012205412586,
+          "delta_mae_vs_baseline": 1.231598779458741,
+          "train_rmse": 4.174128878097731,
+          "heldout_rmse": 3.6238745314837226,
+          "delta_rmse_vs_baseline": 1.7023293010432488,
+          "train_r2": 0.4189944592155759,
+          "heldout_r2": 0.5370390298352312,
+          "delta_r2_vs_baseline": 0.5371164903957566,
+          "coefficients": {
+            "beta_0": -1.9504117744289828,
+            "beta_motivation": 5.230885213579761,
+            "beta_goals": -22.078420223659393,
+            "beta_behavior": 17.880811067376932
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.768849150125916,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        }
+      },
+      "gate1_expressiveness": true,
+      "gate2_incremental_information": true,
+      "gate3_identifiability": true,
+      "gate4_minimality": true,
+      "minimal_sufficient_model": "motivation_goals",
+      "minimal_sufficient_parameter_count": 3,
+      "outcome_label": "outcome_b_multi_dimension_required"
+    },
+    "789": {
+      "seed": 789,
+      "total_events_train": 80,
+      "total_events_heldout": 20,
+      "runtime_seconds": 0.004882499997620471,
+      "baseline_model": "current_bias_only",
+      "candidate_metrics": {
+        "current_bias_only": {
+          "model": "current_bias_only",
+          "family": "current",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 4.48125,
+          "heldout_mae": 4.25,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 5.639948886071576,
+          "heldout_rmse": 5.225541987440155,
+          "delta_rmse_vs_baseline": 0.0,
+          "train_r2": -2.220446049250313e-16,
+          "heldout_r2": -0.0008948821332841472,
+          "delta_r2_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 6.3312500000000025
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 1,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 1.0,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_motivation": {
+          "model": "plus_motivation",
+          "family": "candidate_a",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.460156250000001,
+          "heldout_mae": 4.708125000000001,
+          "delta_mae_vs_baseline": -0.4581250000000008,
+          "train_rmse": 5.393668524877108,
+          "heldout_rmse": 5.264294898773245,
+          "delta_rmse_vs_baseline": -0.03875291133308956,
+          "train_r2": 0.08542743497263328,
+          "heldout_r2": -0.01579531396760636,
+          "delta_r2_vs_baseline": -0.014900431834322214,
+          "coefficients": {
+            "beta_0": 4.000000000000003,
+            "beta_motivation": 4.6625
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 3.6122516562787976,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_goals": {
+          "model": "plus_goals",
+          "family": "candidate_a",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 3.544024518722368,
+          "heldout_mae": 3.5484002893175424,
+          "delta_mae_vs_baseline": 0.7015997106824576,
+          "train_rmse": 4.938381562253623,
+          "heldout_rmse": 4.463139574256047,
+          "delta_rmse_vs_baseline": 0.7624024131841081,
+          "train_r2": 0.23331150035698012,
+          "heldout_r2": 0.26985902327862565,
+          "delta_r2_vs_baseline": 0.2707539054119098,
+          "coefficients": {
+            "beta_0": 13.338769738330738,
+            "beta_goals": -17.129439164199958
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 7.363353704587026,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_behavior": {
+          "model": "plus_behavior",
+          "family": "candidate_a",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.4706137273247055,
+          "heldout_mae": 4.329279068558658,
+          "delta_mae_vs_baseline": -0.07927906855865796,
+          "train_rmse": 5.60756890512074,
+          "heldout_rmse": 5.41568513524651,
+          "delta_rmse_vs_baseline": -0.19014314780635466,
+          "train_r2": 0.011449405623488285,
+          "heldout_r2": -0.07505974146315086,
+          "delta_r2_vs_baseline": -0.07416485932986672,
+          "coefficients": {
+            "beta_0": 12.165757055980054,
+            "beta_behavior": -6.961380529133545
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 19.67416725425625,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.19041324203931,
+          "heldout_mae": 3.4535490810389,
+          "delta_mae_vs_baseline": 0.7964509189611002,
+          "train_rmse": 4.429743117739339,
+          "heldout_rmse": 4.088835321162262,
+          "delta_rmse_vs_baseline": 1.1367066662778935,
+          "train_r2": 0.38311139517644777,
+          "heldout_r2": 0.38719115590170783,
+          "delta_r2_vs_baseline": 0.388086038034992,
+          "coefficients": {
+            "beta_0": 11.24225857349988,
+            "beta_motivation": 6.279824280772411,
+            "beta_goals": -19.679966911824923
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 8.241888192916797,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_behavior": {
+          "model": "motivation_behavior",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.4258677394992345,
+          "heldout_mae": 4.6760701941850025,
+          "delta_mae_vs_baseline": -0.42607019418500247,
+          "train_rmse": 5.37845379802425,
+          "heldout_rmse": 5.3431668225948235,
+          "delta_rmse_vs_baseline": -0.11762483515466826,
+          "train_r2": 0.09057990056437182,
+          "heldout_r2": -0.04646149482313988,
+          "delta_r2_vs_baseline": -0.045566612689855734,
+          "coefficients": {
+            "beta_0": 8.01420274655694,
+            "beta_motivation": 4.521341222099094,
+            "beta_behavior": -4.705292596696777
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.51621821842382,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "goals_behavior": {
+          "model": "goals_behavior",
+          "family": "candidate_a",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.5403257659432845,
+          "heldout_mae": 3.5491859766459632,
+          "delta_mae_vs_baseline": 0.7008140233540368,
+          "train_rmse": 4.937542341470979,
+          "heldout_rmse": 4.498707321382317,
+          "delta_rmse_vs_baseline": 0.7268346660578384,
+          "train_r2": 0.23357205788726998,
+          "heldout_r2": 0.2581753430268685,
+          "delta_r2_vs_baseline": 0.25907022516015266,
+          "coefficients": {
+            "beta_0": 14.190038701100203,
+            "beta_goals": -17.019439894823265,
+            "beta_behavior": -1.0693736668184126
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 20.715265343149564,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "all_three": {
+          "model": "all_three",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.1833022399119675,
+          "heldout_mae": 3.4226247221766344,
+          "delta_mae_vs_baseline": 0.8273752778233656,
+          "train_rmse": 4.42168480917332,
+          "heldout_rmse": 4.021444533349474,
+          "delta_rmse_vs_baseline": 1.2040974540906815,
+          "train_r2": 0.38535376321472137,
+          "heldout_r2": 0.4072249017046532,
+          "delta_r2_vs_baseline": 0.40811978383793734,
+          "coefficients": {
+            "beta_0": 8.66913734927604,
+            "beta_motivation": 6.406302388252131,
+            "beta_goals": -20.058372930256507,
+            "beta_behavior": 3.179340929249599
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.626760889847127,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "aggregate_signal": {
+          "model": "aggregate_signal",
+          "family": "candidate_b",
+          "features": [
+            "aggregate_signal"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.498393658903138,
+          "heldout_mae": 4.344585630770391,
+          "delta_mae_vs_baseline": -0.09458563077039095,
+          "train_rmse": 5.635185378206227,
+          "heldout_rmse": 5.237242996157057,
+          "delta_rmse_vs_baseline": -0.011701008716901384,
+          "train_r2": 0.001688489143851557,
+          "heldout_r2": -0.0053822987164970915,
+          "delta_r2_vs_baseline": -0.004487416583212944,
+          "coefficients": {
+            "beta_0": 5.366211640367756,
+            "beta_aggregate_signal": 1.656986377886543
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 9.610817368615388,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "minimal_linear": {
+          "model": "minimal_linear",
+          "family": "candidate_c",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.1833022399119675,
+          "heldout_mae": 3.4226247221766344,
+          "delta_mae_vs_baseline": 0.8273752778233656,
+          "train_rmse": 4.42168480917332,
+          "heldout_rmse": 4.021444533349474,
+          "delta_rmse_vs_baseline": 1.2040974540906815,
+          "train_r2": 0.38535376321472137,
+          "heldout_r2": 0.4072249017046532,
+          "delta_r2_vs_baseline": 0.40811978383793734,
+          "coefficients": {
+            "beta_0": 8.66913734927604,
+            "beta_motivation": 6.406302388252131,
+            "beta_goals": -20.058372930256507,
+            "beta_behavior": 3.179340929249599
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.626760889847127,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        }
+      },
+      "gate1_expressiveness": true,
+      "gate2_incremental_information": true,
+      "gate3_identifiability": true,
+      "gate4_minimality": true,
+      "minimal_sufficient_model": "all_three",
+      "minimal_sufficient_parameter_count": 4,
+      "outcome_label": "outcome_b_multi_dimension_required"
+    },
+    "999": {
+      "seed": 999,
+      "total_events_train": 80,
+      "total_events_heldout": 20,
+      "runtime_seconds": 0.005839200006448664,
+      "baseline_model": "current_bias_only",
+      "candidate_metrics": {
+        "current_bias_only": {
+          "model": "current_bias_only",
+          "family": "current",
+          "features": [],
+          "parameter_count": 1,
+          "train_mae": 4.277265625,
+          "heldout_mae": 4.1625,
+          "delta_mae_vs_baseline": 0.0,
+          "train_rmse": 5.295368517334275,
+          "heldout_rmse": 5.103530678914844,
+          "delta_rmse_vs_baseline": 0.0,
+          "train_r2": 2.220446049250313e-16,
+          "heldout_r2": -0.004311162857951967,
+          "delta_r2_vs_baseline": 0.0,
+          "coefficients": {
+            "beta_0": 6.5718749999999995
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 1,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 1.0,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_motivation": {
+          "model": "plus_motivation",
+          "family": "candidate_a",
+          "features": [
+            "motivation"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.274062499999999,
+          "heldout_mae": 4.00125,
+          "delta_mae_vs_baseline": 0.1612499999999999,
+          "train_rmse": 5.171155539081667,
+          "heldout_rmse": 4.91306791405584,
+          "delta_rmse_vs_baseline": 0.19046276485900382,
+          "train_r2": 0.04636359172261806,
+          "heldout_r2": 0.06925145650955844,
+          "delta_r2_vs_baseline": 0.0735626193675104,
+          "coefficients": {
+            "beta_0": 4.959374999999999,
+            "beta_motivation": 3.225000000000001
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 3.6122516562787976,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_goals": {
+          "model": "plus_goals",
+          "family": "candidate_a",
+          "features": [
+            "goals"
+          ],
+          "parameter_count": 2,
+          "train_mae": 3.5574825482589008,
+          "heldout_mae": 3.182692785744376,
+          "delta_mae_vs_baseline": 0.9798072142556236,
+          "train_rmse": 4.720024068382494,
+          "heldout_rmse": 4.5374180577742775,
+          "delta_rmse_vs_baseline": 0.566112621140566,
+          "train_r2": 0.20549607284216365,
+          "heldout_r2": 0.20613908483300292,
+          "delta_r2_vs_baseline": 0.21045024769095488,
+          "coefficients": {
+            "beta_0": 12.877195523672047,
+            "beta_goals": -15.77605773086093
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 7.643196806566553,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "plus_behavior": {
+          "model": "plus_behavior",
+          "family": "candidate_a",
+          "features": [
+            "behavior"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.269363484316736,
+          "heldout_mae": 4.156362415003291,
+          "delta_mae_vs_baseline": 0.006137584996708689,
+          "train_rmse": 5.291313013735598,
+          "heldout_rmse": 5.1060532767145554,
+          "delta_rmse_vs_baseline": -0.0025225977997118676,
+          "train_r2": 0.001531130690610949,
+          "heldout_r2": -0.005304239775776987,
+          "delta_r2_vs_baseline": -0.0009930769178250198,
+          "coefficients": {
+            "beta_0": 4.543403158587414,
+            "beta_behavior": 2.4550339986839185
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 19.971294338274266,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_goals": {
+          "model": "motivation_goals",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.3451252472421773,
+          "heldout_mae": 2.861211678935045,
+          "delta_mae_vs_baseline": 1.3012883210649546,
+          "train_rmse": 4.4005676115369825,
+          "heldout_rmse": 4.001531665469889,
+          "delta_rmse_vs_baseline": 1.1019990134449547,
+          "train_r2": 0.3094024745847117,
+          "heldout_r2": 0.38258191526366225,
+          "delta_r2_vs_baseline": 0.3868930781216142,
+          "coefficients": {
+            "beta_0": 11.408868379231237,
+            "beta_motivation": 4.947890725583347,
+            "beta_goals": -18.29213776332683
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 8.617841901186186,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "motivation_behavior": {
+          "model": "motivation_behavior",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 4.265422814358071,
+          "heldout_mae": 3.990469747852896,
+          "delta_mae_vs_baseline": 0.17203025214710355,
+          "train_rmse": 5.16360179337498,
+          "heldout_rmse": 4.901388101082189,
+          "delta_rmse_vs_baseline": 0.20214257783265488,
+          "train_r2": 0.04914759835639271,
+          "heldout_r2": 0.0736715245208589,
+          "delta_r2_vs_baseline": 0.07798268737881087,
+          "coefficients": {
+            "beta_0": 2.193825699185209,
+            "beta_motivation": 3.274755009909712,
+            "beta_behavior": 3.3170006606474267
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 21.653586819831393,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "goals_behavior": {
+          "model": "goals_behavior",
+          "family": "candidate_a",
+          "features": [
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 3,
+          "train_mae": 3.479146116493534,
+          "heldout_mae": 3.136778863774807,
+          "delta_mae_vs_baseline": 1.0257211362251928,
+          "train_rmse": 4.681730263031562,
+          "heldout_rmse": 4.572613421823126,
+          "delta_rmse_vs_baseline": 0.5309172570917173,
+          "train_r2": 0.21833548221317023,
+          "heldout_r2": 0.1937758485423049,
+          "delta_r2_vs_baseline": 0.19808701140025686,
+          "coefficients": {
+            "beta_0": 7.1822446785917196,
+            "beta_goals": -16.416894044728306,
+            "beta_behavior": 7.202515098495629
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 3,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 20.945849461118122,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "all_three": {
+          "model": "all_three",
+          "family": "candidate_a",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.204783070491838,
+          "heldout_mae": 2.722216630785072,
+          "delta_mae_vs_baseline": 1.4402833692149275,
+          "train_rmse": 4.331314116505867,
+          "heldout_rmse": 3.9676739424381595,
+          "delta_rmse_vs_baseline": 1.135856736476684,
+          "train_r2": 0.3309678569284632,
+          "heldout_r2": 0.39298589769538494,
+          "delta_r2_vs_baseline": 0.3972970605533369,
+          "coefficients": {
+            "beta_0": 3.9213568391130855,
+            "beta_motivation": 5.178306287059831,
+            "beta_goals": -19.244161318552063,
+            "beta_behavior": 9.383122857913893
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.63508024986748,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "aggregate_signal": {
+          "model": "aggregate_signal",
+          "family": "candidate_b",
+          "features": [
+            "aggregate_signal"
+          ],
+          "parameter_count": 2,
+          "train_mae": 4.287732660670436,
+          "heldout_mae": 4.173733303663437,
+          "delta_mae_vs_baseline": -0.011233303663437333,
+          "train_rmse": 5.293753533525509,
+          "heldout_rmse": 5.09829490622865,
+          "delta_rmse_vs_baseline": 0.005235772686194018,
+          "train_r2": 0.0006098678625466869,
+          "heldout_r2": -0.0022515504106710438,
+          "delta_r2_vs_baseline": 0.002059612447280923,
+          "coefficients": {
+            "beta_0": 6.0386922656622835,
+            "beta_aggregate_signal": 0.926776513999644
+          },
+          "supports_incremental_information": false,
+          "identifiability_rank": 2,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 9.468111382272122,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        },
+        "minimal_linear": {
+          "model": "minimal_linear",
+          "family": "candidate_c",
+          "features": [
+            "motivation",
+            "goals",
+            "behavior"
+          ],
+          "parameter_count": 4,
+          "train_mae": 3.204783070491838,
+          "heldout_mae": 2.722216630785072,
+          "delta_mae_vs_baseline": 1.4402833692149275,
+          "train_rmse": 4.331314116505867,
+          "heldout_rmse": 3.9676739424381595,
+          "delta_rmse_vs_baseline": 1.135856736476684,
+          "train_r2": 0.3309678569284632,
+          "heldout_r2": 0.39298589769538494,
+          "delta_r2_vs_baseline": 0.3972970605533369,
+          "coefficients": {
+            "beta_0": 3.9213568391130855,
+            "beta_motivation": 5.178306287059831,
+            "beta_goals": -19.244161318552063,
+            "beta_behavior": 9.383122857913893
+          },
+          "supports_incremental_information": true,
+          "identifiability_rank": 4,
+          "identifiability_full_rank": true,
+          "identifiability_condition_number": 22.63508024986748,
+          "identifiable": true,
+          "nullspace_dimension": 0
+        }
+      },
+      "gate1_expressiveness": true,
+      "gate2_incremental_information": true,
+      "gate3_identifiability": true,
+      "gate4_minimality": true,
+      "minimal_sufficient_model": "all_three",
+      "minimal_sufficient_parameter_count": 4,
+      "outcome_label": "outcome_b_multi_dimension_required"
+    }
+  }
+}

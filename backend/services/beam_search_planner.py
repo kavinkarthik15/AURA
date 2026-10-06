@@ -5,7 +5,6 @@ from backend.ai.assumption_detector import AssumptionDetector
 from backend.ai.counterfactual_planner import CounterfactualPlanner
 from backend.ai.explanation_consistency import ExplanationConsistencyChecker
 from backend.ai.experience_reasoner import ExperienceReasoner
-from backend.ai.experience_retriever import ExperienceRetriever
 from backend.ai.meta_reasoner import MetaReasoner
 from backend.ai.plan_explainer import PlanExplainer
 from backend.ai.planning_policy import PlanningPolicy
@@ -17,7 +16,15 @@ from backend.ai.strategy_selector import StrategySelector
 from backend.config.retrieval_config import RETRIEVAL_WEIGHT
 from backend.models.goal_state import GoalState
 from backend.models.search_metrics import SearchMetrics
+from backend.memory.episodic_memory import EpisodicMemory
+from backend.memory.memory_manager import MemoryManager
+from backend.planning.candidate_selector import CandidateSelector
+from backend.planning.digital_twin_score_translator import DigitalTwinScoreTranslator
+from backend.planning.planning_context import PlanningContext
+from backend.models.calibration_parameters import CalibrationParameters
+from backend.models.planning_horizon import PlanningHorizon
 from backend.services.action_library import action_library
+from backend.services.multi_step_decision_engine import MultiStepDecisionEngine
 from backend.services.plan_expander import PlanExpander
 from backend.services.planner_config import (
     DEFAULT_BEAM_WIDTH,
@@ -26,6 +33,7 @@ from backend.services.planner_config import (
     DEFAULT_POLICY_WEIGHT,
 )
 from backend.services.search_state import SearchState
+from backend.services.simulation_engine import SimulationEngine
 
 
 class BeamSearchPlanner:
@@ -35,15 +43,30 @@ class BeamSearchPlanner:
         expander: PlanExpander | None = None,
         policy: PlanningPolicy | None = None,
         policy_weight: float = DEFAULT_POLICY_WEIGHT,
-        retriever: ExperienceRetriever | None = None,
+        retriever: object | None = None,
+        memory_manager: MemoryManager | None = None,
         retrieval_weight: float = RETRIEVAL_WEIGHT,
+        candidate_selector: CandidateSelector | None = None,
+        multi_step_decision_engine: MultiStepDecisionEngine | None = None,
+        calibration_parameters: CalibrationParameters | None = None,
     ) -> None:
         self.action_library = action_library_instance or action_library
         self.expander = expander or PlanExpander(action_library_instance=self.action_library)
         self.policy = policy
         self.policy_weight = policy_weight
         self.retriever = retriever
+        self.memory_manager = memory_manager or MemoryManager(
+            episodic_store=EpisodicMemory(retriever) if retriever is not None else None
+        )
+        self._retrieval_configured = memory_manager is not None or retriever is not None
         self.retrieval_weight = retrieval_weight
+        self.calibration_parameters = calibration_parameters
+        self.candidate_selector = candidate_selector or CandidateSelector(simulation_engine=SimulationEngine(calibration_parameters=self.calibration_parameters))
+        if candidate_selector is not None and candidate_selector.simulation_engine is None:
+            candidate_selector.simulation_engine = SimulationEngine(calibration_parameters=self.calibration_parameters)
+        self.multi_step_decision_engine = multi_step_decision_engine or MultiStepDecisionEngine(
+            simulation_engine=SimulationEngine(calibration_parameters=self.calibration_parameters)
+        )
 
     def search(
         self,
@@ -53,18 +76,68 @@ class BeamSearchPlanner:
         max_depth: int = DEFAULT_MAX_DEPTH,
         use_policy: bool | None = None,
         use_retrieval: bool | None = None,
+        use_digital_twin: bool = False,
+        calibration_parameters: CalibrationParameters | None = None,
     ) -> Dict:
+        if calibration_parameters is not None:
+            self.calibration_parameters = calibration_parameters
+            if self.candidate_selector is not None and getattr(self.candidate_selector, "simulation_engine", None) is not None:
+                self.candidate_selector.simulation_engine = SimulationEngine(calibration_parameters=self.calibration_parameters)
+            self.multi_step_decision_engine = MultiStepDecisionEngine(
+                simulation_engine=SimulationEngine(calibration_parameters=self.calibration_parameters)
+            )
         start_time = time.perf_counter()
+        working_memory_id = self.memory_manager.create_working_session()
+        self.memory_manager.set_working_goal(
+            {"goal": goal_state.goal, "current_state": current_state.copy()}, working_memory_id
+        )
+        for constraint in goal_state.target_skills.items():
+            self.memory_manager.add_working_constraint(constraint, working_memory_id)
         policy_enabled = (
             DEFAULT_POLICY_ENABLED and self.policy is not None
             if use_policy is None
             else bool(use_policy) and self.policy is not None
         )
-        retrieval_enabled = (
-            self.retriever is not None if use_retrieval is None else bool(use_retrieval) and self.retriever is not None
-        )
+        retrieval_enabled = self._retrieval_configured if use_retrieval is None else bool(use_retrieval)
         adaptive_retrieval_weight = self.retrieval_weight
         confidence_breakdown = {"policy": 0.0, "retrieval": 0.0, "digital_twin": 0.0, "planner": 0.0}
+        digital_twin_selection = None
+        digital_twin_enabled = bool(use_digital_twin) and self.candidate_selector is not None and self.candidate_selector.enabled
+        digital_twin_decision_signal = None
+        if digital_twin_enabled:
+            candidate_actions = self.expander.get_possible_next_actions(current_state, goal_state)
+            if candidate_actions:
+                try:
+                    root_snapshot = self.candidate_selector.simulation_engine.make_snapshot(
+                        current_state,
+                        simulation_id="planner-root",
+                        step=0,
+                        snapshot_id="root",
+                    )
+                except Exception:
+                    root_snapshot = None
+                if root_snapshot is not None:
+                    digital_twin_selection = self.candidate_selector.select_action(
+                        snapshot=root_snapshot,
+                        candidate_actions=candidate_actions,
+                        context=None,
+                        goal_state=goal_state,
+                    )
+                    if digital_twin_selection is not None:
+                        digital_twin_decision_signal = DigitalTwinScoreTranslator().translate(digital_twin_selection)
+        digital_twin_planner_adjustment = DigitalTwinScoreTranslator().translate_to_planner_adjustment(
+            signal=digital_twin_decision_signal,
+            enabled=digital_twin_enabled,
+            adjustment_scale=0.1,
+            max_adjustment=0.2,
+        )
+        digital_twin_advisory: dict | None = None
+        recommended_action: str | None = None
+        if digital_twin_enabled:
+            digital_twin_advisory = self._build_digital_twin_advisory(current_state, goal_state, beam_width, max_depth)
+            if isinstance(digital_twin_advisory, dict):
+                recommended_action = digital_twin_advisory.get("first_action")
+
         root = SearchState(actions=[], current_state=current_state.copy(), score=0.0, depth=0)
         beam = [root]
         metrics = SearchMetrics(beam_width=beam_width, search_depth=max_depth)
@@ -88,8 +161,8 @@ class BeamSearchPlanner:
                         )
                     }
                     policy_inference_ms += (time.perf_counter() - policy_started) * 1000
-                if retrieval_enabled and self.retriever is not None:
-                    retrieval_result = self.retriever.retrieve(
+                if retrieval_enabled:
+                    retrieval_result = self.memory_manager.retrieve_experiences(
                         cast(Dict[str, float], state.current_state), goal_state.goal, next_actions
                     )
                     retrieval_time_ms += retrieval_result["retrieval_time_ms"]
@@ -99,22 +172,30 @@ class BeamSearchPlanner:
                             retrieval_scores[match_action] = max(
                                 retrieval_scores.get(match_action, 0.0), match.similarity
                             )
-                    if self.retriever and hasattr(self.retriever, "compute_adaptive_weight"):
-                        adaptive_retrieval_weight = self.retriever.compute_adaptive_weight(
-                            policy_confidence=(
-                                policy_scores.get(next_actions[0], 0.0) if policy_enabled and next_actions else 0.0
-                            ),
-                            retrieval_confidence=max((match.similarity for match in retrieval_matches), default=0.0),
-                            goal_type="exploration" if not goal_state.target_skills else "optimization",
-                        )
+                    adaptive_retrieval_weight = self.memory_manager.compute_adaptive_weight(
+                        policy_confidence=(
+                            policy_scores.get(next_actions[0], 0.0) if policy_enabled and next_actions else 0.0
+                        ),
+                        retrieval_confidence=max((match.similarity for match in retrieval_matches), default=0.0),
+                        goal_type="exploration" if not goal_state.target_skills else "optimization",
+                    )
                 metrics.plans_generated += len(next_actions)
                 for action in next_actions:
                     next_state = state.current_state.copy()
                     next_state = self._apply_action(next_state, action)
+                    base_score = self._score_state(next_state, goal_state)
+                    adjustment = 0.0
+                    if (
+                        digital_twin_enabled
+                        and state.depth == 0
+                        and digital_twin_planner_adjustment.enabled
+                        and action == digital_twin_planner_adjustment.action
+                    ):
+                        adjustment = digital_twin_planner_adjustment.adjustment
                     new_state = SearchState(
                         actions=[*state.actions, action],
                         current_state=next_state,
-                        score=self._score_state(next_state, goal_state),
+                        score=base_score + adjustment,
                         depth=state.depth + 1,
                         goal_progress=self._goal_progress(next_state, goal_state),
                         confidence=self._confidence(next_state, goal_state),
@@ -153,6 +234,8 @@ class BeamSearchPlanner:
             ]
 
         if not beam:
+            working_memory_snapshot = self.memory_manager.working_snapshot(working_memory_id)
+            self.memory_manager.end_working_session(working_memory_id)
             return {
                 "best_plan": [],
                 "score": 0.0,
@@ -162,6 +245,8 @@ class BeamSearchPlanner:
                 "search_metrics": metrics.to_dict(),
                 "policy_enabled": policy_enabled,
                 "retrieval_enabled": retrieval_enabled,
+                "working_memory_id": working_memory_id,
+                "working_memory_snapshot": working_memory_snapshot,
             }
 
         best_state = max(beam, key=lambda item: (item.score, item.goal_progress, item.confidence))
@@ -180,9 +265,9 @@ class BeamSearchPlanner:
             )
             policy_confidence = max((item["confidence"] for item in action_explanations), default=0.0)
         retrieval_confidence = max((match.similarity for match in retrieval_matches), default=0.0)
-        if retrieval_enabled and self.retriever is not None:
+        if retrieval_enabled:
             first_actions = self.expander.get_possible_next_actions(current_state, goal_state)
-            final_retrieval = self.retriever.retrieve(
+            final_retrieval = self.memory_manager.retrieve_experiences(
                 cast(Dict[str, float], current_state), goal_state.goal, first_actions
             )
             retrieval_matches = final_retrieval["matches"]
@@ -226,8 +311,15 @@ class BeamSearchPlanner:
                 for match in retrieval_matches
             ]
         )
-        reasoner = ExperienceReasoner()
-        reasoning = reasoner.analyze(reasoning_experiences)
+        self.memory_manager.add_working_experience(reasoning_experiences[0], working_memory_id)
+        for experience in retrieval_matches:
+            experience_record = (
+                experience.to_dict() if hasattr(experience, "to_dict") else vars(experience)
+            )
+            self.memory_manager.add_working_experience(experience_record, working_memory_id)
+        self.memory_manager.add_candidate_plan(best_state.actions, working_memory_id)
+        reasoner = ExperienceReasoner(self.memory_manager, working_memory_id)
+        reasoning = reasoner.analyze()
         explanation = PlanExplainer().explain(
             best_state.actions,
             reasoning_experiences,
@@ -281,7 +373,7 @@ class BeamSearchPlanner:
             contributors.append("policy")
         if counterfactuals:
             contributors.append("counterfactual")
-        meta_reasoner = MetaReasoner()
+        meta_reasoner = MetaReasoner(memory_manager=self.memory_manager)
         meta_reasoning = meta_reasoner.evaluate(
             reasoning_trace={"confidence": planner_confidence, "coverage": reasoning.get("coverage", 0.0)},
             reasoning_metadata={"consistency_status": consistency_status},
@@ -303,6 +395,10 @@ class BeamSearchPlanner:
             evidence_count=len(retrieval_matches),
             contradictions=not consistency_status["consistent"],
         )
+        self.memory_manager.set_working_strategy(strategy, working_memory_id)
+        self.memory_manager.set_working_confidence(planner_confidence, working_memory_id)
+        working_memory_snapshot = self.memory_manager.working_snapshot(working_memory_id)
+        self.memory_manager.end_working_session(working_memory_id)
         return {
             "best_plan": best_state.actions,
             "score": round(best_state.score, 2),
@@ -324,8 +420,8 @@ class BeamSearchPlanner:
             "retrieval_enabled": retrieval_enabled,
             "retrieval_weight": adaptive_retrieval_weight,
             "retrieval_analytics": (
-                self.retriever.get_analytics_summary()
-                if self.retriever and hasattr(self.retriever, "get_analytics_summary")
+                self.memory_manager.get_analytics_summary()
+                if retrieval_enabled
                 else {}
             ),
             "retrieved_experiences": [
@@ -343,6 +439,8 @@ class BeamSearchPlanner:
                 else "No similar prior experience was retrieved."
             ),
             "reasoning_confidence": reasoning.get("reasoning_confidence", 0.0),
+            "working_memory_id": working_memory_id,
+            "working_memory_snapshot": working_memory_snapshot,
             "counterfactual_comparison": counterfactuals,
             "reasoning_trace": reasoning_trace,
             "consistency_status": consistency_status,
@@ -360,7 +458,77 @@ class BeamSearchPlanner:
                 "self_critique": critique,
                 "strategy_selection": strategy,
             },
+            "use_digital_twin": use_digital_twin,
+            "digital_twin_enabled": digital_twin_enabled,
+            "digital_twin_selection": {
+                "action": digital_twin_selection.action,
+                "score": digital_twin_selection.score,
+                "probability": digital_twin_selection.probability,
+                "risk": digital_twin_selection.risk,
+                "uncertainty": digital_twin_selection.uncertainty,
+                "selection_reason": digital_twin_selection.selection_reason,
+                "metadata": dict(digital_twin_selection.metadata or {}),
+            }
+            if digital_twin_selection is not None
+            else None,
+            "digital_twin_decision_signal": {
+                "action": digital_twin_decision_signal.action,
+                "trajectory_score": digital_twin_decision_signal.trajectory_score,
+                "normalized_score": digital_twin_decision_signal.normalized_score,
+                "adjustment": digital_twin_decision_signal.adjustment,
+                "confidence": digital_twin_decision_signal.confidence,
+                "branch_probability": digital_twin_decision_signal.branch_probability,
+                "risk": digital_twin_decision_signal.risk,
+                "uncertainty": digital_twin_decision_signal.uncertainty,
+                "reason": digital_twin_decision_signal.reason,
+                "valid": digital_twin_decision_signal.valid,
+                "metadata": dict(digital_twin_decision_signal.metadata or {}),
+            }
+            if digital_twin_decision_signal is not None
+            else None,
+            "digital_twin_advisory": digital_twin_advisory,
+            "recommended_action": recommended_action or (best_state.actions[0] if best_state.actions else None),
+            "recommended_plan_actions": [recommended_action] if recommended_action else (best_state.actions[:1] if best_state.actions else []),
+            "digital_twin_planner_adjustment": {
+                "action": digital_twin_planner_adjustment.action,
+                "adjustment": digital_twin_planner_adjustment.adjustment,
+                "confidence": digital_twin_planner_adjustment.confidence,
+                "enabled": digital_twin_planner_adjustment.enabled,
+                "reason": digital_twin_planner_adjustment.reason,
+            },
         }
+
+    def _build_digital_twin_advisory(
+        self,
+        current_state: Dict[str, int],
+        goal_state: GoalState,
+        beam_width: int,
+        max_depth: int,
+    ) -> dict | None:
+        candidate_actions = self.expander.get_possible_next_actions(current_state, goal_state)
+        if not candidate_actions:
+            return None
+
+        horizon_depth = min(max_depth, 2)
+        horizon = PlanningHorizon(
+            horizon_depth=horizon_depth,
+            candidate_actions=candidate_actions,
+            discount_factor=1.0,
+            max_branches=beam_width,
+            use_digital_twin=True,
+        )
+        simulation_engine = self.candidate_selector.simulation_engine if self.candidate_selector is not None else SimulationEngine(calibration_parameters=self.calibration_parameters)
+        if simulation_engine is None:
+            simulation_engine = SimulationEngine(calibration_parameters=self.calibration_parameters)
+        root_snapshot = simulation_engine.make_snapshot(
+            current_state,
+            simulation_id="planner-root",
+            step=0,
+            snapshot_id="root",
+        )
+        context = PlanningContext(current_state=current_state, goal_state=goal_state)
+        advisory = self.multi_step_decision_engine.decide(root_snapshot, horizon, goal_state, context)
+        return advisory.model_dump()
 
     def _apply_action(self, state: Dict[str, int], action_name: str) -> Dict[str, int]:
         updated = state.copy()

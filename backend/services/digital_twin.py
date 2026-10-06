@@ -2,12 +2,14 @@ from typing import Dict, List
 
 from backend.ai.model_errors import ModelNotFoundError
 from backend.ai.sequence_transition_model import SequenceTransitionModel
+from backend.models.calibration_parameters import CalibrationParameters
 from backend.services.simulation_engine import SimulationEngine
 
 
 class DigitalTwin:
-    def __init__(self, simulation_engine: SimulationEngine | None = None) -> None:
-        self.simulation_engine = simulation_engine or SimulationEngine()
+    def __init__(self, simulation_engine: SimulationEngine | None = None, calibration_parameters: CalibrationParameters | None = None) -> None:
+        self.calibration_parameters = calibration_parameters
+        self.simulation_engine = simulation_engine or SimulationEngine(calibration_parameters=self.calibration_parameters)
 
     def simulate_action(self, current_state: Dict[str, int], action: str) -> Dict:
         return self.simulation_engine.simulate_action(current_state, action)
@@ -45,9 +47,10 @@ class DigitalTwin:
 
 
 class LearnedDigitalTwin:
-    def __init__(self, sequence_model: SequenceTransitionModel | None = None) -> None:
+    def __init__(self, sequence_model: SequenceTransitionModel | None = None, calibration_parameters: CalibrationParameters | None = None) -> None:
         self.sequence_model = sequence_model
-        self.fallback_engine = DigitalTwin()
+        self.calibration_parameters = calibration_parameters
+        self.fallback_engine = DigitalTwin(calibration_parameters=self.calibration_parameters)
 
         if self.sequence_model is None:
             try:
@@ -70,11 +73,27 @@ class LearnedDigitalTwin:
             future_state[skill] = int(current_state.get(skill, 0) + delta)
 
         confidence = round(min(0.99, max(0.0, 0.55 + (sum(abs(value) for value in prediction.values()) / 100.0))), 2)
+        if self.calibration_parameters is not None:
+            future_state, confidence = self._apply_calibration_bias(future_state, confidence)
+
         return {
             "predicted_future_state": future_state,
             "confidence": confidence,
             "expected_outcome": prediction,
         }
+
+    def _apply_calibration_bias(self, future_state: Dict[str, int], confidence: float) -> tuple[Dict[str, int], float]:
+        if self.calibration_parameters is None:
+            return future_state, confidence
+
+        adjusted_future = dict(future_state)
+        for key, bias in self.calibration_parameters.expected_state_bias.items():
+            adjusted_future[key] = int(adjusted_future.get(key, 0) + float(bias))
+
+        adjusted_confidence = confidence + (self.calibration_parameters.confidence - 0.5) * 0.2
+        adjusted_confidence -= self.calibration_parameters.uncertainty * 0.1
+        adjusted_confidence = round(min(0.99, max(0.0, adjusted_confidence)), 2)
+        return adjusted_future, adjusted_confidence
 
     def simulate_action(self, current_state: Dict[str, int], action: str, history: List[str] | None = None) -> Dict:
         history = list(history or [])

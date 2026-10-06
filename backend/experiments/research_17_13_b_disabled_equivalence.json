@@ -1,0 +1,1436 @@
+{
+  "timestamp": "2026-08-13T22:49:19.070626",
+  "test_name": "17.13B Disabled-Mode Equivalence",
+  "decision_rule": "Pre-17.13 output == 17.13B / MG disabled output",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "tolerance": 1e-09,
+  "all_pass": true,
+  "results": [
+    {
+      "seed": 42,
+      "dataset_id": "research_benchmark_v1_seed_42",
+      "legacy_predictions": 20,
+      "disabled_predictions": 20,
+      "identical_core_predictions": true,
+      "identical_current_state": true,
+      "identical_future_state": true,
+      "identical_objective_values": true,
+      "identical_benchmark_split": true,
+      "no_mg_correction_applied": true,
+      "metadata_source_is_legacy": true,
+      "differences": [],
+      "summary": {
+        "seed": 42,
+        "dataset_id": "research_benchmark_v1_seed_42",
+        "train_size": 80,
+        "held_out_size": 20,
+        "benchmark_split_identical": true,
+        "all_identical": true,
+        "experience_checks": [
+          {
+            "experience_id": "research_exp_080_low_skill_practice",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_081_medium_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_082_high_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_083_low_motivation",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_084_high_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_085_mixed_skills",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_086_project_completion",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_087_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_088_low_skill_practice",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_089_medium_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_090_high_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_091_low_motivation",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_092_high_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_093_mixed_skills",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_094_project_completion",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_095_plateau",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_096_low_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_097_medium_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_098_high_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_099_low_motivation",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 123,
+      "dataset_id": "research_benchmark_v1_seed_123",
+      "legacy_predictions": 20,
+      "disabled_predictions": 20,
+      "identical_core_predictions": true,
+      "identical_current_state": true,
+      "identical_future_state": true,
+      "identical_objective_values": true,
+      "identical_benchmark_split": true,
+      "no_mg_correction_applied": true,
+      "metadata_source_is_legacy": true,
+      "differences": [],
+      "summary": {
+        "seed": 123,
+        "dataset_id": "research_benchmark_v1_seed_123",
+        "train_size": 80,
+        "held_out_size": 20,
+        "benchmark_split_identical": true,
+        "all_identical": true,
+        "experience_checks": [
+          {
+            "experience_id": "research_exp_080_low_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_081_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_082_high_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_083_low_motivation",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_084_high_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_085_mixed_skills",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_086_project_completion",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_087_plateau",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_088_low_skill_practice",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_089_medium_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_090_high_skill_practice",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_091_low_motivation",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_092_high_motivation",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_093_mixed_skills",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_094_project_completion",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_095_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_096_low_skill_practice",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_097_medium_skill_practice",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_098_high_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_099_low_motivation",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 456,
+      "dataset_id": "research_benchmark_v1_seed_456",
+      "legacy_predictions": 20,
+      "disabled_predictions": 20,
+      "identical_core_predictions": true,
+      "identical_current_state": true,
+      "identical_future_state": true,
+      "identical_objective_values": true,
+      "identical_benchmark_split": true,
+      "no_mg_correction_applied": true,
+      "metadata_source_is_legacy": true,
+      "differences": [],
+      "summary": {
+        "seed": 456,
+        "dataset_id": "research_benchmark_v1_seed_456",
+        "train_size": 80,
+        "held_out_size": 20,
+        "benchmark_split_identical": true,
+        "all_identical": true,
+        "experience_checks": [
+          {
+            "experience_id": "research_exp_080_low_skill_practice",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_081_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_082_high_skill_practice",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_083_low_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_084_high_motivation",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_085_mixed_skills",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_086_project_completion",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_087_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_088_low_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_089_medium_skill_practice",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_090_high_skill_practice",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_091_low_motivation",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_092_high_motivation",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_093_mixed_skills",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_094_project_completion",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_095_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_096_low_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_097_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_098_high_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_099_low_motivation",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 789,
+      "dataset_id": "research_benchmark_v1_seed_789",
+      "legacy_predictions": 20,
+      "disabled_predictions": 20,
+      "identical_core_predictions": true,
+      "identical_current_state": true,
+      "identical_future_state": true,
+      "identical_objective_values": true,
+      "identical_benchmark_split": true,
+      "no_mg_correction_applied": true,
+      "metadata_source_is_legacy": true,
+      "differences": [],
+      "summary": {
+        "seed": 789,
+        "dataset_id": "research_benchmark_v1_seed_789",
+        "train_size": 80,
+        "held_out_size": 20,
+        "benchmark_split_identical": true,
+        "all_identical": true,
+        "experience_checks": [
+          {
+            "experience_id": "research_exp_080_low_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_081_medium_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_082_high_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_083_low_motivation",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_084_high_motivation",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_085_mixed_skills",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_086_project_completion",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_087_plateau",
+            "selected_action": "Python Project",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_088_low_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_089_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_090_high_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_091_low_motivation",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_092_high_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_093_mixed_skills",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_094_project_completion",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_095_plateau",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_096_low_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_097_medium_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_098_high_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_099_low_motivation",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 999,
+      "dataset_id": "research_benchmark_v1_seed_999",
+      "legacy_predictions": 20,
+      "disabled_predictions": 20,
+      "identical_core_predictions": true,
+      "identical_current_state": true,
+      "identical_future_state": true,
+      "identical_objective_values": true,
+      "identical_benchmark_split": true,
+      "no_mg_correction_applied": true,
+      "metadata_source_is_legacy": true,
+      "differences": [],
+      "summary": {
+        "seed": 999,
+        "dataset_id": "research_benchmark_v1_seed_999",
+        "train_size": 80,
+        "held_out_size": 20,
+        "benchmark_split_identical": true,
+        "all_identical": true,
+        "experience_checks": [
+          {
+            "experience_id": "research_exp_080_low_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_081_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_082_high_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_083_low_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_084_high_motivation",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_085_mixed_skills",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_086_project_completion",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_087_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_088_low_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_089_medium_skill_practice",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_090_high_skill_practice",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_091_low_motivation",
+            "selected_action": "Research Paper",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_092_high_motivation",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_093_mixed_skills",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_094_project_completion",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_095_plateau",
+            "selected_action": "ML Course",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_096_low_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_097_medium_skill_practice",
+            "selected_action": "Interview Prep",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_098_high_skill_practice",
+            "selected_action": "Build Portfolio",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          },
+          {
+            "experience_id": "research_exp_099_low_motivation",
+            "selected_action": "DSA Practice",
+            "comparison": {
+              "identical_core_predictions": true,
+              "identical_current_state": true,
+              "identical_future_state": true,
+              "identical_objective_values": true,
+              "no_mg_correction_applied": true,
+              "metadata_source_is_legacy": true,
+              "metadata_correction_applied": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

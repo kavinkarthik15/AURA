@@ -14,6 +14,26 @@ from backend.config.retrieval_config import RETRIEVAL_ANALYTICS_ENABLED, RETRIEV
 
 
 @dataclass
+class RetrievalResult:
+    experience: Any
+    similarity: float
+    freshness: float
+    importance: float
+    retrieval_reason: str
+    retrieval_strategy: str = "similarity"
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "experience": self.experience,
+            "similarity": self.similarity,
+            "freshness": self.freshness,
+            "importance": self.importance,
+            "retrieval_reason": self.retrieval_reason,
+            "retrieval_strategy": self.retrieval_strategy,
+        }
+
+
+@dataclass
 class RetrievedExperience:
     experience_id: str
     similarity: float
@@ -24,18 +44,20 @@ class RetrievedExperience:
     success: bool
     goal_completion: float
     reason: str
+    memory_id: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         return self.__dict__.copy()
 
 
 class ExperienceRetriever:
-    def __init__(self, experiences: Iterable[Dict[str, Any]] | None = None, index_path: Path | None = None, metric: str = RETRIEVAL_METRIC, cache_enabled: bool = RETRIEVAL_CACHE_ENABLED) -> None:
+    def __init__(self, experiences: Iterable[Dict[str, Any]] | None = None, index_path: Path | None = None, metric: str = RETRIEVAL_METRIC, cache_enabled: bool = RETRIEVAL_CACHE_ENABLED, index: Any | None = None) -> None:
         self.index_path = index_path or Path(__file__).resolve().parents[1] / "data" / "retrieval_index.json"
         self.metric = metric
         self.cache_enabled = cache_enabled
         self.experiences = list(experiences or [])
-        self._cache: Dict[str, List[RetrievedExperience]] = {}
+        self.index = index
+        self._cache: Dict[str, Dict[str, Any]] = {}
         self.embedder = ExperienceEmbedder()
         self.analytics_enabled = RETRIEVAL_ANALYTICS_ENABLED
         self.analytics: Dict[str, Dict[str, Any]] = {}
@@ -47,6 +69,7 @@ class ExperienceRetriever:
         for record in records:
             index.append({
                 "experience_id": record.get("experience_id", ""),
+                "memory_id": record.get("memory_id", record.get("experience_id", "")),
                 "state": record.get("initial_state", record.get("state_before", {})),
                 "goal": record.get("goal_name", record.get("goal", "")),
                 "actions": record.get("actions", [record.get("action", "")]),
@@ -54,13 +77,21 @@ class ExperienceRetriever:
                 "success": bool(record.get("success", record.get("outcome_value", 0) > 0)),
                 "goal_completion": float(record.get("goal_completion", record.get("outcome_value", 0.0) or 0.0)),
                 "timestamp": record.get("timestamp") or record.get("created_at") or record.get("created") or "",
+                "status": record.get("status", "ACTIVE"),
             })
+        if self.index is not None:
+            self.index.rebuild(records)
+            self.embedder.fit(self.index.records())
+            self._cache.clear()
+            return self.index_path
         self.index_path.parent.mkdir(parents=True, exist_ok=True)
         self.index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
         self.embedder.fit(index)
         return self.index_path
 
     def load_index(self) -> List[Dict[str, Any]]:
+        if self.index is not None:
+            return self.index.records()
         if not self.index_path.exists():
             self.build_index()
         return json.loads(self.index_path.read_text(encoding="utf-8"))
@@ -70,10 +101,12 @@ class ExperienceRetriever:
         actions = actions or []
         cache_key = json.dumps([state, goal, actions, top_k, self.metric], sort_keys=True)
         if self.cache_enabled and cache_key in self._cache:
-            matches = self._cache[cache_key]
-            return {"matches": matches, "retrieval_time_ms": 0.0, "cache_hit": True}
+            cached = self._cache[cache_key]
+            return {"matches": cached["matches"], "retrieval_results": cached["retrieval_results"], "retrieval_time_ms": 0.0, "cache_hit": True}
         scored: List[RetrievedExperience] = []
         for record in self.load_index():
+            if record.get("status", "ACTIVE") != "ACTIVE":
+                continue
             similarity = self._compute_similarity(state, goal, actions, record)
             freshness = self._freshness_score(record.get("timestamp", ""))
             effective_similarity = round(similarity * (1.0 if record.get("success", False) else 0.8) * freshness, 4)
@@ -87,6 +120,7 @@ class ExperienceRetriever:
                 success=record.get("success", False),
                 goal_completion=record.get("goal_completion", 0.0),
                 reason="A similar previous execution succeeded." if record.get("success", False) else "A similar previous execution was retrieved for comparison.",
+                memory_id=record.get("memory_id", record.get("experience_id", "")),
             ))
         scored.sort(key=lambda item: (item.similarity, item.success, item.goal_completion), reverse=True)
         selected: List[RetrievedExperience] = []
@@ -96,13 +130,24 @@ class ExperienceRetriever:
             if any(self._diversity_overlap(candidate, item) >= diversity_threshold for item in selected):
                 continue
             selected.append(candidate)
+        retrieval_results = []
+        for candidate in selected:
+            record = next((item for item in self.load_index() if item.get("memory_id", item.get("experience_id", "")) == candidate.memory_id), None) or {}
+            retrieval_results.append(RetrievalResult(
+                experience=candidate.to_dict(),
+                similarity=candidate.similarity,
+                freshness=self._freshness_score(record.get("timestamp", "")),
+                importance=float(record.get("importance", 0.5)),
+                retrieval_reason=candidate.reason,
+                retrieval_strategy="hybrid" if RETRIEVAL_EMBEDDING_ENABLED else "similarity",
+            ))
         if self.cache_enabled:
-            self._cache[cache_key] = selected
+            self._cache[cache_key] = {"matches": selected, "retrieval_results": retrieval_results}
         retrieval_time_ms = round((time.perf_counter() - started) * 1000, 4)
         if self.analytics_enabled:
             for item in selected:
                 self.record_analytics(item.experience_id, item.similarity, retrieval_time_ms, 1.0 if item.success else 0.0, float(item.goal_completion))
-        return {"matches": selected, "retrieval_time_ms": retrieval_time_ms, "cache_hit": False}
+        return {"matches": selected, "retrieval_results": retrieval_results, "retrieval_time_ms": retrieval_time_ms, "cache_hit": False}
 
     def compute_adaptive_weight(self, policy_confidence: float, retrieval_confidence: float, goal_type: str = "default") -> float:
         goal_bias = {"exploration": 0.35, "optimization": 0.55, "stability": 0.25}.get(goal_type.lower(), 0.4)

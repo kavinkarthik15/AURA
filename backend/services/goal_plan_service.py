@@ -2,15 +2,18 @@ import random
 import time
 from typing import Dict, List
 
-from backend.ai.experience_retriever import ExperienceRetriever
 from backend.ai.reflection_registry import ReflectionRegistry
 from backend.ai.research_benchmark import ResearchBenchmark
 from backend.ai.research_registry import ResearchRegistry
 from backend.ai.research_report import ResearchReportGenerator
 from backend.ai.system_registry import SystemRegistry
+from backend.models.calibration_parameters import CalibrationParameters
 from backend.models.goal_state import GoalState
 from backend.models.objective_profile import ObjectiveProfile
+from backend.memory.episodic_memory import EpisodicMemory
+from backend.memory.memory_manager import MemoryManager
 from backend.services.beam_search_planner import BeamSearchPlanner
+from backend.services.digital_twin import LearnedDigitalTwin
 from backend.services.experiment_tracker import ExperimentTracker
 from backend.services.integration_coverage import IntegrationCoverageTracker
 from backend.services.multi_objective_evaluator import MultiObjectiveEvaluator
@@ -29,10 +32,14 @@ class GoalPlanService:
         recommendation_engine: RecommendationEngine | None = None,
         multi_objective_evaluator: MultiObjectiveEvaluator | None = None,
         pareto_optimizer: ParetoOptimizer | None = None,
-        retriever: ExperienceRetriever | None = None,
+        retriever: object | None = None,
+        memory_manager: MemoryManager | None = None,
     ) -> None:
+        self.memory_manager = memory_manager or MemoryManager(
+            episodic_store=EpisodicMemory(retriever) if retriever is not None else None
+        )
         self.beam_search_planner = beam_search_planner or BeamSearchPlanner(
-            retriever=retriever or ExperienceRetriever()
+            memory_manager=self.memory_manager
         )
         self.plan_evaluator = plan_evaluator or PlanEvaluator()
         self.recommendation_engine = recommendation_engine or RecommendationEngine(plan_evaluator=self.plan_evaluator)
@@ -46,11 +53,21 @@ class GoalPlanService:
         self.integration_coverage = IntegrationCoverageTracker()
 
     def recommend_goal_plan(
-        self, current_state: Dict[str, int], goal_state: GoalState, profile: ObjectiveProfile | None = None
+        self,
+        current_state: Dict[str, int],
+        goal_state: GoalState,
+        profile: ObjectiveProfile | None = None,
+        use_digital_twin: bool = False,
+        calibration_parameters: CalibrationParameters | None = None,
     ) -> Dict:
         start_time = time.perf_counter()
         search_result = self.beam_search_planner.search(
-            current_state, goal_state, beam_width=DEFAULT_BEAM_WIDTH, max_depth=DEFAULT_MAX_DEPTH
+            current_state,
+            goal_state,
+            beam_width=DEFAULT_BEAM_WIDTH,
+            max_depth=DEFAULT_MAX_DEPTH,
+            use_digital_twin=use_digital_twin,
+            calibration_parameters=calibration_parameters,
         )
         candidate_plans = (
             [{"name": "Plan 1", "actions": search_result["best_plan"]}] if search_result["best_plan"] else []
@@ -76,13 +93,23 @@ class GoalPlanService:
                 },
             }
 
-        evaluations = self.plan_evaluator.evaluate_plans(current_state, goal_state, candidate_plans)
+        plan_evaluator = self.plan_evaluator
+        multi_objective_evaluator = self.multi_objective_evaluator
+        recommendation_engine = self.recommendation_engine
+
+        if calibration_parameters is not None:
+            calibrated_twin = LearnedDigitalTwin(calibration_parameters=calibration_parameters)
+            plan_evaluator = PlanEvaluator(digital_twin=calibrated_twin)
+            multi_objective_evaluator = MultiObjectiveEvaluator(digital_twin=calibrated_twin)
+            recommendation_engine = RecommendationEngine(plan_evaluator=plan_evaluator)
+
+        evaluations = plan_evaluator.evaluate_plans(current_state, goal_state, candidate_plans)
         selected_profile = profile or build_default_profiles()["balanced_learning"]
-        multi_objective_results = self.multi_objective_evaluator.evaluate_plans(
+        multi_objective_results = multi_objective_evaluator.evaluate_plans(
             current_state, goal_state, candidate_plans, profile=selected_profile
         )
         pareto_front = self.pareto_optimizer.find_pareto_front(multi_objective_results)
-        recommendation = self.recommendation_engine.recommend_plan(current_state, goal_state, candidate_plans)
+        recommendation = recommendation_engine.recommend_plan(current_state, goal_state, candidate_plans)
         recommendation["candidate_plans"] = candidate_plans
         recommendation["candidate_evaluations"] = [
             {
@@ -117,6 +144,14 @@ class GoalPlanService:
         recommendation["assumptions"] = search_result.get("reasoning_metadata", {}).get("assumptions", [])
         recommendation["self_critique"] = search_result.get("reasoning_metadata", {}).get("self_critique", {})
         recommendation["strategy_selection"] = search_result.get("reasoning_metadata", {}).get("strategy_selection", {})
+        recommendation["use_digital_twin"] = search_result.get("use_digital_twin", False)
+        recommendation["digital_twin_enabled"] = search_result.get("digital_twin_enabled", False)
+        recommendation["digital_twin_selection"] = search_result.get("digital_twin_selection")
+        recommendation["digital_twin_decision_signal"] = search_result.get("digital_twin_decision_signal")
+        recommendation["digital_twin_planner_adjustment"] = search_result.get("digital_twin_planner_adjustment")
+        recommendation["digital_twin_advisory"] = search_result.get("digital_twin_advisory")
+        recommendation["recommended_action"] = search_result.get("recommended_action")
+        recommendation["recommended_plan_actions"] = search_result.get("recommended_plan_actions")
 
         self.integration_coverage.mark_covered("planner")
         self.integration_coverage.mark_covered("retriever")

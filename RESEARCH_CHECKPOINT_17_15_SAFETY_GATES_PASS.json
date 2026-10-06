@@ -1,0 +1,182 @@
+{
+  "phase": "17.15",
+  "stage": "safety_analysis_complete",
+  "created": "2026-08-14T15:00:00.000000Z",
+  "timestamp": "2026-08-14T15:00:00.000000Z",
+  "status": "COMPLETE",
+  
+  "summary": {
+    "title": "17.15 MG-Enabled Shadow Validation - Safety Analysis PASS",
+    "description": "First execution with MG enabled in shadow mode. All 2,400 events pass 8 mechanical safety gates.",
+    "events_analyzed": 2400,
+    "gates_total": 8,
+    "gates_passed": 8,
+    "gates_blocked": 0
+  },
+  
+  "execution_timeline": [
+    {
+      "version": "17.15 Attempt 1",
+      "issue": "MG activation gate disabled (rollout_percentage defaulted to 0.0)",
+      "result": "2400 events recorded but source='legacy' (MG never ran)"
+    },
+    {
+      "version": "17.15 Forensic Analysis",
+      "action": "Identified 2 root causes: activation gate + latency measurement",
+      "fixes": [
+        "Set rollout_percentage=100.0 in validator config",
+        "Added time.perf_counter() around mg_layer.apply() call"
+      ]
+    },
+    {
+      "version": "17.15 Attempt 2 (Corrected)",
+      "result": "2400 events recorded with source='mg', all corrections applied"
+    },
+    {
+      "version": "17.15 Safety Analysis",
+      "gates": "All 8 gates evaluated mechanically",
+      "result": "ALL GATES PASS"
+    }
+  ],
+  
+  "gate_results": {
+    "gate_1_computation_integrity": {
+      "verdict": "PASS",
+      "evidence": {
+        "events_recorded": "2400/2400",
+        "computation_success": "2400/2400 (100%)",
+        "errors": "0/2400 (0%)"
+      }
+    },
+    "gate_2_correction_safety": {
+      "verdict": "PASS",
+      "evidence": {
+        "corrections_applied": "2400/2400 (100%)",
+        "valid_values": "2400/2400 (100%)",
+        "invalid_nan": "0/2400 (0%)",
+        "range": "[0.007899, 5.347402]",
+        "mean": 2.786827,
+        "median": 2.896004
+      }
+    },
+    "gate_3_signal_validity": {
+      "verdict": "PASS",
+      "evidence": {
+        "null_motivation": "0/2400",
+        "null_goals": "0/2400",
+        "motivation_unique": "[0.0, 1.0]",
+        "goals_range": "[0.0, 0.4125]"
+      }
+    },
+    "gate_4_fallback_safety": {
+      "verdict": "PASS",
+      "evidence": {
+        "fallbacks_triggered": "0/2400 (0%)"
+      }
+    },
+    "gate_5_latency_safety": {
+      "verdict": "PASS",
+      "evidence": {
+        "mean_latency_ms": 0.0354,
+        "median_latency_ms": 0.0186,
+        "p95_latency_ms": 0.0773,
+        "p99_latency_ms": 0.1166,
+        "max_latency_ms": 22.9349,
+        "events_over_100ms": 0,
+        "threshold": "< 100 ms (PASS)"
+      }
+    },
+    "gate_6_production_isolation": {
+      "verdict": "PASS",
+      "evidence": {
+        "production_failures": 0,
+        "state_mutations": 0,
+        "legacy_predictions_missing": 0
+      }
+    },
+    "gate_7_determinism": {
+      "verdict": "PASS",
+      "evidence": {
+        "unique_signal_pairs": 4,
+        "inconsistent_pairs": 0,
+        "deterministic": true
+      }
+    },
+    "gate_8_observability_integrity": {
+      "verdict": "PASS",
+      "evidence": {
+        "complete_records": "2400/2400 (100%)",
+        "required_fields": 14,
+        "missing_field_instances": 0
+      }
+    }
+  },
+  
+  "key_findings": {
+    "instrumentation_defects_identified": 2,
+    "defect_1": {
+      "name": "MG Activation Gate",
+      "location": "backend/compatibility/mg_config.py is_active()",
+      "issue": "rollout_percentage default 0.0 prevented activation",
+      "impact": "MG never computed (returned legacy prediction)",
+      "fix": "Validator sets rollout_percentage=100.0"
+    },
+    "defect_2": {
+      "name": "Latency Measurement",
+      "location": "backend/services/simulation_engine.py line ~104",
+      "issue": "mg_latency_ms hardcoded to 0",
+      "impact": "Latency never measured (would have masked real behavior)",
+      "fix": "Added time.perf_counter() around mg_layer.apply()"
+    },
+    "frozen_configuration": {
+      "mg_enabled": true,
+      "use_motivation": true,
+      "use_goals": true,
+      "rollout_percentage": 100.0,
+      "motivation_coefficient": -3.2807449219261597,
+      "goals_coefficient": -4.990929117526626,
+      "intercept_coefficient": 5.347402291610499,
+      "source": "17.13B research checkpoint"
+    }
+  },
+  
+  "critical_caveats": [
+    "Safety gates passing = infrastructure sound, NOT behavioral validation",
+    "Corrections are numerically well-behaved, NOT necessarily accurate",
+    "MG computation is deterministic, NOT necessarily optimal",
+    "Latency is acceptable, NOT necessarily worth the complexity",
+    "No production activation decision yet (separate gate required)"
+  ],
+  
+  "artifacts": {
+    "events": "17_15_SHADOW_VALIDATION_EVENTS.json (2400 events)",
+    "metrics": "17_15_SHADOW_VALIDATION_REPORT.json",
+    "forensic": "17_15_FORENSIC_ANALYSIS_ROOT_CAUSE.md",
+    "safety": "17_15_SAFETY_ANALYSIS_REPORT.md",
+    "code_fixes": [
+      "backend/validation/shadow_validator_17_15.py (rollout_percentage=100.0)",
+      "backend/services/simulation_engine.py (latency timing)"
+    ]
+  },
+  
+  "next_phase": {
+    "recommended": "17.16 Behavioral Analysis",
+    "objectives": [
+      "Analyze whether corrections improve prediction accuracy",
+      "Compare MG predictions vs legacy predictions on held-out data",
+      "Check for systematic bias or pathological cases",
+      "Evaluate correction magnitude appropriateness"
+    ],
+    "gate_decision": "17.15 infrastructure CLEARED, proceed to behavioral validation"
+  },
+  
+  "research_chain_status": {
+    "17_13_b": "Frozen MG coefficients from research phase",
+    "17_13_c": "Generalization validation completed",
+    "17_14_a": "Shadow instrumentation validated",
+    "17_15": "MG-enabled shadow validation: SAFETY GATES PASS",
+    "17_16": "NEXT: Behavioral analysis phase",
+    "17_17": "FUTURE: Coefficient tuning (if needed)",
+    "17_18": "FUTURE: Production activation decision"
+  }
+}

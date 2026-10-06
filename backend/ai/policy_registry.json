@@ -36,6 +36,812 @@
     "accepted": true,
     "reason": null,
     "created_at": "2026-07-26T05:10:53.350583+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T03:56:36.036039+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T03:57:09.403567+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T03:58:19.657249+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T10:08:30.112391+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T10:08:59.749134+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-07-31T10:09:23.615940+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:40:27.760876+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:41:33.865907+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:42:09.990351+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:42:45.402506+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:45:02.334839+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:46:48.406036+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:56:09.857918+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:57:17.300584+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T16:58:20.335678+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:04:25.173389+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:10:53.317995+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:11:23.661865+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:12:21.303339+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:14:20.686059+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:14:56.646415+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-10T17:17:31.049401+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T08:08:26.012420+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T08:12:00.402678+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T09:01:52.365907+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T10:06:09.086131+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T10:29:49.504781+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:04:59.756832+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:24:03.731098+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:29:45.857949+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:37:48.996045+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:52:40.456868+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T11:58:15.047944+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:06:53.712405+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:18:00.570235+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:24:53.892108+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:25:39.352018+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:28:36.158810+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T12:43:42.698473+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T13:24:11.011464+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:04:47.863960+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:08:03.846673+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:16:58.688713+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:27:56.526047+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:31:24.744795+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-11T17:33:42.510795+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T09:10:43.172551+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T09:55:04.407359+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T15:01:46.847516+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T15:03:42.687897+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:14:21.962387+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:18:53.223325+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:34:28.640012+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:45:32.288816+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:46:01.120099+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-12T16:46:24.498717+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:33:44.951585+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:34:13.507680+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:34:42.081671+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:35:53.506318+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:36:16.786199+00:00",
+    "active": false
+  },
+  {
+    "policy_version": "policy_v3",
+    "dataset_hash": "policy_hash",
+    "sample_count": 2,
+    "benchmark": {
+      "top_action_accuracy": 0.9
+    },
+    "parent_policy": null,
+    "accepted": true,
+    "reason": null,
+    "created_at": "2026-08-13T04:36:39.618595+00:00",
     "active": true
   }
 ]

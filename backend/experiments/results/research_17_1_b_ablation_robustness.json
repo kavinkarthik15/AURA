@@ -1,0 +1,49 @@
+{
+  "experiment_id": "research_17_1_b_ablation_robustness",
+  "timestamp": "2026-08-12 16:18:38.122187",
+  "total_seeds": 5,
+  "seed_results": [
+    {
+      "seed": 42,
+      "condition_a_mae": 5.7875,
+      "condition_b_mae": 5.4125,
+      "improvement_percent": 6.479481641468683,
+      "learning_wins": true
+    },
+    {
+      "seed": 123,
+      "condition_a_mae": 5.575,
+      "condition_b_mae": 5.075,
+      "improvement_percent": 8.968609865470851,
+      "learning_wins": true
+    },
+    {
+      "seed": 456,
+      "condition_a_mae": 5.8,
+      "condition_b_mae": 5.25,
+      "improvement_percent": 9.482758620689653,
+      "learning_wins": true
+    },
+    {
+      "seed": 789,
+      "condition_a_mae": 5.45,
+      "condition_b_mae": 4.825,
+      "improvement_percent": 11.46788990825688,
+      "learning_wins": true
+    },
+    {
+      "seed": 999,
+      "condition_a_mae": 5.3375,
+      "condition_b_mae": 4.5875,
+      "improvement_percent": 14.05152224824356,
+      "learning_wins": true
+    }
+  ],
+  "learning_wins_count": 5,
+  "learning_win_rate": 100.0,
+  "average_improvement": 10.090052456825926,
+  "median_improvement": 9.482758620689653,
+  "min_improvement": 6.479481641468683,
+  "max_improvement": 14.05152224824356,
+  "std_dev_improvement": 2.8396452178354945
+}

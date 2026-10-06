@@ -1,0 +1,37 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.14, pytest-8.3.4, pluggy-1.6.0 -- D:\AURA\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\AURA
+configfile: pyproject.toml
+plugins: anyio-4.14.2, cov-5.0.0
+collecting ... collected 1 item
+
+backend/tests/test_knowledge_retriever.py::KnowledgeRetrieverTests::test_empty_result_handling FAILED [100%]
+
+================================== FAILURES ===================================
+_____________ KnowledgeRetrieverTests.test_empty_result_handling ______________
+
+self = <test_knowledge_retriever.KnowledgeRetrieverTests testMethod=test_empty_result_handling>
+
+    def test_empty_result_handling(self) -> None:
+        retriever = KnowledgeRetriever(knowledge_records=[])
+        result = retriever.retrieve("nothing")
+>       self.assertEqual(result["matches"], [])
+E       AssertionError: Lists differ: [{'knowledge': {'knowledge_id': 'KNW-1', '[505 chars]315}] != []
+E       
+E       First list contains 1 additional elements.
+E       First extra element 0:
+E       {'knowledge': {'knowledge_id': 'KNW-1', 'concept': 'backend', 'statement': 'Testing improves reliability', 'knowledge_type': 'general', 'confidence': 0.9, 'confidence_source': None, 'importance': 0.8, 'importance_source': None, 'importance_reason': None, 'status': 'ACTIVE', 'revision': 1, 'supporting_episode_ids': ['ep-1'], 'related_knowledge_ids': [], 'metadata': {}}, 'similarity': 0.0, 'confidence': 0.9, 'evidence_strength': 0.1, 'retrieval_reason': ['fallback_retrieval'], 'retrieval_strategy': 'fallback', 'matched_terms': [], 'score': 0.315}
+E       
+E       Diff is 822 characters long. Set self.maxDiff to None to see it.
+
+backend\tests\test_knowledge_retriever.py:70: AssertionError
+=========================== short test summary info ===========================
+FAILED backend/tests/test_knowledge_retriever.py::KnowledgeRetrieverTests::test_empty_result_handling - AssertionError: Lists differ: [{'knowledge': {'knowledge_id': 'KNW-1', '[505 chars]315}] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+{'knowledge': {'knowledge_id': 'KNW-1', 'concept': 'backend', 'statement': 'Testing improves reliability', 'knowledge_type': 'general', 'confidence': 0.9, 'confidence_source': None, 'importance': 0.8, 'importance_source': None, 'importance_reason': None, 'status': 'ACTIVE', 'revision': 1, 'supporting_episode_ids': ['ep-1'], 'related_knowledge_ids': [], 'metadata': {}}, 'similarity': 0.0, 'confidence': 0.9, 'evidence_strength': 0.1, 'retrieval_reason': ['fallback_retrieval'], 'retrieval_strategy': 'fallback', 'matched_terms': [], 'score': 0.315}
+
+Diff is 822 characters long. Set self.maxDiff to None to see it.
+============================== 1 failed in 0.40s ==============================

@@ -1,0 +1,49 @@
+{
+  "experiment_id": "research_17_0_d_robustness",
+  "timestamp": "2026-08-12 15:03:29.847223",
+  "total_seeds_tested": 5,
+  "seed_results": [
+    {
+      "seed": 42,
+      "baseline_mae": 5.7875,
+      "learning_mae": 5.4125,
+      "improvement_percent": 6.48,
+      "improvement_status": "positive"
+    },
+    {
+      "seed": 123,
+      "baseline_mae": 5.575,
+      "learning_mae": 5.075,
+      "improvement_percent": 8.97,
+      "improvement_status": "positive"
+    },
+    {
+      "seed": 456,
+      "baseline_mae": 5.8,
+      "learning_mae": 5.25,
+      "improvement_percent": 9.48,
+      "improvement_status": "positive"
+    },
+    {
+      "seed": 789,
+      "baseline_mae": 5.45,
+      "learning_mae": 4.825,
+      "improvement_percent": 11.47,
+      "improvement_status": "positive"
+    },
+    {
+      "seed": 999,
+      "baseline_mae": 5.3375,
+      "learning_mae": 4.5875,
+      "improvement_percent": 14.05,
+      "improvement_status": "positive"
+    }
+  ],
+  "positive_improvement_count": 5,
+  "average_improvement_percent": 10.09,
+  "median_improvement_percent": 9.48,
+  "improvement_std_dev": 2.839216441203453,
+  "max_improvement_percent": 14.05,
+  "min_improvement_percent": 6.48,
+  "robustness_score": 100.0
+}

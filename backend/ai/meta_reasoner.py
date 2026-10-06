@@ -2,10 +2,13 @@ from __future__ import annotations
 
 from typing import Any, Dict, List
 
+from backend.memory.memory_manager import MemoryManager
+
 
 class MetaReasoner:
-    def __init__(self) -> None:
+    def __init__(self, memory_manager: MemoryManager | None = None) -> None:
         self.version = "meta_reasoner_v1"
+        self.memory_manager = memory_manager
 
     def evaluate(
         self,
@@ -65,7 +68,7 @@ class MetaReasoner:
         else:
             decision = "accept" if reflection_score >= 0.75 and evidence_sufficiency >= 0.6 else "replan"
             recommended_action = "continue" if decision == "accept" else "revise"
-        return {
+        result = {
             "goal": goal,
             "confidence": round(confidence, 4),
             "reflection_score": reflection_score,
@@ -80,3 +83,7 @@ class MetaReasoner:
             "assumptions": assumptions,
             "contributors": contributors,
         }
+        if self.memory_manager is not None:
+            self.memory_manager.store_working_reflection(result)
+            self.memory_manager.store_reflection(result)
+        return result

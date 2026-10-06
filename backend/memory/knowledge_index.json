@@ -1,0 +1,20 @@
+[
+  {
+    "knowledge_id": "KNW-1",
+    "concept": "backend",
+    "statement": "Testing improves reliability",
+    "knowledge_type": "general",
+    "confidence": 0.9,
+    "confidence_source": null,
+    "importance": 0.8,
+    "importance_source": null,
+    "importance_reason": null,
+    "status": "ACTIVE",
+    "revision": 1,
+    "supporting_episode_ids": [
+      "ep-1"
+    ],
+    "related_knowledge_ids": [],
+    "metadata": {}
+  }
+]

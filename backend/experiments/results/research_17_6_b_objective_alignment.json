@@ -1,0 +1,107 @@
+{
+  "analysis_date": "2026-08-13T12:42:51.481782",
+  "learning_rate": 0.007,
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 320,
+      "objective_direction_accuracy": 0.184375,
+      "mean_mae_before": 5.509375,
+      "mean_mae_after": 5.46796875,
+      "mean_improvement": 0.04140625000000053,
+      "mean_signed_error": 2.784375,
+      "mean_bias_delta": 0.038565625,
+      "alignment_by_category": {
+        "low_skill_practice": 0.2,
+        "medium_skill_practice": 0.2,
+        "high_skill_practice": 0.175,
+        "low_motivation": 0.225,
+        "high_motivation": 0.275,
+        "mixed_skills": 0.225,
+        "project_completion": 0.0,
+        "plateau": 0.175
+      }
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 320,
+      "objective_direction_accuracy": 0.2125,
+      "mean_mae_before": 5.61875,
+      "mean_mae_after": 5.55703125,
+      "mean_improvement": 0.06171875000000071,
+      "mean_signed_error": 2.9625,
+      "mean_bias_delta": 0.03933125,
+      "alignment_by_category": {
+        "low_skill_practice": 0.1,
+        "medium_skill_practice": 0.2,
+        "high_skill_practice": 0.175,
+        "low_motivation": 0.3,
+        "high_motivation": 0.325,
+        "mixed_skills": 0.325,
+        "project_completion": 0.05,
+        "plateau": 0.225
+      }
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 320,
+      "objective_direction_accuracy": 0.19375,
+      "mean_mae_before": 5.428125,
+      "mean_mae_after": 5.39765625,
+      "mean_improvement": 0.030468749999999822,
+      "mean_signed_error": 2.846875,
+      "mean_bias_delta": 0.037996875,
+      "alignment_by_category": {
+        "low_skill_practice": 0.125,
+        "medium_skill_practice": 0.075,
+        "high_skill_practice": 0.225,
+        "low_motivation": 0.25,
+        "high_motivation": 0.35,
+        "mixed_skills": 0.275,
+        "project_completion": 0.025,
+        "plateau": 0.225
+      }
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 320,
+      "objective_direction_accuracy": 0.178125,
+      "mean_mae_before": 5.315625,
+      "mean_mae_after": 5.26796875,
+      "mean_improvement": 0.04765625000000018,
+      "mean_signed_error": 2.684375,
+      "mean_bias_delta": 0.037209375,
+      "alignment_by_category": {
+        "low_skill_practice": 0.125,
+        "medium_skill_practice": 0.15,
+        "high_skill_practice": 0.15,
+        "low_motivation": 0.3,
+        "high_motivation": 0.175,
+        "mixed_skills": 0.275,
+        "project_completion": 0.075,
+        "plateau": 0.175
+      }
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 320,
+      "objective_direction_accuracy": 0.190625,
+      "mean_mae_before": 5.284375,
+      "mean_mae_after": 5.2578125,
+      "mean_improvement": 0.026562499999999822,
+      "mean_signed_error": 2.884375,
+      "mean_bias_delta": 0.036990625,
+      "alignment_by_category": {
+        "low_skill_practice": 0.1,
+        "medium_skill_practice": 0.175,
+        "high_skill_practice": 0.175,
+        "low_motivation": 0.175,
+        "high_motivation": 0.325,
+        "mixed_skills": 0.275,
+        "project_completion": 0.05,
+        "plateau": 0.25
+      }
+    }
+  }
+}

@@ -1,0 +1,752 @@
+{
+  "analysis_date": "2026-08-13T20:27:28.996312",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "metrics": {
+        "Legacy": {
+          "model_name": "Legacy",
+          "features": [],
+          "train_mae": 3.10830078125,
+          "heldout_mae": 3.229296875,
+          "train_rmse": 3.714329042286776,
+          "heldout_rmse": 3.7641724376846764,
+          "train_r2": 0.9570524476154958,
+          "heldout_r2": 0.947292299435295,
+          "coefficients": {
+            "beta_0": 1.7031249999999996
+          }
+        },
+        "M": {
+          "model_name": "motivation",
+          "features": [
+            "motivation"
+          ],
+          "train_mae": 2.8337695312499998,
+          "heldout_mae": 2.8336718750000003,
+          "train_rmse": 3.473008365865968,
+          "heldout_rmse": 3.3787551447426614,
+          "train_r2": 0.9632470096976454,
+          "heldout_r2": 0.9588455726523301,
+          "coefficients": {
+            "beta_0": 3.5656249999999994,
+            "beta_1": -3.7249999999999996
+          }
+        },
+        "G": {
+          "model_name": "goals",
+          "features": [
+            "goals"
+          ],
+          "train_mae": 2.774091676945175,
+          "heldout_mae": 2.818759217256616,
+          "train_rmse": 3.558518811845685,
+          "heldout_rmse": 3.539182120907076,
+          "train_r2": 0.9610995902897433,
+          "heldout_r2": 0.9541880860200301,
+          "coefficients": {
+            "beta_0": 4.212057687476592,
+            "beta_1": -6.248752441899004
+          }
+        },
+        "MG": {
+          "model_name": "motivation+goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "train_mae": 2.631562301713669,
+          "heldout_mae": 2.709267057106138,
+          "train_rmse": 3.370987996676337,
+          "heldout_rmse": 3.2397235506342823,
+          "train_r2": 0.9657407125584255,
+          "heldout_r2": 0.9627071903623632,
+          "coefficients": {
+            "beta_0": 5.347402291610499,
+            "beta_1": -3.2807449219261597,
+            "beta_2": -4.990929117526626
+          }
+        }
+      },
+      "gate1_legacy_invariance": {
+        "gate_number": 1,
+        "gate_name": "Legacy Bias Consistency",
+        "passed": true,
+        "detail": "MG and Legacy bias terms are consistent",
+        "evidence": {
+          "legacy_beta0": 1.7031249999999996,
+          "mg_beta0": 5.347402291610499,
+          "difference": 3.6442772916104995,
+          "same_sign": true
+        }
+      },
+      "gate2_motivation_activation": {
+        "gate_number": 2,
+        "gate_name": "Motivation Causal Activation",
+        "passed": true,
+        "detail": "Motivation causes prediction changes",
+        "evidence": {
+          "beta_motivation": -3.2807449219261597,
+          "prediction_delta": 0.6561489843852314,
+          "activated": true
+        }
+      },
+      "gate3_goals_activation": {
+        "gate_number": 3,
+        "gate_name": "Goals Causal Activation",
+        "passed": true,
+        "detail": "Goals causes prediction changes",
+        "evidence": {
+          "beta_goals": -4.990929117526626,
+          "prediction_delta": 1.2477322793816574,
+          "activated": true
+        }
+      },
+      "gate4_mg_improves_legacy": {
+        "gate_number": 4,
+        "gate_name": "MG Improves Legacy",
+        "passed": true,
+        "detail": "MG better than Legacy",
+        "evidence": {
+          "mae_legacy": 3.229296875,
+          "mae_mg": 2.709267057106138,
+          "delta": -0.520029817893862
+        }
+      },
+      "gate5_mg_improves_singletons": {
+        "gate_number": 5,
+        "gate_name": "MG Improves Singletons",
+        "passed": true,
+        "detail": "MG better than both M and G",
+        "evidence": {
+          "mae_m": 2.8336718750000003,
+          "mae_g": 2.818759217256616,
+          "mae_mg": 2.709267057106138
+        }
+      },
+      "gate6_coefficient_stability": {
+        "gate_number": 6,
+        "gate_name": "Coefficient Stability",
+        "passed": true,
+        "detail": "Coefficients are non-zero and stable",
+        "evidence": {
+          "beta_motivation": -3.2807449219261597,
+          "beta_goals": -4.990929117526626,
+          "both_nonzero": true,
+          "stable_sign": true
+        }
+      },
+      "gate7_no_simulation_contamination": {
+        "gate_number": 7,
+        "gate_name": "No Simulation Contamination",
+        "passed": true,
+        "detail": "Benchmark split preserved",
+        "evidence": {
+          "train_count": 80,
+          "heldout_count": 20
+        }
+      }
+    },
+    "123": {
+      "seed": 123,
+      "metrics": {
+        "Legacy": {
+          "model_name": "Legacy",
+          "features": [],
+          "train_mae": 3.130722656249999,
+          "heldout_mae": 2.945624999999999,
+          "train_rmse": 3.721179615978647,
+          "heldout_rmse": 3.5308918513068326,
+          "train_r2": 0.9575628041398533,
+          "heldout_r2": 0.9608293845431042,
+          "coefficients": {
+            "beta_0": 1.646875
+          }
+        },
+        "M": {
+          "model_name": "motivation",
+          "features": [
+            "motivation"
+          ],
+          "train_mae": 2.852656249999999,
+          "heldout_mae": 2.540078124999998,
+          "train_rmse": 3.5094056098397903,
+          "heldout_rmse": 3.1244765186547636,
+          "train_r2": 0.9629195909068408,
+          "heldout_r2": 0.970523193239477,
+          "coefficients": {
+            "beta_0": 3.396875,
+            "beta_1": -3.499999999999999
+          }
+        },
+        "G": {
+          "model_name": "goals",
+          "features": [
+            "goals"
+          ],
+          "train_mae": 2.6978790216688155,
+          "heldout_mae": 2.4257252218499374,
+          "train_rmse": 3.545468798192026,
+          "heldout_rmse": 3.224657989582824,
+          "train_r2": 0.9620295465226235,
+          "heldout_r2": 0.968243616618521,
+          "coefficients": {
+            "beta_0": 4.601662388220913,
+            "beta_1": -7.52689222086118
+          }
+        },
+        "MG": {
+          "model_name": "motivation+goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "train_mae": 2.6306375873443884,
+          "heldout_mae": 2.2872908807129195,
+          "train_rmse": 3.3992117082394624,
+          "heldout_rmse": 2.9415471870865804,
+          "train_r2": 0.9655828103612055,
+          "heldout_r2": 0.9745000478420428,
+          "coefficients": {
+            "beta_0": 5.4524982305536485,
+            "beta_1": -2.926512025045623,
+            "beta_2": -5.966840681018364
+          }
+        }
+      },
+      "gate1_legacy_invariance": {
+        "gate_number": 1,
+        "gate_name": "Legacy Bias Consistency",
+        "passed": true,
+        "detail": "MG and Legacy bias terms are consistent",
+        "evidence": {
+          "legacy_beta0": 1.646875,
+          "mg_beta0": 5.4524982305536485,
+          "difference": 3.8056232305536484,
+          "same_sign": true
+        }
+      },
+      "gate2_motivation_activation": {
+        "gate_number": 2,
+        "gate_name": "Motivation Causal Activation",
+        "passed": true,
+        "detail": "Motivation causes prediction changes",
+        "evidence": {
+          "beta_motivation": -2.926512025045623,
+          "prediction_delta": 0.5853024050091259,
+          "activated": true
+        }
+      },
+      "gate3_goals_activation": {
+        "gate_number": 3,
+        "gate_name": "Goals Causal Activation",
+        "passed": true,
+        "detail": "Goals causes prediction changes",
+        "evidence": {
+          "beta_goals": -5.966840681018364,
+          "prediction_delta": 1.4917101702545907,
+          "activated": true
+        }
+      },
+      "gate4_mg_improves_legacy": {
+        "gate_number": 4,
+        "gate_name": "MG Improves Legacy",
+        "passed": true,
+        "detail": "MG better than Legacy",
+        "evidence": {
+          "mae_legacy": 2.945624999999999,
+          "mae_mg": 2.2872908807129195,
+          "delta": -0.6583341192870793
+        }
+      },
+      "gate5_mg_improves_singletons": {
+        "gate_number": 5,
+        "gate_name": "MG Improves Singletons",
+        "passed": true,
+        "detail": "MG better than both M and G",
+        "evidence": {
+          "mae_m": 2.540078124999998,
+          "mae_g": 2.4257252218499374,
+          "mae_mg": 2.2872908807129195
+        }
+      },
+      "gate6_coefficient_stability": {
+        "gate_number": 6,
+        "gate_name": "Coefficient Stability",
+        "passed": true,
+        "detail": "Coefficients are non-zero and stable",
+        "evidence": {
+          "beta_motivation": -2.926512025045623,
+          "beta_goals": -5.966840681018364,
+          "both_nonzero": true,
+          "stable_sign": true
+        }
+      },
+      "gate7_no_simulation_contamination": {
+        "gate_number": 7,
+        "gate_name": "No Simulation Contamination",
+        "passed": true,
+        "detail": "Benchmark split preserved",
+        "evidence": {
+          "train_count": 80,
+          "heldout_count": 20
+        }
+      }
+    },
+    "456": {
+      "seed": 456,
+      "metrics": {
+        "Legacy": {
+          "model_name": "Legacy",
+          "features": [],
+          "train_mae": 3.15439453125,
+          "heldout_mae": 2.9484375,
+          "train_rmse": 3.7410505188215515,
+          "heldout_rmse": 3.421875,
+          "train_r2": 0.9512574180535549,
+          "heldout_r2": 0.9590200592358314,
+          "coefficients": {
+            "beta_0": 1.6718750000000002
+          }
+        },
+        "M": {
+          "model_name": "motivation",
+          "features": [
+            "motivation"
+          ],
+          "train_mae": 2.82958984375,
+          "heldout_mae": 2.66484375,
+          "train_rmse": 3.454340849297446,
+          "heldout_rmse": 3.175567432070212,
+          "train_r2": 0.9593548928680125,
+          "heldout_r2": 0.9655308671770139,
+          "coefficients": {
+            "beta_0": 3.7031250000000013,
+            "beta_1": -4.062500000000001
+          }
+        },
+        "G": {
+          "model_name": "goals",
+          "features": [
+            "goals"
+          ],
+          "train_mae": 2.817110906206808,
+          "heldout_mae": 2.485849079194657,
+          "train_rmse": 3.5958612448083924,
+          "heldout_rmse": 3.0911646705365565,
+          "train_r2": 0.9554386154827517,
+          "heldout_r2": 0.9676501030896353,
+          "coefficients": {
+            "beta_0": 4.478829853086056,
+            "beta_1": -6.9560596846361396
+          }
+        },
+        "MG": {
+          "model_name": "motivation+goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "train_mae": 2.6975614099949174,
+          "heldout_mae": 2.4255836755840674,
+          "train_rmse": 3.3863098606379127,
+          "heldout_rmse": 2.973170439607068,
+          "train_r2": 0.9611815500250009,
+          "heldout_r2": 0.970517088515122,
+          "coefficients": {
+            "beta_0": 5.364756696601368,
+            "beta_1": -3.5430610773518003,
+            "beta_2": -4.761399462830821
+          }
+        }
+      },
+      "gate1_legacy_invariance": {
+        "gate_number": 1,
+        "gate_name": "Legacy Bias Consistency",
+        "passed": true,
+        "detail": "MG and Legacy bias terms are consistent",
+        "evidence": {
+          "legacy_beta0": 1.6718750000000002,
+          "mg_beta0": 5.364756696601368,
+          "difference": 3.6928816966013676,
+          "same_sign": true
+        }
+      },
+      "gate2_motivation_activation": {
+        "gate_number": 2,
+        "gate_name": "Motivation Causal Activation",
+        "passed": true,
+        "detail": "Motivation causes prediction changes",
+        "evidence": {
+          "beta_motivation": -3.5430610773518003,
+          "prediction_delta": 0.7086122154703611,
+          "activated": true
+        }
+      },
+      "gate3_goals_activation": {
+        "gate_number": 3,
+        "gate_name": "Goals Causal Activation",
+        "passed": true,
+        "detail": "Goals causes prediction changes",
+        "evidence": {
+          "beta_goals": -4.761399462830821,
+          "prediction_delta": 1.1903498657077054,
+          "activated": true
+        }
+      },
+      "gate4_mg_improves_legacy": {
+        "gate_number": 4,
+        "gate_name": "MG Improves Legacy",
+        "passed": true,
+        "detail": "MG better than Legacy",
+        "evidence": {
+          "mae_legacy": 2.9484375,
+          "mae_mg": 2.4255836755840674,
+          "delta": -0.5228538244159324
+        }
+      },
+      "gate5_mg_improves_singletons": {
+        "gate_number": 5,
+        "gate_name": "MG Improves Singletons",
+        "passed": true,
+        "detail": "MG better than both M and G",
+        "evidence": {
+          "mae_m": 2.66484375,
+          "mae_g": 2.485849079194657,
+          "mae_mg": 2.4255836755840674
+        }
+      },
+      "gate6_coefficient_stability": {
+        "gate_number": 6,
+        "gate_name": "Coefficient Stability",
+        "passed": true,
+        "detail": "Coefficients are non-zero and stable",
+        "evidence": {
+          "beta_motivation": -3.5430610773518003,
+          "beta_goals": -4.761399462830821,
+          "both_nonzero": true,
+          "stable_sign": true
+        }
+      },
+      "gate7_no_simulation_contamination": {
+        "gate_number": 7,
+        "gate_name": "No Simulation Contamination",
+        "passed": true,
+        "detail": "Benchmark split preserved",
+        "evidence": {
+          "train_count": 80,
+          "heldout_count": 20
+        }
+      }
+    },
+    "789": {
+      "seed": 789,
+      "metrics": {
+        "Legacy": {
+          "model_name": "Legacy",
+          "features": [],
+          "train_mae": 2.995429687499999,
+          "heldout_mae": 3.042187499999998,
+          "train_rmse": 3.58664515076415,
+          "heldout_rmse": 3.5098132517984473,
+          "train_r2": 0.9583732060386376,
+          "heldout_r2": 0.9578080136156714,
+          "coefficients": {
+            "beta_0": 1.6312500000000003
+          }
+        },
+        "M": {
+          "model_name": "motivation",
+          "features": [
+            "motivation"
+          ],
+          "train_mae": 2.7124609374999986,
+          "heldout_mae": 2.6890624999999986,
+          "train_rmse": 3.354885080930491,
+          "heldout_rmse": 3.1738365240273465,
+          "train_r2": 0.9643885909905208,
+          "heldout_r2": 0.9666574148820422,
+          "coefficients": {
+            "beta_0": 3.4250000000000007,
+            "beta_1": -3.5875000000000004
+          }
+        },
+        "G": {
+          "model_name": "goals",
+          "features": [
+            "goals"
+          ],
+          "train_mae": 2.6427253473637684,
+          "heldout_mae": 2.642701864903713,
+          "train_rmse": 3.4012367359898046,
+          "heldout_rmse": 3.2838231404441585,
+          "train_r2": 0.9632176572779227,
+          "heldout_r2": 0.9638583948794769,
+          "coefficients": {
+            "beta_0": 4.559165822574033,
+            "beta_1": -7.157105200338326
+          }
+        },
+        "MG": {
+          "model_name": "motivation+goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "train_mae": 2.5267181333831767,
+          "heldout_mae": 2.5168281203711453,
+          "train_rmse": 3.225692538342208,
+          "heldout_rmse": 3.0828176327857726,
+          "train_r2": 0.9675674484472709,
+          "heldout_r2": 0.9689016311066272,
+          "coefficients": {
+            "beta_0": 5.595060650317936,
+            "beta_1": -3.102887120621425,
+            "beta_2": -5.896878903382189
+          }
+        }
+      },
+      "gate1_legacy_invariance": {
+        "gate_number": 1,
+        "gate_name": "Legacy Bias Consistency",
+        "passed": true,
+        "detail": "MG and Legacy bias terms are consistent",
+        "evidence": {
+          "legacy_beta0": 1.6312500000000003,
+          "mg_beta0": 5.595060650317936,
+          "difference": 3.963810650317935,
+          "same_sign": true
+        }
+      },
+      "gate2_motivation_activation": {
+        "gate_number": 2,
+        "gate_name": "Motivation Causal Activation",
+        "passed": true,
+        "detail": "Motivation causes prediction changes",
+        "evidence": {
+          "beta_motivation": -3.102887120621425,
+          "prediction_delta": 0.6205774241242829,
+          "activated": true
+        }
+      },
+      "gate3_goals_activation": {
+        "gate_number": 3,
+        "gate_name": "Goals Causal Activation",
+        "passed": true,
+        "detail": "Goals causes prediction changes",
+        "evidence": {
+          "beta_goals": -5.896878903382189,
+          "prediction_delta": 1.4742197258455465,
+          "activated": true
+        }
+      },
+      "gate4_mg_improves_legacy": {
+        "gate_number": 4,
+        "gate_name": "MG Improves Legacy",
+        "passed": true,
+        "detail": "MG better than Legacy",
+        "evidence": {
+          "mae_legacy": 3.042187499999998,
+          "mae_mg": 2.5168281203711453,
+          "delta": -0.5253593796288527
+        }
+      },
+      "gate5_mg_improves_singletons": {
+        "gate_number": 5,
+        "gate_name": "MG Improves Singletons",
+        "passed": true,
+        "detail": "MG better than both M and G",
+        "evidence": {
+          "mae_m": 2.6890624999999986,
+          "mae_g": 2.642701864903713,
+          "mae_mg": 2.5168281203711453
+        }
+      },
+      "gate6_coefficient_stability": {
+        "gate_number": 6,
+        "gate_name": "Coefficient Stability",
+        "passed": true,
+        "detail": "Coefficients are non-zero and stable",
+        "evidence": {
+          "beta_motivation": -3.102887120621425,
+          "beta_goals": -5.896878903382189,
+          "both_nonzero": true,
+          "stable_sign": true
+        }
+      },
+      "gate7_no_simulation_contamination": {
+        "gate_number": 7,
+        "gate_name": "No Simulation Contamination",
+        "passed": true,
+        "detail": "Benchmark split preserved",
+        "evidence": {
+          "train_count": 80,
+          "heldout_count": 20
+        }
+      }
+    },
+    "999": {
+      "seed": 999,
+      "metrics": {
+        "Legacy": {
+          "model_name": "Legacy",
+          "features": [],
+          "train_mae": 2.97357421875,
+          "heldout_mae": 3.0032031249999998,
+          "train_rmse": 3.556243134879138,
+          "heldout_rmse": 3.569085196605007,
+          "train_r2": 0.9592060102241192,
+          "heldout_r2": 0.9669153807699274,
+          "coefficients": {
+            "beta_0": 1.5968750000000003
+          }
+        },
+        "M": {
+          "model_name": "motivation",
+          "features": [
+            "motivation"
+          ],
+          "train_mae": 2.6487695312499993,
+          "heldout_mae": 2.673828124999999,
+          "train_rmse": 3.2667701341500903,
+          "heldout_rmse": 3.182925946063621,
+          "train_r2": 0.9664611193511871,
+          "heldout_r2": 0.9748905372783803,
+          "coefficients": {
+            "beta_0": 3.584375000000001,
+            "beta_1": -3.9750000000000014
+          }
+        },
+        "G": {
+          "model_name": "goals",
+          "features": [
+            "goals"
+          ],
+          "train_mae": 2.6527102502514213,
+          "heldout_mae": 2.4588504756973304,
+          "train_rmse": 3.398677620302913,
+          "heldout_rmse": 3.1767774592891236,
+          "train_r2": 0.9632314471703922,
+          "heldout_r2": 0.9750101410091462,
+          "coefficients": {
+            "beta_0": 4.346578680422136,
+            "beta_1": -6.879822182273035
+          }
+        },
+        "MG": {
+          "model_name": "motivation+goals",
+          "features": [
+            "motivation",
+            "goals"
+          ],
+          "train_mae": 2.5148273564904438,
+          "heldout_mae": 2.3963043520985883,
+          "train_rmse": 3.1777011214763915,
+          "heldout_rmse": 2.9388311657847423,
+          "train_r2": 0.9685696193221818,
+          "heldout_r2": 0.9794611477297749,
+          "coefficients": {
+            "beta_0": 5.383562400207635,
+            "beta_1": -3.4943725920572044,
+            "beta_2": -5.102878916446432
+          }
+        }
+      },
+      "gate1_legacy_invariance": {
+        "gate_number": 1,
+        "gate_name": "Legacy Bias Consistency",
+        "passed": true,
+        "detail": "MG and Legacy bias terms are consistent",
+        "evidence": {
+          "legacy_beta0": 1.5968750000000003,
+          "mg_beta0": 5.383562400207635,
+          "difference": 3.786687400207635,
+          "same_sign": true
+        }
+      },
+      "gate2_motivation_activation": {
+        "gate_number": 2,
+        "gate_name": "Motivation Causal Activation",
+        "passed": true,
+        "detail": "Motivation causes prediction changes",
+        "evidence": {
+          "beta_motivation": -3.4943725920572044,
+          "prediction_delta": 0.6988745184114435,
+          "activated": true
+        }
+      },
+      "gate3_goals_activation": {
+        "gate_number": 3,
+        "gate_name": "Goals Causal Activation",
+        "passed": true,
+        "detail": "Goals causes prediction changes",
+        "evidence": {
+          "beta_goals": -5.102878916446432,
+          "prediction_delta": 1.2757197291116074,
+          "activated": true
+        }
+      },
+      "gate4_mg_improves_legacy": {
+        "gate_number": 4,
+        "gate_name": "MG Improves Legacy",
+        "passed": true,
+        "detail": "MG better than Legacy",
+        "evidence": {
+          "mae_legacy": 3.0032031249999998,
+          "mae_mg": 2.3963043520985883,
+          "delta": -0.6068987729014115
+        }
+      },
+      "gate5_mg_improves_singletons": {
+        "gate_number": 5,
+        "gate_name": "MG Improves Singletons",
+        "passed": true,
+        "detail": "MG better than both M and G",
+        "evidence": {
+          "mae_m": 2.673828124999999,
+          "mae_g": 2.4588504756973304,
+          "mae_mg": 2.3963043520985883
+        }
+      },
+      "gate6_coefficient_stability": {
+        "gate_number": 6,
+        "gate_name": "Coefficient Stability",
+        "passed": true,
+        "detail": "Coefficients are non-zero and stable",
+        "evidence": {
+          "beta_motivation": -3.4943725920572044,
+          "beta_goals": -5.102878916446432,
+          "both_nonzero": true,
+          "stable_sign": true
+        }
+      },
+      "gate7_no_simulation_contamination": {
+        "gate_number": 7,
+        "gate_name": "No Simulation Contamination",
+        "passed": true,
+        "detail": "Benchmark split preserved",
+        "evidence": {
+          "train_count": 80,
+          "heldout_count": 20
+        }
+      }
+    }
+  },
+  "aggregate_summary": {
+    "gate_pass_counts": {
+      "gate1": 5,
+      "gate2": 5,
+      "gate3": 5,
+      "gate4": 5,
+      "gate5": 5,
+      "gate6": 5,
+      "gate7": 5
+    },
+    "total_gates": 7,
+    "seeds_with_all_gates_pass": 5,
+    "all_gates_pass_all_seeds": true,
+    "mg_is_stable_and_reproducible": true,
+    "recommendation": "MG is stable, reproducible, and a valid production candidate"
+  }
+}

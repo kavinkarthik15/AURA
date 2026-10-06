@@ -1,0 +1,639 @@
+{
+  "analysis_date": "2026-08-13T20:23:41.140584",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "mae_legacy": 3.7375,
+      "mae_mg_17_9_mapping": 2.709267057106138,
+      "mae_mgb_17_9_mapping": 2.6078208770259996,
+      "mae_mg_17_10b_mapping": 2.709267057106138,
+      "mae_mgb_17_10b_mapping": 2.6078208770259996,
+      "delta_mgb_minus_mg_17_9": -0.1014461800801385,
+      "delta_mgb_minus_mg_17_10b": -0.1014461800801385,
+      "coefficients_17_9_mg": {
+        "model": "motivation+goals",
+        "features": [
+          "motivation",
+          "goals"
+        ],
+        "beta_0": 5.347402291610499,
+        "beta_1": -3.2807449219261597,
+        "beta_2": -4.990929117526626,
+        "beta_3": null
+      },
+      "coefficients_17_9_mgb": {
+        "model": "motivation+goals+behavior",
+        "features": [
+          "motivation",
+          "goals",
+          "behavior"
+        ],
+        "beta_0": -2.182883826803374,
+        "beta_1": -2.9138588716450817,
+        "beta_2": -7.663007591104515,
+        "beta_3": 10.3230132121386
+      },
+      "gate1_mapping_equivalence": {
+        "gate_name": "Mapping Equivalence",
+        "gate_number": 1,
+        "passed": true,
+        "message": "Correction models have expected structure",
+        "details": {
+          "mg_model": {
+            "model": "motivation+goals",
+            "features": [
+              "motivation",
+              "goals"
+            ],
+            "beta_0": 5.347402291610499,
+            "beta_1": -3.2807449219261597,
+            "beta_2": -4.990929117526626,
+            "beta_3": null
+          },
+          "mgb_model": {
+            "model": "motivation+goals+behavior",
+            "features": [
+              "motivation",
+              "goals",
+              "behavior"
+            ],
+            "beta_0": -2.182883826803374,
+            "beta_1": -2.9138588716450817,
+            "beta_2": -7.663007591104515,
+            "beta_3": 10.3230132121386
+          },
+          "mg_feature_count": 2,
+          "mgb_feature_count": 3,
+          "expected_structure": "MG has 2 features, MGB has 3 features"
+        }
+      },
+      "gate2_legacy_invariance": {
+        "gate_name": "Legacy Invariance",
+        "gate_number": 2,
+        "passed": true,
+        "message": "Legacy output preserved when M=G=B=0",
+        "details": {
+          "mae_legacy": 3.7375,
+          "mae_zero_features": 3.7375,
+          "difference": 0.0
+        }
+      },
+      "gate3_mgb_reproduction": {
+        "gate_name": "MGB Reproduction",
+        "gate_number": 3,
+        "passed": true,
+        "message": "MGB improves over MG (17.9 result reproduced)",
+        "details": {
+          "mae_mg": 2.709267057106138,
+          "mae_mgb": 2.6078208770259996,
+          "delta_mgb_minus_mg": -0.1014461800801385
+        }
+      },
+      "gate4_incremental_behavior": {
+        "gate_name": "Incremental Behavior",
+        "gate_number": 4,
+        "passed": true,
+        "message": "Behavior provides consistent improvement",
+        "details": {
+          "mae_mg": 2.709267057106138,
+          "mae_mgb": 2.6078208770259996,
+          "delta": -0.1014461800801385,
+          "threshold": -0.01
+        }
+      },
+      "gate5_causal_activation": {
+        "gate_name": "Causal Activation",
+        "gate_number": 5,
+        "passed": true,
+        "message": "All features cause measurable prediction changes",
+        "details": {
+          "motivation": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 0.5827717743290163,
+            "activated": true
+          },
+          "goals": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 1.9157518977761292,
+            "activated": true
+          },
+          "behavior": {
+            "perturbation_magnitude": 0.1,
+            "prediction_delta": 0.9290711890924733,
+            "activated": true
+          }
+        }
+      }
+    },
+    "123": {
+      "seed": 123,
+      "mae_legacy": 3.45,
+      "mae_mg_17_9_mapping": 2.2872908807129195,
+      "mae_mgb_17_9_mapping": 2.21998750548315,
+      "mae_mg_17_10b_mapping": 2.2872908807129195,
+      "mae_mgb_17_10b_mapping": 2.21998750548315,
+      "delta_mgb_minus_mg_17_9": -0.06730337522976937,
+      "delta_mgb_minus_mg_17_10b": -0.06730337522976937,
+      "coefficients_17_9_mg": {
+        "model": "motivation+goals",
+        "features": [
+          "motivation",
+          "goals"
+        ],
+        "beta_0": 5.4524982305536485,
+        "beta_1": -2.926512025045623,
+        "beta_2": -5.966840681018364,
+        "beta_3": null
+      },
+      "coefficients_17_9_mgb": {
+        "model": "motivation+goals+behavior",
+        "features": [
+          "motivation",
+          "goals",
+          "behavior"
+        ],
+        "beta_0": 1.3819489391284698,
+        "beta_1": -3.0146418795050427,
+        "beta_2": -6.111722309219722,
+        "beta_3": 5.1027394974963025
+      },
+      "gate1_mapping_equivalence": {
+        "gate_name": "Mapping Equivalence",
+        "gate_number": 1,
+        "passed": true,
+        "message": "Correction models have expected structure",
+        "details": {
+          "mg_model": {
+            "model": "motivation+goals",
+            "features": [
+              "motivation",
+              "goals"
+            ],
+            "beta_0": 5.4524982305536485,
+            "beta_1": -2.926512025045623,
+            "beta_2": -5.966840681018364,
+            "beta_3": null
+          },
+          "mgb_model": {
+            "model": "motivation+goals+behavior",
+            "features": [
+              "motivation",
+              "goals",
+              "behavior"
+            ],
+            "beta_0": 1.3819489391284698,
+            "beta_1": -3.0146418795050427,
+            "beta_2": -6.111722309219722,
+            "beta_3": 5.1027394974963025
+          },
+          "mg_feature_count": 2,
+          "mgb_feature_count": 3,
+          "expected_structure": "MG has 2 features, MGB has 3 features"
+        }
+      },
+      "gate2_legacy_invariance": {
+        "gate_name": "Legacy Invariance",
+        "gate_number": 2,
+        "passed": true,
+        "message": "Legacy output preserved when M=G=B=0",
+        "details": {
+          "mae_legacy": 3.45,
+          "mae_zero_features": 3.45,
+          "difference": 0.0
+        }
+      },
+      "gate3_mgb_reproduction": {
+        "gate_name": "MGB Reproduction",
+        "gate_number": 3,
+        "passed": true,
+        "message": "MGB improves over MG (17.9 result reproduced)",
+        "details": {
+          "mae_mg": 2.2872908807129195,
+          "mae_mgb": 2.21998750548315,
+          "delta_mgb_minus_mg": -0.06730337522976937
+        }
+      },
+      "gate4_incremental_behavior": {
+        "gate_name": "Incremental Behavior",
+        "gate_number": 4,
+        "passed": true,
+        "message": "Behavior provides consistent improvement",
+        "details": {
+          "mae_mg": 2.2872908807129195,
+          "mae_mgb": 2.21998750548315,
+          "delta": -0.06730337522976937,
+          "threshold": -0.01
+        }
+      },
+      "gate5_causal_activation": {
+        "gate_name": "Causal Activation",
+        "gate_number": 5,
+        "passed": true,
+        "message": "All features cause measurable prediction changes",
+        "details": {
+          "motivation": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 0.6029283759010077,
+            "activated": true
+          },
+          "goals": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 1.5279305773049299,
+            "activated": true
+          },
+          "behavior": {
+            "perturbation_magnitude": 0.1,
+            "prediction_delta": 0.4592465547746678,
+            "activated": true
+          }
+        }
+      }
+    },
+    "456": {
+      "seed": 456,
+      "mae_legacy": 3.525,
+      "mae_mg_17_9_mapping": 2.4255836755840674,
+      "mae_mgb_17_9_mapping": 2.580081987085195,
+      "mae_mg_17_10b_mapping": 2.4255836755840674,
+      "mae_mgb_17_10b_mapping": 2.580081987085195,
+      "delta_mgb_minus_mg_17_9": 0.1544983115011278,
+      "delta_mgb_minus_mg_17_10b": 0.1544983115011278,
+      "coefficients_17_9_mg": {
+        "model": "motivation+goals",
+        "features": [
+          "motivation",
+          "goals"
+        ],
+        "beta_0": 5.364756696601368,
+        "beta_1": -3.5430610773518003,
+        "beta_2": -4.761399462830821,
+        "beta_3": null
+      },
+      "coefficients_17_9_mgb": {
+        "model": "motivation+goals+behavior",
+        "features": [
+          "motivation",
+          "goals",
+          "behavior"
+        ],
+        "beta_0": -2.2872490679949817,
+        "beta_1": -3.855045894421688,
+        "beta_2": -5.478707082868592,
+        "beta_3": 9.755964881084568
+      },
+      "gate1_mapping_equivalence": {
+        "gate_name": "Mapping Equivalence",
+        "gate_number": 1,
+        "passed": true,
+        "message": "Correction models have expected structure",
+        "details": {
+          "mg_model": {
+            "model": "motivation+goals",
+            "features": [
+              "motivation",
+              "goals"
+            ],
+            "beta_0": 5.364756696601368,
+            "beta_1": -3.5430610773518003,
+            "beta_2": -4.761399462830821,
+            "beta_3": null
+          },
+          "mgb_model": {
+            "model": "motivation+goals+behavior",
+            "features": [
+              "motivation",
+              "goals",
+              "behavior"
+            ],
+            "beta_0": -2.2872490679949817,
+            "beta_1": -3.855045894421688,
+            "beta_2": -5.478707082868592,
+            "beta_3": 9.755964881084568
+          },
+          "mg_feature_count": 2,
+          "mgb_feature_count": 3,
+          "expected_structure": "MG has 2 features, MGB has 3 features"
+        }
+      },
+      "gate2_legacy_invariance": {
+        "gate_name": "Legacy Invariance",
+        "gate_number": 2,
+        "passed": true,
+        "message": "Legacy output preserved when M=G=B=0",
+        "details": {
+          "mae_legacy": 3.525,
+          "mae_zero_features": 3.525,
+          "difference": 0.0
+        }
+      },
+      "gate3_mgb_reproduction": {
+        "gate_name": "MGB Reproduction",
+        "gate_number": 3,
+        "passed": false,
+        "message": "MGB fails to improve over MG",
+        "details": {
+          "mae_mg": 2.4255836755840674,
+          "mae_mgb": 2.580081987085195,
+          "delta_mgb_minus_mg": 0.1544983115011278
+        }
+      },
+      "gate4_incremental_behavior": {
+        "gate_name": "Incremental Behavior",
+        "gate_number": 4,
+        "passed": false,
+        "message": "Behavior improvement is marginal",
+        "details": {
+          "mae_mg": 2.4255836755840674,
+          "mae_mgb": 2.580081987085195,
+          "delta": 0.1544983115011278,
+          "threshold": -0.01
+        }
+      },
+      "gate5_causal_activation": {
+        "gate_name": "Causal Activation",
+        "gate_number": 5,
+        "passed": true,
+        "message": "All features cause measurable prediction changes",
+        "details": {
+          "motivation": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 0.7710091788843363,
+            "activated": true
+          },
+          "goals": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 1.3696767707171484,
+            "activated": true
+          },
+          "behavior": {
+            "perturbation_magnitude": 0.1,
+            "prediction_delta": 0.8780368392976114,
+            "activated": true
+          }
+        }
+      }
+    },
+    "789": {
+      "seed": 789,
+      "mae_legacy": 3.55,
+      "mae_mg_17_9_mapping": 2.5168281203711453,
+      "mae_mgb_17_9_mapping": 2.5190083640595935,
+      "mae_mg_17_10b_mapping": 2.5168281203711453,
+      "mae_mgb_17_10b_mapping": 2.5190083640595935,
+      "delta_mgb_minus_mg_17_9": 0.002180243688448158,
+      "delta_mgb_minus_mg_17_10b": 0.002180243688448158,
+      "coefficients_17_9_mg": {
+        "model": "motivation+goals",
+        "features": [
+          "motivation",
+          "goals"
+        ],
+        "beta_0": 5.595060650317936,
+        "beta_1": -3.102887120621425,
+        "beta_2": -5.896878903382189,
+        "beta_3": null
+      },
+      "coefficients_17_9_mgb": {
+        "model": "motivation+goals+behavior",
+        "features": [
+          "motivation",
+          "goals",
+          "behavior"
+        ],
+        "beta_0": 5.672215978862526,
+        "beta_1": -3.106679580861704,
+        "beta_2": -5.885532356472353,
+        "beta_3": -0.09533289440162962
+      },
+      "gate1_mapping_equivalence": {
+        "gate_name": "Mapping Equivalence",
+        "gate_number": 1,
+        "passed": true,
+        "message": "Correction models have expected structure",
+        "details": {
+          "mg_model": {
+            "model": "motivation+goals",
+            "features": [
+              "motivation",
+              "goals"
+            ],
+            "beta_0": 5.595060650317936,
+            "beta_1": -3.102887120621425,
+            "beta_2": -5.896878903382189,
+            "beta_3": null
+          },
+          "mgb_model": {
+            "model": "motivation+goals+behavior",
+            "features": [
+              "motivation",
+              "goals",
+              "behavior"
+            ],
+            "beta_0": 5.672215978862526,
+            "beta_1": -3.106679580861704,
+            "beta_2": -5.885532356472353,
+            "beta_3": -0.09533289440162962
+          },
+          "mg_feature_count": 2,
+          "mgb_feature_count": 3,
+          "expected_structure": "MG has 2 features, MGB has 3 features"
+        }
+      },
+      "gate2_legacy_invariance": {
+        "gate_name": "Legacy Invariance",
+        "gate_number": 2,
+        "passed": true,
+        "message": "Legacy output preserved when M=G=B=0",
+        "details": {
+          "mae_legacy": 3.55,
+          "mae_zero_features": 3.55,
+          "difference": 0.0
+        }
+      },
+      "gate3_mgb_reproduction": {
+        "gate_name": "MGB Reproduction",
+        "gate_number": 3,
+        "passed": false,
+        "message": "MGB fails to improve over MG",
+        "details": {
+          "mae_mg": 2.5168281203711453,
+          "mae_mgb": 2.5190083640595935,
+          "delta_mgb_minus_mg": 0.002180243688448158
+        }
+      },
+      "gate4_incremental_behavior": {
+        "gate_name": "Incremental Behavior",
+        "gate_number": 4,
+        "passed": false,
+        "message": "Behavior improvement is marginal",
+        "details": {
+          "mae_mg": 2.5168281203711453,
+          "mae_mgb": 2.5190083640595935,
+          "delta": 0.002180243688448158,
+          "threshold": -0.01
+        }
+      },
+      "gate5_causal_activation": {
+        "gate_name": "Causal Activation",
+        "gate_number": 5,
+        "passed": true,
+        "message": "All features cause measurable prediction changes",
+        "details": {
+          "motivation": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 0.621335916172341,
+            "activated": true
+          },
+          "goals": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 1.4713830891180897,
+            "activated": true
+          },
+          "behavior": {
+            "perturbation_magnitude": 0.1,
+            "prediction_delta": 0.007626631552130903,
+            "activated": true
+          }
+        }
+      }
+    },
+    "999": {
+      "seed": 999,
+      "mae_legacy": 3.4625,
+      "mae_mg_17_9_mapping": 2.3963043520985883,
+      "mae_mgb_17_9_mapping": 2.446811363665998,
+      "mae_mg_17_10b_mapping": 2.3963043520985883,
+      "mae_mgb_17_10b_mapping": 2.446811363665998,
+      "delta_mgb_minus_mg_17_9": 0.050507011567409776,
+      "delta_mgb_minus_mg_17_10b": 0.050507011567409776,
+      "coefficients_17_9_mg": {
+        "model": "motivation+goals",
+        "features": [
+          "motivation",
+          "goals"
+        ],
+        "beta_0": 5.383562400207635,
+        "beta_1": -3.4943725920572044,
+        "beta_2": -5.102878916446432,
+        "beta_3": null
+      },
+      "coefficients_17_9_mgb": {
+        "model": "motivation+goals+behavior",
+        "features": [
+          "motivation",
+          "goals",
+          "behavior"
+        ],
+        "beta_0": 0.9347704365653224,
+        "beta_1": -3.35746850947885,
+        "beta_2": -5.668534771397864,
+        "beta_3": 5.575091449341148
+      },
+      "gate1_mapping_equivalence": {
+        "gate_name": "Mapping Equivalence",
+        "gate_number": 1,
+        "passed": true,
+        "message": "Correction models have expected structure",
+        "details": {
+          "mg_model": {
+            "model": "motivation+goals",
+            "features": [
+              "motivation",
+              "goals"
+            ],
+            "beta_0": 5.383562400207635,
+            "beta_1": -3.4943725920572044,
+            "beta_2": -5.102878916446432,
+            "beta_3": null
+          },
+          "mgb_model": {
+            "model": "motivation+goals+behavior",
+            "features": [
+              "motivation",
+              "goals",
+              "behavior"
+            ],
+            "beta_0": 0.9347704365653224,
+            "beta_1": -3.35746850947885,
+            "beta_2": -5.668534771397864,
+            "beta_3": 5.575091449341148
+          },
+          "mg_feature_count": 2,
+          "mgb_feature_count": 3,
+          "expected_structure": "MG has 2 features, MGB has 3 features"
+        }
+      },
+      "gate2_legacy_invariance": {
+        "gate_name": "Legacy Invariance",
+        "gate_number": 2,
+        "passed": true,
+        "message": "Legacy output preserved when M=G=B=0",
+        "details": {
+          "mae_legacy": 3.4625,
+          "mae_zero_features": 3.4625,
+          "difference": 0.0
+        }
+      },
+      "gate3_mgb_reproduction": {
+        "gate_name": "MGB Reproduction",
+        "gate_number": 3,
+        "passed": false,
+        "message": "MGB fails to improve over MG",
+        "details": {
+          "mae_mg": 2.3963043520985883,
+          "mae_mgb": 2.446811363665998,
+          "delta_mgb_minus_mg": 0.050507011567409776
+        }
+      },
+      "gate4_incremental_behavior": {
+        "gate_name": "Incremental Behavior",
+        "gate_number": 4,
+        "passed": false,
+        "message": "Behavior improvement is marginal",
+        "details": {
+          "mae_mg": 2.3963043520985883,
+          "mae_mgb": 2.446811363665998,
+          "delta": 0.050507011567409776,
+          "threshold": -0.01
+        }
+      },
+      "gate5_causal_activation": {
+        "gate_name": "Causal Activation",
+        "gate_number": 5,
+        "passed": true,
+        "message": "All features cause measurable prediction changes",
+        "details": {
+          "motivation": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 0.67149370189577,
+            "activated": true
+          },
+          "goals": {
+            "perturbation_magnitude": 0.25,
+            "prediction_delta": 1.4171336928494658,
+            "activated": true
+          },
+          "behavior": {
+            "perturbation_magnitude": 0.1,
+            "prediction_delta": 0.4738827731939976,
+            "activated": true
+          }
+        }
+      }
+    }
+  },
+  "aggregate_summary": {
+    "gate_pass_counts": {
+      "gate1": 5,
+      "gate2": 5,
+      "gate3": 2,
+      "gate4": 2,
+      "gate5": 5
+    },
+    "mgb_reproduces_count": 2,
+    "behavior_incremental_count": 2,
+    "overall_17_9_reproduction": false,
+    "final_recommendation": "MGB hypothesis not confirmed: 17.9 mapping does not fully reproduce"
+  }
+}

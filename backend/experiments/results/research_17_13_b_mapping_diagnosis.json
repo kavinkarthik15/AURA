@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-08-13T21:55:03.843256",
+  "experiment": "17.13B single-input mapping equivalence diagnosis",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "results": [
+    {
+      "seed": 42,
+      "experience_id": "research_exp_080_low_skill_practice",
+      "action": "Research Paper",
+      "category": "low_skill_practice",
+      "legacy_state_keys": [
+        "dsa",
+        "machine_learning",
+        "projects",
+        "python"
+      ],
+      "legacy_state": {
+        "python": 26,
+        "dsa": 24,
+        "machine_learning": 14,
+        "projects": 16
+      },
+      "state_contract_match": true,
+      "seventeen_twelve_a_motivation_signal": 0.0,
+      "seventeen_thirteen_b_motivation_signal": 0.2,
+      "motivation_signal_match": false,
+      "seventeen_twelve_a_goals_signal": 0.16000000000000003,
+      "seventeen_thirteen_b_goals_signal": 0.0,
+      "goals_signal_match": false,
+      "seventeen_twelve_a_correction": 0.11080000000000001,
+      "seventeen_thirteen_b_correction": 0.14,
+      "correction_match": false,
+      "seventeen_twelve_a_prediction": {
+        "python": 33,
+        "dsa": 30,
+        "machine_learning": 14,
+        "projects": 16
+      },
+      "seventeen_thirteen_b_prediction": {
+        "python": 33,
+        "dsa": 30,
+        "machine_learning": 14,
+        "projects": 16
+      },
+      "prediction_match": true,
+      "source_17_13_b": "mg",
+      "fallback_17_13_b": false
+    },
+    {
+      "seed": 123,
+      "experience_id": "research_exp_080_low_skill_practice",
+      "action": "DSA Practice",
+      "category": "low_skill_practice",
+      "legacy_state_keys": [
+        "dsa",
+        "machine_learning",
+        "projects",
+        "python"
+      ],
+      "legacy_state": {
+        "python": 22,
+        "dsa": 15,
+        "machine_learning": 17,
+        "projects": 24
+      },
+      "state_contract_match": true,
+      "seventeen_twelve_a_motivation_signal": 0.0,
+      "seventeen_thirteen_b_motivation_signal": 0.195,
+      "motivation_signal_match": false,
+      "seventeen_twelve_a_goals_signal": 0.14625,
+      "seventeen_thirteen_b_goals_signal": 0.0,
+      "goals_signal_match": false,
+      "seventeen_twelve_a_correction": 0.141425,
+      "seventeen_thirteen_b_correction": 0.1814,
+      "correction_match": false,
+      "seventeen_twelve_a_prediction": {
+        "python": 29,
+        "dsa": 21,
+        "machine_learning": 17,
+        "projects": 24
+      },
+      "seventeen_thirteen_b_prediction": {
+        "python": 29,
+        "dsa": 21,
+        "machine_learning": 17,
+        "projects": 24
+      },
+      "prediction_match": true,
+      "source_17_13_b": "mg",
+      "fallback_17_13_b": false
+    },
+    {
+      "seed": 456,
+      "experience_id": "research_exp_080_low_skill_practice",
+      "action": "Python Project",
+      "category": "low_skill_practice",
+      "legacy_state_keys": [
+        "dsa",
+        "machine_learning",
+        "projects",
+        "python"
+      ],
+      "legacy_state": {
+        "python": 26,
+        "dsa": 25,
+        "machine_learning": 18,
+        "projects": 23
+      },
+      "state_contract_match": true,
+      "seventeen_twelve_a_motivation_signal": 0.0,
+      "seventeen_thirteen_b_motivation_signal": 0.23,
+      "motivation_signal_match": false,
+      "seventeen_twelve_a_goals_signal": 0.20700000000000002,
+      "seventeen_thirteen_b_goals_signal": 0.0,
+      "goals_signal_match": false,
+      "seventeen_twelve_a_correction": 0.1428,
+      "seventeen_thirteen_b_correction": 0.1704,
+      "correction_match": false,
+      "seventeen_twelve_a_prediction": {
+        "python": 33,
+        "dsa": 31,
+        "machine_learning": 18,
+        "projects": 23
+      },
+      "seventeen_thirteen_b_prediction": {
+        "python": 33,
+        "dsa": 31,
+        "machine_learning": 18,
+        "projects": 23
+      },
+      "prediction_match": true,
+      "source_17_13_b": "mg",
+      "fallback_17_13_b": false
+    },
+    {
+      "seed": 789,
+      "experience_id": "research_exp_080_low_skill_practice",
+      "action": "Build Portfolio",
+      "category": "low_skill_practice",
+      "legacy_state_keys": [
+        "dsa",
+        "machine_learning",
+        "projects",
+        "python"
+      ],
+      "legacy_state": {
+        "python": 33,
+        "dsa": 25,
+        "machine_learning": 16,
+        "projects": 18
+      },
+      "state_contract_match": true,
+      "seventeen_twelve_a_motivation_signal": 0.0,
+      "seventeen_thirteen_b_motivation_signal": 0.23,
+      "motivation_signal_match": false,
+      "seventeen_twelve_a_goals_signal": 0.23,
+      "seventeen_thirteen_b_goals_signal": 0.0,
+      "goals_signal_match": false,
+      "seventeen_twelve_a_correction": 0.1597,
+      "seventeen_thirteen_b_correction": 0.185,
+      "correction_match": false,
+      "seventeen_twelve_a_prediction": {
+        "python": 40,
+        "dsa": 31,
+        "machine_learning": 16,
+        "projects": 18
+      },
+      "seventeen_thirteen_b_prediction": {
+        "python": 40,
+        "dsa": 31,
+        "machine_learning": 16,
+        "projects": 18
+      },
+      "prediction_match": true,
+      "source_17_13_b": "mg",
+      "fallback_17_13_b": false
+    },
+    {
+      "seed": 999,
+      "experience_id": "research_exp_080_low_skill_practice",
+      "action": "Build Portfolio",
+      "category": "low_skill_practice",
+      "legacy_state_keys": [
+        "dsa",
+        "machine_learning",
+        "projects",
+        "python"
+      ],
+      "legacy_state": {
+        "python": 35,
+        "dsa": 15,
+        "machine_learning": 12,
+        "projects": 24
+      },
+      "state_contract_match": true,
+      "seventeen_twelve_a_motivation_signal": 0.0,
+      "seventeen_thirteen_b_motivation_signal": 0.215,
+      "motivation_signal_match": false,
+      "seventeen_twelve_a_goals_signal": 0.215,
+      "seventeen_thirteen_b_goals_signal": 0.0,
+      "goals_signal_match": false,
+      "seventeen_twelve_a_correction": 0.13815,
+      "seventeen_thirteen_b_correction": 0.1489,
+      "correction_match": false,
+      "seventeen_twelve_a_prediction": {
+        "python": 42,
+        "dsa": 21,
+        "machine_learning": 12,
+        "projects": 24
+      },
+      "seventeen_thirteen_b_prediction": {
+        "python": 42,
+        "dsa": 21,
+        "machine_learning": 12,
+        "projects": 24
+      },
+      "prediction_match": true,
+      "source_17_13_b": "mg",
+      "fallback_17_13_b": false
+    }
+  ],
+  "overall_equivalence": false
+}

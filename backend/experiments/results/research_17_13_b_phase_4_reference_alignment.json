@@ -1,0 +1,3585 @@
+{
+  "timestamp": "2026-08-13T22:47:48.456381",
+  "experiment": "Phase 4: Reference Alignment Investigation",
+  "decision_rule": "All signals, corrections, and predictions must match exactly (within numerical tolerance) between 17.12A reconstruction and 17.13B production on the same live legacy baseline.",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "all_pass": true,
+  "results": [
+    {
+      "seed": 42,
+      "experiences_compared": 20,
+      "all_signals_match": true,
+      "all_corrections_match": true,
+      "all_predictions_match": true,
+      "all_no_fallback": true,
+      "all_no_coefficient_deviation": true,
+      "no_state_mutations": true,
+      "all_gates_pass": true,
+      "first_divergence_seed_level": null,
+      "experience_records": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 33.0,
+            "dsa": 30.0,
+            "machine_learning": 14.0,
+            "projects": 16.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.16000000000000003,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.16000000000000003,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.548853632806239,
+          "correction_17_13b": 4.548853632806239,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 37.54885363280624,
+            "dsa": 34.54885363280624,
+            "machine_learning": 18.54885363280624,
+            "projects": 20.54885363280624
+          },
+          "prediction_17_13b": {
+            "python": 37.54885363280624,
+            "dsa": 34.54885363280624,
+            "machine_learning": 18.54885363280624,
+            "projects": 20.54885363280624
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 48.0,
+            "dsa": 49.0,
+            "machine_learning": 32.0,
+            "projects": 48.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.328,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.328,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.070005080098686,
+          "correction_17_13b": 2.070005080098686,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 50.07000508009869,
+            "dsa": 51.07000508009869,
+            "machine_learning": 34.07000508009869,
+            "projects": 50.07000508009869
+          },
+          "prediction_17_13b": {
+            "python": 50.07000508009869,
+            "dsa": 51.07000508009869,
+            "machine_learning": 34.07000508009869,
+            "projects": 50.07000508009869
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 85.0,
+            "dsa": 71.0,
+            "machine_learning": 65.0,
+            "projects": 71.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.5231250000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.5231250000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.0961500360413026,
+          "correction_17_13b": 1.0961500360413026,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 86.09615003604131,
+            "dsa": 72.09615003604131,
+            "machine_learning": 66.09615003604131,
+            "projects": 72.09615003604131
+          },
+          "prediction_17_13b": {
+            "python": 86.09615003604131,
+            "dsa": 72.09615003604131,
+            "machine_learning": 66.09615003604131,
+            "projects": 72.09615003604131
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_083_low_motivation",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 54.0,
+            "dsa": 48.0,
+            "machine_learning": 34.0,
+            "projects": 35.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.31600000000000006,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.31600000000000006,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.770268690472085,
+          "correction_17_13b": 3.770268690472085,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 57.770268690472086,
+            "dsa": 51.770268690472086,
+            "machine_learning": 37.770268690472086,
+            "projects": 38.770268690472086
+          },
+          "prediction_17_13b": {
+            "python": 57.770268690472086,
+            "dsa": 51.770268690472086,
+            "machine_learning": 37.770268690472086,
+            "projects": 38.770268690472086
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_084_high_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 55.0,
+            "dsa": 32.0,
+            "machine_learning": 34.0,
+            "projects": 32.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.27999999999999997,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.27999999999999997,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.669197216776884,
+          "correction_17_13b": 0.669197216776884,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 55.66919721677689,
+            "dsa": 32.66919721677689,
+            "machine_learning": 34.66919721677689,
+            "projects": 32.66919721677689
+          },
+          "prediction_17_13b": {
+            "python": 55.66919721677689,
+            "dsa": 32.66919721677689,
+            "machine_learning": 34.66919721677689,
+            "projects": 32.66919721677689
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_085_mixed_skills",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 58.0,
+            "dsa": 45.0,
+            "machine_learning": 63.0,
+            "projects": 30.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.41175,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.41175,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.6520147665058307,
+          "correction_17_13b": 1.6520147665058307,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 59.65201476650583,
+            "dsa": 46.65201476650583,
+            "machine_learning": 64.65201476650583,
+            "projects": 31.65201476650583
+          },
+          "prediction_17_13b": {
+            "python": 59.65201476650583,
+            "dsa": 46.65201476650583,
+            "machine_learning": 64.65201476650583,
+            "projects": 31.65201476650583
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_086_project_completion",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 59.0,
+            "dsa": 58.0,
+            "machine_learning": 51.0,
+            "projects": 51.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.38625,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.38625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.1389109980396801,
+          "correction_17_13b": 0.1389109980396801,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 59.13891099803968,
+            "dsa": 58.13891099803968,
+            "machine_learning": 51.13891099803968,
+            "projects": 51.13891099803968
+          },
+          "prediction_17_13b": {
+            "python": 59.13891099803968,
+            "dsa": 58.13891099803968,
+            "machine_learning": 51.13891099803968,
+            "projects": 51.13891099803968
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_087_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 90.0,
+            "dsa": 77.0,
+            "machine_learning": 77.0,
+            "projects": 82.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.626,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.626,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.5827082030757511,
+          "correction_17_13b": 0.5827082030757511,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 90.58270820307575,
+            "dsa": 77.58270820307575,
+            "machine_learning": 77.58270820307575,
+            "projects": 82.58270820307575
+          },
+          "prediction_17_13b": {
+            "python": 90.58270820307575,
+            "dsa": 77.58270820307575,
+            "machine_learning": 77.58270820307575,
+            "projects": 82.58270820307575
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_088_low_skill_practice",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 40.0,
+            "dsa": 25.0,
+            "machine_learning": 20.0,
+            "projects": 22.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.188,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.188,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.4091076175154935,
+          "correction_17_13b": 4.4091076175154935,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 44.409107617515495,
+            "dsa": 29.409107617515495,
+            "machine_learning": 24.409107617515495,
+            "projects": 26.409107617515495
+          },
+          "prediction_17_13b": {
+            "python": 44.409107617515495,
+            "dsa": 29.409107617515495,
+            "machine_learning": 24.409107617515495,
+            "projects": 26.409107617515495
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_089_medium_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 57.0,
+            "dsa": 52.0,
+            "machine_learning": 32.0,
+            "projects": 47.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.35000000000000003,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.35000000000000003,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.9602046395130999,
+          "correction_17_13b": 1.9602046395130999,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 58.9602046395131,
+            "dsa": 53.9602046395131,
+            "machine_learning": 33.9602046395131,
+            "projects": 48.9602046395131
+          },
+          "prediction_17_13b": {
+            "python": 58.9602046395131,
+            "dsa": 53.9602046395131,
+            "machine_learning": 33.9602046395131,
+            "projects": 48.9602046395131
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_090_high_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 90.0,
+            "dsa": 75.0,
+            "machine_learning": 73.0,
+            "projects": 71.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.5549999999999999,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.5549999999999999,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.9370641704201419,
+          "correction_17_13b": 0.9370641704201419,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 90.93706417042014,
+            "dsa": 75.93706417042014,
+            "machine_learning": 73.93706417042014,
+            "projects": 71.93706417042014
+          },
+          "prediction_17_13b": {
+            "python": 90.93706417042014,
+            "dsa": 75.93706417042014,
+            "machine_learning": 73.93706417042014,
+            "projects": 71.93706417042014
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_091_low_motivation",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 62.0,
+            "dsa": 52.0,
+            "machine_learning": 40.0,
+            "projects": 40.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.4525,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.4525,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.0890068659297008,
+          "correction_17_13b": 3.0890068659297008,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 65.0890068659297,
+            "dsa": 55.089006865929704,
+            "machine_learning": 43.089006865929704,
+            "projects": 43.089006865929704
+          },
+          "prediction_17_13b": {
+            "python": 65.0890068659297,
+            "dsa": 55.089006865929704,
+            "machine_learning": 43.089006865929704,
+            "projects": 43.089006865929704
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_092_high_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 52.0,
+            "dsa": 37.0,
+            "machine_learning": 24.0,
+            "projects": 25.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.25,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.25,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.8189250903026828,
+          "correction_17_13b": 0.8189250903026828,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 52.818925090302685,
+            "dsa": 37.818925090302685,
+            "machine_learning": 24.818925090302685,
+            "projects": 25.818925090302685
+          },
+          "prediction_17_13b": {
+            "python": 52.818925090302685,
+            "dsa": 37.818925090302685,
+            "machine_learning": 24.818925090302685,
+            "projects": 25.818925090302685
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_093_mixed_skills",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 68.0,
+            "dsa": 46.0,
+            "machine_learning": 68.0,
+            "projects": 45.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.42800000000000005,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.42800000000000005,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.5709121683460228,
+          "correction_17_13b": 1.5709121683460228,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 69.57091216834603,
+            "dsa": 47.57091216834602,
+            "machine_learning": 69.57091216834603,
+            "projects": 46.57091216834602
+          },
+          "prediction_17_13b": {
+            "python": 69.57091216834603,
+            "dsa": 47.57091216834602,
+            "machine_learning": 69.57091216834603,
+            "projects": 46.57091216834602
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_094_project_completion",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 70.0,
+            "dsa": 59.0,
+            "machine_learning": 51.0,
+            "projects": 41.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.39,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.39,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.12019501384895515,
+          "correction_17_13b": 0.12019501384895515,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 70.12019501384896,
+            "dsa": 59.12019501384896,
+            "machine_learning": 51.12019501384896,
+            "projects": 41.12019501384896
+          },
+          "prediction_17_13b": {
+            "python": 70.12019501384896,
+            "dsa": 59.12019501384896,
+            "machine_learning": 51.12019501384896,
+            "projects": 41.12019501384896
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_095_plateau",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 84.0,
+            "dsa": 81.0,
+            "machine_learning": 78.0,
+            "projects": 85.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.590625,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.590625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.759262320608256,
+          "correction_17_13b": 0.759262320608256,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 84.75926232060826,
+            "dsa": 81.75926232060826,
+            "machine_learning": 78.75926232060826,
+            "projects": 85.75926232060826
+          },
+          "prediction_17_13b": {
+            "python": 84.75926232060826,
+            "dsa": 81.75926232060826,
+            "machine_learning": 78.75926232060826,
+            "projects": 85.75926232060826
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_096_low_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 33.0,
+            "dsa": 27.0,
+            "machine_learning": 17.0,
+            "projects": 19.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.15562499999999999,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.15562499999999999,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.570688947695418,
+          "correction_17_13b": 4.570688947695418,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 37.570688947695416,
+            "dsa": 31.570688947695416,
+            "machine_learning": 21.570688947695416,
+            "projects": 23.570688947695416
+          },
+          "prediction_17_13b": {
+            "python": 37.570688947695416,
+            "dsa": 31.570688947695416,
+            "machine_learning": 21.570688947695416,
+            "projects": 23.570688947695416
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_097_medium_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 47.0,
+            "dsa": 50.0,
+            "machine_learning": 30.0,
+            "projects": 45.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.31800000000000006,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.31800000000000006,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.1199143712739517,
+          "correction_17_13b": 2.1199143712739517,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 49.11991437127395,
+            "dsa": 52.11991437127395,
+            "machine_learning": 32.11991437127395,
+            "projects": 47.11991437127395
+          },
+          "prediction_17_13b": {
+            "python": 49.11991437127395,
+            "dsa": 52.11991437127395,
+            "machine_learning": 32.11991437127395,
+            "projects": 47.11991437127395
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_098_high_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 80.0,
+            "dsa": 71.0,
+            "machine_learning": 68.0,
+            "projects": 70.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.69,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.69,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.2632887395540475,
+          "correction_17_13b": 0.2632887395540475,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 80.26328873955404,
+            "dsa": 71.26328873955404,
+            "machine_learning": 68.26328873955404,
+            "projects": 70.26328873955404
+          },
+          "prediction_17_13b": {
+            "python": 80.26328873955404,
+            "dsa": 71.26328873955404,
+            "machine_learning": 68.26328873955404,
+            "projects": 70.26328873955404
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_099_low_motivation",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 47.0,
+            "dsa": 56.0,
+            "machine_learning": 30.0,
+            "projects": 44.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.369,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.369,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.505749447243174,
+          "correction_17_13b": 3.505749447243174,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 50.505749447243176,
+            "dsa": 59.505749447243176,
+            "machine_learning": 33.505749447243176,
+            "projects": 47.505749447243176
+          },
+          "prediction_17_13b": {
+            "python": 50.505749447243176,
+            "dsa": 59.505749447243176,
+            "machine_learning": 33.505749447243176,
+            "projects": 47.505749447243176
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        }
+      ]
+    },
+    {
+      "seed": 123,
+      "experiences_compared": 20,
+      "all_signals_match": true,
+      "all_corrections_match": true,
+      "all_predictions_match": true,
+      "all_no_fallback": true,
+      "all_no_coefficient_deviation": true,
+      "no_state_mutations": true,
+      "all_gates_pass": true,
+      "first_divergence_seed_level": null,
+      "experience_records": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 29.0,
+            "dsa": 21.0,
+            "machine_learning": 17.0,
+            "projects": 24.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.14625,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.14625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.5798477809547125,
+          "correction_17_13b": 4.5798477809547125,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 33.579847780954715,
+            "dsa": 25.57984778095471,
+            "machine_learning": 21.57984778095471,
+            "projects": 28.57984778095471
+          },
+          "prediction_17_13b": {
+            "python": 33.579847780954715,
+            "dsa": 25.57984778095471,
+            "machine_learning": 21.57984778095471,
+            "projects": 28.57984778095471
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 59.0,
+            "dsa": 43.0,
+            "machine_learning": 36.0,
+            "projects": 39.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.3075,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.3075,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.1544387086176897,
+          "correction_17_13b": 2.1544387086176897,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 61.15443870861769,
+            "dsa": 45.15443870861769,
+            "machine_learning": 38.15443870861769,
+            "projects": 41.15443870861769
+          },
+          "prediction_17_13b": {
+            "python": 61.15443870861769,
+            "dsa": 45.15443870861769,
+            "machine_learning": 38.15443870861769,
+            "projects": 41.15443870861769
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 90.0,
+            "dsa": 86.0,
+            "machine_learning": 63.0,
+            "projects": 85.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.583125,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.583125,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.5098282459120034,
+          "correction_17_13b": 0.5098282459120034,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 90.509828245912,
+            "dsa": 86.509828245912,
+            "machine_learning": 63.509828245912004,
+            "projects": 85.509828245912
+          },
+          "prediction_17_13b": {
+            "python": 90.509828245912,
+            "dsa": 86.509828245912,
+            "machine_learning": 63.509828245912004,
+            "projects": 85.509828245912
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_083_low_motivation",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 47.0,
+            "dsa": 43.0,
+            "machine_learning": 34.0,
+            "projects": 37.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.27749999999999997,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.27749999999999997,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.7966999415710525,
+          "correction_17_13b": 3.7966999415710525,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 50.79669994157105,
+            "dsa": 46.79669994157105,
+            "machine_learning": 37.79669994157105,
+            "projects": 40.79669994157105
+          },
+          "prediction_17_13b": {
+            "python": 50.79669994157105,
+            "dsa": 46.79669994157105,
+            "machine_learning": 37.79669994157105,
+            "projects": 40.79669994157105
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_084_high_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 53.0,
+            "dsa": 38.0,
+            "machine_learning": 25.0,
+            "projects": 25.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.256,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.256,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.9984749911673241,
+          "correction_17_13b": 0.9984749911673241,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 53.99847499116733,
+            "dsa": 38.99847499116733,
+            "machine_learning": 25.998474991167324,
+            "projects": 25.998474991167324
+          },
+          "prediction_17_13b": {
+            "python": 53.99847499116733,
+            "dsa": 38.99847499116733,
+            "machine_learning": 25.998474991167324,
+            "projects": 25.998474991167324
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_085_mixed_skills",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 65.0,
+            "dsa": 42.0,
+            "machine_learning": 66.0,
+            "projects": 31.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.4775,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.4775,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.1400757928445682,
+          "correction_17_13b": 1.1400757928445682,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 66.14007579284457,
+            "dsa": 43.14007579284457,
+            "machine_learning": 67.14007579284457,
+            "projects": 32.14007579284457
+          },
+          "prediction_17_13b": {
+            "python": 66.14007579284457,
+            "dsa": 43.14007579284457,
+            "machine_learning": 67.14007579284457,
+            "projects": 32.14007579284457
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_086_project_completion",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 69.0,
+            "dsa": 46.0,
+            "machine_learning": 40.0,
+            "projects": 58.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.4,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.4,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.1392499331006798,
+          "correction_17_13b": 0.1392499331006798,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 69.13924993310069,
+            "dsa": 46.13924993310068,
+            "machine_learning": 40.13924993310068,
+            "projects": 58.13924993310068
+          },
+          "prediction_17_13b": {
+            "python": 69.13924993310069,
+            "dsa": 46.13924993310068,
+            "machine_learning": 40.13924993310068,
+            "projects": 58.13924993310068
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_087_plateau",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 94.0,
+            "dsa": 76.0,
+            "machine_learning": 77.0,
+            "projects": 80.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6280000000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6280000000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.2420662703513039,
+          "correction_17_13b": 0.2420662703513039,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 94.2420662703513,
+            "dsa": 76.2420662703513,
+            "machine_learning": 77.2420662703513,
+            "projects": 80.2420662703513
+          },
+          "prediction_17_13b": {
+            "python": 94.2420662703513,
+            "dsa": 76.2420662703513,
+            "machine_learning": 77.2420662703513,
+            "projects": 80.2420662703513
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_088_low_skill_practice",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 38.0,
+            "dsa": 24.0,
+            "machine_learning": 10.0,
+            "projects": 20.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.15800000000000003,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.15800000000000003,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.509737402952747,
+          "correction_17_13b": 4.509737402952747,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 42.509737402952744,
+            "dsa": 28.509737402952748,
+            "machine_learning": 14.509737402952748,
+            "projects": 24.509737402952748
+          },
+          "prediction_17_13b": {
+            "python": 42.509737402952744,
+            "dsa": 28.509737402952748,
+            "machine_learning": 14.509737402952748,
+            "projects": 24.509737402952748
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_089_medium_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 59.0,
+            "dsa": 42.0,
+            "machine_learning": 31.0,
+            "projects": 44.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.4075,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.4075,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.5577546405158538,
+          "correction_17_13b": 1.5577546405158538,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 60.55775464051585,
+            "dsa": 43.55775464051585,
+            "machine_learning": 32.55775464051585,
+            "projects": 45.55775464051585
+          },
+          "prediction_17_13b": {
+            "python": 60.55775464051585,
+            "dsa": 43.55775464051585,
+            "machine_learning": 32.55775464051585,
+            "projects": 45.55775464051585
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_090_high_skill_practice",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 81.0,
+            "dsa": 84.0,
+            "machine_learning": 67.0,
+            "projects": 79.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6705,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6705,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.011524458591975595,
+          "correction_17_13b": -0.011524458591975595,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 80.98847554140802,
+            "dsa": 83.98847554140802,
+            "machine_learning": 66.98847554140802,
+            "projects": 78.98847554140802
+          },
+          "prediction_17_13b": {
+            "python": 80.98847554140802,
+            "dsa": 83.98847554140802,
+            "machine_learning": 66.98847554140802,
+            "projects": 78.98847554140802
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_091_low_motivation",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 58.0,
+            "dsa": 54.0,
+            "machine_learning": 34.0,
+            "projects": 44.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.33187500000000003,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.33187500000000003,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.472252979540679,
+          "correction_17_13b": 3.472252979540679,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 61.47225297954068,
+            "dsa": 57.47225297954068,
+            "machine_learning": 37.47225297954068,
+            "projects": 47.47225297954068
+          },
+          "prediction_17_13b": {
+            "python": 61.47225297954068,
+            "dsa": 57.47225297954068,
+            "machine_learning": 37.47225297954068,
+            "projects": 47.47225297954068
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_092_high_motivation",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 38.0,
+            "dsa": 41.0,
+            "machine_learning": 23.0,
+            "projects": 34.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.230625,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.230625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.1498835734481652,
+          "correction_17_13b": 1.1498835734481652,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 39.149883573448164,
+            "dsa": 42.149883573448164,
+            "machine_learning": 24.149883573448164,
+            "projects": 35.149883573448164
+          },
+          "prediction_17_13b": {
+            "python": 39.149883573448164,
+            "dsa": 42.149883573448164,
+            "machine_learning": 24.149883573448164,
+            "projects": 35.149883573448164
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_093_mixed_skills",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 63.0,
+            "dsa": 46.0,
+            "machine_learning": 65.0,
+            "projects": 45.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.38625,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.38625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.6845500049874942,
+          "correction_17_13b": 1.6845500049874942,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 64.6845500049875,
+            "dsa": 47.68455000498749,
+            "machine_learning": 66.6845500049875,
+            "projects": 46.68455000498749
+          },
+          "prediction_17_13b": {
+            "python": 64.6845500049875,
+            "dsa": 47.68455000498749,
+            "machine_learning": 66.6845500049875,
+            "projects": 46.68455000498749
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_094_project_completion",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 61.0,
+            "dsa": 53.0,
+            "machine_learning": 40.0,
+            "projects": 48.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.378,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.378,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.27052042808308396,
+          "correction_17_13b": 0.27052042808308396,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 61.27052042808308,
+            "dsa": 53.27052042808308,
+            "machine_learning": 40.27052042808308,
+            "projects": 48.27052042808308
+          },
+          "prediction_17_13b": {
+            "python": 61.27052042808308,
+            "dsa": 53.27052042808308,
+            "machine_learning": 40.27052042808308,
+            "projects": 48.27052042808308
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_095_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 91.0,
+            "dsa": 81.0,
+            "machine_learning": 68.0,
+            "projects": 86.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.626,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.626,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.25399995171334133,
+          "correction_17_13b": 0.25399995171334133,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 91.25399995171334,
+            "dsa": 81.25399995171334,
+            "machine_learning": 68.25399995171334,
+            "projects": 86.25399995171334
+          },
+          "prediction_17_13b": {
+            "python": 91.25399995171334,
+            "dsa": 81.25399995171334,
+            "machine_learning": 68.25399995171334,
+            "projects": 86.25399995171334
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_096_low_skill_practice",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 37.0,
+            "dsa": 29.0,
+            "machine_learning": 10.0,
+            "projects": 20.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.166,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.166,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.4620026775046,
+          "correction_17_13b": 4.4620026775046,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 41.4620026775046,
+            "dsa": 33.4620026775046,
+            "machine_learning": 14.4620026775046,
+            "projects": 24.4620026775046
+          },
+          "prediction_17_13b": {
+            "python": 41.4620026775046,
+            "dsa": 33.4620026775046,
+            "machine_learning": 14.4620026775046,
+            "projects": 24.4620026775046
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_097_medium_skill_practice",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 54.0,
+            "dsa": 48.0,
+            "machine_learning": 44.0,
+            "projects": 43.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.35200000000000004,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.35200000000000004,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.8889142983123728,
+          "correction_17_13b": 1.8889142983123728,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 55.88891429831237,
+            "dsa": 49.88891429831237,
+            "machine_learning": 45.88891429831237,
+            "projects": 44.88891429831237
+          },
+          "prediction_17_13b": {
+            "python": 55.88891429831237,
+            "dsa": 49.88891429831237,
+            "machine_learning": 45.88891429831237,
+            "projects": 44.88891429831237
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_098_high_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 84.0,
+            "dsa": 84.0,
+            "machine_learning": 62.0,
+            "projects": 85.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6040000000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6040000000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.3852704466957446,
+          "correction_17_13b": 0.3852704466957446,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 84.38527044669574,
+            "dsa": 84.38527044669574,
+            "machine_learning": 62.38527044669574,
+            "projects": 85.38527044669574
+          },
+          "prediction_17_13b": {
+            "python": 84.38527044669574,
+            "dsa": 84.38527044669574,
+            "machine_learning": 62.38527044669574,
+            "projects": 85.38527044669574
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_099_low_motivation",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 50.0,
+            "dsa": 48.0,
+            "machine_learning": 34.0,
+            "projects": 39.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.35550000000000004,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.35550000000000004,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.33128636845162,
+          "correction_17_13b": 3.33128636845162,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 53.33128636845162,
+            "dsa": 51.33128636845162,
+            "machine_learning": 37.33128636845162,
+            "projects": 42.33128636845162
+          },
+          "prediction_17_13b": {
+            "python": 53.33128636845162,
+            "dsa": 51.33128636845162,
+            "machine_learning": 37.33128636845162,
+            "projects": 42.33128636845162
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "experiences_compared": 20,
+      "all_signals_match": true,
+      "all_corrections_match": true,
+      "all_predictions_match": true,
+      "all_no_fallback": true,
+      "all_no_coefficient_deviation": true,
+      "no_state_mutations": true,
+      "all_gates_pass": true,
+      "first_divergence_seed_level": null,
+      "experience_records": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 33.0,
+            "dsa": 31.0,
+            "machine_learning": 18.0,
+            "projects": 23.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.20700000000000002,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.20700000000000002,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.379147007795387,
+          "correction_17_13b": 4.379147007795387,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 37.37914700779539,
+            "dsa": 35.37914700779539,
+            "machine_learning": 22.37914700779539,
+            "projects": 27.37914700779539
+          },
+          "prediction_17_13b": {
+            "python": 37.37914700779539,
+            "dsa": 35.37914700779539,
+            "machine_learning": 22.37914700779539,
+            "projects": 27.37914700779539
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 61.0,
+            "dsa": 48.0,
+            "machine_learning": 37.0,
+            "projects": 36.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.316875,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.316875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.0844577031409512,
+          "correction_17_13b": 2.0844577031409512,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 63.08445770314095,
+            "dsa": 50.08445770314095,
+            "machine_learning": 39.08445770314095,
+            "projects": 38.08445770314095
+          },
+          "prediction_17_13b": {
+            "python": 63.08445770314095,
+            "dsa": 50.08445770314095,
+            "machine_learning": 39.08445770314095,
+            "projects": 38.08445770314095
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 85.0,
+            "dsa": 80.0,
+            "machine_learning": 61.0,
+            "projects": 82.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6637500000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6637500000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.4328472644715098,
+          "correction_17_13b": 0.4328472644715098,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 85.4328472644715,
+            "dsa": 80.4328472644715,
+            "machine_learning": 61.43284726447151,
+            "projects": 82.4328472644715
+          },
+          "prediction_17_13b": {
+            "python": 85.4328472644715,
+            "dsa": 80.4328472644715,
+            "machine_learning": 61.43284726447151,
+            "projects": 82.4328472644715
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_083_low_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 56.0,
+            "dsa": 47.0,
+            "machine_learning": 26.0,
+            "projects": 34.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.30000000000000004,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.30000000000000004,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.936336857752121,
+          "correction_17_13b": 3.936336857752121,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 59.936336857752124,
+            "dsa": 50.936336857752124,
+            "machine_learning": 29.93633685775212,
+            "projects": 37.936336857752124
+          },
+          "prediction_17_13b": {
+            "python": 59.936336857752124,
+            "dsa": 50.936336857752124,
+            "machine_learning": 29.93633685775212,
+            "projects": 37.936336857752124
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_084_high_motivation",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 56.0,
+            "dsa": 42.0,
+            "machine_learning": 20.0,
+            "projects": 39.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.288,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.288,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.450412573954291,
+          "correction_17_13b": 0.450412573954291,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 56.45041257395429,
+            "dsa": 42.45041257395429,
+            "machine_learning": 20.450412573954292,
+            "projects": 39.45041257395429
+          },
+          "prediction_17_13b": {
+            "python": 56.45041257395429,
+            "dsa": 42.45041257395429,
+            "machine_learning": 20.450412573954292,
+            "projects": 39.45041257395429
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_085_mixed_skills",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 68.0,
+            "dsa": 26.0,
+            "machine_learning": 74.0,
+            "projects": 42.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.369375,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.369375,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.8344842313423328,
+          "correction_17_13b": 1.8344842313423328,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 69.83448423134233,
+            "dsa": 27.834484231342334,
+            "machine_learning": 75.83448423134233,
+            "projects": 43.83448423134233
+          },
+          "prediction_17_13b": {
+            "python": 69.83448423134233,
+            "dsa": 27.834484231342334,
+            "machine_learning": 75.83448423134233,
+            "projects": 43.83448423134233
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_086_project_completion",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 67.0,
+            "dsa": 49.0,
+            "machine_learning": 40.0,
+            "projects": 53.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.3675,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.3675,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.07188131665924069,
+          "correction_17_13b": 0.07188131665924069,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 67.07188131665924,
+            "dsa": 49.071881316659244,
+            "machine_learning": 40.071881316659244,
+            "projects": 53.071881316659244
+          },
+          "prediction_17_13b": {
+            "python": 67.07188131665924,
+            "dsa": 49.071881316659244,
+            "machine_learning": 40.071881316659244,
+            "projects": 53.071881316659244
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_087_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 86.0,
+            "dsa": 78.0,
+            "machine_learning": 79.0,
+            "projects": 80.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6200000000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6200000000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.641158490970358,
+          "correction_17_13b": 0.641158490970358,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 86.64115849097035,
+            "dsa": 78.64115849097035,
+            "machine_learning": 79.64115849097035,
+            "projects": 80.64115849097035
+          },
+          "prediction_17_13b": {
+            "python": 86.64115849097035,
+            "dsa": 78.64115849097035,
+            "machine_learning": 79.64115849097035,
+            "projects": 80.64115849097035
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_088_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 35.0,
+            "dsa": 22.0,
+            "machine_learning": 14.0,
+            "projects": 24.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.205,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.205,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.388669806721049,
+          "correction_17_13b": 4.388669806721049,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 39.38866980672105,
+            "dsa": 26.388669806721047,
+            "machine_learning": 18.388669806721047,
+            "projects": 28.388669806721047
+          },
+          "prediction_17_13b": {
+            "python": 39.38866980672105,
+            "dsa": 26.388669806721047,
+            "machine_learning": 18.388669806721047,
+            "projects": 28.388669806721047
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_089_medium_skill_practice",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 53.0,
+            "dsa": 42.0,
+            "machine_learning": 37.0,
+            "projects": 50.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.38025,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.38025,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.7827040121840478,
+          "correction_17_13b": 1.7827040121840478,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 54.78270401218405,
+            "dsa": 43.78270401218405,
+            "machine_learning": 38.78270401218405,
+            "projects": 51.78270401218405
+          },
+          "prediction_17_13b": {
+            "python": 54.78270401218405,
+            "dsa": 43.78270401218405,
+            "machine_learning": 38.78270401218405,
+            "projects": 51.78270401218405
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_090_high_skill_practice",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 77.0,
+            "dsa": 79.0,
+            "machine_learning": 72.0,
+            "projects": 82.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.66825,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.66825,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.4114209668887714,
+          "correction_17_13b": 0.4114209668887714,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 77.41142096688877,
+            "dsa": 79.41142096688877,
+            "machine_learning": 72.41142096688877,
+            "projects": 82.41142096688877
+          },
+          "prediction_17_13b": {
+            "python": 77.41142096688877,
+            "dsa": 79.41142096688877,
+            "machine_learning": 72.41142096688877,
+            "projects": 82.41142096688877
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_091_low_motivation",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 48.0,
+            "dsa": 43.0,
+            "machine_learning": 33.0,
+            "projects": 40.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.283125,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.283125,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.016685473687391,
+          "correction_17_13b": 4.016685473687391,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 52.01668547368739,
+            "dsa": 47.01668547368739,
+            "machine_learning": 37.01668547368739,
+            "projects": 44.01668547368739
+          },
+          "prediction_17_13b": {
+            "python": 52.01668547368739,
+            "dsa": 47.01668547368739,
+            "machine_learning": 37.01668547368739,
+            "projects": 44.01668547368739
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_092_high_motivation",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 38.0,
+            "dsa": 32.0,
+            "machine_learning": 24.0,
+            "projects": 27.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.2025,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.2025,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.857512228026326,
+          "correction_17_13b": 0.857512228026326,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 38.85751222802632,
+            "dsa": 32.85751222802632,
+            "machine_learning": 24.857512228026327,
+            "projects": 27.857512228026327
+          },
+          "prediction_17_13b": {
+            "python": 38.85751222802632,
+            "dsa": 32.85751222802632,
+            "machine_learning": 24.857512228026327,
+            "projects": 27.857512228026327
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_093_mixed_skills",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 77.0,
+            "dsa": 32.0,
+            "machine_learning": 75.0,
+            "projects": 35.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.41200000000000003,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.41200000000000003,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.631529579239169,
+          "correction_17_13b": 1.631529579239169,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 78.63152957923917,
+            "dsa": 33.63152957923917,
+            "machine_learning": 76.63152957923917,
+            "projects": 36.63152957923917
+          },
+          "prediction_17_13b": {
+            "python": 78.63152957923917,
+            "dsa": 33.63152957923917,
+            "machine_learning": 76.63152957923917,
+            "projects": 36.63152957923917
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_094_project_completion",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 67.0,
+            "dsa": 61.0,
+            "machine_learning": 41.0,
+            "projects": 51.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.46575,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.46575,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.3959261805638876,
+          "correction_17_13b": -0.3959261805638876,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 66.60407381943611,
+            "dsa": 60.60407381943611,
+            "machine_learning": 40.60407381943611,
+            "projects": 50.60407381943611
+          },
+          "prediction_17_13b": {
+            "python": 66.60407381943611,
+            "dsa": 60.60407381943611,
+            "machine_learning": 40.60407381943611,
+            "projects": 50.60407381943611
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_095_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 89.0,
+            "dsa": 76.0,
+            "machine_learning": 71.0,
+            "projects": 82.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.61,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.61,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.6887724855986668,
+          "correction_17_13b": 0.6887724855986668,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 89.68877248559866,
+            "dsa": 76.68877248559866,
+            "machine_learning": 71.68877248559866,
+            "projects": 82.68877248559866
+          },
+          "prediction_17_13b": {
+            "python": 89.68877248559866,
+            "dsa": 76.68877248559866,
+            "machine_learning": 71.68877248559866,
+            "projects": 82.68877248559866
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_096_low_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 27.0,
+            "dsa": 22.0,
+            "machine_learning": 20.0,
+            "projects": 23.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.148125,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.148125,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.659474401169552,
+          "correction_17_13b": 4.659474401169552,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 31.659474401169554,
+            "dsa": 26.659474401169554,
+            "machine_learning": 24.659474401169554,
+            "projects": 27.659474401169554
+          },
+          "prediction_17_13b": {
+            "python": 31.659474401169554,
+            "dsa": 26.659474401169554,
+            "machine_learning": 24.659474401169554,
+            "projects": 27.659474401169554
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_097_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 62.0,
+            "dsa": 41.0,
+            "machine_learning": 44.0,
+            "projects": 39.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.32437499999999997,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.32437499999999997,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.04874720716972,
+          "correction_17_13b": 2.04874720716972,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 64.04874720716973,
+            "dsa": 43.04874720716972,
+            "machine_learning": 46.04874720716972,
+            "projects": 41.04874720716972
+          },
+          "prediction_17_13b": {
+            "python": 64.04874720716973,
+            "dsa": 43.04874720716972,
+            "machine_learning": 46.04874720716972,
+            "projects": 41.04874720716972
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_098_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 87.0,
+            "dsa": 76.0,
+            "machine_learning": 71.0,
+            "projects": 76.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.556875,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.556875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.9417218320615541,
+          "correction_17_13b": 0.9417218320615541,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 87.94172183206156,
+            "dsa": 76.94172183206156,
+            "machine_learning": 71.94172183206156,
+            "projects": 76.94172183206156
+          },
+          "prediction_17_13b": {
+            "python": 87.94172183206156,
+            "dsa": 76.94172183206156,
+            "machine_learning": 71.94172183206156,
+            "projects": 76.94172183206156
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_099_low_motivation",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 53.0,
+            "dsa": 49.0,
+            "machine_learning": 30.0,
+            "projects": 34.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.3825,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.3825,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.5435214020685786,
+          "correction_17_13b": 3.5435214020685786,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 56.54352140206858,
+            "dsa": 52.54352140206858,
+            "machine_learning": 33.54352140206858,
+            "projects": 37.54352140206858
+          },
+          "prediction_17_13b": {
+            "python": 56.54352140206858,
+            "dsa": 52.54352140206858,
+            "machine_learning": 33.54352140206858,
+            "projects": 37.54352140206858
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "experiences_compared": 20,
+      "all_signals_match": true,
+      "all_corrections_match": true,
+      "all_predictions_match": true,
+      "all_no_fallback": true,
+      "all_no_coefficient_deviation": true,
+      "no_state_mutations": true,
+      "all_gates_pass": true,
+      "first_divergence_seed_level": null,
+      "experience_records": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 40.0,
+            "dsa": 31.0,
+            "machine_learning": 16.0,
+            "projects": 18.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.23,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.23,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.238778502540033,
+          "correction_17_13b": 4.238778502540033,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 44.23877850254003,
+            "dsa": 35.23877850254003,
+            "machine_learning": 20.238778502540033,
+            "projects": 22.238778502540033
+          },
+          "prediction_17_13b": {
+            "python": 44.23877850254003,
+            "dsa": 35.23877850254003,
+            "machine_learning": 20.238778502540033,
+            "projects": 22.238778502540033
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 54.0,
+            "dsa": 55.0,
+            "machine_learning": 44.0,
+            "projects": 36.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.35200000000000004,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.35200000000000004,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.9679157160166927,
+          "correction_17_13b": 1.9679157160166927,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 55.96791571601669,
+            "dsa": 56.96791571601669,
+            "machine_learning": 45.96791571601669,
+            "projects": 37.96791571601669
+          },
+          "prediction_17_13b": {
+            "python": 55.96791571601669,
+            "dsa": 56.96791571601669,
+            "machine_learning": 45.96791571601669,
+            "projects": 37.96791571601669
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 88.0,
+            "dsa": 74.0,
+            "machine_learning": 74.0,
+            "projects": 73.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.592,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.592,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.5526647792049677,
+          "correction_17_13b": 0.5526647792049677,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 88.55266477920497,
+            "dsa": 74.55266477920497,
+            "machine_learning": 74.55266477920497,
+            "projects": 73.55266477920497
+          },
+          "prediction_17_13b": {
+            "python": 88.55266477920497,
+            "dsa": 74.55266477920497,
+            "machine_learning": 74.55266477920497,
+            "projects": 73.55266477920497
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_083_low_motivation",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 62.0,
+            "dsa": 45.0,
+            "machine_learning": 37.0,
+            "projects": 43.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.32625,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.32625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.6712039080894967,
+          "correction_17_13b": 3.6712039080894967,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 65.6712039080895,
+            "dsa": 48.671203908089495,
+            "machine_learning": 40.671203908089495,
+            "projects": 46.671203908089495
+          },
+          "prediction_17_13b": {
+            "python": 65.6712039080895,
+            "dsa": 48.671203908089495,
+            "machine_learning": 40.671203908089495,
+            "projects": 46.671203908089495
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_084_high_motivation",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 41.0,
+            "dsa": 40.0,
+            "machine_learning": 31.0,
+            "projects": 36.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.30375,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.30375,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.700996562794171,
+          "correction_17_13b": 0.700996562794171,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 41.700996562794174,
+            "dsa": 40.700996562794174,
+            "machine_learning": 31.70099656279417,
+            "projects": 36.700996562794174
+          },
+          "prediction_17_13b": {
+            "python": 41.700996562794174,
+            "dsa": 40.700996562794174,
+            "machine_learning": 31.70099656279417,
+            "projects": 36.700996562794174
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_085_mixed_skills",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 73.0,
+            "dsa": 31.0,
+            "machine_learning": 71.0,
+            "projects": 41.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.45675,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.45675,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.3502176508874086,
+          "correction_17_13b": 1.3502176508874086,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 74.3502176508874,
+            "dsa": 32.35021765088741,
+            "machine_learning": 72.3502176508874,
+            "projects": 42.35021765088741
+          },
+          "prediction_17_13b": {
+            "python": 74.3502176508874,
+            "dsa": 32.35021765088741,
+            "machine_learning": 72.3502176508874,
+            "projects": 42.35021765088741
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_086_project_completion",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 68.0,
+            "dsa": 54.0,
+            "machine_learning": 45.0,
+            "projects": 53.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.5175,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.5175,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.5594613028037716,
+          "correction_17_13b": -0.5594613028037716,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 67.44053869719623,
+            "dsa": 53.44053869719623,
+            "machine_learning": 44.44053869719623,
+            "projects": 52.44053869719623
+          },
+          "prediction_17_13b": {
+            "python": 67.44053869719623,
+            "dsa": 53.44053869719623,
+            "machine_learning": 44.44053869719623,
+            "projects": 52.44053869719623
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_087_plateau",
+          "selected_action": "Python Project",
+          "legacy_prediction": {
+            "python": 82.0,
+            "dsa": 84.0,
+            "machine_learning": 79.0,
+            "projects": 88.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.7200000000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.7200000000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.20213572042795303,
+          "correction_17_13b": -0.20213572042795303,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 81.79786427957205,
+            "dsa": 83.79786427957205,
+            "machine_learning": 78.79786427957205,
+            "projects": 87.79786427957205
+          },
+          "prediction_17_13b": {
+            "python": 81.79786427957205,
+            "dsa": 83.79786427957205,
+            "machine_learning": 78.79786427957205,
+            "projects": 87.79786427957205
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_088_low_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 34.0,
+            "dsa": 27.0,
+            "machine_learning": 12.0,
+            "projects": 22.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.164,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.164,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.627972510163256,
+          "correction_17_13b": 4.627972510163256,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 38.627972510163254,
+            "dsa": 31.627972510163257,
+            "machine_learning": 16.627972510163257,
+            "projects": 26.627972510163257
+          },
+          "prediction_17_13b": {
+            "python": 38.627972510163254,
+            "dsa": 31.627972510163257,
+            "machine_learning": 16.627972510163257,
+            "projects": 26.627972510163257
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_089_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 64.0,
+            "dsa": 50.0,
+            "machine_learning": 40.0,
+            "projects": 47.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.3525,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.3525,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.9649672765650017,
+          "correction_17_13b": 1.9649672765650017,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 65.964967276565,
+            "dsa": 51.964967276565005,
+            "machine_learning": 41.964967276565005,
+            "projects": 48.964967276565005
+          },
+          "prediction_17_13b": {
+            "python": 65.964967276565,
+            "dsa": 51.964967276565005,
+            "machine_learning": 41.964967276565005,
+            "projects": 48.964967276565005
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_090_high_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 79.0,
+            "dsa": 82.0,
+            "machine_learning": 64.0,
+            "projects": 70.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.5287499999999999,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.5287499999999999,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.9256423698438914,
+          "correction_17_13b": 0.9256423698438914,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 79.92564236984389,
+            "dsa": 82.92564236984389,
+            "machine_learning": 64.92564236984389,
+            "projects": 70.92564236984389
+          },
+          "prediction_17_13b": {
+            "python": 79.92564236984389,
+            "dsa": 82.92564236984389,
+            "machine_learning": 64.92564236984389,
+            "projects": 70.92564236984389
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_091_low_motivation",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 50.0,
+            "dsa": 43.0,
+            "machine_learning": 33.0,
+            "projects": 36.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.3725,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.3725,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.39847325880807,
+          "correction_17_13b": 3.39847325880807,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 53.39847325880807,
+            "dsa": 46.39847325880807,
+            "machine_learning": 36.39847325880807,
+            "projects": 39.39847325880807
+          },
+          "prediction_17_13b": {
+            "python": 53.39847325880807,
+            "dsa": 46.39847325880807,
+            "machine_learning": 36.39847325880807,
+            "projects": 39.39847325880807
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_092_high_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 47.0,
+            "dsa": 36.0,
+            "machine_learning": 34.0,
+            "projects": 29.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.266,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.266,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.9236037413968485,
+          "correction_17_13b": 0.9236037413968485,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 47.923603741396846,
+            "dsa": 36.923603741396846,
+            "machine_learning": 34.923603741396846,
+            "projects": 29.92360374139685
+          },
+          "prediction_17_13b": {
+            "python": 47.923603741396846,
+            "dsa": 36.923603741396846,
+            "machine_learning": 34.923603741396846,
+            "projects": 29.92360374139685
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_093_mixed_skills",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 57.0,
+            "dsa": 46.0,
+            "machine_learning": 70.0,
+            "projects": 34.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.388,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.388,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.755628075494934,
+          "correction_17_13b": 1.755628075494934,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 58.75562807549493,
+            "dsa": 47.75562807549493,
+            "machine_learning": 71.75562807549494,
+            "projects": 35.75562807549493
+          },
+          "prediction_17_13b": {
+            "python": 58.75562807549493,
+            "dsa": 47.75562807549493,
+            "machine_learning": 71.75562807549494,
+            "projects": 35.75562807549493
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_094_project_completion",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 69.0,
+            "dsa": 49.0,
+            "machine_learning": 40.0,
+            "projects": 50.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.4875,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.4875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.38255493570230614,
+          "correction_17_13b": -0.38255493570230614,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 68.6174450642977,
+            "dsa": 48.61744506429769,
+            "machine_learning": 39.61744506429769,
+            "projects": 49.61744506429769
+          },
+          "prediction_17_13b": {
+            "python": 68.6174450642977,
+            "dsa": 48.61744506429769,
+            "machine_learning": 39.61744506429769,
+            "projects": 49.61744506429769
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_095_plateau",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 84.0,
+            "dsa": 91.0,
+            "machine_learning": 70.0,
+            "projects": 84.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.6320000000000001,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.6320000000000001,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.3167896230696794,
+          "correction_17_13b": 0.3167896230696794,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 84.31678962306968,
+            "dsa": 91.31678962306968,
+            "machine_learning": 70.31678962306968,
+            "projects": 84.31678962306968
+          },
+          "prediction_17_13b": {
+            "python": 84.31678962306968,
+            "dsa": 91.31678962306968,
+            "machine_learning": 70.31678962306968,
+            "projects": 84.31678962306968
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_096_low_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 38.0,
+            "dsa": 27.0,
+            "machine_learning": 10.0,
+            "projects": 19.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.151875,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.151875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.699472166866766,
+          "correction_17_13b": 4.699472166866766,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 42.69947216686677,
+            "dsa": 31.699472166866766,
+            "machine_learning": 14.699472166866766,
+            "projects": 23.699472166866766
+          },
+          "prediction_17_13b": {
+            "python": 42.69947216686677,
+            "dsa": 31.699472166866766,
+            "machine_learning": 14.699472166866766,
+            "projects": 23.699472166866766
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_097_medium_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 53.0,
+            "dsa": 54.0,
+            "machine_learning": 33.0,
+            "projects": 42.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.338,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.338,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.0504720206640434,
+          "correction_17_13b": 2.0504720206640434,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 55.050472020664046,
+            "dsa": 56.050472020664046,
+            "machine_learning": 35.050472020664046,
+            "projects": 44.050472020664046
+          },
+          "prediction_17_13b": {
+            "python": 55.050472020664046,
+            "dsa": 56.050472020664046,
+            "machine_learning": 35.050472020664046,
+            "projects": 44.050472020664046
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_098_high_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 92.0,
+            "dsa": 83.0,
+            "machine_learning": 75.0,
+            "projects": 76.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.586875,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.586875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.5828862835848012,
+          "correction_17_13b": 0.5828862835848012,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 92.5828862835848,
+            "dsa": 83.5828862835848,
+            "machine_learning": 75.5828862835848,
+            "projects": 76.5828862835848
+          },
+          "prediction_17_13b": {
+            "python": 92.5828862835848,
+            "dsa": 83.5828862835848,
+            "machine_learning": 75.5828862835848,
+            "projects": 76.5828862835848
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_099_low_motivation",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 49.0,
+            "dsa": 54.0,
+            "machine_learning": 39.0,
+            "projects": 45.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.32625,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.32625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.6712039080894967,
+          "correction_17_13b": 3.6712039080894967,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 52.671203908089495,
+            "dsa": 57.671203908089495,
+            "machine_learning": 42.671203908089495,
+            "projects": 48.671203908089495
+          },
+          "prediction_17_13b": {
+            "python": 52.671203908089495,
+            "dsa": 57.671203908089495,
+            "machine_learning": 42.671203908089495,
+            "projects": 48.671203908089495
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        }
+      ]
+    },
+    {
+      "seed": 999,
+      "experiences_compared": 20,
+      "all_signals_match": true,
+      "all_corrections_match": true,
+      "all_predictions_match": true,
+      "all_no_fallback": true,
+      "all_no_coefficient_deviation": true,
+      "no_state_mutations": true,
+      "all_gates_pass": true,
+      "first_divergence_seed_level": null,
+      "experience_records": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 42.0,
+            "dsa": 21.0,
+            "machine_learning": 12.0,
+            "projects": 24.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.215,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.215,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.2864434331716526,
+          "correction_17_13b": 4.2864434331716526,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 46.286443433171655,
+            "dsa": 25.28644343317165,
+            "machine_learning": 16.28644343317165,
+            "projects": 28.28644343317165
+          },
+          "prediction_17_13b": {
+            "python": 46.286443433171655,
+            "dsa": 25.28644343317165,
+            "machine_learning": 16.28644343317165,
+            "projects": 28.28644343317165
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 62.0,
+            "dsa": 49.0,
+            "machine_learning": 32.0,
+            "projects": 39.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.316875,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.316875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 2.01940134753007,
+          "correction_17_13b": 2.01940134753007,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 64.01940134753006,
+            "dsa": 51.01940134753007,
+            "machine_learning": 34.01940134753007,
+            "projects": 41.01940134753007
+          },
+          "prediction_17_13b": {
+            "python": 64.01940134753006,
+            "dsa": 51.01940134753007,
+            "machine_learning": 34.01940134753007,
+            "projects": 41.01940134753007
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 92.0,
+            "dsa": 80.0,
+            "machine_learning": 62.0,
+            "projects": 76.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.556875,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.556875,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.7947104075829263,
+          "correction_17_13b": 0.7947104075829263,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 92.79471040758293,
+            "dsa": 80.79471040758293,
+            "machine_learning": 62.794710407582926,
+            "projects": 76.79471040758293
+          },
+          "prediction_17_13b": {
+            "python": 92.79471040758293,
+            "dsa": 80.79471040758293,
+            "machine_learning": 62.794710407582926,
+            "projects": 76.79471040758293
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_083_low_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 53.0,
+            "dsa": 42.0,
+            "machine_learning": 39.0,
+            "projects": 38.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.31800000000000006,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.31800000000000006,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.7608469047776696,
+          "correction_17_13b": 3.7608469047776696,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 56.76084690477767,
+            "dsa": 45.76084690477767,
+            "machine_learning": 42.76084690477767,
+            "projects": 41.76084690477767
+          },
+          "prediction_17_13b": {
+            "python": 56.76084690477767,
+            "dsa": 45.76084690477767,
+            "machine_learning": 42.76084690477767,
+            "projects": 41.76084690477767
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_084_high_motivation",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 43.0,
+            "dsa": 40.0,
+            "machine_learning": 35.0,
+            "projects": 36.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.282,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.282,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.4501779537125372,
+          "correction_17_13b": 0.4501779537125372,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 43.45017795371254,
+            "dsa": 40.45017795371254,
+            "machine_learning": 35.45017795371254,
+            "projects": 36.45017795371254
+          },
+          "prediction_17_13b": {
+            "python": 43.45017795371254,
+            "dsa": 40.45017795371254,
+            "machine_learning": 35.45017795371254,
+            "projects": 36.45017795371254
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_085_mixed_skills",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 77.0,
+            "dsa": 27.0,
+            "machine_learning": 73.0,
+            "projects": 43.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.38812499999999994,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.38812499999999994,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.655821224733262,
+          "correction_17_13b": 1.655821224733262,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 78.65582122473326,
+            "dsa": 28.655821224733263,
+            "machine_learning": 74.65582122473326,
+            "projects": 44.65582122473326
+          },
+          "prediction_17_13b": {
+            "python": 78.65582122473326,
+            "dsa": 28.655821224733263,
+            "machine_learning": 74.65582122473326,
+            "projects": 44.65582122473326
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_086_project_completion",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 72.0,
+            "dsa": 66.0,
+            "machine_learning": 54.0,
+            "projects": 57.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.472,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.472,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.5193690404122848,
+          "correction_17_13b": -0.5193690404122848,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 71.48063095958771,
+            "dsa": 65.48063095958771,
+            "machine_learning": 53.480630959587714,
+            "projects": 56.480630959587714
+          },
+          "prediction_17_13b": {
+            "python": 71.48063095958771,
+            "dsa": 65.48063095958771,
+            "machine_learning": 53.480630959587714,
+            "projects": 56.480630959587714
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_087_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 94.0,
+            "dsa": 86.0,
+            "machine_learning": 80.0,
+            "projects": 80.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.654,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.654,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.2990932928230663,
+          "correction_17_13b": 0.2990932928230663,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 94.29909329282307,
+            "dsa": 86.29909329282307,
+            "machine_learning": 80.29909329282307,
+            "projects": 80.29909329282307
+          },
+          "prediction_17_13b": {
+            "python": 94.29909329282307,
+            "dsa": 86.29909329282307,
+            "machine_learning": 80.29909329282307,
+            "projects": 80.29909329282307
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_088_low_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 33.0,
+            "dsa": 21.0,
+            "machine_learning": 14.0,
+            "projects": 21.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.14250000000000002,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.14250000000000002,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.656402154614018,
+          "correction_17_13b": 4.656402154614018,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 37.65640215461402,
+            "dsa": 25.656402154614018,
+            "machine_learning": 18.656402154614018,
+            "projects": 25.656402154614018
+          },
+          "prediction_17_13b": {
+            "python": 37.65640215461402,
+            "dsa": 25.656402154614018,
+            "machine_learning": 18.656402154614018,
+            "projects": 25.656402154614018
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_089_medium_skill_practice",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 64.0,
+            "dsa": 56.0,
+            "machine_learning": 40.0,
+            "projects": 48.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.365625,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.365625,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.7706360003533066,
+          "correction_17_13b": 1.7706360003533066,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 65.7706360003533,
+            "dsa": 57.770636000353306,
+            "machine_learning": 41.770636000353306,
+            "projects": 49.770636000353306
+          },
+          "prediction_17_13b": {
+            "python": 65.7706360003533,
+            "dsa": 57.770636000353306,
+            "machine_learning": 41.770636000353306,
+            "projects": 49.770636000353306
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_090_high_skill_practice",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 87.0,
+            "dsa": 85.0,
+            "machine_learning": 72.0,
+            "projects": 84.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.63,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.63,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.42156238681778113,
+          "correction_17_13b": 0.42156238681778113,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 87.42156238681778,
+            "dsa": 85.42156238681778,
+            "machine_learning": 72.42156238681778,
+            "projects": 84.42156238681778
+          },
+          "prediction_17_13b": {
+            "python": 87.42156238681778,
+            "dsa": 85.42156238681778,
+            "machine_learning": 72.42156238681778,
+            "projects": 84.42156238681778
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_091_low_motivation",
+          "selected_action": "Research Paper",
+          "legacy_prediction": {
+            "python": 61.0,
+            "dsa": 45.0,
+            "machine_learning": 37.0,
+            "projects": 41.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.342,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.342,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.6383778107829556,
+          "correction_17_13b": 3.6383778107829556,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 64.63837781078296,
+            "dsa": 48.638377810782956,
+            "machine_learning": 40.638377810782956,
+            "projects": 44.638377810782956
+          },
+          "prediction_17_13b": {
+            "python": 64.63837781078296,
+            "dsa": 48.638377810782956,
+            "machine_learning": 40.638377810782956,
+            "projects": 44.638377810782956
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_092_high_motivation",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 48.0,
+            "dsa": 32.0,
+            "machine_learning": 28.0,
+            "projects": 26.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.242,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.242,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.6542931103703944,
+          "correction_17_13b": 0.6542931103703944,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 48.654293110370396,
+            "dsa": 32.654293110370396,
+            "machine_learning": 28.654293110370393,
+            "projects": 26.654293110370393
+          },
+          "prediction_17_13b": {
+            "python": 48.654293110370396,
+            "dsa": 32.654293110370396,
+            "machine_learning": 28.654293110370393,
+            "projects": 26.654293110370393
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_093_mixed_skills",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 76.0,
+            "dsa": 42.0,
+            "machine_learning": 75.0,
+            "projects": 38.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.40875000000000006,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.40875000000000006,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.5505743470815538,
+          "correction_17_13b": 1.5505743470815538,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 77.55057434708155,
+            "dsa": 43.55057434708155,
+            "machine_learning": 76.55057434708155,
+            "projects": 39.55057434708155
+          },
+          "prediction_17_13b": {
+            "python": 77.55057434708155,
+            "dsa": 43.55057434708155,
+            "machine_learning": 76.55057434708155,
+            "projects": 39.55057434708155
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_094_project_completion",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 62.0,
+            "dsa": 65.0,
+            "machine_learning": 47.0,
+            "projects": 51.0
+          },
+          "motivation_17_12a": 1.0,
+          "goals_17_12a": 0.3975,
+          "motivation_17_13b": 1.0,
+          "goals_17_13b": 0.3975,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.13920456113702562,
+          "correction_17_13b": -0.13920456113702562,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 61.86079543886297,
+            "dsa": 64.86079543886298,
+            "machine_learning": 46.86079543886297,
+            "projects": 50.86079543886297
+          },
+          "prediction_17_13b": {
+            "python": 61.86079543886297,
+            "dsa": 64.86079543886298,
+            "machine_learning": 46.86079543886297,
+            "projects": 50.86079543886297
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_095_plateau",
+          "selected_action": "ML Course",
+          "legacy_prediction": {
+            "python": 93.0,
+            "dsa": 91.0,
+            "machine_learning": 66.0,
+            "projects": 90.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.654,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.654,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 0.2990932928230663,
+          "correction_17_13b": 0.2990932928230663,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 93.29909329282307,
+            "dsa": 91.29909329282307,
+            "machine_learning": 66.29909329282307,
+            "projects": 90.29909329282307
+          },
+          "prediction_17_13b": {
+            "python": 93.29909329282307,
+            "dsa": 91.29909329282307,
+            "machine_learning": 66.29909329282307,
+            "projects": 90.29909329282307
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_096_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 33.0,
+            "dsa": 24.0,
+            "machine_learning": 11.0,
+            "projects": 18.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.1825,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.1825,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 4.452286997956161,
+          "correction_17_13b": 4.452286997956161,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 37.452286997956165,
+            "dsa": 28.45228699795616,
+            "machine_learning": 15.452286997956161,
+            "projects": 22.45228699795616
+          },
+          "prediction_17_13b": {
+            "python": 37.452286997956165,
+            "dsa": 28.45228699795616,
+            "machine_learning": 15.452286997956161,
+            "projects": 22.45228699795616
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_097_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "legacy_prediction": {
+            "python": 67.0,
+            "dsa": 54.0,
+            "machine_learning": 33.0,
+            "projects": 48.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.354375,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.354375,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 1.828043388163329,
+          "correction_17_13b": 1.828043388163329,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 68.82804338816332,
+            "dsa": 55.82804338816333,
+            "machine_learning": 34.82804338816333,
+            "projects": 49.82804338816333
+          },
+          "prediction_17_13b": {
+            "python": 68.82804338816332,
+            "dsa": 55.82804338816333,
+            "machine_learning": 34.82804338816333,
+            "projects": 49.82804338816333
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_098_high_skill_practice",
+          "selected_action": "Build Portfolio",
+          "legacy_prediction": {
+            "python": 80.0,
+            "dsa": 71.0,
+            "machine_learning": 73.0,
+            "projects": 85.0
+          },
+          "motivation_17_12a": 0.5,
+          "goals_17_12a": 0.74,
+          "motivation_17_13b": 0.5,
+          "goals_17_13b": 0.74,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": -0.13975429399132633,
+          "correction_17_13b": -0.13975429399132633,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 79.86024570600867,
+            "dsa": 70.86024570600867,
+            "machine_learning": 72.86024570600867,
+            "projects": 84.86024570600867
+          },
+          "prediction_17_13b": {
+            "python": 79.86024570600867,
+            "dsa": 70.86024570600867,
+            "machine_learning": 72.86024570600867,
+            "projects": 84.86024570600867
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        },
+        {
+          "experience_id": "research_exp_099_low_motivation",
+          "selected_action": "DSA Practice",
+          "legacy_prediction": {
+            "python": 52.0,
+            "dsa": 49.0,
+            "machine_learning": 34.0,
+            "projects": 43.0
+          },
+          "motivation_17_12a": 0.0,
+          "goals_17_12a": 0.30937499999999996,
+          "motivation_17_13b": 0.0,
+          "goals_17_13b": 0.30937499999999996,
+          "motivation_match": true,
+          "goals_match": true,
+          "correction_17_12a": 3.804859235432021,
+          "correction_17_13b": 3.804859235432021,
+          "correction_match": true,
+          "prediction_17_12a": {
+            "python": 55.80485923543202,
+            "dsa": 52.80485923543202,
+            "machine_learning": 37.80485923543202,
+            "projects": 46.80485923543202
+          },
+          "prediction_17_13b": {
+            "python": 55.80485923543202,
+            "dsa": 52.80485923543202,
+            "machine_learning": 37.80485923543202,
+            "projects": 46.80485923543202
+          },
+          "prediction_match": true,
+          "source_17_13b": "mg",
+          "fallback_17_13b": false,
+          "first_divergence": null
+        }
+      ]
+    }
+  ]
+}

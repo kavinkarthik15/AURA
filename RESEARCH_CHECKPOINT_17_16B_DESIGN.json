@@ -1,0 +1,59 @@
+{
+  "phase": "17.16B",
+  "status": "BLOCKED_INDEPENDENT_OUTCOME_DATA_REQUIRED",
+  "assessment_date": "2026-10-04",
+  "research_question": "Does the frozen MG correction mechanism improve future-state prediction compared with the existing base prediction when both are evaluated against the same independently observed outcome?",
+  "ground_truth_source": null,
+  "ground_truth_status": "No repository source is verified as independently observed ground truth for this evaluation. The 15-row experiences.json corpus is documented as synthetic; the default transition service also loads synthetic_experiences.json. Other actual_state-labelled data lacks row-level provenance and is described as synthetic or is populated by caller-supplied/test values.",
+  "evaluation_population": {
+    "current_eligible_units": 0,
+    "required_population": "Prospectively collected or provenance-verified real completed single-action episodes with paired pre-action state/predictions and independently measured post-action state.",
+    "17_15_rows": 2400,
+    "17_15_unique_state_action_category_signatures": 4,
+    "17_15_rows_per_signature": 600,
+    "17_15_seed_recorded_per_event": false,
+    "17_15_experience_id_recorded_per_event": false,
+    "note": "Repeated scripted scenarios are not independent observed outcomes or an evaluation population."
+  },
+  "methodology_status": "PROPOSED_NOT_FROZEN; blocked pending approved target population, measurement horizon/instrument, minimum meaningful effect, and a priori power/sample-size plan.",
+  "leakage_risk": "CRITICAL",
+  "pseudoreplication_risk": "CRITICAL",
+  "implementation_ready": false,
+  "blocking_issues": [
+    "No independently observed, provenance-verified action-linked post-state cohort was found.",
+    "experiences.json is explicitly documented as synthetic and is used by TransitionEngine to generate base predictions.",
+    "ExperienceService loads synthetic_experiences.json by default; matching these records as evaluation labels would contaminate the baseline.",
+    "17.15 has four repeated scripted input signatures, with seed and experience_id null on all events; 2,400 is not the independent outcome sample size.",
+    "17.15 lacks per-event context, event timestamps, and actual_state_after; fixed prediction horizon and measurement source are unspecified.",
+    "experience_dataset.json actual_state values have no row-level provenance/user identity and the logger accepts caller-supplied values; test code supplies hard-coded examples.",
+    "The prior proposal to use the legacy prediction as a synthetic fallback actual outcome is circular and invalid; it must not be implemented.",
+    "State/action/context schemas and measurable target dimensions need to be fixed before choosing an error metric and evaluating outcomes."
+  ],
+  "protocol_proposal": {
+    "evaluation_unit": "One unique, verified, completed real action episode with both predictions recorded before outcome observation.",
+    "ground_truth_definition": "Independently measured post-action state for the same episode, with source, measurement method, timestamp, state schema/version, and fixed pre-registered follow-up horizon.",
+    "matching_rules": "Pair base and MG forecasts directly by unique observed episode ID. Do not synthesize outcomes, nearest-neighbor match to training data, reuse a target across rows, or include any evaluation episode in model fitting/calibration.",
+    "primary_error_metric": "Per-event MAE over the same predeclared valid skill dimensions and common scale; missing dimensions are not defaulted to zero.",
+    "comparison_metric": "delta = MAE_MG - MAE_base, computed within each same outcome episode.",
+    "statistical_test": "Paired, cluster-aware sign-flip/permutation test with user-level (and where needed time-block) bootstrap confidence intervals; finalize against observed independence structure before registration.",
+    "significance_threshold": 0.05,
+    "effect_size": "Mean paired delta and 95% cluster-aware CI; paired standardized d_z with CI as descriptive context.",
+    "minimum_evidence_for_improvement": "Pre-register delta_min and obtain adequate a priori power (at least 80% for delta_min); improvement only if the 95% CI upper bound is below -delta_min and the primary test meets alpha.",
+    "no_meaningful_difference": "Equivalence test supports the full pre-registered interval [-delta_min, +delta_min]; nonsignificance alone is insufficient.",
+    "degradation": "95% CI lower bound is above +delta_min and the primary test meets alpha.",
+    "inconclusive": "All other cases, including insufficient clusters, failed provenance, or confidence intervals crossing decision boundaries.",
+    "freeze_state": "Draft only; freeze after population, outcome horizon/instrument, delta_min and power plan are approved, before outcome values are examined."
+  },
+  "previous_artifacts_superseded_for_design": [
+    "17_16B_OUTCOME_GENERATION_READY.md",
+    "RESEARCH_CHECKPOINT_17_16B_ARCHITECTURE_READY.json"
+  ],
+  "recommended_next_step": "Obtain or prospectively collect a provenance-verified independent action-outcome cohort. Approve and freeze the evaluation protocol (including horizon, delta_min, and power plan) before any outcome comparison. Do not implement or run effectiveness analysis on current repository data.",
+  "constraints_preserved": {
+    "frozen_17_15_artifacts_modified": false,
+    "frozen_mg_coefficients_modified": false,
+    "production_behavior_modified": false,
+    "effectiveness_experiment_run": false
+  },
+  "assessment_report": "17_16B_ARCHITECTURE_AND_GROUND_TRUTH_ASSESSMENT.md"
+}

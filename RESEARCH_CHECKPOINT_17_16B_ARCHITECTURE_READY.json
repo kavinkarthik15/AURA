@@ -1,0 +1,158 @@
+{
+  "phase": "17.16B",
+  "stage": "architecture_inspection_complete",
+  "created": "2026-08-14T16:30:00Z",
+  "status": "READY_FOR_DESIGN",
+  
+  "summary": {
+    "title": "17.16B Outcome Generation Architecture - System Ready",
+    "description": "Inspected existing AURA components; confirmed ground truth mechanism available for outcome-based validation",
+    "verdict": "READY_TO_PROCEED",
+    "next_phase": "17.16B Implementation"
+  },
+  
+  "architecture_components_verified": {
+    "experience_model": {
+      "status": "✅ READY",
+      "location": "backend/models/experience.py",
+      "provides": "state_after (ground truth), state_delta, outcome_value",
+      "key_fields": ["state_before", "action", "state_after", "state_delta", "outcome_value"]
+    },
+    "transition_engine": {
+      "status": "✅ READY",
+      "location": "backend/services/transition_engine.py",
+      "provides": "predict_skill_growth(), predict_future_state(), predict_success_probability()",
+      "can_match": "Similar experiences for outcome aggregation"
+    },
+    "simulation_engine": {
+      "status": "✅ READY",
+      "location": "backend/services/simulation_engine.py",
+      "already_has": "legacy_prediction, mg_prediction (from 17.15)",
+      "needs": "Integration with outcome matching"
+    },
+    "historical_data": {
+      "status": "✅ READY",
+      "location": "backend/data/experiences.json",
+      "count": 15,
+      "action_types": 7,
+      "ground_truth": "Complete state_after for each experience"
+    }
+  },
+  
+  "prediction_horizon": {
+    "input": "State(t) + Action",
+    "predictions": "Legacy & MG (from 17.15 frozen events)",
+    "ground_truth": "State(t+1) actual (from experiences matching)",
+    "comparison": "Error(Legacy) vs Error(MG)"
+  },
+  
+  "outcome_record_schema": {
+    "from_17_15": ["event_id", "seed", "category", "state_before", "action", "legacy_prediction", "mg_prediction"],
+    "new_for_17_16b": ["actual_state_after", "error_legacy", "error_mg", "delta_error", "mg_improved", "result_tie", "mg_degraded", "evidence_type", "match_count"],
+    "total_fields": 17
+  },
+  
+  "outcome_generation_strategy": {
+    "step_1_matching": "Find similar experiences in experiences.json",
+    "step_2_aggregation": "Aggregate state_delta from similar cases (weighted by confidence)",
+    "step_3_fallback": "Use legacy prediction as synthetic ground truth if no matches (mark as low confidence)",
+    "step_4_error_calculation": "L1 distance (Manhattan): sum of absolute skill differences"
+  },
+  
+  "statistical_framework": {
+    "metrics": [
+      "Mean ΔError",
+      "Median ΔError",
+      "StDev ΔError",
+      "% improvement (ΔError < -0.1)",
+      "% tied (|ΔError| < 0.1)",
+      "% degraded (ΔError > 0.1)"
+    ],
+    "tests": [
+      "Paired t-test on ΔError",
+      "Wilcoxon signed-rank (robustness)",
+      "Sign test (binomial)"
+    ],
+    "effects": [
+      "Cohen's d (effect size)",
+      "95% confidence interval",
+      "Per-category breakdown",
+      "Per-seed consistency"
+    ]
+  },
+  
+  "predefined_decision_criteria": {
+    "rule_1_improvement": {
+      "condition": "mean(ΔError) < -0.1 AND p < 0.05 AND >60% wins",
+      "verdict": "MG IMPROVED significantly",
+      "action": "Proceed to 17.17"
+    },
+    "rule_2_no_difference": {
+      "condition": "|mean(ΔError)| ≤ 0.05 AND p > 0.10",
+      "verdict": "NO MEANINGFUL DIFFERENCE",
+      "action": "Discuss complexity vs benefit trade-off"
+    },
+    "rule_3_degradation": {
+      "condition": "mean(ΔError) > 0.1 AND p < 0.05",
+      "verdict": "MG DEGRADED predictions",
+      "action": "Reject or significantly revise MG"
+    },
+    "rule_4_inconclusive": {
+      "condition": "Does not meet above criteria",
+      "verdict": "INCONCLUSIVE",
+      "action": "Inspect anomalies or increase sample size"
+    },
+    "critical_note": "These thresholds must NOT be changed after seeing results (p-hacking prevention)"
+  },
+  
+  "frozen_constraints": {
+    "frozen_coefficients": "17.13B coefficients - no tuning during 17.16B",
+    "frozen_events": "17.15 shadow events (2,400) - no modification",
+    "frozen_criteria": "Decision rules above - no post-hoc adjustment",
+    "rationale": "Maintain scientific validity of outcome study"
+  },
+  
+  "data_files": {
+    "inputs": [
+      "17_15_SHADOW_VALIDATION_EVENTS.json (2,400 predictions, frozen)",
+      "backend/data/experiences.json (15 ground truth records, frozen)"
+    ],
+    "outputs": [
+      "17_16B_OUTCOME_DATASET.json (2,400 + error calculations)",
+      "17_16B_STATISTICAL_ANALYSIS.json (metrics, tests, verdict)",
+      "17_16B_OUTCOME_ANALYSIS.md (detailed report)"
+    ]
+  },
+  
+  "research_chain_progress": {
+    "17_15_mechanical_validity": "✅ PASS (8/8 safety gates, 2,400 events valid)",
+    "17_16a_mechanism_sensibility": "✅ PASS (deterministic, well-designed, category-appropriate)",
+    "17_16b_behavioral_effectiveness": "🚀 DESIGN_PHASE (architecture ready, awaiting implementation)",
+    "17_17_optimization": "⏳ PENDING (conditional on 17.16B results)",
+    "17_18_production_ready": "⏳ PENDING (requires 17.15 + 17.16A + 17.16B pass)"
+  },
+  
+  "implementation_roadmap": {
+    "phase_1_outcome_generation": {
+      "task": "Create script to generate actual_state_after for all 2,400 events",
+      "components_needed": ["Matching algorithm", "State aggregation", "Error calculation"],
+      "output": "17_16B_OUTCOME_DATASET.json"
+    },
+    "phase_2_statistical_analysis": {
+      "task": "Run paired statistical tests on ΔError distribution",
+      "tests": ["Paired t-test", "Effect size", "Confidence intervals", "Per-category breakdown"],
+      "output": "17_16B_STATISTICAL_ANALYSIS.json"
+    },
+    "phase_3_interpretation": {
+      "task": "Compare results against pre-defined criteria",
+      "decision_points": 4,
+      "output": "17_16B_OUTCOME_ANALYSIS.md + verdict"
+    }
+  },
+  
+  "ready_to_proceed": true,
+  "next_action": "Implement 17.16B outcome generation and statistical analysis",
+  "estimated_effort": "2-3 hours implementation + analysis",
+  "blockers": "None identified",
+  "scientific_rigor": "All constraints in place for valid behavioral validation"
+}

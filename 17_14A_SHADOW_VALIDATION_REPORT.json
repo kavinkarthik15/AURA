@@ -1,0 +1,59 @@
+{
+  "phase": "17.14A",
+  "stage": "shadow_validation",
+  "created": "2026-08-14T14:25:18.120009Z",
+  "execution": {
+    "start_time": "2026-08-14T14:25:18.046415Z",
+    "end_time": "2026-08-14T14:25:18.119521Z",
+    "duration_seconds": 0.073106,
+    "total_events": 400,
+    "total_errors": 0
+  },
+  "safety_gates": {
+    "legacy_output_recorded": {
+      "status": "PASS",
+      "description": "Legacy predictions were successfully recorded by shadow recorder"
+    },
+    "no_state_mutation": {
+      "status": "PASS",
+      "description": "No production state was mutated by shadow path"
+    },
+    "no_unexpected_exceptions": {
+      "status": "PASS",
+      "error_count": 0,
+      "sample_errors": []
+    },
+    "fallback_behavior": {
+      "count": 0,
+      "percentage": 0.0,
+      "reasons": {}
+    },
+    "latency_overhead": {
+      "avg_legacy_ms": 0.0,
+      "avg_mg_ms": 0.0,
+      "overhead_percent": 0
+    },
+    "schema_completeness": {
+      "complete": true,
+      "total_events_checked": 400,
+      "missing_fields": []
+    }
+  },
+  "observability": {
+    "total_events_recorded": 400,
+    "category_coverage": {
+      "low_skill_practice": 100,
+      "project_completion": 100,
+      "high_motivation": 100,
+      "null": 100
+    },
+    "correction_distribution": {
+      "count": 0,
+      "avg": 0,
+      "min": 0,
+      "max": 0,
+      "std": 0
+    }
+  },
+  "overall_status": "PASS"
+}

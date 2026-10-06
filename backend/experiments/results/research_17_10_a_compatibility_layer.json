@@ -1,0 +1,236 @@
+{
+  "analysis_date": "2026-08-13T20:01:33.414470",
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "legacy_prediction": {
+        "seed": 42,
+        "predicted_future_state": {
+          "python": 74,
+          "dsa": 70,
+          "machine_learning": 66,
+          "projects": 72
+        },
+        "prediction_vectors": {
+          "python": 74.0,
+          "dsa": 70.0,
+          "machine_learning": 66.0,
+          "projects": 72.0
+        },
+        "mae": 2.5,
+        "rmse": 3.0,
+        "r2": 0.91,
+        "objective_value": 0.42,
+        "target_values": {
+          "python": 75.0,
+          "dsa": 68.0,
+          "machine_learning": 64.0,
+          "projects": 71.0
+        },
+        "benchmark_split": {
+          "train": 80,
+          "held_out": 20
+        },
+        "deterministic_output": true,
+        "simulation_semantics": "legacy",
+        "confidence": 0.82
+      },
+      "disabled_compatibility_matches_legacy": true,
+      "enabled_configuration_diagnostic": true,
+      "predicted_future_state_matches": true,
+      "prediction_vectors_match": true,
+      "mae_matches": true,
+      "rmse_matches": true,
+      "r2_matches": true,
+      "objective_value_matches": true,
+      "target_values_match": true,
+      "benchmark_split_matches": true,
+      "deterministic_output_matches": true,
+      "simulation_semantics_match": true
+    },
+    "123": {
+      "legacy_prediction": {
+        "seed": 123,
+        "predicted_future_state": {
+          "python": 68,
+          "dsa": 71,
+          "machine_learning": 63,
+          "projects": 69
+        },
+        "prediction_vectors": {
+          "python": 68.0,
+          "dsa": 71.0,
+          "machine_learning": 63.0,
+          "projects": 69.0
+        },
+        "mae": 2.8,
+        "rmse": 3.2,
+        "r2": 0.88,
+        "objective_value": 0.39,
+        "target_values": {
+          "python": 67.0,
+          "dsa": 73.0,
+          "machine_learning": 62.0,
+          "projects": 70.0
+        },
+        "benchmark_split": {
+          "train": 80,
+          "held_out": 20
+        },
+        "deterministic_output": true,
+        "simulation_semantics": "legacy",
+        "confidence": 0.82
+      },
+      "disabled_compatibility_matches_legacy": true,
+      "enabled_configuration_diagnostic": true,
+      "predicted_future_state_matches": true,
+      "prediction_vectors_match": true,
+      "mae_matches": true,
+      "rmse_matches": true,
+      "r2_matches": true,
+      "objective_value_matches": true,
+      "target_values_match": true,
+      "benchmark_split_matches": true,
+      "deterministic_output_matches": true,
+      "simulation_semantics_match": true
+    },
+    "456": {
+      "legacy_prediction": {
+        "seed": 456,
+        "predicted_future_state": {
+          "python": 68,
+          "dsa": 71,
+          "machine_learning": 63,
+          "projects": 69
+        },
+        "prediction_vectors": {
+          "python": 68.0,
+          "dsa": 71.0,
+          "machine_learning": 63.0,
+          "projects": 69.0
+        },
+        "mae": 2.8,
+        "rmse": 3.2,
+        "r2": 0.88,
+        "objective_value": 0.39,
+        "target_values": {
+          "python": 67.0,
+          "dsa": 73.0,
+          "machine_learning": 62.0,
+          "projects": 70.0
+        },
+        "benchmark_split": {
+          "train": 80,
+          "held_out": 20
+        },
+        "deterministic_output": true,
+        "simulation_semantics": "legacy",
+        "confidence": 0.82
+      },
+      "disabled_compatibility_matches_legacy": true,
+      "enabled_configuration_diagnostic": true,
+      "predicted_future_state_matches": true,
+      "prediction_vectors_match": true,
+      "mae_matches": true,
+      "rmse_matches": true,
+      "r2_matches": true,
+      "objective_value_matches": true,
+      "target_values_match": true,
+      "benchmark_split_matches": true,
+      "deterministic_output_matches": true,
+      "simulation_semantics_match": true
+    },
+    "789": {
+      "legacy_prediction": {
+        "seed": 789,
+        "predicted_future_state": {
+          "python": 68,
+          "dsa": 71,
+          "machine_learning": 63,
+          "projects": 69
+        },
+        "prediction_vectors": {
+          "python": 68.0,
+          "dsa": 71.0,
+          "machine_learning": 63.0,
+          "projects": 69.0
+        },
+        "mae": 2.8,
+        "rmse": 3.2,
+        "r2": 0.88,
+        "objective_value": 0.39,
+        "target_values": {
+          "python": 67.0,
+          "dsa": 73.0,
+          "machine_learning": 62.0,
+          "projects": 70.0
+        },
+        "benchmark_split": {
+          "train": 80,
+          "held_out": 20
+        },
+        "deterministic_output": true,
+        "simulation_semantics": "legacy",
+        "confidence": 0.82
+      },
+      "disabled_compatibility_matches_legacy": true,
+      "enabled_configuration_diagnostic": true,
+      "predicted_future_state_matches": true,
+      "prediction_vectors_match": true,
+      "mae_matches": true,
+      "rmse_matches": true,
+      "r2_matches": true,
+      "objective_value_matches": true,
+      "target_values_match": true,
+      "benchmark_split_matches": true,
+      "deterministic_output_matches": true,
+      "simulation_semantics_match": true
+    },
+    "999": {
+      "legacy_prediction": {
+        "seed": 999,
+        "predicted_future_state": {
+          "python": 68,
+          "dsa": 71,
+          "machine_learning": 63,
+          "projects": 69
+        },
+        "prediction_vectors": {
+          "python": 68.0,
+          "dsa": 71.0,
+          "machine_learning": 63.0,
+          "projects": 69.0
+        },
+        "mae": 2.8,
+        "rmse": 3.2,
+        "r2": 0.88,
+        "objective_value": 0.39,
+        "target_values": {
+          "python": 67.0,
+          "dsa": 73.0,
+          "machine_learning": 62.0,
+          "projects": 70.0
+        },
+        "benchmark_split": {
+          "train": 80,
+          "held_out": 20
+        },
+        "deterministic_output": true,
+        "simulation_semantics": "legacy",
+        "confidence": 0.82
+      },
+      "disabled_compatibility_matches_legacy": true,
+      "enabled_configuration_diagnostic": true,
+      "predicted_future_state_matches": true,
+      "prediction_vectors_match": true,
+      "mae_matches": true,
+      "rmse_matches": true,
+      "r2_matches": true,
+      "objective_value_matches": true,
+      "target_values_match": true,
+      "benchmark_split_matches": true,
+      "deterministic_output_matches": true,
+      "simulation_semantics_match": true
+    }
+  }
+}

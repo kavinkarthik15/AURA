@@ -1,0 +1,341 @@
+{
+  "timestamp": "2026-08-13T22:48:45.376977",
+  "test_name": "17.13B Enabled MG Verification",
+  "decision_rule": "A valid MG-enabled run must reproduce the validated 17.12A shadow behavior within the established \u00b15% improvement tolerance without coefficient tuning or fallback.",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "expected_improvement_tolerance_pct": 5.0,
+  "all_pass": true,
+  "results": [
+    {
+      "seed": 42,
+      "legacy_heldout_mae": 5.7875,
+      "mg_heldout_mae": 5.329340753369562,
+      "legacy_heldout_rmse": 6.636406688502082,
+      "mg_heldout_rmse": 6.031267126146513,
+      "legacy_heldout_r2": -6.50507992835403,
+      "mg_heldout_r2": -6.119774390206252,
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0,
+      "delta_r2": 0.0,
+      "improvement_pct": 7.916358473096122,
+      "expected_shadow_mae": 5.329340753369562,
+      "expected_shadow_rmse": 6.031267126146513,
+      "expected_shadow_r2": -6.119774390206252,
+      "expected_improvement_pct": 7.916358473096122,
+      "delta_improvement_pct": 0.0,
+      "mg_coefficients": {
+        "motivation": -3.2807449219261597,
+        "goals": -4.990929117526626,
+        "intercept": 5.347402291610499
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Research Paper",
+          "motivation_signal": 0.0,
+          "goals_signal": 0.16000000000000003,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.328,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.5231250000000001,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "mg_activates": true,
+      "legacy_baseline_unchanged": true,
+      "simulation_semantics_unchanged": true,
+      "exact_mapping_used": true,
+      "no_coefficient_tuning": true,
+      "no_fallback": true,
+      "source_reported_as_mg": true,
+      "no_state_mutation": true,
+      "reproduces_validated_behavior": true,
+      "differences": []
+    },
+    {
+      "seed": 123,
+      "legacy_heldout_mae": 5.575,
+      "mg_heldout_mae": 4.997094165294663,
+      "legacy_heldout_rmse": 6.296438946092857,
+      "mg_heldout_rmse": 5.823622615252877,
+      "legacy_heldout_r2": -0.9725718012870571,
+      "mg_heldout_r2": -1.0048594044773043,
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0,
+      "delta_r2": 0.0,
+      "improvement_pct": 10.36602394090291,
+      "expected_shadow_mae": 4.997094165294663,
+      "expected_shadow_rmse": 5.823622615252877,
+      "expected_shadow_r2": -1.0048594044773043,
+      "expected_improvement_pct": 10.36602394090291,
+      "delta_improvement_pct": 0.0,
+      "mg_coefficients": {
+        "motivation": -2.926512025045623,
+        "goals": -5.966840681018364,
+        "intercept": 5.4524982305536485
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "DSA Practice",
+          "motivation_signal": 0.0,
+          "goals_signal": 0.14625,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.3075,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.583125,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "mg_activates": true,
+      "legacy_baseline_unchanged": true,
+      "simulation_semantics_unchanged": true,
+      "exact_mapping_used": true,
+      "no_coefficient_tuning": true,
+      "no_fallback": true,
+      "source_reported_as_mg": true,
+      "no_state_mutation": true,
+      "reproduces_validated_behavior": true,
+      "differences": []
+    },
+    {
+      "seed": 456,
+      "legacy_heldout_mae": 5.8,
+      "mg_heldout_mae": 5.278164095126216,
+      "legacy_heldout_rmse": 6.744299351016191,
+      "mg_heldout_rmse": 6.161327492320338,
+      "legacy_heldout_r2": -1.0029882095353906,
+      "mg_heldout_r2": -0.5982683326627019,
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0,
+      "delta_r2": 0.0,
+      "improvement_pct": 8.997170773685935,
+      "expected_shadow_mae": 5.278164095126216,
+      "expected_shadow_rmse": 6.161327492320338,
+      "expected_shadow_r2": -0.5982683326627019,
+      "expected_improvement_pct": 8.997170773685935,
+      "delta_improvement_pct": 0.0,
+      "mg_coefficients": {
+        "motivation": -3.5430610773518003,
+        "goals": -4.761399462830821,
+        "intercept": 5.364756696601368
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Python Project",
+          "motivation_signal": 0.0,
+          "goals_signal": 0.20700000000000002,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.316875,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Python Project",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.6637500000000001,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "mg_activates": true,
+      "legacy_baseline_unchanged": true,
+      "simulation_semantics_unchanged": true,
+      "exact_mapping_used": true,
+      "no_coefficient_tuning": true,
+      "no_fallback": true,
+      "source_reported_as_mg": true,
+      "no_state_mutation": true,
+      "reproduces_validated_behavior": true,
+      "differences": []
+    },
+    {
+      "seed": 789,
+      "legacy_heldout_mae": 5.45,
+      "mg_heldout_mae": 4.753372444321301,
+      "legacy_heldout_rmse": 6.165402682391841,
+      "mg_heldout_rmse": 5.406772318750599,
+      "legacy_heldout_r2": -0.13709916885270715,
+      "mg_heldout_r2": -0.014899048119044972,
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0,
+      "delta_r2": 0.0,
+      "improvement_pct": 12.782156984930253,
+      "expected_shadow_mae": 4.753372444321301,
+      "expected_shadow_rmse": 5.406772318750599,
+      "expected_shadow_r2": -0.014899048119044972,
+      "expected_improvement_pct": 12.782156984930253,
+      "delta_improvement_pct": 0.0,
+      "mg_coefficients": {
+        "motivation": -3.102887120621425,
+        "goals": -5.896878903382189,
+        "intercept": 5.595060650317936
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "motivation_signal": 0.0,
+          "goals_signal": 0.23,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.35200000000000004,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "ML Course",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.592,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "mg_activates": true,
+      "legacy_baseline_unchanged": true,
+      "simulation_semantics_unchanged": true,
+      "exact_mapping_used": true,
+      "no_coefficient_tuning": true,
+      "no_fallback": true,
+      "source_reported_as_mg": true,
+      "no_state_mutation": true,
+      "reproduces_validated_behavior": true,
+      "differences": []
+    },
+    {
+      "seed": 999,
+      "legacy_heldout_mae": 5.3375,
+      "mg_heldout_mae": 4.968745740887824,
+      "legacy_heldout_rmse": 6.117434188106186,
+      "mg_heldout_rmse": 5.699947712057726,
+      "legacy_heldout_r2": -1.6666948054888278,
+      "mg_heldout_r2": -1.6579652552136206,
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0,
+      "delta_r2": 0.0,
+      "improvement_pct": 6.908744901399085,
+      "expected_shadow_mae": 4.968745740887824,
+      "expected_shadow_rmse": 5.699947712057726,
+      "expected_shadow_r2": -1.6579652552136206,
+      "expected_improvement_pct": 6.908744901399085,
+      "delta_improvement_pct": 0.0,
+      "mg_coefficients": {
+        "motivation": -3.4943725920572044,
+        "goals": -5.102878916446432,
+        "intercept": 5.383562400207635
+      },
+      "metadata_samples": [
+        {
+          "experience_id": "research_exp_080_low_skill_practice",
+          "selected_action": "Build Portfolio",
+          "motivation_signal": 0.0,
+          "goals_signal": 0.215,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_081_medium_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.316875,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        },
+        {
+          "experience_id": "research_exp_082_high_skill_practice",
+          "selected_action": "Interview Prep",
+          "motivation_signal": 0.5,
+          "goals_signal": 0.556875,
+          "correction_applied": true,
+          "source": "mg",
+          "fallback_triggered": false,
+          "fallback_reason": null
+        }
+      ],
+      "mg_activates": true,
+      "legacy_baseline_unchanged": true,
+      "simulation_semantics_unchanged": true,
+      "exact_mapping_used": true,
+      "no_coefficient_tuning": true,
+      "no_fallback": true,
+      "source_reported_as_mg": true,
+      "no_state_mutation": true,
+      "reproduces_validated_behavior": true,
+      "differences": []
+    }
+  ]
+}

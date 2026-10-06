@@ -1,0 +1,34 @@
+{
+  "experiment_id": "research_17_1_c_interpretation",
+  "timestamp": "2026-08-12 16:34:03.274039",
+  "consistency": {
+    "analysis_type": "consistency",
+    "total_seeds": 5,
+    "seeds_with_improvement": 5,
+    "consistency_score": 100.0,
+    "is_consistent": true,
+    "evidence": "All 5 seeds show learning > baseline (5/5 wins, 100.0%)."
+  },
+  "meaningfulness": {
+    "analysis_type": "meaningfulness",
+    "average_improvement_percent": 10.090052456825926,
+    "median_improvement_percent": 9.482758620689653,
+    "min_improvement_percent": 6.479481641468683,
+    "max_improvement_percent": 14.05152224824356,
+    "std_dev": 2.8396452178354945,
+    "is_meaningful": true,
+    "evidence": "Average improvement is +10.09% (range: +6.48% to +14.05%), which is clearly meaningful. Low std dev (2.84) indicates stable effect."
+  },
+  "causality": {
+    "analysis_type": "causality",
+    "ablation_design": "Condition A (Baseline) vs Condition B (Learning) comparison",
+    "only_difference": "Condition A: SimulationEngine predictions (no calibration); Condition B: Predictions after online calibration (learning_rate=0.007)",
+    "baseline_is_stable": true,
+    "learning_is_stable": true,
+    "causal_conclusion": "The ablation design isolates the effect of calibration by holding all else constant (same dataset, same initial state, same evaluation). The sole difference is whether calibration is applied. Since learning consistently outperforms baseline across all seeds, the improvement is specifically caused by calibration."
+  },
+  "summary_statement": "Calibration produces consistent, meaningful improvement in held-out prediction accuracy across independent random datasets.",
+  "interpretation": "The ablation study demonstrates three key findings:\n  1. Consistency: All 5 seeds show learning > baseline (5/5 wins, 100.0%).\n  2. Meaningfulness: Average improvement is +10.09% (range: +6.48% to +14.05%), which is clearly meaningful. Low std dev (2.84) indicates stable effect.\n  3. Causality: Calibration is the only difference between conditions that explains the observed improvement.",
+  "conclusion": "Calibration is the component responsible for the observed prediction improvement. This effect is reproducible across different datasets (5 independent seeds), with an average improvement of +10.09% on held-out predictions. The causal link is established through experimental design isolating calibration as the sole treatment variable.",
+  "next_steps": "Phase 17.2: Investigate the mechanisms of calibration learning. Why does the learning system discover and correct systematic biases? Can we characterize the learning dynamics? Study calibration behavior across different error magnitudes, learning rates, and domain characteristics."
+}

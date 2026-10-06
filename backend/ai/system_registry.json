@@ -3,5 +3,6 @@
   "policy": "policy_v3",
   "retrieval": "retrieval_v2",
   "reasoning": "reasoning_v1",
-  "twin": "twin_v4"
+  "twin": "twin_v4",
+  "reflection": "reflection_v1"
 }

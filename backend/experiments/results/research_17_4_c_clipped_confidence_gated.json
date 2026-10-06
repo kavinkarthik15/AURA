@@ -1,0 +1,1084 @@
+{
+  "timestamp": "2026-08-13T11:07:04.659097",
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "variants": {
+        "original": {
+          "variant_name": "original",
+          "seed": 42,
+          "held_out_mae": 5.4125,
+          "improvement_vs_baseline": 0.375,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.75,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 2.716,
+            "machine_learning": 3.441,
+            "projects": 3.356,
+            "python": 2.87
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 4.3333,
+            "medium_skill_practice": 3.8333,
+            "high_skill_practice": 7.3333,
+            "low_motivation": 3.0,
+            "high_motivation": 2.875,
+            "mixed_skills": 2.5,
+            "project_completion": 14.125,
+            "plateau": 6.875
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "sign-aware-17.3": {
+          "variant_name": "sign-aware-17.3",
+          "seed": 42,
+          "held_out_mae": 5.3125,
+          "improvement_vs_baseline": 0.475,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.75,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.161,
+            "machine_learning": 2.993,
+            "projects": 2.992,
+            "python": 0.021
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.5,
+            "medium_skill_practice": 4.5,
+            "high_skill_practice": 5.8333,
+            "low_motivation": 2.3333,
+            "high_motivation": 2.375,
+            "mixed_skills": 2.5,
+            "project_completion": 15.625,
+            "plateau": 5.375
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "clipped": {
+          "variant_name": "clipped",
+          "seed": 42,
+          "held_out_mae": 5.7375,
+          "improvement_vs_baseline": 0.05,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.425,
+          "positive_bias_direction_accuracy": 0.5,
+          "negative_bias_direction_accuracy": 0.25,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0,
+            "machine_learning": 0.0239,
+            "projects": 0.0256,
+            "python": -0.0017
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.75,
+            "medium_skill_practice": 5.5833,
+            "high_skill_practice": 4.5833,
+            "low_motivation": 2.9167,
+            "high_motivation": 3.375,
+            "mixed_skills": 3.25,
+            "project_completion": 16.875,
+            "plateau": 4.125
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.5,
+            "medium_skill_practice": 0.5,
+            "high_skill_practice": 0.1667,
+            "low_motivation": 0.5,
+            "high_motivation": 0.5,
+            "mixed_skills": 0.5,
+            "project_completion": 0.5,
+            "plateau": 0.25
+          }
+        },
+        "confidence-gated": {
+          "variant_name": "confidence-gated",
+          "seed": 42,
+          "held_out_mae": 5.3125,
+          "improvement_vs_baseline": 0.475,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.75,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.161,
+            "machine_learning": 2.993,
+            "projects": 2.992,
+            "python": 0.021
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.5,
+            "medium_skill_practice": 4.5,
+            "high_skill_practice": 5.8333,
+            "low_motivation": 2.3333,
+            "high_motivation": 2.375,
+            "mixed_skills": 2.5,
+            "project_completion": 15.625,
+            "plateau": 5.375
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "clipped-confidence-gated": {
+          "variant_name": "clipped-confidence-gated",
+          "seed": 42,
+          "held_out_mae": 5.7375,
+          "improvement_vs_baseline": 0.05,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.425,
+          "positive_bias_direction_accuracy": 0.5,
+          "negative_bias_direction_accuracy": 0.25,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0,
+            "machine_learning": 0.0239,
+            "projects": 0.0256,
+            "python": -0.0017
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.75,
+            "medium_skill_practice": 5.5833,
+            "high_skill_practice": 4.5833,
+            "low_motivation": 2.9167,
+            "high_motivation": 3.375,
+            "mixed_skills": 3.25,
+            "project_completion": 16.875,
+            "plateau": 4.125
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.5,
+            "medium_skill_practice": 0.5,
+            "high_skill_practice": 0.1667,
+            "low_motivation": 0.5,
+            "high_motivation": 0.5,
+            "mixed_skills": 0.5,
+            "project_completion": 0.5,
+            "plateau": 0.25
+          }
+        }
+      },
+      "win_count": 5,
+      "category_degradation_count": 0
+    },
+    "123": {
+      "seed": 123,
+      "variants": {
+        "original": {
+          "variant_name": "original",
+          "seed": 123,
+          "held_out_mae": 5.075,
+          "improvement_vs_baseline": 0.5,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.775,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 2.716,
+            "machine_learning": 3.471,
+            "projects": 3.408,
+            "python": 2.716
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.0833,
+            "medium_skill_practice": 3.9167,
+            "high_skill_practice": 5.75,
+            "low_motivation": 4.1667,
+            "high_motivation": 3.125,
+            "mixed_skills": 3.75,
+            "project_completion": 8.25,
+            "plateau": 7.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.9167,
+            "high_motivation": 0.875,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "sign-aware-17.3": {
+          "variant_name": "sign-aware-17.3",
+          "seed": 123,
+          "held_out_mae": 4.975,
+          "improvement_vs_baseline": 0.6,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.775,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.42,
+            "machine_learning": 2.996,
+            "projects": 2.975,
+            "python": 0.049
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.4167,
+            "medium_skill_practice": 4.75,
+            "high_skill_practice": 4.4167,
+            "low_motivation": 3.1667,
+            "high_motivation": 1.875,
+            "mixed_skills": 4.25,
+            "project_completion": 9.75,
+            "plateau": 5.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.9167,
+            "high_motivation": 0.875,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "clipped": {
+          "variant_name": "clipped",
+          "seed": 123,
+          "held_out_mae": 5.575,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.775,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0013,
+            "machine_learning": 0.0235,
+            "projects": 0.0252,
+            "python": 0.0004
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 7.4167,
+            "medium_skill_practice": 5.75,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 4.1667,
+            "high_motivation": 2.875,
+            "mixed_skills": 5.25,
+            "project_completion": 10.75,
+            "plateau": 4.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.9167,
+            "high_motivation": 0.875,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "confidence-gated": {
+          "variant_name": "confidence-gated",
+          "seed": 123,
+          "held_out_mae": 4.975,
+          "improvement_vs_baseline": 0.6,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.775,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.42,
+            "machine_learning": 2.996,
+            "projects": 2.975,
+            "python": 0.049
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.4167,
+            "medium_skill_practice": 4.75,
+            "high_skill_practice": 4.4167,
+            "low_motivation": 3.1667,
+            "high_motivation": 1.875,
+            "mixed_skills": 4.25,
+            "project_completion": 9.75,
+            "plateau": 5.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.9167,
+            "high_motivation": 0.875,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "clipped-confidence-gated": {
+          "variant_name": "clipped-confidence-gated",
+          "seed": 123,
+          "held_out_mae": 5.575,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.775,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0013,
+            "machine_learning": 0.0235,
+            "projects": 0.0252,
+            "python": 0.0004
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 7.4167,
+            "medium_skill_practice": 5.75,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 4.1667,
+            "high_motivation": 2.875,
+            "mixed_skills": 5.25,
+            "project_completion": 10.75,
+            "plateau": 4.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.9167,
+            "high_motivation": 0.875,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        }
+      },
+      "win_count": 3,
+      "category_degradation_count": 0
+    },
+    "456": {
+      "seed": 456,
+      "variants": {
+        "original": {
+          "variant_name": "original",
+          "seed": 456,
+          "held_out_mae": 5.25,
+          "improvement_vs_baseline": 0.55,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.7875,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 2.583,
+            "machine_learning": 3.467,
+            "projects": 3.39,
+            "python": 2.639
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.5833,
+            "medium_skill_practice": 4.75,
+            "high_skill_practice": 6.4167,
+            "low_motivation": 4.1667,
+            "high_motivation": 2.25,
+            "mixed_skills": 3.0,
+            "project_completion": 9.625,
+            "plateau": 6.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0833,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.25
+          }
+        },
+        "sign-aware-17.3": {
+          "variant_name": "sign-aware-17.3",
+          "seed": 456,
+          "held_out_mae": 5.35,
+          "improvement_vs_baseline": 0.45,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.7875,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.308,
+            "machine_learning": 2.998,
+            "projects": 2.978,
+            "python": 0.028
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.5833,
+            "medium_skill_practice": 6.0833,
+            "high_skill_practice": 4.9167,
+            "low_motivation": 3.3333,
+            "high_motivation": 2.5,
+            "mixed_skills": 3.75,
+            "project_completion": 11.125,
+            "plateau": 4.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0833,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.25
+          }
+        },
+        "clipped": {
+          "variant_name": "clipped",
+          "seed": 456,
+          "held_out_mae": 5.8,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.7875,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0029,
+            "machine_learning": 0.0235,
+            "projects": 0.0227,
+            "python": 0.0008
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 7.5833,
+            "medium_skill_practice": 7.0833,
+            "high_skill_practice": 3.9167,
+            "low_motivation": 4.0,
+            "high_motivation": 3.5,
+            "mixed_skills": 4.75,
+            "project_completion": 12.125,
+            "plateau": 3.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0833,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.25
+          }
+        },
+        "confidence-gated": {
+          "variant_name": "confidence-gated",
+          "seed": 456,
+          "held_out_mae": 5.35,
+          "improvement_vs_baseline": 0.45,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.7875,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.308,
+            "machine_learning": 2.998,
+            "projects": 2.978,
+            "python": 0.028
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.5833,
+            "medium_skill_practice": 6.0833,
+            "high_skill_practice": 4.9167,
+            "low_motivation": 3.3333,
+            "high_motivation": 2.5,
+            "mixed_skills": 3.75,
+            "project_completion": 11.125,
+            "plateau": 4.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0833,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.25
+          }
+        },
+        "clipped-confidence-gated": {
+          "variant_name": "clipped-confidence-gated",
+          "seed": 456,
+          "held_out_mae": 5.8,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.7875,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0029,
+            "machine_learning": 0.0235,
+            "projects": 0.0227,
+            "python": 0.0008
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 7.5833,
+            "medium_skill_practice": 7.0833,
+            "high_skill_practice": 3.9167,
+            "low_motivation": 4.0,
+            "high_motivation": 3.5,
+            "mixed_skills": 4.75,
+            "project_completion": 12.125,
+            "plateau": 3.75
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.0833,
+            "low_motivation": 1.0,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.25
+          }
+        }
+      },
+      "win_count": 3,
+      "category_degradation_count": 0
+    },
+    "789": {
+      "seed": 789,
+      "variants": {
+        "original": {
+          "variant_name": "original",
+          "seed": 789,
+          "held_out_mae": 4.825,
+          "improvement_vs_baseline": 0.625,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.8,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 2.625,
+            "machine_learning": 3.258,
+            "projects": 3.292,
+            "python": 2.702
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 3.75,
+            "medium_skill_practice": 4.5833,
+            "high_skill_practice": 5.8333,
+            "low_motivation": 3.0,
+            "high_motivation": 1.75,
+            "mixed_skills": 3.75,
+            "project_completion": 9.0,
+            "plateau": 8.0
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.4167,
+            "low_motivation": 0.9167,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 0.0
+          }
+        },
+        "sign-aware-17.3": {
+          "variant_name": "sign-aware-17.3",
+          "seed": 789,
+          "held_out_mae": 4.975,
+          "improvement_vs_baseline": 0.475,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.625,
+          "positive_bias_direction_accuracy": 0.7344,
+          "negative_bias_direction_accuracy": 0.2308,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.336,
+            "machine_learning": 2.852,
+            "projects": 2.795,
+            "python": -0.035
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 4.8333,
+            "medium_skill_practice": 6.0,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 3.0833,
+            "high_motivation": 1.5,
+            "mixed_skills": 4.25,
+            "project_completion": 10.75,
+            "plateau": 6.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.6667,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.25
+          }
+        },
+        "clipped": {
+          "variant_name": "clipped",
+          "seed": 789,
+          "held_out_mae": 5.475,
+          "improvement_vs_baseline": -0.025,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.625,
+          "positive_bias_direction_accuracy": 0.7344,
+          "negative_bias_direction_accuracy": 0.2308,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0025,
+            "machine_learning": 0.0235,
+            "projects": 0.0231,
+            "python": -0.0008
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.8333,
+            "medium_skill_practice": 7.0,
+            "high_skill_practice": 3.4167,
+            "low_motivation": 3.75,
+            "high_motivation": 2.5,
+            "mixed_skills": 5.25,
+            "project_completion": 11.75,
+            "plateau": 5.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.6667,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.25
+          }
+        },
+        "confidence-gated": {
+          "variant_name": "confidence-gated",
+          "seed": 789,
+          "held_out_mae": 4.975,
+          "improvement_vs_baseline": 0.475,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.625,
+          "positive_bias_direction_accuracy": 0.7344,
+          "negative_bias_direction_accuracy": 0.2308,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.336,
+            "machine_learning": 2.852,
+            "projects": 2.795,
+            "python": -0.035
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 4.8333,
+            "medium_skill_practice": 6.0,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 3.0833,
+            "high_motivation": 1.5,
+            "mixed_skills": 4.25,
+            "project_completion": 10.75,
+            "plateau": 6.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.6667,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.25
+          }
+        },
+        "clipped-confidence-gated": {
+          "variant_name": "clipped-confidence-gated",
+          "seed": 789,
+          "held_out_mae": 5.475,
+          "improvement_vs_baseline": -0.025,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.625,
+          "positive_bias_direction_accuracy": 0.7344,
+          "negative_bias_direction_accuracy": 0.2308,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0025,
+            "machine_learning": 0.0235,
+            "projects": 0.0231,
+            "python": -0.0008
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.8333,
+            "medium_skill_practice": 7.0,
+            "high_skill_practice": 3.4167,
+            "low_motivation": 3.75,
+            "high_motivation": 2.5,
+            "mixed_skills": 5.25,
+            "project_completion": 11.75,
+            "plateau": 5.25
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.6667,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.25
+          }
+        }
+      },
+      "win_count": 3,
+      "category_degradation_count": 0
+    },
+    "999": {
+      "seed": 999,
+      "variants": {
+        "original": {
+          "variant_name": "original",
+          "seed": 999,
+          "held_out_mae": 4.5875,
+          "improvement_vs_baseline": 0.75,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.8625,
+          "positive_bias_direction_accuracy": 1.0,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 2.506,
+            "machine_learning": 3.356,
+            "projects": 3.431,
+            "python": 2.464
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 4.1667,
+            "medium_skill_practice": 3.5,
+            "high_skill_practice": 5.6667,
+            "low_motivation": 4.0,
+            "high_motivation": 3.0,
+            "mixed_skills": 2.625,
+            "project_completion": 10.375,
+            "plateau": 3.875
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 1.0,
+            "medium_skill_practice": 1.0,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.75,
+            "high_motivation": 1.0,
+            "mixed_skills": 1.0,
+            "project_completion": 1.0,
+            "plateau": 1.0
+          }
+        },
+        "sign-aware-17.3": {
+          "variant_name": "sign-aware-17.3",
+          "seed": 999,
+          "held_out_mae": 4.7125,
+          "improvement_vs_baseline": 0.625,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.6625,
+          "positive_bias_direction_accuracy": 0.7536,
+          "negative_bias_direction_accuracy": 0.1667,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.448,
+            "machine_learning": 2.999,
+            "projects": 2.983,
+            "python": -0.014
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.5833,
+            "medium_skill_practice": 5.25,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 2.75,
+            "high_motivation": 3.5,
+            "mixed_skills": 2.875,
+            "project_completion": 12.125,
+            "plateau": 2.125
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.5833,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.75
+          }
+        },
+        "clipped": {
+          "variant_name": "clipped",
+          "seed": 999,
+          "held_out_mae": 5.3375,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.65,
+          "positive_bias_direction_accuracy": 0.7536,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0025,
+            "machine_learning": 0.0273,
+            "projects": 0.0244,
+            "python": 0.0
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.3333,
+            "medium_skill_practice": 6.0,
+            "high_skill_practice": 3.8333,
+            "low_motivation": 3.0,
+            "high_motivation": 4.5,
+            "mixed_skills": 3.875,
+            "project_completion": 12.875,
+            "plateau": 3.375
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.25,
+            "low_motivation": 0.5833,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.75
+          }
+        },
+        "confidence-gated": {
+          "variant_name": "confidence-gated",
+          "seed": 999,
+          "held_out_mae": 4.7125,
+          "improvement_vs_baseline": 0.625,
+          "beats_baseline": true,
+          "overall_direction_accuracy": 0.6625,
+          "positive_bias_direction_accuracy": 0.7536,
+          "negative_bias_direction_accuracy": 0.1667,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.448,
+            "machine_learning": 2.999,
+            "projects": 2.983,
+            "python": -0.014
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 5.5833,
+            "medium_skill_practice": 5.25,
+            "high_skill_practice": 4.0833,
+            "low_motivation": 2.75,
+            "high_motivation": 3.5,
+            "mixed_skills": 2.875,
+            "project_completion": 12.125,
+            "plateau": 2.125
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.3333,
+            "low_motivation": 0.5833,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.75
+          }
+        },
+        "clipped-confidence-gated": {
+          "variant_name": "clipped-confidence-gated",
+          "seed": 999,
+          "held_out_mae": 5.3375,
+          "improvement_vs_baseline": 0.0,
+          "beats_baseline": false,
+          "overall_direction_accuracy": 0.65,
+          "positive_bias_direction_accuracy": 0.7536,
+          "negative_bias_direction_accuracy": 0.0,
+          "max_absolute_parameter_drift": 0.0,
+          "final_expected_state_bias": {
+            "dsa": 0.0025,
+            "machine_learning": 0.0273,
+            "projects": 0.0244,
+            "python": 0.0
+          },
+          "updates_accepted": 0,
+          "updates_rejected": 0,
+          "per_category_mae": {
+            "low_skill_practice": 6.3333,
+            "medium_skill_practice": 6.0,
+            "high_skill_practice": 3.8333,
+            "low_motivation": 3.0,
+            "high_motivation": 4.5,
+            "mixed_skills": 3.875,
+            "project_completion": 12.875,
+            "plateau": 3.375
+          },
+          "per_category_direction_accuracy": {
+            "low_skill_practice": 0.75,
+            "medium_skill_practice": 0.75,
+            "high_skill_practice": 0.25,
+            "low_motivation": 0.5833,
+            "high_motivation": 0.75,
+            "mixed_skills": 0.75,
+            "project_completion": 0.75,
+            "plateau": 0.75
+          }
+        }
+      },
+      "win_count": 3,
+      "category_degradation_count": 0
+    }
+  },
+  "variant_statistics": {
+    "original": {
+      "variant_name": "original",
+      "seed_results_count": 5,
+      "win_count": 5,
+      "win_rate": 1.0,
+      "mean_improvement": 0.56,
+      "std_dev_improvement": 0.1399,
+      "mean_direction_accuracy": 0.795,
+      "mean_positive_bias_direction_accuracy": 1.0,
+      "mean_negative_bias_direction_accuracy": 0.0,
+      "passes_primary_criterion": true,
+      "passes_ideal_criterion": false
+    },
+    "sign-aware-17.3": {
+      "variant_name": "sign-aware-17.3",
+      "seed_results_count": 5,
+      "win_count": 5,
+      "win_rate": 1.0,
+      "mean_improvement": 0.525,
+      "std_dev_improvement": 0.081,
+      "mean_direction_accuracy": 0.72,
+      "mean_positive_bias_direction_accuracy": 0.8976,
+      "mean_negative_bias_direction_accuracy": 0.0795,
+      "passes_primary_criterion": true,
+      "passes_ideal_criterion": false
+    },
+    "clipped": {
+      "variant_name": "clipped",
+      "seed_results_count": 5,
+      "win_count": 1,
+      "win_rate": 0.2,
+      "mean_improvement": 0.005,
+      "std_dev_improvement": 0.0274,
+      "mean_direction_accuracy": 0.6525,
+      "mean_positive_bias_direction_accuracy": 0.7976,
+      "mean_negative_bias_direction_accuracy": 0.0962,
+      "passes_primary_criterion": false,
+      "passes_ideal_criterion": false
+    },
+    "confidence-gated": {
+      "variant_name": "confidence-gated",
+      "seed_results_count": 5,
+      "win_count": 5,
+      "win_rate": 1.0,
+      "mean_improvement": 0.525,
+      "std_dev_improvement": 0.081,
+      "mean_direction_accuracy": 0.72,
+      "mean_positive_bias_direction_accuracy": 0.8976,
+      "mean_negative_bias_direction_accuracy": 0.0795,
+      "passes_primary_criterion": true,
+      "passes_ideal_criterion": false
+    },
+    "clipped-confidence-gated": {
+      "variant_name": "clipped-confidence-gated",
+      "seed_results_count": 5,
+      "win_count": 1,
+      "win_rate": 0.2,
+      "mean_improvement": 0.005,
+      "std_dev_improvement": 0.0274,
+      "mean_direction_accuracy": 0.6525,
+      "mean_positive_bias_direction_accuracy": 0.7976,
+      "mean_negative_bias_direction_accuracy": 0.0962,
+      "passes_primary_criterion": false,
+      "passes_ideal_criterion": false
+    }
+  },
+  "recommended_variant": null,
+  "success_summary": ""
+}

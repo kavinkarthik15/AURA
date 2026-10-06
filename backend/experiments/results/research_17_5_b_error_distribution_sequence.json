@@ -1,0 +1,562 @@
+{
+  "analysis_date": "2026-08-13T12:00:31.322104",
+  "learning_rate": 0.007,
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 80,
+      "balance_metrics": {
+        "positive_error_count": 55,
+        "negative_error_count": 25,
+        "zero_error_count": 0,
+        "positive_error_ratio": 0.6875,
+        "negative_error_ratio": 0.3125,
+        "mean_signed_error": 3.228125,
+        "median_signed_error": 2.5,
+        "std_signed_error": 5.790951277038857
+      },
+      "magnitude_metrics": {
+        "mean_abs_error": 5.053125,
+        "median_abs_error": 3.875,
+        "max_abs_error": 17.5,
+        "percentile_95_abs_error": 14.774999999999999
+      },
+      "sequence_metrics": {
+        "longest_positive_streak": 4,
+        "longest_negative_streak": 2,
+        "positive_to_negative_transitions": 20,
+        "negative_to_positive_transitions": 19,
+        "early_mean_signed_error": 3.8125,
+        "early_mid_mean_signed_error": 3.234375,
+        "mid_mean_signed_error": 2.640625,
+        "mid_late_mean_signed_error": 3.0625,
+        "late_mean_signed_error": 3.390625
+      },
+      "cumulative_metrics": {
+        "final_cumulative_error": 258.25,
+        "final_cumulative_abs_error": 404.25,
+        "cumulative_error_trajectory_length": 80
+      },
+      "category_stats": {
+        "low_skill_practice": {
+          "category_name": "low_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 5.475,
+          "mean_abs_error": 5.475,
+          "total_events": 10
+        },
+        "medium_skill_practice": {
+          "category_name": "medium_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 7.725,
+          "mean_abs_error": 7.725,
+          "total_events": 10
+        },
+        "high_skill_practice": {
+          "category_name": "high_skill_practice",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.75,
+          "mean_abs_error": 3.75,
+          "total_events": 10
+        },
+        "low_motivation": {
+          "category_name": "low_motivation",
+          "positive_error_count": 5,
+          "negative_error_count": 5,
+          "zero_error_count": 0,
+          "mean_signed_error": 0.575,
+          "mean_abs_error": 1.625,
+          "total_events": 10
+        },
+        "high_motivation": {
+          "category_name": "high_motivation",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 1.6,
+          "mean_abs_error": 1.6,
+          "total_events": 10
+        },
+        "mixed_skills": {
+          "category_name": "mixed_skills",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 3.225,
+          "mean_abs_error": 3.225,
+          "total_events": 10
+        },
+        "project_completion": {
+          "category_name": "project_completion",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 14.0,
+          "mean_abs_error": 14.0,
+          "total_events": 10
+        },
+        "plateau": {
+          "category_name": "plateau",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.025,
+          "mean_abs_error": 3.025,
+          "total_events": 10
+        }
+      },
+      "final_mae": 5.053125
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 80,
+      "balance_metrics": {
+        "positive_error_count": 52,
+        "negative_error_count": 27,
+        "zero_error_count": 1,
+        "positive_error_ratio": 0.65,
+        "negative_error_ratio": 0.3375,
+        "mean_signed_error": 3.371875,
+        "median_signed_error": 3.125,
+        "std_signed_error": 6.056170844736211
+      },
+      "magnitude_metrics": {
+        "mean_abs_error": 5.221875,
+        "median_abs_error": 4.125,
+        "max_abs_error": 17.75,
+        "percentile_95_abs_error": 16.7625
+      },
+      "sequence_metrics": {
+        "longest_positive_streak": 4,
+        "longest_negative_streak": 2,
+        "positive_to_negative_transitions": 23,
+        "negative_to_positive_transitions": 22,
+        "early_mean_signed_error": 2.5,
+        "early_mid_mean_signed_error": 3.4375,
+        "mid_mean_signed_error": 3.796875,
+        "mid_late_mean_signed_error": 3.9375,
+        "late_mean_signed_error": 3.1875
+      },
+      "cumulative_metrics": {
+        "final_cumulative_error": 269.75,
+        "final_cumulative_abs_error": 417.75,
+        "cumulative_error_trajectory_length": 80
+      },
+      "category_stats": {
+        "low_skill_practice": {
+          "category_name": "low_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 5.575,
+          "mean_abs_error": 5.575,
+          "total_events": 10
+        },
+        "medium_skill_practice": {
+          "category_name": "medium_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.825,
+          "mean_abs_error": 6.825,
+          "total_events": 10
+        },
+        "high_skill_practice": {
+          "category_name": "high_skill_practice",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.975,
+          "mean_abs_error": 3.975,
+          "total_events": 10
+        },
+        "low_motivation": {
+          "category_name": "low_motivation",
+          "positive_error_count": 5,
+          "negative_error_count": 4,
+          "zero_error_count": 1,
+          "mean_signed_error": -0.025,
+          "mean_abs_error": 1.225,
+          "total_events": 10
+        },
+        "high_motivation": {
+          "category_name": "high_motivation",
+          "positive_error_count": 7,
+          "negative_error_count": 3,
+          "zero_error_count": 0,
+          "mean_signed_error": 2.175,
+          "mean_abs_error": 2.525,
+          "total_events": 10
+        },
+        "mixed_skills": {
+          "category_name": "mixed_skills",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 3.45,
+          "mean_abs_error": 3.45,
+          "total_events": 10
+        },
+        "project_completion": {
+          "category_name": "project_completion",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 15.575,
+          "mean_abs_error": 15.575,
+          "total_events": 10
+        },
+        "plateau": {
+          "category_name": "plateau",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -2.625,
+          "mean_abs_error": 2.625,
+          "total_events": 10
+        }
+      },
+      "final_mae": 5.221875
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 80,
+      "balance_metrics": {
+        "positive_error_count": 56,
+        "negative_error_count": 24,
+        "zero_error_count": 0,
+        "positive_error_ratio": 0.7,
+        "negative_error_ratio": 0.3,
+        "mean_signed_error": 3.346875,
+        "median_signed_error": 3.25,
+        "std_signed_error": 5.51070502364216
+      },
+      "magnitude_metrics": {
+        "mean_abs_error": 5.215625,
+        "median_abs_error": 4.25,
+        "max_abs_error": 17.25,
+        "percentile_95_abs_error": 12.524999999999999
+      },
+      "sequence_metrics": {
+        "longest_positive_streak": 4,
+        "longest_negative_streak": 2,
+        "positive_to_negative_transitions": 22,
+        "negative_to_positive_transitions": 21,
+        "early_mean_signed_error": 3.375,
+        "early_mid_mean_signed_error": 3.515625,
+        "mid_mean_signed_error": 2.953125,
+        "mid_late_mean_signed_error": 3.59375,
+        "late_mean_signed_error": 3.296875
+      },
+      "cumulative_metrics": {
+        "final_cumulative_error": 267.75,
+        "final_cumulative_abs_error": 417.25,
+        "cumulative_error_trajectory_length": 80
+      },
+      "category_stats": {
+        "low_skill_practice": {
+          "category_name": "low_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.425,
+          "mean_abs_error": 6.425,
+          "total_events": 10
+        },
+        "medium_skill_practice": {
+          "category_name": "medium_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.55,
+          "mean_abs_error": 6.55,
+          "total_events": 10
+        },
+        "high_skill_practice": {
+          "category_name": "high_skill_practice",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -2.85,
+          "mean_abs_error": 2.85,
+          "total_events": 10
+        },
+        "low_motivation": {
+          "category_name": "low_motivation",
+          "positive_error_count": 8,
+          "negative_error_count": 2,
+          "zero_error_count": 0,
+          "mean_signed_error": 1.4,
+          "mean_abs_error": 2.05,
+          "total_events": 10
+        },
+        "high_motivation": {
+          "category_name": "high_motivation",
+          "positive_error_count": 8,
+          "negative_error_count": 2,
+          "zero_error_count": 0,
+          "mean_signed_error": 1.775,
+          "mean_abs_error": 2.725,
+          "total_events": 10
+        },
+        "mixed_skills": {
+          "category_name": "mixed_skills",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 4.175,
+          "mean_abs_error": 4.175,
+          "total_events": 10
+        },
+        "project_completion": {
+          "category_name": "project_completion",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 13.125,
+          "mean_abs_error": 13.125,
+          "total_events": 10
+        },
+        "plateau": {
+          "category_name": "plateau",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.825,
+          "mean_abs_error": 3.825,
+          "total_events": 10
+        }
+      },
+      "final_mae": 5.215625
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 80,
+      "balance_metrics": {
+        "positive_error_count": 51,
+        "negative_error_count": 28,
+        "zero_error_count": 1,
+        "positive_error_ratio": 0.6375,
+        "negative_error_ratio": 0.35,
+        "mean_signed_error": 3.08125,
+        "median_signed_error": 3.125,
+        "std_signed_error": 5.675532512795383
+      },
+      "magnitude_metrics": {
+        "mean_abs_error": 5.03125,
+        "median_abs_error": 4.25,
+        "max_abs_error": 19.0,
+        "percentile_95_abs_error": 13.274999999999999
+      },
+      "sequence_metrics": {
+        "longest_positive_streak": 4,
+        "longest_negative_streak": 3,
+        "positive_to_negative_transitions": 22,
+        "negative_to_positive_transitions": 21,
+        "early_mean_signed_error": 2.578125,
+        "early_mid_mean_signed_error": 2.8125,
+        "mid_mean_signed_error": 3.65625,
+        "mid_late_mean_signed_error": 3.71875,
+        "late_mean_signed_error": 2.640625
+      },
+      "cumulative_metrics": {
+        "final_cumulative_error": 246.5,
+        "final_cumulative_abs_error": 402.5,
+        "cumulative_error_trajectory_length": 80
+      },
+      "category_stats": {
+        "low_skill_practice": {
+          "category_name": "low_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 5.625,
+          "mean_abs_error": 5.625,
+          "total_events": 10
+        },
+        "medium_skill_practice": {
+          "category_name": "medium_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.85,
+          "mean_abs_error": 6.85,
+          "total_events": 10
+        },
+        "high_skill_practice": {
+          "category_name": "high_skill_practice",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.6,
+          "mean_abs_error": 3.6,
+          "total_events": 10
+        },
+        "low_motivation": {
+          "category_name": "low_motivation",
+          "positive_error_count": 5,
+          "negative_error_count": 4,
+          "zero_error_count": 1,
+          "mean_signed_error": 0.55,
+          "mean_abs_error": 1.4,
+          "total_events": 10
+        },
+        "high_motivation": {
+          "category_name": "high_motivation",
+          "positive_error_count": 6,
+          "negative_error_count": 4,
+          "zero_error_count": 0,
+          "mean_signed_error": 2.0,
+          "mean_abs_error": 2.6,
+          "total_events": 10
+        },
+        "mixed_skills": {
+          "category_name": "mixed_skills",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 3.2,
+          "mean_abs_error": 3.2,
+          "total_events": 10
+        },
+        "project_completion": {
+          "category_name": "project_completion",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 13.5,
+          "mean_abs_error": 13.5,
+          "total_events": 10
+        },
+        "plateau": {
+          "category_name": "plateau",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.475,
+          "mean_abs_error": 3.475,
+          "total_events": 10
+        }
+      },
+      "final_mae": 5.03125
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 80,
+      "balance_metrics": {
+        "positive_error_count": 54,
+        "negative_error_count": 26,
+        "zero_error_count": 0,
+        "positive_error_ratio": 0.675,
+        "negative_error_ratio": 0.325,
+        "mean_signed_error": 3.321875,
+        "median_signed_error": 3.0,
+        "std_signed_error": 5.328778113855827
+      },
+      "magnitude_metrics": {
+        "mean_abs_error": 4.934375,
+        "median_abs_error": 4.0,
+        "max_abs_error": 16.5,
+        "percentile_95_abs_error": 13.5125
+      },
+      "sequence_metrics": {
+        "longest_positive_streak": 4,
+        "longest_negative_streak": 3,
+        "positive_to_negative_transitions": 22,
+        "negative_to_positive_transitions": 21,
+        "early_mean_signed_error": 3.890625,
+        "early_mid_mean_signed_error": 3.703125,
+        "mid_mean_signed_error": 2.5,
+        "mid_late_mean_signed_error": 3.125,
+        "late_mean_signed_error": 3.390625
+      },
+      "cumulative_metrics": {
+        "final_cumulative_error": 265.75,
+        "final_cumulative_abs_error": 394.75,
+        "cumulative_error_trajectory_length": 80
+      },
+      "category_stats": {
+        "low_skill_practice": {
+          "category_name": "low_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.8,
+          "mean_abs_error": 6.8,
+          "total_events": 10
+        },
+        "medium_skill_practice": {
+          "category_name": "medium_skill_practice",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 6.15,
+          "mean_abs_error": 6.15,
+          "total_events": 10
+        },
+        "high_skill_practice": {
+          "category_name": "high_skill_practice",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -2.75,
+          "mean_abs_error": 2.75,
+          "total_events": 10
+        },
+        "low_motivation": {
+          "category_name": "low_motivation",
+          "positive_error_count": 8,
+          "negative_error_count": 2,
+          "zero_error_count": 0,
+          "mean_signed_error": 1.175,
+          "mean_abs_error": 1.575,
+          "total_events": 10
+        },
+        "high_motivation": {
+          "category_name": "high_motivation",
+          "positive_error_count": 6,
+          "negative_error_count": 4,
+          "zero_error_count": 0,
+          "mean_signed_error": 1.45,
+          "mean_abs_error": 2.45,
+          "total_events": 10
+        },
+        "mixed_skills": {
+          "category_name": "mixed_skills",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 3.775,
+          "mean_abs_error": 3.775,
+          "total_events": 10
+        },
+        "project_completion": {
+          "category_name": "project_completion",
+          "positive_error_count": 10,
+          "negative_error_count": 0,
+          "zero_error_count": 0,
+          "mean_signed_error": 12.975,
+          "mean_abs_error": 12.975,
+          "total_events": 10
+        },
+        "plateau": {
+          "category_name": "plateau",
+          "positive_error_count": 0,
+          "negative_error_count": 10,
+          "zero_error_count": 0,
+          "mean_signed_error": -3.0,
+          "mean_abs_error": 3.0,
+          "total_events": 10
+        }
+      },
+      "final_mae": 4.934375
+    }
+  }
+}

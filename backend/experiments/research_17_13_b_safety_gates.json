@@ -1,0 +1,645 @@
+{
+  "timestamp": "2026-08-13T22:49:12.691291",
+  "test_name": "17.13B Safety Gate Tests",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "total_gates": 10,
+  "total_seeds": 5,
+  "gate_pass_counts": {
+    "G1": 5,
+    "G2": 5,
+    "G3": 5,
+    "G4": 5,
+    "G5": 5,
+    "G6": 5,
+    "G7": 5,
+    "G8": 5,
+    "G9": 5,
+    "G10": 5
+  },
+  "total_passes": 50,
+  "expected_passes": 50,
+  "all_gates_pass": true,
+  "results_by_seed": {
+    "42": {
+      "seed": 42,
+      "timestamp": "2026-08-13T22:49:12.649361",
+      "mg_disabled_mode": false,
+      "gate_g1_isolation": {
+        "gate_number": "G1",
+        "gate_name": "Isolation",
+        "passed": true,
+        "detail": "MG is isolated in separate layer, not in SimulationEngine",
+        "evidence": {
+          "has_mg_layer": true,
+          "layer_type": "MGCompatibilityLayer"
+        }
+      },
+      "gate_g2_disabled_identity": {
+        "gate_number": "G2",
+        "gate_name": "Disabled Identity",
+        "passed": true,
+        "detail": "With MG disabled, all 10 predictions use legacy source",
+        "evidence": {
+          "total_predictions": 10,
+          "legacy_count": 10,
+          "mg_count": 0
+        }
+      },
+      "gate_g3_config_contract": {
+        "gate_number": "G3",
+        "gate_name": "Config Contract Explicit",
+        "passed": true,
+        "detail": "Configuration is in single MGCompatibilityConfig object",
+        "evidence": {
+          "config_type": "MGCompatibilityConfig",
+          "has_enabled": true,
+          "has_coefficients": true
+        }
+      },
+      "gate_g4_external_coefficients": {
+        "gate_number": "G4",
+        "gate_name": "External Coefficients",
+        "passed": true,
+        "detail": "Coefficients are externally set, not hardcoded",
+        "evidence": {
+          "motivation_coeff": 0.45,
+          "goals_coeff": 0.38,
+          "intercept_coeff": 0.05
+        }
+      },
+      "gate_g5_fallback_rules": {
+        "gate_number": "G5",
+        "gate_name": "Fallback Rules",
+        "passed": true,
+        "detail": "Fallback rate 0.00% within threshold 5.00%",
+        "evidence": {
+          "fallback_rate": 0.0,
+          "threshold": 0.05,
+          "total_calls": 11,
+          "fallback_calls": 0
+        }
+      },
+      "gate_g6_no_mutation": {
+        "gate_number": "G6",
+        "gate_name": "No State Mutation",
+        "passed": true,
+        "detail": "Input state dict not modified by simulate_action",
+        "evidence": {
+          "original_state": {
+            "python": 26,
+            "dsa": 24,
+            "machine_learning": 14,
+            "projects": 16
+          },
+          "state_after": {
+            "python": 26,
+            "dsa": 24,
+            "machine_learning": 14,
+            "projects": 16
+          }
+        }
+      },
+      "gate_g7_observable_source": {
+        "gate_number": "G7",
+        "gate_name": "Observable Source",
+        "passed": true,
+        "detail": "Every prediction has observable _mg_metadata with source",
+        "evidence": {
+          "predictions_with_metadata": 10,
+          "total_predictions": 10,
+          "sources": [
+            "mg"
+          ]
+        }
+      },
+      "gate_g8_shadow_isolation": {
+        "gate_number": "G8",
+        "gate_name": "Shadow Isolation",
+        "passed": true,
+        "detail": "Shadow config has enabled=False, no active prediction changes",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      },
+      "gate_g9_rollback_config_only": {
+        "gate_number": "G9",
+        "gate_name": "Rollback Config-Only",
+        "passed": true,
+        "detail": "Rollback to disabled requires only config change, no code deployment",
+        "evidence": {
+          "rollback_type": "MGCompatibilityConfig",
+          "enabled": false
+        }
+      },
+      "gate_g10_default_disabled": {
+        "gate_number": "G10",
+        "gate_name": "Default Disabled",
+        "passed": true,
+        "detail": "Default MGCompatibilityConfig has enabled=False",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      }
+    },
+    "123": {
+      "seed": 123,
+      "timestamp": "2026-08-13T22:49:12.659725",
+      "mg_disabled_mode": false,
+      "gate_g1_isolation": {
+        "gate_number": "G1",
+        "gate_name": "Isolation",
+        "passed": true,
+        "detail": "MG is isolated in separate layer, not in SimulationEngine",
+        "evidence": {
+          "has_mg_layer": true,
+          "layer_type": "MGCompatibilityLayer"
+        }
+      },
+      "gate_g2_disabled_identity": {
+        "gate_number": "G2",
+        "gate_name": "Disabled Identity",
+        "passed": true,
+        "detail": "With MG disabled, all 10 predictions use legacy source",
+        "evidence": {
+          "total_predictions": 10,
+          "legacy_count": 10,
+          "mg_count": 0
+        }
+      },
+      "gate_g3_config_contract": {
+        "gate_number": "G3",
+        "gate_name": "Config Contract Explicit",
+        "passed": true,
+        "detail": "Configuration is in single MGCompatibilityConfig object",
+        "evidence": {
+          "config_type": "MGCompatibilityConfig",
+          "has_enabled": true,
+          "has_coefficients": true
+        }
+      },
+      "gate_g4_external_coefficients": {
+        "gate_number": "G4",
+        "gate_name": "External Coefficients",
+        "passed": true,
+        "detail": "Coefficients are externally set, not hardcoded",
+        "evidence": {
+          "motivation_coeff": 0.52,
+          "goals_coeff": 0.42,
+          "intercept_coeff": 0.08
+        }
+      },
+      "gate_g5_fallback_rules": {
+        "gate_number": "G5",
+        "gate_name": "Fallback Rules",
+        "passed": true,
+        "detail": "Fallback rate 0.00% within threshold 5.00%",
+        "evidence": {
+          "fallback_rate": 0.0,
+          "threshold": 0.05,
+          "total_calls": 11,
+          "fallback_calls": 0
+        }
+      },
+      "gate_g6_no_mutation": {
+        "gate_number": "G6",
+        "gate_name": "No State Mutation",
+        "passed": true,
+        "detail": "Input state dict not modified by simulate_action",
+        "evidence": {
+          "original_state": {
+            "python": 22,
+            "dsa": 15,
+            "machine_learning": 17,
+            "projects": 24
+          },
+          "state_after": {
+            "python": 22,
+            "dsa": 15,
+            "machine_learning": 17,
+            "projects": 24
+          }
+        }
+      },
+      "gate_g7_observable_source": {
+        "gate_number": "G7",
+        "gate_name": "Observable Source",
+        "passed": true,
+        "detail": "Every prediction has observable _mg_metadata with source",
+        "evidence": {
+          "predictions_with_metadata": 10,
+          "total_predictions": 10,
+          "sources": [
+            "mg"
+          ]
+        }
+      },
+      "gate_g8_shadow_isolation": {
+        "gate_number": "G8",
+        "gate_name": "Shadow Isolation",
+        "passed": true,
+        "detail": "Shadow config has enabled=False, no active prediction changes",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      },
+      "gate_g9_rollback_config_only": {
+        "gate_number": "G9",
+        "gate_name": "Rollback Config-Only",
+        "passed": true,
+        "detail": "Rollback to disabled requires only config change, no code deployment",
+        "evidence": {
+          "rollback_type": "MGCompatibilityConfig",
+          "enabled": false
+        }
+      },
+      "gate_g10_default_disabled": {
+        "gate_number": "G10",
+        "gate_name": "Default Disabled",
+        "passed": true,
+        "detail": "Default MGCompatibilityConfig has enabled=False",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      }
+    },
+    "456": {
+      "seed": 456,
+      "timestamp": "2026-08-13T22:49:12.670068",
+      "mg_disabled_mode": false,
+      "gate_g1_isolation": {
+        "gate_number": "G1",
+        "gate_name": "Isolation",
+        "passed": true,
+        "detail": "MG is isolated in separate layer, not in SimulationEngine",
+        "evidence": {
+          "has_mg_layer": true,
+          "layer_type": "MGCompatibilityLayer"
+        }
+      },
+      "gate_g2_disabled_identity": {
+        "gate_number": "G2",
+        "gate_name": "Disabled Identity",
+        "passed": true,
+        "detail": "With MG disabled, all 10 predictions use legacy source",
+        "evidence": {
+          "total_predictions": 10,
+          "legacy_count": 10,
+          "mg_count": 0
+        }
+      },
+      "gate_g3_config_contract": {
+        "gate_number": "G3",
+        "gate_name": "Config Contract Explicit",
+        "passed": true,
+        "detail": "Configuration is in single MGCompatibilityConfig object",
+        "evidence": {
+          "config_type": "MGCompatibilityConfig",
+          "has_enabled": true,
+          "has_coefficients": true
+        }
+      },
+      "gate_g4_external_coefficients": {
+        "gate_number": "G4",
+        "gate_name": "External Coefficients",
+        "passed": true,
+        "detail": "Coefficients are externally set, not hardcoded",
+        "evidence": {
+          "motivation_coeff": 0.48,
+          "goals_coeff": 0.4,
+          "intercept_coeff": 0.06
+        }
+      },
+      "gate_g5_fallback_rules": {
+        "gate_number": "G5",
+        "gate_name": "Fallback Rules",
+        "passed": true,
+        "detail": "Fallback rate 0.00% within threshold 5.00%",
+        "evidence": {
+          "fallback_rate": 0.0,
+          "threshold": 0.05,
+          "total_calls": 11,
+          "fallback_calls": 0
+        }
+      },
+      "gate_g6_no_mutation": {
+        "gate_number": "G6",
+        "gate_name": "No State Mutation",
+        "passed": true,
+        "detail": "Input state dict not modified by simulate_action",
+        "evidence": {
+          "original_state": {
+            "python": 26,
+            "dsa": 25,
+            "machine_learning": 18,
+            "projects": 23
+          },
+          "state_after": {
+            "python": 26,
+            "dsa": 25,
+            "machine_learning": 18,
+            "projects": 23
+          }
+        }
+      },
+      "gate_g7_observable_source": {
+        "gate_number": "G7",
+        "gate_name": "Observable Source",
+        "passed": true,
+        "detail": "Every prediction has observable _mg_metadata with source",
+        "evidence": {
+          "predictions_with_metadata": 10,
+          "total_predictions": 10,
+          "sources": [
+            "mg"
+          ]
+        }
+      },
+      "gate_g8_shadow_isolation": {
+        "gate_number": "G8",
+        "gate_name": "Shadow Isolation",
+        "passed": true,
+        "detail": "Shadow config has enabled=False, no active prediction changes",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      },
+      "gate_g9_rollback_config_only": {
+        "gate_number": "G9",
+        "gate_name": "Rollback Config-Only",
+        "passed": true,
+        "detail": "Rollback to disabled requires only config change, no code deployment",
+        "evidence": {
+          "rollback_type": "MGCompatibilityConfig",
+          "enabled": false
+        }
+      },
+      "gate_g10_default_disabled": {
+        "gate_number": "G10",
+        "gate_name": "Default Disabled",
+        "passed": true,
+        "detail": "Default MGCompatibilityConfig has enabled=False",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      }
+    },
+    "789": {
+      "seed": 789,
+      "timestamp": "2026-08-13T22:49:12.680651",
+      "mg_disabled_mode": false,
+      "gate_g1_isolation": {
+        "gate_number": "G1",
+        "gate_name": "Isolation",
+        "passed": true,
+        "detail": "MG is isolated in separate layer, not in SimulationEngine",
+        "evidence": {
+          "has_mg_layer": true,
+          "layer_type": "MGCompatibilityLayer"
+        }
+      },
+      "gate_g2_disabled_identity": {
+        "gate_number": "G2",
+        "gate_name": "Disabled Identity",
+        "passed": true,
+        "detail": "With MG disabled, all 10 predictions use legacy source",
+        "evidence": {
+          "total_predictions": 10,
+          "legacy_count": 10,
+          "mg_count": 0
+        }
+      },
+      "gate_g3_config_contract": {
+        "gate_number": "G3",
+        "gate_name": "Config Contract Explicit",
+        "passed": true,
+        "detail": "Configuration is in single MGCompatibilityConfig object",
+        "evidence": {
+          "config_type": "MGCompatibilityConfig",
+          "has_enabled": true,
+          "has_coefficients": true
+        }
+      },
+      "gate_g4_external_coefficients": {
+        "gate_number": "G4",
+        "gate_name": "External Coefficients",
+        "passed": true,
+        "detail": "Coefficients are externally set, not hardcoded",
+        "evidence": {
+          "motivation_coeff": 0.5,
+          "goals_coeff": 0.39,
+          "intercept_coeff": 0.07
+        }
+      },
+      "gate_g5_fallback_rules": {
+        "gate_number": "G5",
+        "gate_name": "Fallback Rules",
+        "passed": true,
+        "detail": "Fallback rate 0.00% within threshold 5.00%",
+        "evidence": {
+          "fallback_rate": 0.0,
+          "threshold": 0.05,
+          "total_calls": 11,
+          "fallback_calls": 0
+        }
+      },
+      "gate_g6_no_mutation": {
+        "gate_number": "G6",
+        "gate_name": "No State Mutation",
+        "passed": true,
+        "detail": "Input state dict not modified by simulate_action",
+        "evidence": {
+          "original_state": {
+            "python": 33,
+            "dsa": 25,
+            "machine_learning": 16,
+            "projects": 18
+          },
+          "state_after": {
+            "python": 33,
+            "dsa": 25,
+            "machine_learning": 16,
+            "projects": 18
+          }
+        }
+      },
+      "gate_g7_observable_source": {
+        "gate_number": "G7",
+        "gate_name": "Observable Source",
+        "passed": true,
+        "detail": "Every prediction has observable _mg_metadata with source",
+        "evidence": {
+          "predictions_with_metadata": 10,
+          "total_predictions": 10,
+          "sources": [
+            "mg"
+          ]
+        }
+      },
+      "gate_g8_shadow_isolation": {
+        "gate_number": "G8",
+        "gate_name": "Shadow Isolation",
+        "passed": true,
+        "detail": "Shadow config has enabled=False, no active prediction changes",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      },
+      "gate_g9_rollback_config_only": {
+        "gate_number": "G9",
+        "gate_name": "Rollback Config-Only",
+        "passed": true,
+        "detail": "Rollback to disabled requires only config change, no code deployment",
+        "evidence": {
+          "rollback_type": "MGCompatibilityConfig",
+          "enabled": false
+        }
+      },
+      "gate_g10_default_disabled": {
+        "gate_number": "G10",
+        "gate_name": "Default Disabled",
+        "passed": true,
+        "detail": "Default MGCompatibilityConfig has enabled=False",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      }
+    },
+    "999": {
+      "seed": 999,
+      "timestamp": "2026-08-13T22:49:12.691004",
+      "mg_disabled_mode": false,
+      "gate_g1_isolation": {
+        "gate_number": "G1",
+        "gate_name": "Isolation",
+        "passed": true,
+        "detail": "MG is isolated in separate layer, not in SimulationEngine",
+        "evidence": {
+          "has_mg_layer": true,
+          "layer_type": "MGCompatibilityLayer"
+        }
+      },
+      "gate_g2_disabled_identity": {
+        "gate_number": "G2",
+        "gate_name": "Disabled Identity",
+        "passed": true,
+        "detail": "With MG disabled, all 10 predictions use legacy source",
+        "evidence": {
+          "total_predictions": 10,
+          "legacy_count": 10,
+          "mg_count": 0
+        }
+      },
+      "gate_g3_config_contract": {
+        "gate_number": "G3",
+        "gate_name": "Config Contract Explicit",
+        "passed": true,
+        "detail": "Configuration is in single MGCompatibilityConfig object",
+        "evidence": {
+          "config_type": "MGCompatibilityConfig",
+          "has_enabled": true,
+          "has_coefficients": true
+        }
+      },
+      "gate_g4_external_coefficients": {
+        "gate_number": "G4",
+        "gate_name": "External Coefficients",
+        "passed": true,
+        "detail": "Coefficients are externally set, not hardcoded",
+        "evidence": {
+          "motivation_coeff": 0.46,
+          "goals_coeff": 0.41,
+          "intercept_coeff": 0.05
+        }
+      },
+      "gate_g5_fallback_rules": {
+        "gate_number": "G5",
+        "gate_name": "Fallback Rules",
+        "passed": true,
+        "detail": "Fallback rate 0.00% within threshold 5.00%",
+        "evidence": {
+          "fallback_rate": 0.0,
+          "threshold": 0.05,
+          "total_calls": 11,
+          "fallback_calls": 0
+        }
+      },
+      "gate_g6_no_mutation": {
+        "gate_number": "G6",
+        "gate_name": "No State Mutation",
+        "passed": true,
+        "detail": "Input state dict not modified by simulate_action",
+        "evidence": {
+          "original_state": {
+            "python": 35,
+            "dsa": 15,
+            "machine_learning": 12,
+            "projects": 24
+          },
+          "state_after": {
+            "python": 35,
+            "dsa": 15,
+            "machine_learning": 12,
+            "projects": 24
+          }
+        }
+      },
+      "gate_g7_observable_source": {
+        "gate_number": "G7",
+        "gate_name": "Observable Source",
+        "passed": true,
+        "detail": "Every prediction has observable _mg_metadata with source",
+        "evidence": {
+          "predictions_with_metadata": 10,
+          "total_predictions": 10,
+          "sources": [
+            "mg"
+          ]
+        }
+      },
+      "gate_g8_shadow_isolation": {
+        "gate_number": "G8",
+        "gate_name": "Shadow Isolation",
+        "passed": true,
+        "detail": "Shadow config has enabled=False, no active prediction changes",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      },
+      "gate_g9_rollback_config_only": {
+        "gate_number": "G9",
+        "gate_name": "Rollback Config-Only",
+        "passed": true,
+        "detail": "Rollback to disabled requires only config change, no code deployment",
+        "evidence": {
+          "rollback_type": "MGCompatibilityConfig",
+          "enabled": false
+        }
+      },
+      "gate_g10_default_disabled": {
+        "gate_number": "G10",
+        "gate_name": "Default Disabled",
+        "passed": true,
+        "detail": "Default MGCompatibilityConfig has enabled=False",
+        "evidence": {
+          "enabled": false,
+          "is_active": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "analysis_date": "2026-08-13T06:18:41.515308+00:00",
+  "total_seeds": 5,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "learning_rate": 0.007,
+  "aggregate_direction_accuracy": 1.0,
+  "aggregate_matches": 1491,
+  "aggregate_mismatches": 0,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 320,
+      "events_with_nonzero_error": 296,
+      "events_with_nonzero_delta": 296,
+      "total_direction_matches": 296,
+      "total_mismatches": 0,
+      "direction_accuracy": 1.0,
+      "events_skipped_zero_error": 24,
+      "events_skipped_zero_delta": 0,
+      "category_stats": {
+        "low_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "medium_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_skill_practice": {
+          "total": 35,
+          "matches": 35,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "low_motivation": {
+          "total": 36,
+          "matches": 36,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_motivation": {
+          "total": 35,
+          "matches": 35,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "mixed_skills": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "project_completion": {
+          "total": 40,
+          "matches": 40,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "plateau": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        }
+      }
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 320,
+      "events_with_nonzero_error": 301,
+      "events_with_nonzero_delta": 301,
+      "total_direction_matches": 301,
+      "total_mismatches": 0,
+      "direction_accuracy": 1.0,
+      "events_skipped_zero_error": 19,
+      "events_skipped_zero_delta": 0,
+      "category_stats": {
+        "low_skill_practice": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "medium_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "low_motivation": {
+          "total": 36,
+          "matches": 36,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_motivation": {
+          "total": 36,
+          "matches": 36,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "mixed_skills": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "project_completion": {
+          "total": 40,
+          "matches": 40,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "plateau": {
+          "total": 36,
+          "matches": 36,
+          "mismatches": 0,
+          "violation_count": 0
+        }
+      }
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 320,
+      "events_with_nonzero_error": 299,
+      "events_with_nonzero_delta": 299,
+      "total_direction_matches": 299,
+      "total_mismatches": 0,
+      "direction_accuracy": 1.0,
+      "events_skipped_zero_error": 21,
+      "events_skipped_zero_delta": 0,
+      "category_stats": {
+        "low_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "medium_skill_practice": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_skill_practice": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "low_motivation": {
+          "total": 35,
+          "matches": 35,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_motivation": {
+          "total": 34,
+          "matches": 34,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "mixed_skills": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "project_completion": {
+          "total": 40,
+          "matches": 40,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "plateau": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        }
+      }
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 320,
+      "events_with_nonzero_error": 292,
+      "events_with_nonzero_delta": 292,
+      "total_direction_matches": 292,
+      "total_mismatches": 0,
+      "direction_accuracy": 1.0,
+      "events_skipped_zero_error": 28,
+      "events_skipped_zero_delta": 0,
+      "category_stats": {
+        "low_skill_practice": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "medium_skill_practice": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_skill_practice": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "low_motivation": {
+          "total": 33,
+          "matches": 33,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_motivation": {
+          "total": 36,
+          "matches": 36,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "mixed_skills": {
+          "total": 35,
+          "matches": 35,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "project_completion": {
+          "total": 40,
+          "matches": 40,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "plateau": {
+          "total": 33,
+          "matches": 33,
+          "mismatches": 0,
+          "violation_count": 0
+        }
+      }
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 320,
+      "events_with_nonzero_error": 303,
+      "events_with_nonzero_delta": 303,
+      "total_direction_matches": 303,
+      "total_mismatches": 0,
+      "direction_accuracy": 1.0,
+      "events_skipped_zero_error": 17,
+      "events_skipped_zero_delta": 0,
+      "category_stats": {
+        "low_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "medium_skill_practice": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_skill_practice": {
+          "total": 38,
+          "matches": 38,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "low_motivation": {
+          "total": 39,
+          "matches": 39,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "high_motivation": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "mixed_skills": {
+          "total": 37,
+          "matches": 37,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "project_completion": {
+          "total": 40,
+          "matches": 40,
+          "mismatches": 0,
+          "violation_count": 0
+        },
+        "plateau": {
+          "total": 35,
+          "matches": 35,
+          "mismatches": 0,
+          "violation_count": 0
+        }
+      }
+    }
+  },
+  "violations_by_category": {},
+  "key_findings": [
+    "[FINDING] Error direction is preserved PERFECTLY throughout pipeline (100% accuracy across all seeds)",
+    "IMPLICATION: Sign propagation works correctly. Move to next hypothesis: sequence/distribution of errors causes seed-dependent behavior."
+  ]
+}

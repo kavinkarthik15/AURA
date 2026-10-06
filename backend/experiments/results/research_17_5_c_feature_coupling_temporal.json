@@ -1,0 +1,492 @@
+{
+  "analysis_date": "2026-08-13T12:30:45.817008",
+  "learning_rate": 0.007,
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 80,
+      "strongest_feature": "projects",
+      "strongest_feature_correlation": -0.4491445415608936,
+      "strongest_pair": "dsa\u00d7machine_learning",
+      "strongest_pair_gap": -3.2777777777777777,
+      "high_drift_error_gap": -2.5658653846153854,
+      "feature_stats": {
+        "dsa": {
+          "feature": "dsa",
+          "mean_signed_error": 0.275,
+          "mean_abs_error": 4.65,
+          "correlation_with_feature_value": -0.4167619849998986,
+          "feature_value_std": 19.25973779676141
+        },
+        "machine_learning": {
+          "feature": "machine_learning",
+          "mean_signed_error": 6.6,
+          "mean_abs_error": 6.95,
+          "correlation_with_feature_value": -0.35654871607505545,
+          "feature_value_std": 20.685985594116612
+        },
+        "projects": {
+          "feature": "projects",
+          "mean_signed_error": 6.525,
+          "mean_abs_error": 6.825,
+          "correlation_with_feature_value": -0.4491445415608936,
+          "feature_value_std": 20.899158924463922
+        },
+        "python": {
+          "feature": "python",
+          "mean_signed_error": -0.4875,
+          "mean_abs_error": 4.8875,
+          "correlation_with_feature_value": -0.41955246672983415,
+          "feature_value_std": 18.136457585482344
+        }
+      },
+      "pair_interactions": {
+        "dsa\u00d7machine_learning": {
+          "pair": "dsa\u00d7machine_learning",
+          "high_high_mean_signed_error": 0.8703703703703703,
+          "low_low_mean_signed_error": 4.148148148148148,
+          "interaction_gap": -3.2777777777777777,
+          "mean_pair_signed_error": 3.4375,
+          "correlation_with_pair_value": -0.4299755215742181
+        },
+        "dsa\u00d7projects": {
+          "pair": "dsa\u00d7projects",
+          "high_high_mean_signed_error": 2.3125,
+          "low_low_mean_signed_error": 3.828125,
+          "interaction_gap": -1.515625,
+          "mean_pair_signed_error": 3.4,
+          "correlation_with_pair_value": -0.45242398106278814
+        },
+        "dsa\u00d7python": {
+          "pair": "dsa\u00d7python",
+          "high_high_mean_signed_error": -2.310344827586207,
+          "low_low_mean_signed_error": 0.8620689655172413,
+          "interaction_gap": -3.1724137931034484,
+          "mean_pair_signed_error": -0.10625,
+          "correlation_with_pair_value": -0.4469090651030707
+        },
+        "machine_learning\u00d7projects": {
+          "pair": "machine_learning\u00d7projects",
+          "high_high_mean_signed_error": 4.4375,
+          "low_low_mean_signed_error": 6.375,
+          "interaction_gap": -1.9375,
+          "mean_pair_signed_error": 6.5625,
+          "correlation_with_pair_value": -0.4322142043150159
+        },
+        "machine_learning\u00d7python": {
+          "pair": "machine_learning\u00d7python",
+          "high_high_mean_signed_error": 1.0142857142857142,
+          "low_low_mean_signed_error": 3.914285714285714,
+          "interaction_gap": -2.9,
+          "mean_pair_signed_error": 3.05625,
+          "correlation_with_pair_value": -0.40436523561303317
+        },
+        "projects\u00d7python": {
+          "pair": "projects\u00d7python",
+          "high_high_mean_signed_error": 1.064516129032258,
+          "low_low_mean_signed_error": 3.161290322580645,
+          "interaction_gap": -2.096774193548387,
+          "mean_pair_signed_error": 3.01875,
+          "correlation_with_pair_value": -0.4571864652847159
+        }
+      },
+      "temporal_metrics": {
+        "mean_feature_drift": 26.537974683544302,
+        "high_drift_mean_signed_error": 4.56875,
+        "low_drift_mean_signed_error": 7.134615384615385,
+        "drift_abs_error_correlation": -0.2006798252841934,
+        "mean_abs_error_high_drift": 4.56875,
+        "mean_abs_error_low_drift": 7.134615384615385
+      }
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 80,
+      "strongest_feature": "dsa",
+      "strongest_feature_correlation": -0.4150545095975465,
+      "strongest_pair": "machine_learning\u00d7python",
+      "strongest_pair_gap": -3.161764705882353,
+      "high_drift_error_gap": -3.0160256410256414,
+      "feature_stats": {
+        "dsa": {
+          "feature": "dsa",
+          "mean_signed_error": 0.6125,
+          "mean_abs_error": 4.8125,
+          "correlation_with_feature_value": -0.4150545095975465,
+          "feature_value_std": 20.116395676164256
+        },
+        "machine_learning": {
+          "feature": "machine_learning",
+          "mean_signed_error": 6.65,
+          "mean_abs_error": 6.95,
+          "correlation_with_feature_value": -0.4036440965837505,
+          "feature_value_std": 21.289903710444534
+        },
+        "projects": {
+          "feature": "projects",
+          "mean_signed_error": 6.6375,
+          "mean_abs_error": 6.9375,
+          "correlation_with_feature_value": -0.41500798911985903,
+          "feature_value_std": 20.475579967366002
+        },
+        "python": {
+          "feature": "python",
+          "mean_signed_error": -0.4125,
+          "mean_abs_error": 4.7375,
+          "correlation_with_feature_value": -0.4032639770672737,
+          "feature_value_std": 17.677934692717926
+        }
+      },
+      "pair_interactions": {
+        "dsa\u00d7machine_learning": {
+          "pair": "dsa\u00d7machine_learning",
+          "high_high_mean_signed_error": 1.5925925925925926,
+          "low_low_mean_signed_error": 4.464285714285714,
+          "interaction_gap": -2.871693121693122,
+          "mean_pair_signed_error": 3.63125,
+          "correlation_with_pair_value": -0.44421419604115675
+        },
+        "dsa\u00d7projects": {
+          "pair": "dsa\u00d7projects",
+          "high_high_mean_signed_error": 2.7941176470588234,
+          "low_low_mean_signed_error": 3.8088235294117645,
+          "interaction_gap": -1.0147058823529411,
+          "mean_pair_signed_error": 3.625,
+          "correlation_with_pair_value": -0.4291953375457415
+        },
+        "dsa\u00d7python": {
+          "pair": "dsa\u00d7python",
+          "high_high_mean_signed_error": -2.2413793103448274,
+          "low_low_mean_signed_error": 0.896551724137931,
+          "interaction_gap": -3.1379310344827585,
+          "mean_pair_signed_error": 0.1,
+          "correlation_with_pair_value": -0.4363864303876064
+        },
+        "machine_learning\u00d7projects": {
+          "pair": "machine_learning\u00d7projects",
+          "high_high_mean_signed_error": 4.225806451612903,
+          "low_low_mean_signed_error": 6.862068965517241,
+          "interaction_gap": -2.636262513904338,
+          "mean_pair_signed_error": 6.64375,
+          "correlation_with_pair_value": -0.4344875122362304
+        },
+        "machine_learning\u00d7python": {
+          "pair": "machine_learning\u00d7python",
+          "high_high_mean_signed_error": 0.5882352941176471,
+          "low_low_mean_signed_error": 3.75,
+          "interaction_gap": -3.161764705882353,
+          "mean_pair_signed_error": 3.11875,
+          "correlation_with_pair_value": -0.41580478094390444
+        },
+        "projects\u00d7python": {
+          "pair": "projects\u00d7python",
+          "high_high_mean_signed_error": 1.109375,
+          "low_low_mean_signed_error": 3.6333333333333333,
+          "interaction_gap": -2.5239583333333333,
+          "mean_pair_signed_error": 3.1125,
+          "correlation_with_pair_value": -0.4309081907429586
+        }
+      },
+      "temporal_metrics": {
+        "mean_feature_drift": 26.623417721518987,
+        "high_drift_mean_signed_error": 4.375,
+        "low_drift_mean_signed_error": 7.391025641025641,
+        "drift_abs_error_correlation": -0.24228710146345617,
+        "mean_abs_error_high_drift": 4.375,
+        "mean_abs_error_low_drift": 7.391025641025641
+      }
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 80,
+      "strongest_feature": "projects",
+      "strongest_feature_correlation": -0.5445883234744862,
+      "strongest_pair": "machine_learning\u00d7python",
+      "strongest_pair_gap": -3.7916073968705546,
+      "high_drift_error_gap": -2.740384615384615,
+      "feature_stats": {
+        "dsa": {
+          "feature": "dsa",
+          "mean_signed_error": 0.55,
+          "mean_abs_error": 4.45,
+          "correlation_with_feature_value": -0.4765155244294695,
+          "feature_value_std": 19.834435806193227
+        },
+        "machine_learning": {
+          "feature": "machine_learning",
+          "mean_signed_error": 6.5375,
+          "mean_abs_error": 6.9125,
+          "correlation_with_feature_value": -0.46041775726818457,
+          "feature_value_std": 20.176161676592503
+        },
+        "projects": {
+          "feature": "projects",
+          "mean_signed_error": 6.5,
+          "mean_abs_error": 6.85,
+          "correlation_with_feature_value": -0.5445883234744862,
+          "feature_value_std": 20.27800532596833
+        },
+        "python": {
+          "feature": "python",
+          "mean_signed_error": -0.2,
+          "mean_abs_error": 4.625,
+          "correlation_with_feature_value": -0.5256574501472723,
+          "feature_value_std": 18.19471076989134
+        }
+      },
+      "pair_interactions": {
+        "dsa\u00d7machine_learning": {
+          "pair": "dsa\u00d7machine_learning",
+          "high_high_mean_signed_error": 1.7758620689655173,
+          "low_low_mean_signed_error": 4.129032258064516,
+          "interaction_gap": -2.3531701890989987,
+          "mean_pair_signed_error": 3.54375,
+          "correlation_with_pair_value": -0.5126070854572562
+        },
+        "dsa\u00d7projects": {
+          "pair": "dsa\u00d7projects",
+          "high_high_mean_signed_error": 2.1911764705882355,
+          "low_low_mean_signed_error": 4.184210526315789,
+          "interaction_gap": -1.9930340557275539,
+          "mean_pair_signed_error": 3.525,
+          "correlation_with_pair_value": -0.5269123730117121
+        },
+        "dsa\u00d7python": {
+          "pair": "dsa\u00d7python",
+          "high_high_mean_signed_error": -2.4642857142857144,
+          "low_low_mean_signed_error": 0.7666666666666667,
+          "interaction_gap": -3.230952380952381,
+          "mean_pair_signed_error": 0.175,
+          "correlation_with_pair_value": -0.5213461547894622
+        },
+        "machine_learning\u00d7projects": {
+          "pair": "machine_learning\u00d7projects",
+          "high_high_mean_signed_error": 4.8125,
+          "low_low_mean_signed_error": 7.430555555555555,
+          "interaction_gap": -2.6180555555555554,
+          "mean_pair_signed_error": 6.51875,
+          "correlation_with_pair_value": -0.5299119402427042
+        },
+        "machine_learning\u00d7python": {
+          "pair": "machine_learning\u00d7python",
+          "high_high_mean_signed_error": 0.918918918918919,
+          "low_low_mean_signed_error": 4.7105263157894735,
+          "interaction_gap": -3.7916073968705546,
+          "mean_pair_signed_error": 3.16875,
+          "correlation_with_pair_value": -0.5137640450456312
+        },
+        "projects\u00d7python": {
+          "pair": "projects\u00d7python",
+          "high_high_mean_signed_error": 0.84375,
+          "low_low_mean_signed_error": 4.176470588235294,
+          "interaction_gap": -3.3327205882352944,
+          "mean_pair_signed_error": 3.15,
+          "correlation_with_pair_value": -0.559450654139184
+        }
+      },
+      "temporal_metrics": {
+        "mean_feature_drift": 26.45253164556962,
+        "high_drift_mean_signed_error": 4.375,
+        "low_drift_mean_signed_error": 7.115384615384615,
+        "drift_abs_error_correlation": -0.11798478844364241,
+        "mean_abs_error_high_drift": 4.375,
+        "mean_abs_error_low_drift": 7.115384615384615
+      }
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 80,
+      "strongest_feature": "machine_learning",
+      "strongest_feature_correlation": -0.44807360612267944,
+      "strongest_pair": "machine_learning\u00d7projects",
+      "strongest_pair_gap": -2.861391129032258,
+      "high_drift_error_gap": -2.8372913992297812,
+      "feature_stats": {
+        "dsa": {
+          "feature": "dsa",
+          "mean_signed_error": 0.5,
+          "mean_abs_error": 4.65,
+          "correlation_with_feature_value": -0.4325075585065128,
+          "feature_value_std": 19.53520859883508
+        },
+        "machine_learning": {
+          "feature": "machine_learning",
+          "mean_signed_error": 6.1875,
+          "mean_abs_error": 6.5625,
+          "correlation_with_feature_value": -0.44807360612267944,
+          "feature_value_std": 19.937084635171715
+        },
+        "projects": {
+          "feature": "projects",
+          "mean_signed_error": 6.1125,
+          "mean_abs_error": 6.5375,
+          "correlation_with_feature_value": -0.42768560946924783,
+          "feature_value_std": 20.43394464487951
+        },
+        "python": {
+          "feature": "python",
+          "mean_signed_error": -0.475,
+          "mean_abs_error": 4.575,
+          "correlation_with_feature_value": -0.4341626423002365,
+          "feature_value_std": 17.38900065414916
+        }
+      },
+      "pair_interactions": {
+        "dsa\u00d7machine_learning": {
+          "pair": "dsa\u00d7machine_learning",
+          "high_high_mean_signed_error": 1.3448275862068966,
+          "low_low_mean_signed_error": 3.7241379310344827,
+          "interaction_gap": -2.3793103448275863,
+          "mean_pair_signed_error": 3.34375,
+          "correlation_with_pair_value": -0.46855421808610176
+        },
+        "dsa\u00d7projects": {
+          "pair": "dsa\u00d7projects",
+          "high_high_mean_signed_error": 2.3225806451612905,
+          "low_low_mean_signed_error": 3.629032258064516,
+          "interaction_gap": -1.3064516129032255,
+          "mean_pair_signed_error": 3.30625,
+          "correlation_with_pair_value": -0.44581786089944414
+        },
+        "dsa\u00d7python": {
+          "pair": "dsa\u00d7python",
+          "high_high_mean_signed_error": -1.4310344827586208,
+          "low_low_mean_signed_error": 0.3448275862068966,
+          "interaction_gap": -1.7758620689655173,
+          "mean_pair_signed_error": 0.0125,
+          "correlation_with_pair_value": -0.45842573821869265
+        },
+        "machine_learning\u00d7projects": {
+          "pair": "machine_learning\u00d7projects",
+          "high_high_mean_signed_error": 3.935483870967742,
+          "low_low_mean_signed_error": 6.796875,
+          "interaction_gap": -2.861391129032258,
+          "mean_pair_signed_error": 6.15,
+          "correlation_with_pair_value": -0.4563981925657089
+        },
+        "machine_learning\u00d7python": {
+          "pair": "machine_learning\u00d7python",
+          "high_high_mean_signed_error": 0.203125,
+          "low_low_mean_signed_error": 2.9375,
+          "interaction_gap": -2.734375,
+          "mean_pair_signed_error": 2.85625,
+          "correlation_with_pair_value": -0.45321368763152464
+        },
+        "projects\u00d7python": {
+          "pair": "projects\u00d7python",
+          "high_high_mean_signed_error": 1.2727272727272727,
+          "low_low_mean_signed_error": 3.234375,
+          "interaction_gap": -1.9616477272727273,
+          "mean_pair_signed_error": 2.81875,
+          "correlation_with_pair_value": -0.45442264339009314
+        }
+      },
+      "temporal_metrics": {
+        "mean_feature_drift": 26.15506329113924,
+        "high_drift_mean_signed_error": 4.189024390243903,
+        "low_drift_mean_signed_error": 7.026315789473684,
+        "drift_abs_error_correlation": -0.20600240117867516,
+        "mean_abs_error_high_drift": 4.189024390243903,
+        "mean_abs_error_low_drift": 7.026315789473684
+      }
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 80,
+      "strongest_feature": "python",
+      "strongest_feature_correlation": -0.4689098544425551,
+      "strongest_pair": "dsa\u00d7python",
+      "strongest_pair_gap": -2.143548387096774,
+      "high_drift_error_gap": -1.7616987179487182,
+      "feature_stats": {
+        "dsa": {
+          "feature": "dsa",
+          "mean_signed_error": 0.8,
+          "mean_abs_error": 4.375,
+          "correlation_with_feature_value": -0.42873367199404233,
+          "feature_value_std": 19.188045594848894
+        },
+        "machine_learning": {
+          "feature": "machine_learning",
+          "mean_signed_error": 6.625,
+          "mean_abs_error": 6.775,
+          "correlation_with_feature_value": -0.36854609072291633,
+          "feature_value_std": 20.421614621522952
+        },
+        "projects": {
+          "feature": "projects",
+          "mean_signed_error": 6.475,
+          "mean_abs_error": 6.875,
+          "correlation_with_feature_value": -0.45497841146807677,
+          "feature_value_std": 20.076167462939733
+        },
+        "python": {
+          "feature": "python",
+          "mean_signed_error": -0.6125,
+          "mean_abs_error": 4.2875,
+          "correlation_with_feature_value": -0.4689098544425551,
+          "feature_value_std": 18.458585400837194
+        }
+      },
+      "pair_interactions": {
+        "dsa\u00d7machine_learning": {
+          "pair": "dsa\u00d7machine_learning",
+          "high_high_mean_signed_error": 2.2413793103448274,
+          "low_low_mean_signed_error": 4.051724137931035,
+          "interaction_gap": -1.8103448275862073,
+          "mean_pair_signed_error": 3.7125,
+          "correlation_with_pair_value": -0.4522723360305442
+        },
+        "dsa\u00d7projects": {
+          "pair": "dsa\u00d7projects",
+          "high_high_mean_signed_error": 2.9545454545454546,
+          "low_low_mean_signed_error": 4.166666666666667,
+          "interaction_gap": -1.2121212121212124,
+          "mean_pair_signed_error": 3.6375,
+          "correlation_with_pair_value": -0.457696073773641
+        },
+        "dsa\u00d7python": {
+          "pair": "dsa\u00d7python",
+          "high_high_mean_signed_error": -1.45,
+          "low_low_mean_signed_error": 0.6935483870967742,
+          "interaction_gap": -2.143548387096774,
+          "mean_pair_signed_error": 0.09375,
+          "correlation_with_pair_value": -0.4771948447863045
+        },
+        "machine_learning\u00d7projects": {
+          "pair": "machine_learning\u00d7projects",
+          "high_high_mean_signed_error": 5.485294117647059,
+          "low_low_mean_signed_error": 7.073529411764706,
+          "interaction_gap": -1.5882352941176467,
+          "mean_pair_signed_error": 6.55,
+          "correlation_with_pair_value": -0.44130502128426624
+        },
+        "machine_learning\u00d7python": {
+          "pair": "machine_learning\u00d7python",
+          "high_high_mean_signed_error": 1.2916666666666667,
+          "low_low_mean_signed_error": 3.3142857142857145,
+          "interaction_gap": -2.022619047619048,
+          "mean_pair_signed_error": 3.00625,
+          "correlation_with_pair_value": -0.43685860279908667
+        },
+        "projects\u00d7python": {
+          "pair": "projects\u00d7python",
+          "high_high_mean_signed_error": 1.4696969696969697,
+          "low_low_mean_signed_error": 3.303030303030303,
+          "interaction_gap": -1.8333333333333335,
+          "mean_pair_signed_error": 2.93125,
+          "correlation_with_pair_value": -0.4779504274914395
+        }
+      },
+      "temporal_metrics": {
+        "mean_feature_drift": 26.29113924050633,
+        "high_drift_mean_signed_error": 4.70625,
+        "low_drift_mean_signed_error": 6.467948717948718,
+        "drift_abs_error_correlation": -0.030477785729112514,
+        "mean_abs_error_high_drift": 4.70625,
+        "mean_abs_error_low_drift": 6.467948717948718
+      }
+    }
+  }
+}

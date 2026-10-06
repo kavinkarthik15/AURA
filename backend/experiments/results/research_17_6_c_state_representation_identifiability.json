@@ -1,0 +1,72 @@
+{
+  "analysis_date": "2026-08-13T12:45:31.645181",
+  "learning_rate": 0.007,
+  "total_seeds": 5,
+  "seed_results": {
+    "42": {
+      "seed": 42,
+      "total_events": 80,
+      "state_collision_rate": 0.0,
+      "mean_future_variance": 0.0,
+      "max_state_group_size": 0,
+      "bias_sensitivity_mean": 1.15,
+      "bias_sensitivity_p95": 2.0,
+      "identifiability_flatness": 0.43392857142857144,
+      "residual_mae": 5.503125,
+      "history_dependence_score": 0.0,
+      "collision_groups": []
+    },
+    "123": {
+      "seed": 123,
+      "total_events": 80,
+      "state_collision_rate": 0.0,
+      "mean_future_variance": 0.0,
+      "max_state_group_size": 0,
+      "bias_sensitivity_mean": 1.21875,
+      "bias_sensitivity_p95": 2.0,
+      "identifiability_flatness": 0.40714285714285714,
+      "residual_mae": 5.546875,
+      "history_dependence_score": 0.0,
+      "collision_groups": []
+    },
+    "456": {
+      "seed": 456,
+      "total_events": 80,
+      "state_collision_rate": 0.0,
+      "mean_future_variance": 0.0,
+      "max_state_group_size": 0,
+      "bias_sensitivity_mean": 1.34375,
+      "bias_sensitivity_p95": 2.0,
+      "identifiability_flatness": 0.35714285714285715,
+      "residual_mae": 5.290625,
+      "history_dependence_score": 0.0,
+      "collision_groups": []
+    },
+    "789": {
+      "seed": 789,
+      "total_events": 80,
+      "state_collision_rate": 0.0,
+      "mean_future_variance": 0.0,
+      "max_state_group_size": 0,
+      "bias_sensitivity_mean": 1.30625,
+      "bias_sensitivity_p95": 2.0,
+      "identifiability_flatness": 0.36607142857142855,
+      "residual_mae": 5.2625,
+      "history_dependence_score": 0.0,
+      "collision_groups": []
+    },
+    "999": {
+      "seed": 999,
+      "total_events": 80,
+      "state_collision_rate": 0.0,
+      "mean_future_variance": 0.0,
+      "max_state_group_size": 0,
+      "bias_sensitivity_mean": 1.225,
+      "bias_sensitivity_p95": 2.0,
+      "identifiability_flatness": 0.40178571428571425,
+      "residual_mae": 5.153125,
+      "history_dependence_score": 0.0,
+      "collision_groups": []
+    }
+  }
+}

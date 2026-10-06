@@ -1,5 +1,6 @@
 from typing import Dict, List
 
+from backend.ai.context_builder import ContextBuilder
 from backend.models.action_catalog import ActionCatalog
 from backend.models.goal_state import GoalState
 from backend.services.action_catalog_service import ActionCatalogService
@@ -20,8 +21,10 @@ DEFAULT_ACTIONS = [
 
 
 class GoalPlanner:
-    def __init__(self, action_catalog_service: ActionCatalogService | None = None) -> None:
+    def __init__(self, action_catalog_service: ActionCatalogService | None = None, memory_manager: object | None = None) -> None:
         self.action_catalog_service = action_catalog_service or ActionCatalogService()
+        self.memory_manager = memory_manager
+        self.context_builder = ContextBuilder(memory_manager=self.memory_manager) if self.memory_manager is not None else None
         if not self.action_catalog_service.list_actions():
             for action in DEFAULT_ACTIONS:
                 self.action_catalog_service.actions.append(
@@ -35,6 +38,9 @@ class GoalPlanner:
         self.action_ranker = ActionRanker()
 
     def create_plan(self, current_state: Dict[str, int], goal_state: GoalState) -> Dict:
+        planning_context = None
+        if self.context_builder is not None:
+            planning_context = self.context_builder.build(goal_state.goal, current_state)
         recommended_actions = []
         for skill, goal_value in goal_state.target_skills.items():
             current_value = current_state.get(skill, 0)
@@ -53,12 +59,15 @@ class GoalPlanner:
 
         estimated_steps = max(1, len(recommended_actions))
         success_probability = self._estimate_success_probability(current_state, goal_state, recommended_actions)
-        return {
+        result = {
             "goal": goal_state.goal,
             "recommended_actions": recommended_actions[:3],
             "estimated_steps": estimated_steps,
             "success_probability": round(success_probability, 2),
         }
+        if planning_context is not None:
+            result["planning_context"] = planning_context.to_dict()
+        return result
 
     def recommend_next_action(self, current_state: Dict[str, int], goal_state: GoalState) -> str | None:
         plan = self.create_plan(current_state, goal_state)

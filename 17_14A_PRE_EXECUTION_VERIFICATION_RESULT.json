@@ -1,0 +1,30 @@
+{
+  "phase": "17.14A",
+  "stage": "pre_execution_verification",
+  "status": "READY",
+  "candidate": "17.13B + 17.13C Run 1",
+  "implementation_modified": true,
+  "coefficients_modified": false,
+  "criteria_modified": false,
+  "production_activation": false,
+  "critical_failures": [],
+  "checks": {
+    "manifest": true,
+    "pre_execution_verification": true,
+    "candidate_freeze": true,
+    "run1_freeze": true,
+    "default_disabled": true,
+    "legacy_authority": true,
+    "shadow_isolation": true,
+    "fallback_isolation": true,
+    "observability": true
+  },
+  "evidence": {
+    "manifest_hash": "ea80774c501a92c036b295024c2c092d98a0bac23bb65eeb9f07b2807d43e0d4",
+    "checkpoint_file": "d:\\AURA\\RESEARCH_CHECKPOINT_17_13C_RUN1.md",
+    "run_result_file": "d:\\AURA\\17_13C_RESULT_RUN1.json",
+    "default_config": "enabled=False, rollout_percentage=0.0",
+    "observability_contract": "PASS",
+    "shadow_event_recorder": "PASS"
+  }
+}

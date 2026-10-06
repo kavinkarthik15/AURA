@@ -2,11 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Dict, Iterable, List
 
-from backend.ai.experience_retriever import ExperienceRetriever
-
-
 class RetrievalEvaluator:
-    def evaluate(self, retriever: ExperienceRetriever, queries: Iterable[Dict[str, Any]], top_k: int = 3) -> Dict[str, Any]:
+    def evaluate(self, memory_gateway: Any, queries: Iterable[Dict[str, Any]], top_k: int = 3) -> Dict[str, Any]:
         query_list = list(queries)
         if not query_list:
             return {"queries": 0, "retrieval_precision": 0.0, "retrieval_recall": 0.0, "average_similarity": 0.0, "planning_improvement": 0.0, "retrieval_time_ms": 0.0}
@@ -15,7 +12,14 @@ class RetrievalEvaluator:
         similarities: List[float] = []
         retrieval_time = 0.0
         for query in query_list:
-            result = retriever.retrieve(query.get("state", {}), query.get("goal", ""), query.get("actions", []), top_k=top_k)
+            if hasattr(memory_gateway, "retrieve_experiences"):
+                result = memory_gateway.retrieve_experiences(
+                    query.get("state", {}), query.get("goal", ""), query.get("actions", []), top_k=top_k
+                )
+            else:
+                result = memory_gateway.retrieve(
+                    query.get("state", {}), query.get("goal", ""), query.get("actions", []), top_k=top_k
+                )
             matches = result["matches"]
             retrieval_time += result["retrieval_time_ms"]
             relevant = set(query.get("relevant_experience_ids", []))

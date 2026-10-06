@@ -1,0 +1,355 @@
+{
+  "dataset_id": "research_benchmark_v1_seed_42",
+  "seed": 42,
+  "training_size": 10,
+  "held_out_size": 5,
+  "training_experiences": [
+    {
+      "experience_id": "research_exp_000_low_skill_practice",
+      "category": "low_skill_practice",
+      "initial_state": {
+        "python": 23,
+        "dsa": 15,
+        "machine_learning": 14,
+        "projects": 18
+      },
+      "selected_action": "DSA Practice",
+      "predicted_future_state": {
+        "python": 27,
+        "dsa": 19,
+        "machine_learning": 18,
+        "projects": 22
+      },
+      "actual_future_state": {
+        "python": 29,
+        "dsa": 25,
+        "machine_learning": 20,
+        "projects": 28
+      }
+    },
+    {
+      "experience_id": "research_exp_001_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "initial_state": {
+        "python": 41,
+        "dsa": 44,
+        "machine_learning": 34,
+        "projects": 49
+      },
+      "selected_action": "ML Course",
+      "predicted_future_state": {
+        "python": 50,
+        "dsa": 53,
+        "machine_learning": 43,
+        "projects": 58
+      },
+      "actual_future_state": {
+        "python": 51,
+        "dsa": 57,
+        "machine_learning": 48,
+        "projects": 62
+      }
+    },
+    {
+      "experience_id": "research_exp_002_high_skill_practice",
+      "category": "high_skill_practice",
+      "initial_state": {
+        "python": 83,
+        "dsa": 68,
+        "machine_learning": 65,
+        "projects": 82
+      },
+      "selected_action": "DSA Practice",
+      "predicted_future_state": {
+        "python": 86,
+        "dsa": 71,
+        "machine_learning": 68,
+        "projects": 85
+      },
+      "actual_future_state": {
+        "python": 82,
+        "dsa": 67,
+        "machine_learning": 64,
+        "projects": 83
+      }
+    },
+    {
+      "experience_id": "research_exp_003_low_motivation",
+      "category": "low_motivation",
+      "initial_state": {
+        "python": 48,
+        "dsa": 48,
+        "machine_learning": 40,
+        "projects": 38
+      },
+      "selected_action": "Python Project",
+      "predicted_future_state": {
+        "python": 47,
+        "dsa": 47,
+        "machine_learning": 39,
+        "projects": 37
+      },
+      "actual_future_state": {
+        "python": 51,
+        "dsa": 49,
+        "machine_learning": 41,
+        "projects": 42
+      }
+    },
+    {
+      "experience_id": "research_exp_004_high_motivation",
+      "category": "high_motivation",
+      "initial_state": {
+        "python": 32,
+        "dsa": 37,
+        "machine_learning": 21,
+        "projects": 32
+      },
+      "selected_action": "Research Paper",
+      "predicted_future_state": {
+        "python": 42,
+        "dsa": 47,
+        "machine_learning": 31,
+        "projects": 42
+      },
+      "actual_future_state": {
+        "python": 37,
+        "dsa": 45,
+        "machine_learning": 29,
+        "projects": 36
+      }
+    },
+    {
+      "experience_id": "research_exp_005_mixed_skills",
+      "category": "mixed_skills",
+      "initial_state": {
+        "python": 61,
+        "dsa": 22,
+        "machine_learning": 73,
+        "projects": 47
+      },
+      "selected_action": "Interview Prep",
+      "predicted_future_state": {
+        "python": 67,
+        "dsa": 28,
+        "machine_learning": 79,
+        "projects": 53
+      },
+      "actual_future_state": {
+        "python": 70,
+        "dsa": 31,
+        "machine_learning": 84,
+        "projects": 57
+      }
+    },
+    {
+      "experience_id": "research_exp_006_project_completion",
+      "category": "project_completion",
+      "initial_state": {
+        "python": 62,
+        "dsa": 50,
+        "machine_learning": 39,
+        "projects": 57
+      },
+      "selected_action": "Research Paper",
+      "predicted_future_state": {
+        "python": 74,
+        "dsa": 62,
+        "machine_learning": 51,
+        "projects": 69
+      },
+      "actual_future_state": {
+        "python": 82,
+        "dsa": 68,
+        "machine_learning": 54,
+        "projects": 76
+      }
+    },
+    {
+      "experience_id": "research_exp_007_plateau",
+      "category": "plateau",
+      "initial_state": {
+        "python": 77,
+        "dsa": 81,
+        "machine_learning": 78,
+        "projects": 78
+      },
+      "selected_action": "ML Course",
+      "predicted_future_state": {
+        "python": 79,
+        "dsa": 83,
+        "machine_learning": 80,
+        "projects": 80
+      },
+      "actual_future_state": {
+        "python": 80,
+        "dsa": 82,
+        "machine_learning": 81,
+        "projects": 79
+      }
+    },
+    {
+      "experience_id": "research_exp_008_low_skill_practice",
+      "category": "low_skill_practice",
+      "initial_state": {
+        "python": 35,
+        "dsa": 19,
+        "machine_learning": 15,
+        "projects": 25
+      },
+      "selected_action": "DSA Practice",
+      "predicted_future_state": {
+        "python": 43,
+        "dsa": 27,
+        "machine_learning": 23,
+        "projects": 33
+      },
+      "actual_future_state": {
+        "python": 48,
+        "dsa": 31,
+        "machine_learning": 25,
+        "projects": 39
+      }
+    },
+    {
+      "experience_id": "research_exp_009_medium_skill_practice",
+      "category": "medium_skill_practice",
+      "initial_state": {
+        "python": 47,
+        "dsa": 40,
+        "machine_learning": 37,
+        "projects": 42
+      },
+      "selected_action": "Build Portfolio",
+      "predicted_future_state": {
+        "python": 53,
+        "dsa": 46,
+        "machine_learning": 43,
+        "projects": 48
+      },
+      "actual_future_state": {
+        "python": 57,
+        "dsa": 51,
+        "machine_learning": 47,
+        "projects": 53
+      }
+    }
+  ],
+  "held_out_experiences": [
+    {
+      "experience_id": "research_exp_010_high_skill_practice",
+      "category": "high_skill_practice",
+      "initial_state": {
+        "python": 78,
+        "dsa": 66,
+        "machine_learning": 75,
+        "projects": 81
+      },
+      "selected_action": "Interview Prep",
+      "predicted_future_state": {
+        "python": 79,
+        "dsa": 67,
+        "machine_learning": 76,
+        "projects": 82
+      },
+      "actual_future_state": {
+        "python": 75,
+        "dsa": 63,
+        "machine_learning": 73,
+        "projects": 78
+      }
+    },
+    {
+      "experience_id": "research_exp_011_low_motivation",
+      "category": "low_motivation",
+      "initial_state": {
+        "python": 46,
+        "dsa": 49,
+        "machine_learning": 40,
+        "projects": 41
+      },
+      "selected_action": "Research Paper",
+      "predicted_future_state": {
+        "python": 46,
+        "dsa": 49,
+        "machine_learning": 40,
+        "projects": 41
+      },
+      "actual_future_state": {
+        "python": 53,
+        "dsa": 51,
+        "machine_learning": 48,
+        "projects": 43
+      }
+    },
+    {
+      "experience_id": "research_exp_012_high_motivation",
+      "category": "high_motivation",
+      "initial_state": {
+        "python": 34,
+        "dsa": 39,
+        "machine_learning": 29,
+        "projects": 40
+      },
+      "selected_action": "Interview Prep",
+      "predicted_future_state": {
+        "python": 43,
+        "dsa": 48,
+        "machine_learning": 38,
+        "projects": 49
+      },
+      "actual_future_state": {
+        "python": 38,
+        "dsa": 45,
+        "machine_learning": 34,
+        "projects": 47
+      }
+    },
+    {
+      "experience_id": "research_exp_013_mixed_skills",
+      "category": "mixed_skills",
+      "initial_state": {
+        "python": 52,
+        "dsa": 26,
+        "machine_learning": 64,
+        "projects": 39
+      },
+      "selected_action": "Python Project",
+      "predicted_future_state": {
+        "python": 55,
+        "dsa": 29,
+        "machine_learning": 67,
+        "projects": 42
+      },
+      "actual_future_state": {
+        "python": 58,
+        "dsa": 30,
+        "machine_learning": 70,
+        "projects": 46
+      }
+    },
+    {
+      "experience_id": "research_exp_014_project_completion",
+      "category": "project_completion",
+      "initial_state": {
+        "python": 62,
+        "dsa": 40,
+        "machine_learning": 50,
+        "projects": 60
+      },
+      "selected_action": "Build Portfolio",
+      "predicted_future_state": {
+        "python": 74,
+        "dsa": 52,
+        "machine_learning": 62,
+        "projects": 72
+      },
+      "actual_future_state": {
+        "python": 82,
+        "dsa": 58,
+        "machine_learning": 67,
+        "projects": 79
+      }
+    }
+  ]
+}
