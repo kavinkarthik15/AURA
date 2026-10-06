@@ -2,7 +2,7 @@
 
 - Timestamp (local ISO 8601): 2026-10-06T22:22:49.3345759+05:30
 - Branch: pre-cleanup-snapshot
-- Snapshot commit SHA: pending; recorded in the follow-up record update because a commit cannot contain its own hash.
+- Snapshot commit SHA: `b5c81b0444c73c98915c8734044e19ddc128a010` (`chore: pre-cleanup repository safety snapshot`).
 - Previous HEAD SHA: f98c99ab738358a6b51888e238f856d96afa50ba
 - Purpose: Create a local recovery checkpoint of the complete current non-ignored repository state before any authorized cleanup.
 - Cleanup status: **No cleanup had been executed before this snapshot.** No deletion, move, archive, restore, or implementation/research edit was performed for this checkpoint.
@@ -12,7 +12,7 @@
 
 Captured with git status --short on this branch immediately before staging:
 
-``text
+```text
  M backend/ai/evaluate_retrieval.py
  M backend/ai/experience_reasoner.py
  M backend/ai/experience_retriever.py
@@ -371,8 +371,10 @@ Captured with git status --short on this branch immediately before staging:
 ?? test_reload.py
 ?? test_results.txt
 ?? "what each files are used for.md"
-``
+```
 
 ## Git status after snapshot
 
-Expected after snapshot commit: git status --short is empty. The exact verified post-commit status will be recorded in the follow-up update; ignored files are not shown by default.
+Immediately after the snapshot commit, `git status --short` produced no output (clean). The only ignored content remains outside the snapshot (57,548 ignored items reported by `git ls-files --others --ignored --exclude-standard`); ignored environment/cache content was not force-added.
+
+The snapshot commit reported **573 files changed**. Its tree includes the non-ignored state staged with ordinary `git add -A`; the subsequently finalized version of this record is committed separately because a commit cannot contain its own commit SHA.
