@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import sqlite3
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import pytest
 
@@ -12,6 +14,7 @@ from backend.models.prospective_prediction_episode import (
     ObservedOutcome,
     OutcomeProvenance,
     OutcomeSource,
+    PracticeActionEvidence,
     PredictionBundle,
     PredictionTarget,
 )
@@ -245,6 +248,42 @@ def test_action_linkage_and_valid_outcome_are_persisted(setup_service):
         "OUTCOME_DUE",
         "OUTCOME_RECORDED",
     ]
+
+
+def test_practice_module_completion_evidence_is_episode_linked_and_immutable(setup_service):
+    service, store, clock, target = setup_service
+    episode = create_episode(service, target)
+    completed = complete_action(service, clock, episode)
+    evidence = PracticeActionEvidence(
+        participant_id=episode.user_id,
+        module_id="PYTHON_PRACTICE_CORE_V1",
+        module_version="v1",
+        module_hash="b" * 64,
+        completion_status="complete",
+        evidence_id="module-evidence-1",
+        started_at=completed.action_started_at,
+        completed_at=completed.action_completed_at,
+    )
+    with pytest.raises(ValueError, match="participant"):
+        service.record_action_completion_evidence(
+            episode.episode_id,
+            episode.user_id,
+            evidence.model_copy(update={"participant_id": "participant-2"}),
+        )
+    recorded = service.record_action_completion_evidence(
+        episode.episode_id,
+        episode.user_id,
+        evidence,
+    )
+    assert recorded.action_evidence == evidence
+    with pytest.raises(ValueError, match="immutable"):
+        service.record_action_completion_evidence(episode.episode_id, episode.user_id, evidence)
+    with sqlite3.connect(store.database_path) as connection:
+        with pytest.raises(sqlite3.IntegrityError, match="immutable"):
+            connection.execute(
+                "UPDATE prospective_episodes SET episode_json = json_set(episode_json, '$.action_evidence.module_version', 'v2') WHERE episode_id = ?",
+                (episode.episode_id,),
+            )
 
 
 def test_action_cannot_start_at_same_instant_as_prediction_freeze(setup_service):
@@ -493,3 +532,22 @@ def test_future_and_naive_observation_timestamps_are_rejected(setup_service):
             episode.user_id,
             observed_outcome(target, due + timedelta(seconds=20)),
         )
+
+
+def test_pilot_protocol_config_is_frozen_with_integrity_hash():
+    config_path = Path(__file__).resolve().parents[2] / "17_16B_PILOT_PROTOCOL_CONFIG.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+
+    assert config["pilot_id"] == "17_16B_python_skill_pilot_v1"
+    assert config["status"] == "AUDIT_REVISIONS_REQUIRED"
+    assert config["protocol_design_ready"] is True
+    assert config["measurement_instrument_ready"] is False
+    assert config["action_module_ready"] is False
+    assert config["collection_ready"] is False
+
+    payload = {key: value for key, value in config.items() if key != "protocol_hash"}
+    expected_hash = hashlib.sha256(
+        json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
+    ).hexdigest()
+    assert config["protocol_hash"] == expected_hash
+    assert config["protocol_version_hash_status"].startswith("A deterministic SHA-256 digest")

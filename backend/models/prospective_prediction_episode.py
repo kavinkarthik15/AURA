@@ -5,7 +5,7 @@ from datetime import datetime
 from enum import StrEnum
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class EpisodeStatus(StrEnum):
@@ -21,8 +21,10 @@ class EpisodeStatus(StrEnum):
 class EpisodeEventType(StrEnum):
     EPISODE_CREATED = "EPISODE_CREATED"
     PREDICTION_FROZEN = "PREDICTION_FROZEN"
+    BASELINE_LINKED = "BASELINE_LINKED"
     ACTION_STARTED = "ACTION_STARTED"
     ACTION_COMPLETED = "ACTION_COMPLETED"
+    ACTION_EVIDENCE_RECORDED = "ACTION_EVIDENCE_RECORDED"
     OUTCOME_DUE = "OUTCOME_DUE"
     OUTCOME_RECORDED = "OUTCOME_RECORDED"
     EPISODE_EXCLUDED = "EPISODE_EXCLUDED"
@@ -80,6 +82,24 @@ class PredictionTarget(FrozenModel):
     def require_supported_skill_scale(cls, value: str) -> str:
         if value.strip() != "0-100":
             raise ValueError("career skill targets must use the supported 0-100 scale")
+        return value
+
+
+class PracticeActionEvidence(FrozenModel):
+    participant_id: str = Field(min_length=1)
+    module_id: str = Field(min_length=1)
+    module_version: str = Field(min_length=1)
+    module_hash: str = Field(pattern=r"^[0-9a-f]{64}$")
+    completion_status: Literal["complete"]
+    evidence_id: str = Field(min_length=1)
+    started_at: datetime
+    completed_at: datetime
+
+    @field_validator("started_at", "completed_at")
+    @classmethod
+    def require_aware_action_timestamps(cls, value: datetime) -> datetime:
+        if value.tzinfo is None or value.utcoffset() is None:
+            raise ValueError("action evidence timestamps must include a timezone")
         return value
 
 
@@ -174,8 +194,12 @@ class ProspectivePredictionEpisode(FrozenModel):
     context: dict[str, Any]
     predictions: PredictionBundle
     target: PredictionTarget
+    pilot_id: str | None = None
+    enrollment_id: str | None = None
+    baseline_assessment_session_id: str | None = None
     action_started_at: datetime | None = None
     action_completed_at: datetime | None = None
+    action_evidence: PracticeActionEvidence | None = None
     performed_action: str | None = None
     outcome_due_at: datetime
     observed_outcome: ObservedOutcome | None = None
@@ -183,6 +207,21 @@ class ProspectivePredictionEpisode(FrozenModel):
     status: EpisodeStatus
     exclusion_reason: str | None = None
     missing_outcome_reason: str | None = None
+
+    @field_validator("enrollment_id", "baseline_assessment_session_id")
+    @classmethod
+    def validate_optional_pilot_link(cls, value: str | None) -> str | None:
+        if value is not None and not value.strip():
+            raise ValueError("pilot linkage identifiers must not be blank")
+        return value
+
+    @model_validator(mode="after")
+    def require_complete_pilot_baseline_link(self) -> ProspectivePredictionEpisode:
+        if (self.enrollment_id is None) != (self.baseline_assessment_session_id is None):
+            raise ValueError("enrollment and baseline assessment linkage must be supplied together")
+        if self.pilot_id is None and self.enrollment_id is not None:
+            raise ValueError("a baseline-linked episode must belong to a pilot")
+        return self
 
     @field_validator("created_at", "prediction_timestamp", "action_started_at", "action_completed_at", "outcome_due_at")
     @classmethod

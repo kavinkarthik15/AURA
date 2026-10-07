@@ -1,62 +1,45 @@
 {
   "phase": "17.16B",
-  "status": "INFRASTRUCTURE_READY_AWAITING_PROSPECTIVE_OUTCOMES",
-  "assessment_date": "2026-10-06",
-  "research_question": "Does the frozen MG correction mechanism improve future-state prediction compared with the existing base prediction when both are evaluated against the same independently observed outcome?",
+  "status": "AUDIT_REVISIONS_REQUIRED",
+  "assessment_date": "2026-10-07",
+  "research_question": "Can the frozen MG correction mechanism be evaluated against a defensible prospective independent outcome using a single AURA skill target without circularity or unsupported synthetic labels?",
   "ground_truth_source": null,
-  "ground_truth_status": "No repository source is verified as independently observed ground truth for this evaluation. The 15-row experiences.json corpus is documented as synthetic; the default transition service also loads synthetic_experiences.json. Other actual_state-labelled data lacks row-level provenance and is described as synthetic or is populated by caller-supplied/test values.",
+  "ground_truth_status": "No real independent outcome cohort has been collected or verified. The repository still lacks a provenance-preserved, time-ordered, action-linked outcome set suitable for model comparison.",
   "evaluation_population": {
     "current_eligible_units": 0,
-    "required_population": "Prospectively collected or provenance-verified real completed single-action episodes with paired pre-action state/predictions and independently measured post-action state.",
-    "17_15_rows": 2400,
-    "17_15_unique_state_action_category_signatures": 4,
-    "17_15_rows_per_signature": 600,
-    "17_15_seed_recorded_per_event": false,
-    "17_15_experience_id_recorded_per_event": false,
-    "note": "Repeated scripted scenarios are not independent observed outcomes or an evaluation population."
+    "required_population": "Prospectively collected or provenance-verified real completed episodes with frozen pre-action state, paired predictions, and independently measured post-action skill outcome.",
+    "note": "Repeated scripted scenarios remain non-independent synthetic data and cannot be treated as the evaluation population."
   },
-  "methodology_status": "PROPOSED_NOT_FROZEN; blocked pending approved target population, measurement horizon/instrument, minimum meaningful effect, and a priori power/sample-size plan.",
+  "methodology_status": "AUDIT_REVISIONS_REQUIRED; artifact integrity and action-module checks pass, but the secure container backend is unavailable on the audit host and a valid container-backed evidence-to-outcome lifecycle remains unverified. Owner approval is pending.",
   "leakage_risk": "CRITICAL",
   "pseudoreplication_risk": "CRITICAL",
-  "implementation_ready": false,
+  "implementation_ready": true,
   "infrastructure_ready": true,
+  "protocol_design_ready": true,
+  "measurement_instrument_ready": false,
+  "action_module_ready": false,
+  "collection_ready": false,
+  "eligible_real_outcomes": 0,
   "effectiveness_evaluation_status": "BLOCKED_INDEPENDENT_OUTCOME_DATA_REQUIRED",
+  "analysis_performed": false,
   "prospective_collection": {
     "storage": "backend/data/prospective_outcomes/prospective_outcomes.sqlite3 (ignored local runtime database)",
     "verified_observed_outcomes": 0,
-    "analysis_performed": false,
+    "eligible_real_outcomes": 0,
     "architecture_document": "17_16B_PROSPECTIVE_GROUND_TRUTH_ARCHITECTURE.md"
   },
-  "blocking_issues": [
-    "No independently observed, provenance-verified action-linked post-state cohort was found.",
-    "experiences.json is explicitly documented as synthetic and is used by TransitionEngine to generate base predictions.",
-    "ExperienceService loads synthetic_experiences.json by default; matching these records as evaluation labels would contaminate the baseline.",
-    "17.15 has four repeated scripted input signatures, with seed and experience_id null on all events; 2,400 is not the independent outcome sample size.",
-    "17.15 lacks per-event context, event timestamps, and actual_state_after; fixed prediction horizon and measurement source are unspecified.",
-    "experience_dataset.json actual_state values have no row-level provenance/user identity and the logger accepts caller-supplied values; test code supplies hard-coded examples.",
-    "The prior proposal to use the legacy prediction as a synthetic fallback actual outcome is circular and invalid; it must not be implemented.",
-    "State/action/context schemas and measurable target dimensions need to be fixed before choosing an error metric and evaluating outcomes."
-  ],
-  "protocol_proposal": {
-    "evaluation_unit": "One unique, verified, completed real action episode with both predictions recorded before outcome observation.",
-    "ground_truth_definition": "Independently measured post-action state for the same episode, with source, measurement method, timestamp, state schema/version, and fixed pre-registered follow-up horizon.",
-    "matching_rules": "Pair base and MG forecasts directly by unique observed episode ID. Do not synthesize outcomes, nearest-neighbor match to training data, reuse a target across rows, or include any evaluation episode in model fitting/calibration.",
-    "primary_error_metric": "Per-event MAE over the same predeclared valid skill dimensions and common scale; missing dimensions are not defaulted to zero.",
-    "comparison_metric": "delta = MAE_MG - MAE_base, computed within each same outcome episode.",
-    "statistical_test": "Paired, cluster-aware sign-flip/permutation test with user-level (and where needed time-block) bootstrap confidence intervals; finalize against observed independence structure before registration.",
-    "significance_threshold": 0.05,
-    "effect_size": "Mean paired delta and 95% cluster-aware CI; paired standardized d_z with CI as descriptive context.",
-    "minimum_evidence_for_improvement": "Pre-register delta_min and obtain adequate a priori power (at least 80% for delta_min); improvement only if the 95% CI upper bound is below -delta_min and the primary test meets alpha.",
-    "no_meaningful_difference": "Equivalence test supports the full pre-registered interval [-delta_min, +delta_min]; nonsignificance alone is insufficient.",
-    "degradation": "95% CI lower bound is above +delta_min and the primary test meets alpha.",
-    "inconclusive": "All other cases, including insufficient clusters, failed provenance, or confidence intervals crossing decision boundaries.",
-    "freeze_state": "Draft only; freeze after population, outcome horizon/instrument, delta_min and power plan are approved, before outcome values are examined."
+  "protocol_config": {
+    "file": "17_16B_PILOT_PROTOCOL_CONFIG.json",
+    "protocol_version": "2026-10-07-audit-v2",
+    "protocol_hash": "f9444711a7af20592742f70d68def117a650adc2601c5c13564caa49d2951e5d",
+    "status": "FROZEN_FOR_AUDIT_ONLY; not for collection"
   },
-  "previous_artifacts_superseded_for_design": [
-    "17_16B_OUTCOME_GENERATION_READY.md",
-    "RESEARCH_CHECKPOINT_17_16B_ARCHITECTURE_READY.json"
+  "blocking_issues": [
+    "The audit host has no Docker CLI/runtime and no digest-pinned secure worker image configured; participant code cannot run in the required isolated backend.",
+    "A complete valid secure-container-backed baseline-to-follow-up-to-outcome lifecycle remains unverified.",
+    "Pilot-owner approval remains a separate pending human action."
   ],
-  "recommended_next_step": "Obtain or prospectively collect a provenance-verified independent action-outcome cohort. Approve and freeze the evaluation protocol (including horizon, delta_min, and power plan) before any outcome comparison. Do not implement or run effectiveness analysis on current repository data.",
+  "recommended_next_step": "Provision and verify the digest-pinned Docker worker on a supported runtime, execute secure isolation integration tests and valid evidence lifecycle integration tests, then seek explicit human pilot-owner approval. Keep collection and downstream phases blocked.",
   "constraints_preserved": {
     "frozen_17_15_artifacts_modified": false,
     "frozen_mg_coefficients_modified": false,
@@ -64,5 +47,6 @@
     "effectiveness_experiment_run": false,
     "prospective_collection_infrastructure_added": true
   },
-  "assessment_report": "17_16B_ARCHITECTURE_AND_GROUND_TRUTH_ASSESSMENT.md"
+  "assessment_report": "17_16B_ARCHITECTURE_AND_GROUND_TRUTH_ASSESSMENT.md",
+  "pilot_owner_approval": false
 }

@@ -1,0 +1,174 @@
+{
+  "form_id": "python_skill_form_b_v1",
+  "form_version": "v1",
+  "blueprint_id": "python_skill_blueprint_v1",
+  "items": [
+    {
+      "item_id": "b1",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "variables_and_types",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate: 2 ** 3",
+      "expected_answer": 8,
+      "required": true
+    },
+    {
+      "item_id": "b2",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "variables_and_types",
+      "maximum_points": 10,
+      "scoring_method": "multiple_choice",
+      "prompt": "What is the type of 3.14?",
+      "expected_answer": "float",
+      "required": true
+    },
+    {
+      "item_id": "b3",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "control_flow",
+      "maximum_points": 10,
+      "scoring_method": "true_false",
+      "prompt": "The expression 5 < 3 is False.",
+      "expected_answer": true,
+      "required": true
+    },
+    {
+      "item_id": "b4",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "control_flow",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate: total = 0; for i in range(1, 4): total += i; total",
+      "expected_answer": 6,
+      "required": true
+    },
+    {
+      "item_id": "b5",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "functions",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a Python function scale(x) that returns x * 3.",
+      "expected_answer": 15,
+      "execution_contract": {
+        "callable_name": "scale",
+        "test_cases": [
+          {
+            "args": [
+              5
+            ],
+            "expected": 15
+          },
+          {
+            "args": [
+              -2
+            ],
+            "expected": -6
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "b6",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "collections",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a function sorted_copy(values) that returns the values sorted in ascending order.",
+      "expected_answer": [
+        1,
+        2,
+        3
+      ],
+      "execution_contract": {
+        "callable_name": "sorted_copy",
+        "test_cases": [
+          {
+            "args": [
+              [
+                3,
+                1,
+                2
+              ]
+            ],
+            "expected": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "args": [
+              [
+                5,
+                -1,
+                2
+              ]
+            ],
+            "expected": [
+              -1,
+              2,
+              5
+            ]
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "b7",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "collections",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "What is the last element of [10, 20, 30][-1]?",
+      "expected_answer": 30,
+      "required": true
+    },
+    {
+      "item_id": "b8",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "debugging_reasoning",
+      "maximum_points": 10,
+      "scoring_method": "true_false",
+      "prompt": "A NameError occurs when a variable is not defined.",
+      "expected_answer": true,
+      "required": true
+    },
+    {
+      "item_id": "b9",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "problem_solving",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a function product_of_two() that returns 2 * 6.",
+      "expected_answer": 12,
+      "execution_contract": {
+        "callable_name": "product_of_two",
+        "test_cases": [
+          {
+            "args": [],
+            "expected": 12
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "b10",
+      "form_id": "python_skill_form_b_v1",
+      "domain": "functions",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate: def triple(value): return value * 3; triple(5)",
+      "expected_answer": 15,
+      "required": true
+    }
+  ],
+  "assessment_hash": "bc58342771516d63a9f17edba9154f553572239fc9a2116031a9f4c5740399ce"
+}

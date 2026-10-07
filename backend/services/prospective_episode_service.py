@@ -17,6 +17,7 @@ from backend.models.prospective_prediction_episode import (
     EpisodeStatus,
     ObservedOutcome,
     OutcomeSource,
+    PracticeActionEvidence,
     PredictionBundle,
     PredictionTarget,
     ProspectivePredictionEpisode,
@@ -102,9 +103,20 @@ class ProspectiveEpisodeService:
         action: str,
         context: dict[str, Any],
         target: PredictionTarget,
+        pilot_id: str | None = None,
+        enrollment_id: str | None = None,
+        baseline_assessment_session_id: str | None = None,
+        baseline_submitted_at: datetime | None = None,
     ) -> ProspectivePredictionEpisode:
         normalized_user = self._required_text(user_id, "user_id")
         normalized_action = self._required_text(action, "action")
+        if pilot_id is not None:
+            if not enrollment_id or not baseline_assessment_session_id or baseline_submitted_at is None:
+                raise ValueError("pilot episode creation requires a finalized baseline assessment")
+            if baseline_submitted_at.tzinfo is None or baseline_submitted_at.utcoffset() is None:
+                raise ValueError("baseline_submitted_at must include a timezone")
+        elif any(value is not None for value in (enrollment_id, baseline_assessment_session_id, baseline_submitted_at)):
+            raise ValueError("baseline linkage requires a pilot_id")
         if not isinstance(pre_action_state, dict) or not pre_action_state:
             raise ValueError("pre_action_state must be a non-empty career skills mapping")
         state = deepcopy(pre_action_state)
@@ -146,6 +158,8 @@ class ProspectiveEpisodeService:
         self._validate_target_predictions(predictions, target)
 
         frozen_at = self._now()
+        if baseline_submitted_at is not None and baseline_submitted_at >= frozen_at:
+            raise ValueError("baseline assessment must precede prediction freeze")
         episode_id = f"episode_{uuid4().hex}"
         episode = ProspectivePredictionEpisode(
             episode_id=episode_id,
@@ -157,13 +171,24 @@ class ProspectiveEpisodeService:
             context=safe_context,
             predictions=predictions,
             target=target,
+            pilot_id=pilot_id,
+            enrollment_id=enrollment_id,
+            baseline_assessment_session_id=baseline_assessment_session_id,
             outcome_due_at=frozen_at + timedelta(seconds=target.horizon_seconds),
             status=EpisodeStatus.PREDICTION_FROZEN,
         )
         self.store.create_episode(
             episode,
             [
-                self._event(episode, EpisodeEventType.EPISODE_CREATED, frozen_at),
+                self._event(
+                    episode,
+                    EpisodeEventType.EPISODE_CREATED,
+                    frozen_at,
+                    {
+                        "enrollment_id": enrollment_id,
+                        "baseline_assessment_session_id": baseline_assessment_session_id,
+                    },
+                ),
                 self._event(episode, EpisodeEventType.PREDICTION_FROZEN, frozen_at),
             ],
         )
@@ -179,6 +204,53 @@ class ProspectiveEpisodeService:
         self.store.update_episode(
             updated,
             [self._event(updated, EpisodeEventType.ACTION_STARTED, started_at)],
+            expected_episode=episode,
+        )
+        return updated
+
+    def record_action_completion_evidence(
+        self,
+        episode_id: str,
+        user_id: str,
+        evidence: PracticeActionEvidence | dict[str, Any],
+    ) -> ProspectivePredictionEpisode:
+        episode = self._get(episode_id, user_id)
+        self._require_status(episode, EpisodeStatus.ACTION_COMPLETED)
+        if episode.action_evidence is not None:
+            raise ValueError("action completion evidence is immutable once recorded")
+        try:
+            payload = evidence.model_dump(mode="python") if isinstance(evidence, PracticeActionEvidence) else evidence
+            validated = PracticeActionEvidence.model_validate(deepcopy(payload))
+        except ValidationError as error:
+            raise ValueError(f"action evidence failed schema validation: {error}") from error
+        if episode.action_completed_at is None:
+            raise ValueError("action must be completed before recording action evidence")
+        if validated.participant_id != episode.user_id:
+            raise ValueError("action evidence participant does not match episode owner")
+        if episode.action_started_at is None or validated.started_at < episode.action_started_at:
+            raise ValueError("module completion evidence must occur during the episode action")
+        if validated.completed_at > episode.action_completed_at:
+            raise ValueError("module completion evidence must not postdate episode action completion")
+        if validated.started_at >= validated.completed_at:
+            raise ValueError("module completion evidence must start before it completes")
+        if validated.completion_status != "complete":
+            raise ValueError("action evidence must prove a completed practice module")
+        updated = episode.model_copy(update={"action_evidence": validated})
+        self.store.update_episode(
+            updated,
+            [
+                self._event(
+                    updated,
+                    EpisodeEventType.ACTION_EVIDENCE_RECORDED,
+                    self._now(),
+                    {
+                        "module_id": validated.module_id,
+                        "module_version": validated.module_version,
+                        "module_hash": validated.module_hash,
+                        "evidence_id": validated.evidence_id,
+                    },
+                )
+            ],
             expected_episode=episode,
         )
         return updated
@@ -394,6 +466,22 @@ class ProspectiveEpisodeService:
 
     def get_episode(self, episode_id: str, user_id: str) -> ProspectivePredictionEpisode:
         return self._get(episode_id, user_id)
+
+    def get_episode_for_enrollment(
+        self,
+        *,
+        participant_id: str,
+        pilot_id: str,
+        enrollment_id: str,
+    ) -> ProspectivePredictionEpisode:
+        matches = [
+            episode
+            for episode in self.store.list_episodes(self._required_text(participant_id, "participant_id"))
+            if episode.pilot_id == pilot_id and episode.enrollment_id == enrollment_id
+        ]
+        if len(matches) != 1:
+            raise KeyError("prospective episode not found for this enrollment")
+        return matches[0]
 
     def list_episodes(self, user_id: str) -> list[ProspectivePredictionEpisode]:
         return self.store.list_episodes(self._required_text(user_id, "user_id"))

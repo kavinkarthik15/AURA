@@ -1,0 +1,181 @@
+{
+  "form_id": "python_skill_form_a_v1",
+  "form_version": "v1",
+  "blueprint_id": "python_skill_blueprint_v1",
+  "items": [
+    {
+      "item_id": "a1",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "variables_and_types",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate: 3 + 4 * 2",
+      "expected_answer": 11,
+      "required": true
+    },
+    {
+      "item_id": "a2",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "variables_and_types",
+      "maximum_points": 10,
+      "scoring_method": "multiple_choice",
+      "prompt": "What is the type of 3.14?",
+      "expected_answer": "float",
+      "required": true
+    },
+    {
+      "item_id": "a3",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "control_flow",
+      "maximum_points": 10,
+      "scoring_method": "true_false",
+      "prompt": "The condition x % 2 == 0 is true for x = 10.",
+      "expected_answer": true,
+      "required": true
+    },
+    {
+      "item_id": "a4",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "control_flow",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate: total = 0; for i in range(1, 4): total += i; total",
+      "expected_answer": 6,
+      "required": true
+    },
+    {
+      "item_id": "a5",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "functions",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a Python function add(a, b) that returns the sum of two numbers.",
+      "expected_answer": 9,
+      "execution_contract": {
+        "callable_name": "add",
+        "test_cases": [
+          {
+            "args": [
+              4,
+              5
+            ],
+            "expected": 9
+          },
+          {
+            "args": [
+              -1,
+              1
+            ],
+            "expected": 0
+          },
+          {
+            "args": [
+              0,
+              0
+            ],
+            "expected": 0
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "a6",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "functions",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a function double_list(values) that returns each value multiplied by 2.",
+      "expected_answer": [
+        2,
+        4,
+        6
+      ],
+      "execution_contract": {
+        "callable_name": "double_list",
+        "test_cases": [
+          {
+            "args": [
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "expected": [
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "args": [
+              [
+                -1,
+                0
+              ]
+            ],
+            "expected": [
+              -2,
+              0
+            ]
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "a7",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "collections",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "What is len({'apple': 1, 'banana': 2})?",
+      "expected_answer": 2,
+      "required": true
+    },
+    {
+      "item_id": "a8",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "debugging_reasoning",
+      "maximum_points": 10,
+      "scoring_method": "true_false",
+      "prompt": "Using a list index out of range raises an IndexError.",
+      "expected_answer": true,
+      "required": true
+    },
+    {
+      "item_id": "a9",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "problem_solving",
+      "maximum_points": 10,
+      "scoring_method": "code_output",
+      "prompt": "Write a function sum_range_one_to_four() that returns 1 + 2 + 3 + 4.",
+      "expected_answer": 10,
+      "execution_contract": {
+        "callable_name": "sum_range_one_to_four",
+        "test_cases": [
+          {
+            "args": [],
+            "expected": 10
+          }
+        ],
+        "timeout_seconds": 1.0
+      },
+      "required": true
+    },
+    {
+      "item_id": "a10",
+      "form_id": "python_skill_form_a_v1",
+      "domain": "collections",
+      "maximum_points": 10,
+      "scoring_method": "exact_match",
+      "prompt": "Evaluate the expression len([2, 4, 6])",
+      "expected_answer": 3,
+      "required": true
+    }
+  ],
+  "assessment_hash": "e51b38933a9f4a9d97f8cd08319cd64ee0b886d4c8471b58635faeea656b7715"
+}

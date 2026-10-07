@@ -1,0 +1,297 @@
+{
+  "pilot_id": "17_16B_python_skill_pilot_v1",
+  "protocol_version": "2026-10-07-audit-v2",
+  "phase": "17.16B",
+  "status": "AUDIT_REVISIONS_REQUIRED",
+  "protocol_design_ready": true,
+  "measurement_instrument_ready": false,
+  "action_module_ready": false,
+  "collection_ready": false,
+  "research_objective": "Create a defensible prospective pilot for the existing python skill dimension without claiming MG effectiveness before legitimate independent outcomes exist.",
+  "measurement_instrument": {
+    "status": "MEASUREMENT_INSTRUMENT_REQUIRES_FINALIZATION",
+    "instrument_name": "python_skill_assessment_form_v1",
+    "assessment_structure": "10-item Python assessment with one form for baseline and one parallel form for follow-up; each form includes tasks from variables_and_types, control_flow, functions, collections, debugging_reasoning, and problem_solving.",
+    "task_count": 10,
+    "task_types": [
+      "multiple_choice",
+      "exact_match",
+      "true_false",
+      "code_output"
+    ],
+    "scoring_rule": "Each objective item receives its maximum_points only when its expected value matches or its declared code contract passes all deterministic test cases. Raw score is the sum of earned item points.",
+    "raw_score_range": {
+      "min": 0,
+      "max": 100
+    },
+    "mapping_to_aura_scale": {
+      "raw_score": "sum(item.maximum_points for each passed item)",
+      "raw_score_range": {
+        "min": 0,
+        "max": 100
+      },
+      "aura_target_value": "raw_score",
+      "transformation_rule": "Each form has 10 items worth 10 points, so aura_python_skill equals raw_score directly; no post-hoc, data-dependent, or MG/base adjustment is applied."
+    },
+    "baseline_measurement_method": "Use deterministic counterbalanced assignment by stable participant/user ID hashing. Group AB: T0 = Form A and T1 = Form B. Group BA: T0 = Form B and T1 = Form A. Participants cannot choose the form.",
+    "followup_measurement_method": "Use the assigned counterbalanced follow-up form for the participant. The protocol does not claim A/B equivalence; it only preserves blueprint matching and deterministic assignment.",
+    "parallel_forms": {
+      "status": "PARALLEL_FORMS_BLUEPRINT_MATCHED_NOT_EMPIRICALLY_EQUIVALENT",
+      "requirement": "The protocol uses deterministic counterbalanced assignment across Form A and Form B with matched domain blueprint coverage only; equivalence is not assumed without later evidence.",
+      "equivalent_forms_claim": false,
+      "assignment_group_rule": "Group AB = A then B; Group BA = B then A; assignment determined by a stable hash of user_id.",
+      "assignment_group_fields": [
+        "assignment_group",
+        "baseline_form",
+        "followup_form",
+        "assignment_method"
+      ]
+    },
+    "evidence_retained": [
+      "assessment_record",
+      "evidence_id",
+      "assessor_or_system_identity",
+      "timestamp",
+      "raw_score",
+      "score_transformation_log"
+    ],
+    "invalid_assessment_handling": "Score must be rejected or converted into a missing outcome when the assessment is incomplete, invalid, or unverified.",
+    "assessment_validity_rule": "Every required item completed; each submitted coding task executed using SECURE_CONTAINER and passed deterministic test cases; no scoring error; unique episode-linked evidence ID; bound form ID/version/hash; valid assignment/phase; timezone-aware timestamps within phase windows; verified raw score identity mapping; ASSESSMENT provenance only.",
+    "assignment_group": "AB_or_BA",
+    "baseline_form": "Form A or Form B depending on deterministic group assignment",
+    "followup_form": "The alternated form from the same deterministic group assignment",
+    "assignment_method": "stable_user_id_hash_to_group"
+  },
+  "score_transformation": {
+    "raw_score": "sum(item.maximum_points for each passed item)",
+    "raw_score_range": {
+      "min": 0,
+      "max": 100
+    },
+    "aura_target_value": "raw_score",
+    "deterministic_mapping": "With 10 items worth 10 points each, aura_python_skill = raw_score. No normalization, data-dependent scaling, post-hoc adjustment, or prediction adjustment is applied.",
+    "scale_validity_note": "The AURA 0-100 python skill scale remains an operational system scale; this pilot estimates operational usefulness, not psychometric external validity."
+  },
+  "pilot_action": {
+    "action_type": "standardized_python_practice_module",
+    "status": "ACTION_MODULE_REQUIRES_FINALIZATION",
+    "module_identifier_version": "PYTHON_PRACTICE_CORE_V1:v1",
+    "content_scope": "Three required exercises across variables, loops, and functions, plus optional collections/debugging practice.",
+    "expected_duration_minutes": 25,
+    "required_exercises": [
+      "exercise_variables",
+      "exercise_loops",
+      "exercise_functions"
+    ],
+    "completion_threshold": {
+      "required_exercises_to_pass": 3
+    },
+    "allowed_retries": 1,
+    "evidence_of_completion": [
+      "module_id",
+      "started_at",
+      "completed_at",
+      "completion_record",
+      "exercise_log"
+    ],
+    "start_timestamp_required": true,
+    "completion_timestamp_required": true,
+    "action_standardization_gap": "Closed by versioned module manifest and exact required-exercise list."
+  },
+  "population": {
+    "description": "Narrow, early-career or self-directed Python learners who are eligible for the agreed assessment and practice module.",
+    "inclusion_criteria": [
+      "valid baseline python skill signal exists in AURA state schema",
+      "participant is actively learning Python",
+      "participant can complete the finalized assessment and practice module",
+      "participant consent and evidence capture are available"
+    ],
+    "exclusion_criteria": [
+      "no valid baseline python skill value",
+      "participant cannot complete the finalized action or assessment",
+      "assessment or action cannot be audited",
+      "participant withdraws before completion"
+    ],
+    "withdrawal_criteria": [
+      "participant opts out",
+      "participant become ineligible for the study action",
+      "evidence cannot be collected or audited"
+    ],
+    "minimum_required_baseline_information": [
+      "user_id",
+      "baseline_python_skill_value",
+      "enrollment_timestamp",
+      "module_or_action_metadata",
+      "baseline_assessment_evidence_id"
+    ]
+  },
+  "observation_horizon": {
+    "primary_horizon_days": 7,
+    "allowed_timing_window_days": {
+      "start": 7,
+      "end": 10
+    },
+    "primary_horizon_rationale": "Seven days is a pragmatic feasibility horizon, not a proven psychometric optimum. It balances expected skill-change latency, follow-up reliability, and participant burden.",
+    "external_confounding_risk": "Seven-day windows allow real-world exposure to courses, tutorials, AI tools, or projects; these must be recorded as metadata rather than controlled away."
+  },
+  "external_learning_metadata": {
+    "required_fields": [
+      "external_python_learning_minutes",
+      "other_python_courses",
+      "project_activity",
+      "ai_assistance_used",
+      "relevant_classroom_instruction"
+    ],
+    "status": "REQUIRED_METADATA_ONLY",
+    "note": "These values are confounder descriptors and are not used to condition MG predictions or to define outcome values."
+  },
+  "primary_endpoint": {
+    "name": "paired_delta_error",
+    "definition": "delta_error = abs(observed_outcome - mg_prediction) - abs(observed_outcome - base_prediction); negative values favor MG on that episode.",
+    "aggregation_plan": "Future confirmatory analysis will aggregate episode-level delta_error using a single pre-registered summary statistic; additional metrics remain secondary/exploratory.",
+    "status": "FROZEN_FORMULA_ONLY; not calculated during this audit."
+  },
+  "delta_min": {
+    "status": "TO_BE_ESTIMATED_FROM_PILOT",
+    "policy": "No numeric delta_min should be invented from synthetic data or a priori assumptions. Estimate the distribution of paired delta_error, paired-delta SD, measurement noise, missingness, and exclusion rate from a Stage A pilot, then freeze the final threshold before the confirmatory cohort.",
+    "numeric_value": null
+  },
+  "sample_size_strategy": {
+    "pilot_feasibility_sample": "30-50 valid episodes is a pragmatic target for estimating variance and protocol drift; it is not a powered cohort.",
+    "confirmatory_powered_sample": "PENDING_PILOT_VARIANCE_ESTIMATE",
+    "status": "PILOT_SAMPLE_ONLY; confirmatory sample size remains pending pilot variance estimation."
+  },
+  "outcome_provenance": {
+    "allowed_outcome_sources": [
+      "ASSESSMENT",
+      "VERIFIED_EVENT"
+    ],
+    "recorded_by": "assessor_or_verifier",
+    "evidence_id_format": "<pilot_id>:<user_id>:<episode_id>:<assessment_id>",
+    "prohibited_sources": [
+      "SIMULATION",
+      "DIGITAL_TWIN",
+      "SYNTHETIC",
+      "PREDICTION",
+      "LEGACY_PREDICTION"
+    ],
+    "blinding_required": "Outcome-entry staff should not see frozen base or MG predictions when practical; any unavoidable deviation must be documented."
+  },
+  "missing_data_rules": {
+    "action_not_started": "MISSING_OUTCOME",
+    "action_not_completed": "MISSING_OUTCOME",
+    "outcome_not_collected": "MISSING_OUTCOME",
+    "outcome_collected_too_early": "MISSING_OUTCOME",
+    "outcome_collected_too_late": "EXCLUDED",
+    "invalid_provenance": "EXCLUDED",
+    "target_mismatch": "EXCLUDED",
+    "measurement_failure": "EXCLUDED",
+    "participant_withdrawal": "EXCLUDED"
+  },
+  "eligibility_criteria": {
+    "required_conditions": [
+      "prediction frozen before action",
+      "action completed",
+      "target matches python skill",
+      "primary horizon satisfied",
+      "outcome source allowed",
+      "provenance quality sufficient",
+      "follow-up measurement valid",
+      "no leakage detected",
+      "no exclusion criterion triggered"
+    ],
+    "status": "FROZEN"
+  },
+  "protocol_hash": "f9444711a7af20592742f70d68def117a650adc2601c5c13564caa49d2951e5d",
+  "audit_findings": [
+    "The v1 assessment forms, blueprint, and practice module have content and integrity hashes, but are not owner-approved.",
+    "Code submissions are evaluated in a restricted-exec subprocess with timeout; Python introspection can escape the restrictions, so this is not a secure sandbox.",
+    "Assessment result creation does not yet enforce evidence ID, timestamp, assignment-phase, or provenance validation as a collection-ready lifecycle.",
+    "No numeric quality cutoff is used; required deterministic validity conditions are recorded in provenance_quality_policy.",
+    "The 7-day follow-up horizon is a pragmatic feasibility horizon, not a validated psychometric optimum.",
+    "No real outcomes should be collected until the execution isolation and evidence-validation blockers are resolved and human approval is recorded."
+  ],
+  "collection_blockers": [
+    "submitted Python requires OS-level or equivalent isolation before real participants can provide code",
+    "assessment evidence ID, timestamps, form assignment, and provenance validity are not enforced end-to-end by a collection workflow",
+    "pilot owner approval is pending and must remain a human action",
+    "collection_ready remains false until all technical blockers are resolved and owner approval is recorded"
+  ],
+  "pilot_owner_approval": false,
+  "protocol_version_hash_status": "A deterministic SHA-256 digest is computed across the frozen protocol payload and must remain stable after each audit revision.",
+  "technology": {
+    "code_execution": {
+      "execution_modes": [
+        "DEVELOPMENT_RESTRICTED",
+        "SECURE_CONTAINER"
+      ],
+      "real_collection_mode": "SECURE_CONTAINER only",
+      "development_backend": "RestrictedDevelopmentExecutor; explicitly NOT_APPROVED_FOR_UNTRUSTED_CODE",
+      "secure_backend": "DockerContainerExecutor requiring a digest-pinned worker image and passing runtime health check",
+      "secure_backend_available_on_audit_host": false,
+      "security_execution_gate": "FAIL",
+      "container_controls": [
+        "network none",
+        "read-only root filesystem",
+        "temporary writable tmpfs only",
+        "no host mounts",
+        "non-root UID",
+        "memory limit",
+        "CPU limit",
+        "PID limit",
+        "drop all capabilities",
+        "no-new-privileges",
+        "empty host environment"
+      ],
+      "known_security_limit": "The development restricted-exec subprocess is not a security sandbox; Python introspection may escape it. Real submissions are rejected unless the Docker secure backend is configured and healthy."
+    }
+  },
+  "provenance_quality_policy": {
+    "deterministic_validity_rule": "assessment_valid = all required items completed AND coding tasks executed successfully AND evidence_id present AND form/version/hash valid AND timestamps valid AND score transformation verified"
+  },
+  "artifact_bindings": {
+    "blueprint": {
+      "blueprint_id": "python_skill_blueprint_v1",
+      "blueprint_version": "v1",
+      "blueprint_hash": "a6afb36e4ee6fd3fec1a472030c86f426ea6b5ab8948b5c1713adf079a95c9e3"
+    },
+    "form_a": {
+      "form_a_id": "python_skill_form_a_v1",
+      "form_a_version": "v1",
+      "form_a_hash": "e51b38933a9f4a9d97f8cd08319cd64ee0b886d4c8471b58635faeea656b7715"
+    },
+    "form_b": {
+      "form_b_id": "python_skill_form_b_v1",
+      "form_b_version": "v1",
+      "form_b_hash": "bc58342771516d63a9f17edba9154f553572239fc9a2116031a9f4c5740399ce"
+    },
+    "module": {
+      "module_id": "PYTHON_PRACTICE_CORE_V1",
+      "module_version": "v1",
+      "module_hash": "33d0667b66bca8bf0f837c4efb3d37533f29e5feca1df777230581a6c6bb333e"
+    }
+  },
+  "version_freeze_policy": {
+    "before_owner_approval": "v1 artifacts may be corrected during audit.",
+    "after_owner_approval_and_first_real_collection": "v1 artifacts become immutable.",
+    "subsequent_changes": "Any later change requires a new v2 artifact; do not mutate an approved v1 in place."
+  },
+  "final_technical_approval_gate": {
+    "technical_artifacts_complete": false,
+    "security_execution_gate": "FAIL",
+    "hash_binding_gate": "PASS",
+    "measurement_logic_gate": "PASS",
+    "action_module_gate": "PASS",
+    "protocol_integrity_gate": "PASS",
+    "secure_backend_type": "DockerContainerExecutor",
+    "secure_backend_available": false,
+    "secure_backend_health_check": false,
+    "evidence_lifecycle_complete": false,
+    "recommendation": "REVISIONS_REQUIRED",
+    "remaining_blockers": [
+      "The audit host has no Docker CLI/runtime and no digest-pinned secure worker image configured; participant code cannot run in the required isolated backend.",
+      "A complete valid secure-container-backed baseline-to-follow-up-to-outcome lifecycle remains unverified.",
+      "Pilot-owner approval remains a separate pending human action."
+    ]
+  }
+}

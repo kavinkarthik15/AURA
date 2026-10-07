@@ -1,0 +1,15 @@
+{
+  "blueprint_id": "python_skill_blueprint_v1",
+  "blueprint_version": "v1",
+  "domains": {
+    "variables_and_types": 20,
+    "control_flow": 20,
+    "functions": 20,
+    "collections": 20,
+    "debugging_reasoning": 10,
+    "problem_solving": 10
+  },
+  "form_a_id": "python_skill_form_a_v1",
+  "form_b_id": "python_skill_form_b_v1",
+  "assessment_hash": "a6afb36e4ee6fd3fec1a472030c86f426ea6b5ab8948b5c1713adf079a95c9e3"
+}

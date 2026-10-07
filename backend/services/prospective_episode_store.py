@@ -39,6 +39,9 @@ def _frozen_payload(episode: ProspectivePredictionEpisode) -> str:
                 "context",
                 "predictions",
                 "target",
+                "pilot_id",
+                "enrollment_id",
+                "baseline_assessment_session_id",
             )
         }
     )
@@ -109,8 +112,20 @@ class ProspectiveEpisodeStore:
                     OR json(json_extract(NEW.episode_json, '$.context')) IS NOT json(json_extract(OLD.frozen_payload, '$.context'))
                     OR json(json_extract(NEW.episode_json, '$.predictions')) IS NOT json(json_extract(OLD.frozen_payload, '$.predictions'))
                     OR json(json_extract(NEW.episode_json, '$.target')) IS NOT json(json_extract(OLD.frozen_payload, '$.target'))
+                    OR json_extract(NEW.episode_json, '$.enrollment_id') IS NOT json_extract(OLD.frozen_payload, '$.enrollment_id')
+                    OR json_extract(NEW.episode_json, '$.baseline_assessment_session_id') IS NOT json_extract(OLD.frozen_payload, '$.baseline_assessment_session_id')
                 BEGIN
                     SELECT RAISE(ABORT, 'episode JSON contains modified frozen fields');
+                END;
+
+                CREATE TRIGGER IF NOT EXISTS prevent_action_evidence_update
+                BEFORE UPDATE OF episode_json ON prospective_episodes
+                WHEN
+                    json_extract(OLD.episode_json, '$.action_evidence') IS NOT NULL
+                    AND json(json_extract(NEW.episode_json, '$.action_evidence'))
+                        IS NOT json(json_extract(OLD.episode_json, '$.action_evidence'))
+                BEGIN
+                    SELECT RAISE(ABORT, 'action completion evidence is immutable');
                 END;
 
                 CREATE TRIGGER IF NOT EXISTS prevent_audit_event_update
@@ -194,6 +209,15 @@ class ProspectiveEpisodeStore:
             if result.rowcount != 1:
                 raise ValueError("prospective episode changed concurrently; reload before updating")
             self._insert_events(connection, events)
+
+    def append_event(self, event: EpisodeAuditEvent) -> None:
+        with self._connection() as connection:
+            if not connection.execute(
+                "SELECT 1 FROM prospective_episodes WHERE episode_id = ?",
+                (event.episode_id,),
+            ).fetchone():
+                raise KeyError("prospective episode not found")
+            self._insert_events(connection, [event])
 
     def get_episode(self, episode_id: str, user_id: str) -> ProspectivePredictionEpisode | None:
         with self._connection() as connection:

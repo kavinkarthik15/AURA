@@ -1,0 +1,149 @@
+{
+  "module_id": "PYTHON_PRACTICE_CORE_V1",
+  "module_version": "v1",
+  "exercise_ids": [
+    "exercise_variables",
+    "exercise_loops",
+    "exercise_functions",
+    "exercise_collections",
+    "exercise_debugging"
+  ],
+  "competency_domains": [
+    "variables_and_types",
+    "control_flow",
+    "functions",
+    "collections",
+    "debugging_reasoning"
+  ],
+  "expected_duration_minutes": 25,
+  "required_exercises": [
+    "exercise_variables",
+    "exercise_loops",
+    "exercise_functions"
+  ],
+  "optional_exercises": [
+    "exercise_collections",
+    "exercise_debugging"
+  ],
+  "completion_threshold": {
+    "required_exercises_to_pass": 3
+  },
+  "retry_policy": {
+    "max_retries": 1,
+    "retry_only_required": true
+  },
+  "exercises": [
+    {
+      "exercise_id": "exercise_variables",
+      "domain": "variables_and_types",
+      "required": true,
+      "max_points": 20,
+      "prompt": "Write a function add(a, b) that returns the sum of two numbers.",
+      "expected_answer": 9,
+      "scoring_method": "code_output",
+      "execution_contract": {
+        "callable_name": "add",
+        "test_cases": [
+          {
+            "args": [
+              2,
+              3
+            ],
+            "expected": 5
+          },
+          {
+            "args": [
+              -1,
+              1
+            ],
+            "expected": 0
+          }
+        ],
+        "timeout_seconds": 1.0
+      }
+    },
+    {
+      "exercise_id": "exercise_loops",
+      "domain": "control_flow",
+      "required": true,
+      "max_points": 20,
+      "prompt": "Write a function sum_first_three() that returns 1 + 2 + 3.",
+      "expected_answer": 6,
+      "scoring_method": "code_output",
+      "execution_contract": {
+        "callable_name": "sum_first_three",
+        "test_cases": [
+          {
+            "args": [],
+            "expected": 6
+          }
+        ],
+        "timeout_seconds": 1.0
+      }
+    },
+    {
+      "exercise_id": "exercise_functions",
+      "domain": "functions",
+      "required": true,
+      "max_points": 20,
+      "prompt": "Write a function double(x) that returns x * 2.",
+      "expected_answer": 8,
+      "scoring_method": "code_output",
+      "execution_contract": {
+        "callable_name": "double",
+        "test_cases": [
+          {
+            "args": [
+              4
+            ],
+            "expected": 8
+          },
+          {
+            "args": [
+              -1
+            ],
+            "expected": -2
+          }
+        ],
+        "timeout_seconds": 1.0
+      }
+    },
+    {
+      "exercise_id": "exercise_collections",
+      "domain": "collections",
+      "required": false,
+      "max_points": 20,
+      "prompt": "Write a function first_three_evens() that returns [2, 4, 6].",
+      "expected_answer": [
+        2,
+        4,
+        6
+      ],
+      "scoring_method": "code_output",
+      "execution_contract": {
+        "callable_name": "first_three_evens",
+        "test_cases": [
+          {
+            "args": [],
+            "expected": [
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "timeout_seconds": 1.0
+      }
+    },
+    {
+      "exercise_id": "exercise_debugging",
+      "domain": "debugging_reasoning",
+      "required": false,
+      "max_points": 20,
+      "prompt": "In the code below, which index should the loop start from to avoid skipping the first item?",
+      "expected_answer": 0,
+      "scoring_method": "exact_match"
+    }
+  ],
+  "module_hash": "33d0667b66bca8bf0f837c4efb3d37533f29e5feca1df777230581a6c6bb333e"
+}
